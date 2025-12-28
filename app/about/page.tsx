@@ -21,8 +21,8 @@ import {
 } from '@mui/icons-material';
 
 export const metadata: Metadata = {
-  title: 'About Us - CannyMinds Technology Solutions | Digital Transformation Leaders',
-  description: 'Learn about CannyMinds Technology Solutions - ISO certified IT company founded in 2003. Meet our leadership team and discover our mission to deliver world-class digital transformation services across India, USA, Nigeria, and UAE.',
+  title: 'About CannyMinds | Digital Transformation Leaders',
+  description: 'ISO-certified IT company since 2003. Meet our leadership team and discover our mission to deliver world-class digital transformation across 4 countries.',
   keywords: [
     'about CannyMinds',
     'IT company India',
@@ -33,10 +33,21 @@ export const metadata: Metadata = {
     'technology solutions provider',
   ],
   openGraph: {
-    title: 'About Us - CannyMinds Technology Solutions',
-    description: 'ISO certified IT company with 20+ years of experience in digital transformation, AI automation, and enterprise software development.',
+    title: 'About CannyMinds | Digital Transformation Leaders',
+    description: 'ISO-certified IT company since 2003. Meet our leadership team and discover our mission to deliver world-class digital transformation across 4 countries.',
     url: 'https://www.cannymindstech.com/about',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'About CannyMinds Technology Solutions',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://www.cannymindstech.com/about',
   },
 };
 
@@ -53,7 +64,7 @@ export default function AboutPage() {
     {
       name: "Christopher Arulandu",
       title: "Chief Technology Officer",
-      bio: "As CTO, Christopher oversees all technical innovation and product development at CannyMinds Technology Solutions. He leads the engineering teams responsible for CannyDocs, CannyHR, CannyScan, and CannyTrack, ensuring world-class quality and cutting-edge features.",
+      bio: "As CTO, Christopher oversees all technical innovation and product development at CannyMinds Technology Solutions. He leads the engineering teams responsible for CannyECM, CannyHR, CannyScan, and CannyTrack, ensuring world-class quality and cutting-edge features.",
       image: "/team/christopher-arulandu.jpg",
       placeholder: "CA",
       color: "green",
@@ -88,7 +99,7 @@ export default function AboutPage() {
     { year: "2003", event: "CannyMinds Technology Solutions Founded" },
     { year: "2008", event: "Expanded to USA Market" },
     { year: "2012", event: "ISO 9001:2015 Certification Achieved" },
-    { year: "2015", event: "Launched CannyDocs Document Management System" },
+    { year: "2015", event: "Launched CannyECM Document Management System" },
     { year: "2017", event: "Opened Offices in Nigeria and UAE" },
     { year: "2019", event: "ISO 27001 Security Certification" },
     { year: "2021", event: "Launched CannyHR and CannyTrack Products" },
@@ -195,7 +206,7 @@ export default function AboutPage() {
                   Founded in <strong>2003</strong>, CannyMinds Technology Solutions began with a simple mission: to help businesses harness the power of technology to achieve their goals. What started as a small IT services company in Chennai, India, has grown into a global technology solutions provider with offices across four countries.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                  Over the past two decades, we've evolved from traditional IT consulting to become a leader in <strong>digital transformation, AI-powered automation, and enterprise software development</strong>. Our flagship products—CannyDocs, CannyHR, CannyScan, and CannyTrack—are trusted by organizations worldwide to streamline operations, enhance productivity, and secure sensitive data.
+                  Over the past two decades, we've evolved from traditional IT consulting to become a leader in <strong>digital transformation, AI-powered automation, and enterprise software development</strong>. Our flagship products—CannyECM, CannyHR, CannyScan, and CannyTrack—are trusted by organizations worldwide to streamline operations, enhance productivity, and secure sensitive data.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
                   Today, CannyMinds serves clients across <strong>India, USA, Nigeria, and UAE</strong>, delivering world-class solutions backed by ISO 27001 and ISO 9001:2015 certifications. Our team of 50+ technology experts works tirelessly to ensure every client achieves measurable business outcomes from their technology investments.

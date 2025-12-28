@@ -17,7 +17,7 @@ export const siteConfig = {
     "digital marketing",
     "enterprise solutions",
     "cloud solutions",
-    "CannyDocs",
+    "CannyECM",
     "CannyHR",
     "CannyScan",
     "CannyTrack",

@@ -5,7 +5,7 @@ import RevealOnScroll from "../ui/RevealOnScroll";
 
 const products = [
   {
-    name: "CannyDocs",
+    name: "CannyECM",
     icon: "📄",
     description:
       "Smart document management software enabling professional organization and instant retrieval through web browsers.",

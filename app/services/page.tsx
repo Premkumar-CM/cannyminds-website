@@ -12,8 +12,8 @@ import {
 } from "@mui/icons-material";
 
 export const metadata: Metadata = {
-  title: "Our Services - Coming Soon | CannyMinds Technology Solutions",
-  description: "Comprehensive IT consulting services including digital transformation, AI automation, software development, digital marketing, business process services, and record management. Detailed service pages coming soon.",
+  title: "IT Consulting Services | CannyMinds Technology",
+  description: "Expert IT consulting: digital transformation, AI automation, custom software development, and business process services. Transform your business today.",
   keywords: [
     "IT consulting services",
     "digital transformation",
@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     "record management",
     "CannyMinds services",
   ].join(", "),
+  openGraph: {
+    title: "IT Consulting Services | CannyMinds Technology",
+    description: "Expert IT consulting: digital transformation, AI automation, custom software development, and business process services. Transform your business today.",
+    url: "https://www.cannymindstech.com/services",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CannyMinds IT Consulting Services",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.cannymindstech.com/services",
+  },
 };
 
 const services = [

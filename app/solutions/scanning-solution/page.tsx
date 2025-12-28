@@ -19,8 +19,8 @@ import {
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: "CannyScan - Professional Document Scanning Services | Digitization Solution 2025",
-  description: "CannyScan provides professional document scanning and digitization services for paper documents, microfilm, large-format plans, and books. Onsite and offsite scanning with 99.9% accuracy. Secure cloud hosting included.",
+  title: "CannyScan - Professional Document Scanning Services",
+  description: "Professional scanning with 99.9% accuracy. Onsite/offsite options for all document types. Microfilm, blueprints, books. Secure cloud hosting.",
   keywords: [
     "CannyScan",
     "document scanning services",
@@ -36,9 +36,21 @@ export const metadata: Metadata = {
   authors: [{ name: "Christopher" }],
   openGraph: {
     title: "CannyScan - Professional Document Scanning Services",
-    description: "Professional document scanning and digitization services with 99.9% accuracy. Onsite/offsite options. Secure cloud hosting.",
+    description: "Professional scanning with 99.9% accuracy. Onsite/offsite options for all document types. Microfilm, blueprints, books. Secure cloud hosting.",
     type: "article",
+    url: "https://www.cannymindstech.com/solutions/scanning-solution",
     authors: ["Christopher"],
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CannyScan - Professional Document Scanning Services",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.cannymindstech.com/solutions/scanning-solution",
   },
   robots: { index: true, follow: true },
 };
@@ -165,10 +177,10 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          "name": "Can scanned documents be integrated with CannyDocs DMS?",
+          "name": "Can scanned documents be integrated with CannyECM DMS?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. CannyScan integrates seamlessly with CannyDocs Document Management System. Scanned files are uploaded directly to your CannyDocs repository with proper indexing, metadata, and folder organization—ready for immediate use with full-text search capabilities."
+            "text": "Yes. CannyScan integrates seamlessly with CannyECM Document Management System. Scanned files are uploaded directly to your CannyECM repository with proper indexing, metadata, and folder organization—ready for immediate use with full-text search capabilities."
           }
         },
         {
@@ -308,7 +320,7 @@ export default function CannyScanProductPage() {
                   { title: "Industry Use Cases", href: "#use-cases" },
                   { title: "How CannyScan Works", href: "#how-it-works" },
                   { title: "Technical Specifications", href: "#technical-specs" },
-                  { title: "Integration with CannyDocs", href: "#integration" },
+                  { title: "Integration with CannyECM", href: "#integration" },
                   { title: "Why Choose CannyScan", href: "#why-choose" },
                   { title: "Security & Compliance", href: "#security" },
                   { title: "Frequently Asked Questions", href: "#faq" },
@@ -849,16 +861,16 @@ export default function CannyScanProductPage() {
             </div>
           </section>
 
-          {/* Integration with CannyDocs */}
+          {/* Integration with CannyECM */}
           <section id="integration" className="mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8">
-              Seamless Integration with CannyDocs DMS
+              Seamless Integration with CannyECM DMS
             </h2>
 
             <div className="prose prose-lg max-w-none mb-8">
               <p className="text-gray-700 text-lg leading-relaxed">
-                CannyScan professional scanning services integrate perfectly with <strong>CannyDocs Document Management System</strong>.
-                Your scanned documents can be delivered directly into your CannyDocs repository with proper indexing, metadata,
+                CannyScan professional scanning services integrate perfectly with <strong>CannyECM Document Management System</strong>.
+                Your scanned documents can be delivered directly into your CannyECM repository with proper indexing, metadata,
                 and folder organization—ready for immediate use.
               </p>
             </div>
@@ -866,8 +878,8 @@ export default function CannyScanProductPage() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Direct Upload to CannyDocs",
-                  description: "Scanned documents are uploaded directly to your CannyDocs repository with proper folder structure and permissions.",
+                  title: "Direct Upload to CannyECM",
+                  description: "Scanned documents are uploaded directly to your CannyECM repository with proper folder structure and permissions.",
                   icon: <CloudIcon sx={{ fontSize: 40 }} />,
                 },
                 {
@@ -877,7 +889,7 @@ export default function CannyScanProductPage() {
                 },
                 {
                   title: "OCR & Full-Text Search",
-                  description: "All scanned documents are OCR-processed, making them immediately searchable within CannyDocs using keywords, dates, or metadata.",
+                  description: "All scanned documents are OCR-processed, making them immediately searchable within CannyECM using keywords, dates, or metadata.",
                   icon: <ScannerIcon sx={{ fontSize: 40 }} />,
                 },
               ].map((feature, idx) => (
@@ -896,7 +908,7 @@ export default function CannyScanProductPage() {
                 href="/solutions/document-management"
                 className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-800 font-semibold text-lg"
               >
-                Learn More About CannyDocs DMS
+                Learn More About CannyECM DMS
                 <ArrowIcon sx={{ fontSize: 20 }} />
               </Link>
             </div>
@@ -928,7 +940,7 @@ export default function CannyScanProductPage() {
                   name: "Amit Patel",
                   role: "Project Architect",
                   company: "Engineering Firm",
-                  testimonial: "Large-format scanning of A0 blueprints exceeded our expectations. High resolution captures every detail. Integration with CannyDocs made our entire archive searchable instantly.",
+                  testimonial: "Large-format scanning of A0 blueprints exceeded our expectations. High resolution captures every detail. Integration with CannyECM made our entire archive searchable instantly.",
                   rating: 5,
                 },
               ].map((testimonial, idx) => (
@@ -1098,8 +1110,8 @@ export default function CannyScanProductPage() {
                   answer: "Absolutely. We follow strict security protocols including secure transportation, 24/7 monitored facilities, chain of custody tracking, and background-verified staff. Digital files are encrypted with 256-bit AES encryption. We maintain compliance with HIPAA, GLBA, and GDPR standards.",
                 },
                 {
-                  question: "Can scanned documents be integrated with CannyDocs DMS?",
-                  answer: "Yes. CannyScan integrates seamlessly with CannyDocs Document Management System. Scanned files are uploaded directly to your CannyDocs repository with proper indexing, metadata, and folder organization—ready for immediate use with full-text search capabilities.",
+                  question: "Can scanned documents be integrated with CannyECM DMS?",
+                  answer: "Yes. CannyScan integrates seamlessly with CannyECM Document Management System. Scanned files are uploaded directly to your CannyECM repository with proper indexing, metadata, and folder organization—ready for immediate use with full-text search capabilities.",
                 },
                 {
                   question: "What happens to my original documents after scanning?",
@@ -1138,7 +1150,7 @@ export default function CannyScanProductPage() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  name: "CannyDocs",
+                  name: "CannyECM",
                   tagline: "Document Management System",
                   description: "Complete DMS with digital asset management, automated workflows, and 80% OCR accuracy. Manage scanned documents with version control and advanced search.",
                   link: "/solutions/document-management",

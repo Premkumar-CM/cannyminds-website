@@ -8,7 +8,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const products = [
-    { name: "CannyDocs", href: "/solutions/document-management" },
+    { name: "CannyECM", href: "/solutions/document-management" },
     { name: "CannyHR", href: "/solutions/hr-management" },
     { name: "CannyScan", href: "/solutions/scanning-solution" },
     { name: "CannyTrack", href: "/solutions/tracking-system" },

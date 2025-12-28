@@ -20,8 +20,8 @@ import {
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: "CannyHR - Complete HR & Payroll Management Software | HRMS Solution 2025",
-  description: "CannyHR is a comprehensive Hire-to-Retire HR and payroll management platform with time tracking, leave management, performance reviews, and 350+ biometric integrations. Mobile app included.",
+  title: "CannyHR - HR & Payroll Management | HRMS Solution 2025",
+  description: "Complete HRMS with payroll, time tracking, leave management, and performance reviews. 350+ biometric integrations. Mobile app included.",
   keywords: [
     "CannyHR",
     "HR management software",
@@ -36,10 +36,22 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Christopher" }],
   openGraph: {
-    title: "CannyHR - Complete HR & Payroll Management Software",
-    description: "Comprehensive Hire-to-Retire HRMS with payroll, attendance tracking, leave management, and performance reviews.",
+    title: "CannyHR - HR & Payroll Management | HRMS Solution 2025",
+    description: "Complete HRMS with payroll, time tracking, leave management, and performance reviews. 350+ biometric integrations. Mobile app included.",
     type: "article",
+    url: "https://www.cannymindstech.com/solutions/hr-management",
     authors: ["Christopher"],
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CannyHR - HR & Payroll Management Software",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.cannymindstech.com/solutions/hr-management",
   },
   robots: { index: true, follow: true },
 };

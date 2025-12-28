@@ -23,10 +23,10 @@ import {
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: "CannyDocs - Enterprise Document Management Software | DMS Solution 2025",
-  description: "CannyDocs is a powerful enterprise document management system with OCR, workflow automation, and cloud/on-premise deployment. Organize 50,000+ documents with 80% OCR accuracy. Get 30-day free trial.",
+  title: "CannyECM - Enterprise DMS | Document Management 2025",
+  description: "Enterprise DMS with 80% OCR accuracy, workflow automation, cloud/on-premise. Organize 50,000+ documents. 30-day free trial available.",
   keywords: [
-    "CannyDocs",
+    "CannyECM",
     "document management software",
     "enterprise DMS",
     "OCR document management",
@@ -39,10 +39,22 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Christopher" }],
   openGraph: {
-    title: "CannyDocs - Enterprise Document Management Software",
-    description: "Powerful DMS with OCR, workflow automation, and enterprise security. Trusted by growing businesses worldwide.",
+    title: "CannyECM - Enterprise DMS | Document Management 2025",
+    description: "Enterprise DMS with 80% OCR accuracy, workflow automation, cloud/on-premise. Organize 50,000+ documents. 30-day free trial available.",
     type: "article",
+    url: "https://www.cannymindstech.com/solutions/document-management",
     authors: ["Christopher"],
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CannyECM Document Management Software",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.cannymindstech.com/solutions/document-management",
   },
   robots: { index: true, follow: true },
 };
@@ -69,15 +81,15 @@ const jsonLd = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "CannyDocs - Document Management Software"
+          "name": "CannyECM - Document Management Software"
         }
       ]
     },
     {
       "@type": "Article",
-      "headline": "CannyDocs - Enterprise Document Management Software",
-      "description": "Comprehensive guide to CannyDocs enterprise document management system with OCR, workflow automation, and cloud/on-premise deployment options.",
-      "image": "https://cannymindstech.com/images/cannydocs-dashboard.jpg",
+      "headline": "CannyECM - Enterprise Document Management Software",
+      "description": "Comprehensive guide to CannyECM enterprise document management system with OCR, workflow automation, and cloud/on-premise deployment options.",
+      "image": "https://cannymindstech.com/images/CannyECM-dashboard.jpg",
       "author": {
         "@type": "Person",
         "name": "Christopher",
@@ -102,7 +114,7 @@ const jsonLd = {
     },
     {
       "@type": "SoftwareApplication",
-      "name": "CannyDocs",
+      "name": "CannyECM",
       "applicationCategory": "BusinessApplication",
       "description": "Enterprise document management system with OCR and workflow automation",
       "operatingSystem": "Web, Windows, macOS, Linux",
@@ -117,15 +129,15 @@ const jsonLd = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is CannyDocs?",
+          "name": "What is CannyECM?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "CannyDocs is an enterprise document management software that helps organizations digitize, organize, and manage documents with OCR technology, workflow automation, and secure cloud/on-premise storage."
+            "text": "CannyECM is an enterprise document management software that helps organizations digitize, organize, and manage documents with OCR technology, workflow automation, and secure cloud/on-premise storage."
           }
         },
         {
           "@type": "Question",
-          "name": "What are the system requirements for CannyDocs?",
+          "name": "What are the system requirements for CannyECM?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "For cloud deployment, you only need a modern web browser (Chrome, Firefox, Safari, Edge). For on-premise, you need Windows Server 2016+/Linux, 16GB RAM minimum, SQL Server/PostgreSQL database, and .NET Core runtime."
@@ -133,10 +145,10 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          "name": "Does CannyDocs support mobile access?",
+          "name": "Does CannyECM support mobile access?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. CannyDocs is fully responsive and accessible via mobile browsers on iOS and Android devices. Native mobile apps are planned for future releases."
+            "text": "Yes. CannyECM is fully responsive and accessible via mobile browsers on iOS and Android devices. Native mobile apps are planned for future releases."
           }
         }
       ]
@@ -144,7 +156,7 @@ const jsonLd = {
   ]
 };
 
-export default function CannyDocsProductPage() {
+export default function CannyECMProductPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -161,7 +173,7 @@ export default function CannyDocsProductPage() {
               <li className="text-gray-400">/</li>
               <li><Link href="/#solutions" className="text-primary hover:text-primary/80 whitespace-nowrap">Solutions</Link></li>
               <li className="text-gray-400">/</li>
-              <li className="text-gray-600 font-medium truncate">CannyDocs - Document Management Software</li>
+              <li className="text-gray-600 font-medium truncate">CannyECM - Document Management Software</li>
             </ol>
           </div>
         </nav>
@@ -178,7 +190,7 @@ export default function CannyDocsProductPage() {
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-6 leading-tight">
-                  Transform Your Document Management with <span className="text-primary">CannyDocs</span>
+                  Transform Your Document Management with <span className="text-primary">CannyECM</span>
                 </h1>
 
                 <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
@@ -207,8 +219,8 @@ export default function CannyDocsProductPage() {
                 {/* Social Share */}
                 <div className="flex items-center gap-4">
                   <SocialShare
-                    title="CannyDocs - Enterprise Document Management Software"
-                    description="Transform your document management with CannyDocs. 80% OCR accuracy, workflow automation, and enterprise security."
+                    title="CannyECM - Enterprise Document Management Software"
+                    description="Transform your document management with CannyECM. 80% OCR accuracy, workflow automation, and enterprise security."
                   />
                   <span className="text-sm text-gray-600">Share this product</span>
                 </div>
@@ -221,10 +233,10 @@ export default function CannyDocsProductPage() {
               </div>
 
               {/* Image Placeholder */}
-              <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl p-12 text-center" role="img" aria-label="CannyDocs Dashboard Screenshot showing document management interface with search, folders, and workflow features">
+              <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl p-12 text-center" role="img" aria-label="CannyECM Dashboard Screenshot showing document management interface with search, folders, and workflow features">
                 <DocumentIcon sx={{ fontSize: 120, color: '#94a3b8' }} aria-hidden="true" />
                 <p className="text-gray-600 font-semibold mt-6 text-lg">IMAGE PLACEHOLDER</p>
-                <p className="text-sm text-gray-500 mt-2">CannyDocs Dashboard Screenshot</p>
+                <p className="text-sm text-gray-500 mt-2">CannyECM Dashboard Screenshot</p>
                 <p className="text-xs text-gray-400 mt-1">Recommended size: 1200x800px</p>
               </div>
 
@@ -260,15 +272,15 @@ export default function CannyDocsProductPage() {
             <div className="bg-white rounded-xl shadow-md p-8">
               <nav className="grid md:grid-cols-2 gap-4">
                 {[
-                  { title: "What is CannyDocs?", href: "#what-is" },
+                  { title: "What is CannyECM?", href: "#what-is" },
                   { title: "Key Features & Capabilities", href: "#features" },
                   { title: "Benefits for Your Organization", href: "#benefits" },
                   { title: "Deployment Options", href: "#deployment" },
                   { title: "Industry Use Cases", href: "#use-cases" },
-                  { title: "How CannyDocs Works", href: "#how-it-works" },
+                  { title: "How CannyECM Works", href: "#how-it-works" },
                   { title: "Technical Specifications", href: "#technical-specs" },
                   { title: "Integration Capabilities", href: "#integrations" },
-                  { title: "Why Choose CannyDocs", href: "#comparison" },
+                  { title: "Why Choose CannyECM", href: "#comparison" },
                   { title: "Implementation Process", href: "#implementation" },
                   { title: "Security & Compliance", href: "#security" },
                   { title: "Frequently Asked Questions", href: "#faq" },
@@ -290,24 +302,24 @@ export default function CannyDocsProductPage() {
         {/* Main Content */}
         <article className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
-          {/* What is CannyDocs */}
+          {/* What is CannyECM */}
           <section id="what-is" className="mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8">
-              What is CannyDocs Document Management Software?
+              What is CannyECM Document Management Software?
             </h2>
 
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                <strong>CannyDocs</strong> is a comprehensive enterprise document management system (DMS) designed to eliminate paper-based
+                <strong>CannyECM</strong> is a comprehensive enterprise document management system (DMS) designed to eliminate paper-based
                 workflows and digitize your entire document ecosystem. Whether you're managing invoices, contracts, HR records, or
-                compliance documentation, CannyDocs provides a centralized platform to <strong>organize, search, retrieve, and share</strong> professional
+                compliance documentation, CannyECM provides a centralized platform to <strong>organize, search, retrieve, and share</strong> professional
                 documents with military-grade security.
               </p>
 
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Built for modern businesses, CannyDocs operates seamlessly on any browser and offers flexible deployment options—<strong>cloud,
+                Built for modern businesses, CannyECM operates seamlessly on any browser and offers flexible deployment options—<strong>cloud,
                 on-premise, or hybrid</strong>. With advanced <strong>OCR technology powered by Elasticsearch</strong>, full-text search capabilities,
-                and intuitive workflow automation, CannyDocs transforms how organizations handle document management challenges.
+                and intuitive workflow automation, CannyECM transforms how organizations handle document management challenges.
               </p>
 
               <div className="bg-primary-50 border-l-4 border-primary p-6 rounded-r-lg">
@@ -323,7 +335,7 @@ export default function CannyDocsProductPage() {
           {/* Key Features */}
           <section id="features" className="mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              Powerful Features That Set CannyDocs Apart
+              Powerful Features That Set CannyECM Apart
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -488,17 +500,17 @@ export default function CannyDocsProductPage() {
           </section>
 
           {/* Image Placeholder: Features Overview */}
-          <div className="mb-20 bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl p-12 text-center" role="img" aria-label="CannyDocs Features Infographic illustrating OCR technology, workflow automation, cloud storage, and security features">
+          <div className="mb-20 bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl p-12 text-center" role="img" aria-label="CannyECM Features Infographic illustrating OCR technology, workflow automation, cloud storage, and security features">
             <TrendingUpIcon sx={{ fontSize: 80, color: '#94a3b8' }} aria-hidden="true" />
             <p className="text-gray-600 font-semibold mt-6 text-lg">IMAGE PLACEHOLDER</p>
-            <p className="text-sm text-gray-500 mt-2">CannyDocs Features Infographic</p>
+            <p className="text-sm text-gray-500 mt-2">CannyECM Features Infographic</p>
             <p className="text-xs text-gray-400 mt-1">Recommended size: 1400x700px</p>
           </div>
 
           {/* Benefits Section */}
           <section id="benefits" className="mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              Business Benefits of CannyDocs
+              Business Benefits of CannyECM
             </h2>
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -523,7 +535,7 @@ export default function CannyDocsProductPage() {
               {[
                 {
                   title: "1. Enhanced Productivity & Efficiency",
-                  content: "Eliminate time-consuming document searches and manual filing. CannyDocs' intelligent OCR and search capabilities reduce document retrieval time by 75%, allowing employees to focus on high-value tasks instead of administrative overhead."
+                  content: "Eliminate time-consuming document searches and manual filing. CannyECM' intelligent OCR and search capabilities reduce document retrieval time by 75%, allowing employees to focus on high-value tasks instead of administrative overhead."
                 },
                 {
                   title: "2. Significant Cost Savings",
@@ -543,7 +555,7 @@ export default function CannyDocsProductPage() {
                 },
                 {
                   title: "6. Environmental Sustainability",
-                  content: "Reduce your carbon footprint by going paperless. The average office uses 10,000 sheets of paper annually. CannyDocs helps organizations demonstrate corporate social responsibility while cutting costs."
+                  content: "Reduce your carbon footprint by going paperless. The average office uses 10,000 sheets of paper annually. CannyECM helps organizations demonstrate corporate social responsibility while cutting costs."
                 },
               ].map((benefit, idx) => (
                 <div key={idx}>
@@ -561,7 +573,7 @@ export default function CannyDocsProductPage() {
                 Ready to Save 60% on Document Processing Costs?
               </h3>
               <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-                Join growing organizations that have transformed their document workflows with CannyDocs. Start your free 30-day trial today.
+                Join growing organizations that have transformed their document workflows with CannyECM. Start your free 30-day trial today.
               </p>
               <Link
                 href="#get-started"
@@ -660,7 +672,7 @@ export default function CannyDocsProductPage() {
           </section>
 
           {/* Image Placeholder: Deployment */}
-          <div className="mb-20 bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl p-12 text-center" role="img" aria-label="Deployment Options Diagram showing Cloud, On-Premise, and Hybrid deployment architectures for CannyDocs">
+          <div className="mb-20 bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl p-12 text-center" role="img" aria-label="Deployment Options Diagram showing Cloud, On-Premise, and Hybrid deployment architectures for CannyECM">
             <PublicIcon sx={{ fontSize: 80, color: '#94a3b8' }} aria-hidden="true" />
             <p className="text-gray-600 font-semibold mt-6 text-lg">IMAGE PLACEHOLDER</p>
             <p className="text-sm text-gray-500 mt-2">Deployment Options Diagram</p>
@@ -723,7 +735,7 @@ export default function CannyDocsProductPage() {
           <section className="mb-20">
             <div className="bg-gradient-to-br from-secondary to-secondary/80 rounded-xl p-8 text-center text-white shadow-lg">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                See CannyDocs in Action for Your Industry
+                See CannyECM in Action for Your Industry
               </h3>
               <p className="text-lg text-white/90 mb-6 max-w-2xl mx-auto">
                 Schedule a personalized demo tailored to your industry&apos;s specific document management needs.
@@ -738,10 +750,10 @@ export default function CannyDocsProductPage() {
             </div>
           </section>
 
-          {/* How CannyDocs Works */}
+          {/* How CannyECM Works */}
           <section id="how-it-works" className="mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              How CannyDocs Works: Simple 4-Step Process
+              How CannyECM Works: Simple 4-Step Process
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -749,7 +761,7 @@ export default function CannyDocsProductPage() {
                 {
                   step: "1",
                   title: "Upload & Digitize",
-                  description: "Bulk upload paper documents via scanner or drag-and-drop digital files. CannyDocs automatically processes PDFs, JPEGs, and images with OCR extraction.",
+                  description: "Bulk upload paper documents via scanner or drag-and-drop digital files. CannyECM automatically processes PDFs, JPEGs, and images with OCR extraction.",
                   icon: <CloudIcon sx={{ fontSize: 40 }} />
                 },
                 {
@@ -857,7 +869,7 @@ export default function CannyDocsProductPage() {
 
             <div className="bg-gradient-to-br from-blue-50 to-white border-2 border-primary/20 rounded-xl p-8 mb-8">
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                CannyDocs doesn't replace your existing tools—it enhances them. Our comprehensive API and pre-built connectors
+                CannyECM doesn't replace your existing tools—it enhances them. Our comprehensive API and pre-built connectors
                 integrate seamlessly with your ERP, CRM, accounting software, and custom applications to create a unified document
                 management ecosystem.
               </p>
@@ -914,10 +926,10 @@ export default function CannyDocsProductPage() {
             </div>
           </section>
 
-          {/* Why Choose CannyDocs */}
+          {/* Why Choose CannyECM */}
           <section id="comparison" className="mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              Why Organizations Choose CannyDocs Over Traditional Filing
+              Why Organizations Choose CannyECM Over Traditional Filing
             </h2>
 
             <div className="overflow-x-auto">
@@ -926,21 +938,21 @@ export default function CannyDocsProductPage() {
                   <tr className="bg-gradient-to-r from-primary to-secondary text-white">
                     <th className="py-4 px-6 text-left font-bold">Feature</th>
                     <th className="py-4 px-6 text-center font-bold">Traditional Filing</th>
-                    <th className="py-4 px-6 text-center font-bold">CannyDocs DMS</th>
+                    <th className="py-4 px-6 text-center font-bold">CannyECM DMS</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    { feature: "Document Retrieval Time", traditional: "10-30 minutes", cannydocs: "< 5 seconds" },
-                    { feature: "Search Capability", traditional: "Manual browsing", cannydocs: "Full-text OCR search" },
-                    { feature: "Storage Cost", traditional: "High annual costs", cannydocs: "Cost-effective solution" },
-                    { feature: "Security & Access Control", traditional: "Physical locks only", cannydocs: "AES-256 encryption, RBAC" },
-                    { feature: "Remote Access", traditional: "Not possible", cannydocs: "Anytime, anywhere" },
-                    { feature: "Disaster Recovery", traditional: "None (fire/flood risk)", cannydocs: "Automated backup, geo-redundancy" },
-                    { feature: "Version Control", traditional: "Manual tracking", cannydocs: "Automatic with full history" },
-                    { feature: "Compliance Audit Trail", traditional: "Paper logs", cannydocs: "Complete digital audit logs" },
-                    { feature: "Collaboration", traditional: "Physical handoff", cannydocs: "Real-time sharing" },
-                    { feature: "Environmental Impact", traditional: "High paper consumption", cannydocs: "100% paperless" },
+                    { feature: "Document Retrieval Time", traditional: "10-30 minutes", CannyECM: "< 5 seconds" },
+                    { feature: "Search Capability", traditional: "Manual browsing", CannyECM: "Full-text OCR search" },
+                    { feature: "Storage Cost", traditional: "High annual costs", CannyECM: "Cost-effective solution" },
+                    { feature: "Security & Access Control", traditional: "Physical locks only", CannyECM: "AES-256 encryption, RBAC" },
+                    { feature: "Remote Access", traditional: "Not possible", CannyECM: "Anytime, anywhere" },
+                    { feature: "Disaster Recovery", traditional: "None (fire/flood risk)", CannyECM: "Automated backup, geo-redundancy" },
+                    { feature: "Version Control", traditional: "Manual tracking", CannyECM: "Automatic with full history" },
+                    { feature: "Compliance Audit Trail", traditional: "Paper logs", CannyECM: "Complete digital audit logs" },
+                    { feature: "Collaboration", traditional: "Physical handoff", CannyECM: "Real-time sharing" },
+                    { feature: "Environmental Impact", traditional: "High paper consumption", CannyECM: "100% paperless" },
                   ].map((row, idx) => (
                     <tr key={idx} className={idx % 2 === 0 ? "bg-gray-50" : "bg-white"}>
                       <td className="py-4 px-6 font-semibold text-secondary border-t border-gray-200">{row.feature}</td>
@@ -953,7 +965,7 @@ export default function CannyDocsProductPage() {
                       <td className="py-4 px-6 text-center font-semibold text-primary border-t border-gray-200">
                         <span className="inline-flex items-center gap-1">
                           <CheckIcon sx={{ fontSize: 18, color: '#25d366' }} />
-                          {row.cannydocs}
+                          {row.CannyECM}
                         </span>
                       </td>
                     </tr>
@@ -972,7 +984,7 @@ export default function CannyDocsProductPage() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  quote: "CannyDocs transformed our document workflow completely. We went from spending 2 hours daily searching for patient records to finding them in seconds. The OCR accuracy is impressive, and HIPAA compliance was seamless.",
+                  quote: "CannyECM transformed our document workflow completely. We went from spending 2 hours daily searching for patient records to finding them in seconds. The OCR accuracy is impressive, and HIPAA compliance was seamless.",
                   author: "Dr. Sarah Mitchell",
                   role: "Medical Director",
                   company: "Riverside Healthcare Center",
@@ -1037,8 +1049,8 @@ export default function CannyDocsProductPage() {
                 },
                 {
                   phase: "Phase 2: Configuration & Setup (Week 2)",
-                  description: "We configure CannyDocs based on your requirements—setting up folder structures, metadata fields, user roles, permissions, and workflow templates. For on-premise deployments, we install and configure all necessary infrastructure.",
-                  deliverables: ["Configured CannyDocs instance", "User accounts & permissions", "Workflow templates", "Integration setup"]
+                  description: "We configure CannyECM based on your requirements—setting up folder structures, metadata fields, user roles, permissions, and workflow templates. For on-premise deployments, we install and configure all necessary infrastructure.",
+                  deliverables: ["Configured CannyECM instance", "User accounts & permissions", "Workflow templates", "Integration setup"]
                 },
                 {
                   phase: "Phase 3: Data Migration (Week 3)",
@@ -1170,7 +1182,7 @@ export default function CannyDocsProductPage() {
             <div className="bg-blue-50 border-l-4 border-primary p-6 rounded-r-lg">
               <p className="font-semibold text-secondary mb-2">Data Residency & Sovereignty</p>
               <p className="text-gray-700">
-                For organizations with strict data residency requirements, CannyDocs offers region-specific cloud hosting
+                For organizations with strict data residency requirements, CannyECM offers region-specific cloud hosting
                 (US, EU, Asia-Pacific, Middle East) or on-premise deployment for complete data sovereignty. All data remains
                 within your chosen jurisdiction, ensuring compliance with local data protection laws.
               </p>
@@ -1191,7 +1203,7 @@ export default function CannyDocsProductPage() {
                     <p className="text-sm text-gray-600">Head of Technical Department & Investor | CannyMinds Technology Solutions</p>
                   </div>
                   <p className="text-gray-700 leading-relaxed mb-4">
-                    Christopher is the Head of Technical Department and Investor at CannyMinds Technology Solutions with over 10 years of experience in enterprise software development and document management systems. He leads the technical vision and development of CannyDocs and oversees all product innovation, ensuring cutting-edge solutions that help businesses achieve digital transformation and operational efficiency.
+                    Christopher is the Head of Technical Department and Investor at CannyMinds Technology Solutions with over 10 years of experience in enterprise software development and document management systems. He leads the technical vision and development of CannyECM and oversees all product innovation, ensuring cutting-edge solutions that help businesses achieve digital transformation and operational efficiency.
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm text-gray-600">
                     <div className="flex items-center gap-2">
@@ -1226,28 +1238,28 @@ export default function CannyDocsProductPage() {
             <div className="space-y-6 max-w-4xl mx-auto">
               {[
                 {
-                  q: "What is CannyDocs?",
-                  a: "CannyDocs is an enterprise document management software that helps organizations digitize, organize, and manage documents with OCR technology, workflow automation, and secure cloud/on-premise storage."
+                  q: "What is CannyECM?",
+                  a: "CannyECM is an enterprise document management software that helps organizations digitize, organize, and manage documents with OCR technology, workflow automation, and secure cloud/on-premise storage."
                 },
                 {
-                  q: "How does CannyDocs OCR work?",
-                  a: "CannyDocs uses advanced OCR powered by Elasticsearch to convert scanned documents into searchable text with up to 80% accuracy, enabling full-text search across all document content."
+                  q: "How does CannyECM OCR work?",
+                  a: "CannyECM uses advanced OCR powered by Elasticsearch to convert scanned documents into searchable text with up to 80% accuracy, enabling full-text search across all document content."
                 },
                 {
-                  q: "Is CannyDocs secure?",
-                  a: "Yes. CannyDocs implements military-grade AES-256 encryption, role-based access control, detailed audit trails, and compliance with ISO 27001, GDPR, HIPAA, and SOC 2 standards."
+                  q: "Is CannyECM secure?",
+                  a: "Yes. CannyECM implements military-grade AES-256 encryption, role-based access control, detailed audit trails, and compliance with ISO 27001, GDPR, HIPAA, and SOC 2 standards."
                 },
                 {
                   q: "What deployment options are available?",
-                  a: "CannyDocs offers Cloud (SaaS), On-Premise, and Hybrid deployment models to match your compliance and infrastructure requirements."
+                  a: "CannyECM offers Cloud (SaaS), On-Premise, and Hybrid deployment models to match your compliance and infrastructure requirements."
                 },
                 {
-                  q: "What file formats does CannyDocs support?",
-                  a: "CannyDocs supports PDF, JPG, JPEG, PNG, and TIFF files. The OCR engine works best with PDF and high-quality scanned images."
+                  q: "What file formats does CannyECM support?",
+                  a: "CannyECM supports PDF, JPG, JPEG, PNG, and TIFF files. The OCR engine works best with PDF and high-quality scanned images."
                 },
                 {
-                  q: "Can CannyDocs handle workflow automation?",
-                  a: "Yes. CannyDocs includes a drag-and-drop workflow builder for custom approval processes, automated notifications, and multi-level approvals—no coding required."
+                  q: "Can CannyECM handle workflow automation?",
+                  a: "Yes. CannyECM includes a drag-and-drop workflow builder for custom approval processes, automated notifications, and multi-level approvals—no coding required."
                 },
                 {
                   q: "How long does implementation take?",
@@ -1255,15 +1267,15 @@ export default function CannyDocsProductPage() {
                 },
                 {
                   q: "Is there a free trial?",
-                  a: "Yes. CannyDocs offers a 30-day free trial with no credit card required, giving you full access to all features including OCR, workflows, and cloud storage."
+                  a: "Yes. CannyECM offers a 30-day free trial with no credit card required, giving you full access to all features including OCR, workflows, and cloud storage."
                 },
                 {
-                  q: "Can I integrate CannyDocs with other systems?",
-                  a: "Yes. CannyDocs provides API integration for ERP systems, CRM platforms, accounting software, and custom applications. LDAP/Active Directory integration is also supported."
+                  q: "Can I integrate CannyECM with other systems?",
+                  a: "Yes. CannyECM provides API integration for ERP systems, CRM platforms, accounting software, and custom applications. LDAP/Active Directory integration is also supported."
                 },
                 {
-                  q: "Does CannyDocs support mobile access?",
-                  a: "Yes. CannyDocs is fully responsive and accessible via mobile browsers on iOS and Android devices for viewing, searching, and sharing documents."
+                  q: "Does CannyECM support mobile access?",
+                  a: "Yes. CannyECM is fully responsive and accessible via mobile browsers on iOS and Android devices for viewing, searching, and sharing documents."
                 },
               ].map((faq, idx) => (
                 <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-primary transition-colors">
@@ -1280,7 +1292,7 @@ export default function CannyDocsProductPage() {
               Explore Our Complete Business Solutions Suite
             </h2>
             <p className="text-center text-gray-600 mb-10 max-w-3xl mx-auto">
-              CannyDocs works seamlessly with our other enterprise solutions. Build a complete digital transformation ecosystem for your organization.
+              CannyECM works seamlessly with our other enterprise solutions. Build a complete digital transformation ecosystem for your organization.
             </p>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -1296,8 +1308,8 @@ export default function CannyDocsProductPage() {
                 {
                   name: "CannyScan",
                   title: "Enterprise Scanning Solution",
-                  description: "High-speed document scanning with OCR, batch processing, and direct integration with CannyDocs.",
-                  features: ["Batch Scanning", "Auto-Classification", "Quality Enhancement", "Direct Upload to CannyDocs"],
+                  description: "High-speed document scanning with OCR, batch processing, and direct integration with CannyECM.",
+                  features: ["Batch Scanning", "Auto-Classification", "Quality Enhancement", "Direct Upload to CannyECM"],
                   link: "/solutions/scanning-solution",
                   color: "from-purple-50 to-white border-purple-200"
                 },
@@ -1345,7 +1357,7 @@ export default function CannyDocsProductPage() {
               Ready to Transform Your Document Management?
             </h2>
             <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto">
-              Join growing businesses using CannyDocs to digitize and automate document workflows. Start your 30-day free trial today—no credit card required.
+              Join growing businesses using CannyECM to digitize and automate document workflows. Start your 30-day free trial today—no credit card required.
             </p>
 
 

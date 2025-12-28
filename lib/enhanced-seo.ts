@@ -16,7 +16,7 @@ export const enhancedSiteConfig = {
 
   // Extended description for better keyword coverage
   longDescription:
-    "Transform your business with CannyMinds Technology Solutions - your trusted partner for digital transformation, AI-powered automation, custom software development, and enterprise IT services. With ISO 9001:2015, ISO 15489:2016, ISO 22716:2007, and FDA 21 CFR Part 11 certifications, we deliver world-class solutions including CannyDocs (document management), CannyHR (HR & payroll), CannyScan (digitization), and CannyTrack (productivity monitoring). Serving global clients with 24/7 support and industry-leading expertise.",
+    "Transform your business with CannyMinds Technology Solutions - your trusted partner for digital transformation, AI-powered automation, custom software development, and enterprise IT services. With ISO 9001:2015, ISO 15489:2016, ISO 22716:2007, and FDA 21 CFR Part 11 certifications, we deliver world-class solutions including CannyECM (document management), CannyHR (HR & payroll), CannyScan (digitization), and CannyTrack (productivity monitoring). Serving global clients with 24/7 support and industry-leading expertise.",
 
   url: "https://www.cannymindstech.com",
   ogImage: "https://www.cannymindstech.com/og-image.jpg",
@@ -41,7 +41,7 @@ export const enhancedSiteConfig = {
     "HR payroll management system",
     "document scanning services",
     "employee productivity monitoring",
-    "CannyDocs document management",
+    "CannyECM document management",
     "CannyHR payroll software",
     "CannyScan digitization",
     "CannyTrack productivity tool",
@@ -309,7 +309,7 @@ export const enhancedJsonLd = {
                 "@type": "Offer",
                 itemOffered: {
                   "@type": "SoftwareApplication",
-                  name: "CannyDocs",
+                  name: "CannyECM",
                   applicationCategory: "BusinessApplication",
                   description: "Smart document management software",
                 },
@@ -453,7 +453,7 @@ export const enhancedJsonLd = {
           name: "What services does CannyMinds offer?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "CannyMinds offers comprehensive IT solutions including digital transformation, AI automation, custom software development, cloud services, digital marketing, business process automation, and enterprise software products like CannyDocs, CannyHR, CannyScan, and CannyTrack.",
+            text: "CannyMinds offers comprehensive IT solutions including digital transformation, AI automation, custom software development, cloud services, digital marketing, business process automation, and enterprise software products like CannyECM, CannyHR, CannyScan, and CannyTrack.",
           },
         },
         {
@@ -474,10 +474,10 @@ export const enhancedJsonLd = {
         },
         {
           "@type": "Question",
-          name: "What is CannyDocs?",
+          name: "What is CannyECM?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "CannyDocs is a smart document management software that enables professional document organization, version control, quick search, and instant retrieval through secure web browsers with cloud storage capabilities.",
+            text: "CannyECM is a smart document management software that enables professional document organization, version control, quick search, and instant retrieval through secure web browsers with cloud storage capabilities.",
           },
         },
       ],

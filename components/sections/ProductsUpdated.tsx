@@ -15,7 +15,7 @@ import FolderIcon from '@mui/icons-material/Folder';
 
 const products = [
   {
-    name: "CannyDocs",
+    name: "CannyECM",
     icon: DescriptionIcon,
     description:
       "Enterprise document management software enabling professional organization and instant retrieval through secure web browsers.",

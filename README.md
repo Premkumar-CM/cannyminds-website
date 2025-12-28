@@ -79,7 +79,7 @@ cannyminds-landing/
 
 ### Sections
 1. **Hero** - Eye-catching intro with tagline and CTAs
-2. **Products** - CannyDocs, CannyHR, CannyScan, CannyTrack
+2. **Products** - CannyECM, CannyHR, CannyScan, CannyTrack
 3. **Services** - Digital transformation, AI, development, marketing
 4. **About** - E-E-A-T pillars and company values
 5. **Global Offices** - Interactive office selector

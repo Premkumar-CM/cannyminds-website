@@ -17,8 +17,8 @@ import {
 } from '@mui/icons-material';
 
 export const metadata: Metadata = {
-  title: 'Contact Us - CannyMinds Technology Solutions | Get in Touch',
-  description: 'Contact CannyMinds Technology Solutions for digital transformation, AI automation, and enterprise software services. Offices in India, USA, Nigeria, and UAE. 24/7 support available.',
+  title: 'Contact CannyMinds | Get in Touch Today',
+  description: 'Contact CannyMinds for digital transformation and enterprise software. Offices in India, USA, Nigeria. 24/7 support for enterprise clients.',
   keywords: [
     'contact CannyMinds',
     'CannyMinds contact',
@@ -29,10 +29,21 @@ export const metadata: Metadata = {
     'technology solutions contact',
   ],
   openGraph: {
-    title: 'Contact Us - CannyMinds Technology Solutions',
-    description: 'Get in touch with CannyMinds for digital transformation and enterprise software solutions. Global offices with 24/7 support.',
+    title: 'Contact CannyMinds | Get in Touch Today',
+    description: 'Contact CannyMinds for digital transformation and enterprise software. Offices in India, USA, Nigeria. 24/7 support for enterprise clients.',
     url: 'https://www.cannymindstech.com/contact',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Contact CannyMinds Technology Solutions',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://www.cannymindstech.com/contact',
   },
 };
 

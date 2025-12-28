@@ -8,7 +8,7 @@ const faqs = [
   {
     question: "What services does CannyMinds offer?",
     answer:
-      "CannyMinds offers comprehensive IT solutions including digital transformation, AI automation, custom software development, cloud services, digital marketing, business process automation, and enterprise software products like CannyDocs, CannyHR, CannyScan, and CannyTrack.",
+      "CannyMinds offers comprehensive IT solutions including digital transformation, AI automation, custom software development, cloud services, digital marketing, business process automation, and enterprise software products like CannyECM, CannyHR, CannyScan, and CannyTrack.",
   },
   {
     question: "Is CannyMinds ISO certified?",
@@ -21,9 +21,9 @@ const faqs = [
       "CannyMinds has global offices in India (Chennai - Headquarters), USA (McKinney, Texas), Nigeria (Lagos), and UAE (Dubai), serving clients across 50+ countries with 24/7 support.",
   },
   {
-    question: "What is CannyDocs document management software?",
+    question: "What is CannyECM document management software?",
     answer:
-      "CannyDocs is a smart document management software that enables professional document organization, version control, quick search, and instant retrieval through secure web browsers with cloud storage capabilities. It's perfect for enterprises looking to digitize their document workflows.",
+      "CannyECM is a smart document management software that enables professional document organization, version control, quick search, and instant retrieval through secure web browsers with cloud storage capabilities. It's perfect for enterprises looking to digitize their document workflows.",
   },
   {
     question: "How can CannyMinds help with digital transformation?",

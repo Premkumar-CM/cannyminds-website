@@ -20,8 +20,8 @@ import {
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: "CannyTrack - Employee Productivity Monitoring & Tracking Software 2025",
-  description: "CannyTrack is a workforce productivity monitoring solution with activity tracking, screenshot capture, app/URL monitoring, and data loss prevention. Real-time insights with consent-based monitoring.",
+  title: "CannyTrack - Employee Productivity Monitoring Software",
+  description: "Workforce productivity monitoring with activity tracking, screenshots, and data loss prevention. Consent-based, real-time analytics with offline support.",
   keywords: [
     "CannyTrack",
     "productivity monitoring software",
@@ -37,9 +37,21 @@ export const metadata: Metadata = {
   authors: [{ name: "Christopher" }],
   openGraph: {
     title: "CannyTrack - Employee Productivity Monitoring Software",
-    description: "Workforce productivity monitoring with activity tracking, screenshots, and data loss prevention for remote teams.",
+    description: "Workforce productivity monitoring with activity tracking, screenshots, and data loss prevention. Consent-based, real-time analytics with offline support.",
     type: "article",
+    url: "https://www.cannymindstech.com/solutions/tracking-system",
     authors: ["Christopher"],
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CannyTrack - Employee Productivity Monitoring Software",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.cannymindstech.com/solutions/tracking-system",
   },
   robots: { index: true, follow: true },
 };
