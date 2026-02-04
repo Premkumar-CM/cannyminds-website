@@ -176,56 +176,56 @@ export default function CannyHRProductPage() {
         </nav>
 
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-green-50 via-white to-green-50 py-16">
+        <section className="bg-gradient-to-br from-green-50 via-white to-green-50 py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
 
               <div>
-                <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                  <StarIcon sx={{ fontSize: 18 }} />
+                <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-3 py-1.5 rounded-full text-xs font-semibold mb-4">
+                  <StarIcon sx={{ fontSize: 16 }} />
                   Complete Hire-to-Retire HRMS
                 </div>
 
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-6 leading-tight">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary mb-4 leading-tight">
                   Transform HR Operations with <span className="text-green-600">CannyHR</span>
                 </h1>
 
-                <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-                  Complete HR and payroll management platform covering the entire employee lifecycle—from recruitment to retirement.
+                <p className="text-sm sm:text-base text-gray-700 mb-6 leading-relaxed">
+                  Complete HR and payroll management platform covering the entire employee lifecycle from recruitment to retirement.
                   Automate payroll, track attendance with <strong>350+ biometric devices</strong>, manage leave, and conduct performance
                   reviews. Mobile app for employees and managers.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <div className="flex flex-col sm:flex-row gap-3 mb-4">
                   <Link
                     href="#get-started"
-                    className="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-700 transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
+                    className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-all shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2 text-sm"
                   >
                     Request Demo
-                    <ArrowIcon sx={{ fontSize: 20 }} />
+                    <ArrowIcon sx={{ fontSize: 18 }} />
                   </Link>
                   <Link
                     href="#features"
-                    className="bg-white text-green-600 border-2 border-green-600 px-8 py-4 rounded-lg font-semibold hover:bg-green-50 transition-all inline-flex items-center justify-center gap-2"
+                    className="bg-white text-green-600 border-2 border-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition-all inline-flex items-center justify-center gap-2 text-sm"
                   >
                     Explore Features
-                    <PeopleIcon sx={{ fontSize: 20 }} />
+                    <PeopleIcon sx={{ fontSize: 18 }} />
                   </Link>
                 </div>
 
+                <div className="flex items-center gap-4 text-sm text-gray-600 flex-wrap mb-4">
+                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} /> 350+ Biometric Devices</span>
+                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} /> Mobile App</span>
+                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} /> Cloud/On-Premise</span>
+                </div>
+
                 {/* Social Share */}
-                <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-3">
                   <SocialShare
                     title="CannyHR - Complete HR & Payroll Management Solution"
                     description="All-in-one HRMS for attendance, payroll, leave management, and employee self-service. Integrated with 350+ biometric devices. Streamline your HR operations."
                   />
-                  <span className="text-sm text-gray-600">Share this product</span>
-                </div>
-
-                <div className="flex items-center gap-6 text-sm text-gray-600 flex-wrap">
-                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 18, color: '#25d366' }} /> 350+ Biometric Devices</span>
-                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 18, color: '#25d366' }} /> Mobile App</span>
-                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 18, color: '#25d366' }} /> Cloud/On-Premise</span>
+                  <span className="text-xs text-gray-500">Share this product</span>
                 </div>
               </div>
 
@@ -309,7 +309,7 @@ export default function CannyHRProductPage() {
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
                 <strong>CannyHR</strong> is a comprehensive Hire-to-Retire HR and payroll management platform designed to transform
                 human capital operations using industry best practices. From recruiting and onboarding new hires to managing payroll,
-                tracking attendance, processing leave requests, and conducting performance reviews—CannyHR automates the entire
+                tracking attendance, processing leave requests, and conducting performance reviews CannyHR automates the entire
                 <strong> employee lifecycle</strong> in one integrated system.
               </p>
 
@@ -402,7 +402,7 @@ export default function CannyHRProductPage() {
             <div className="prose prose-lg max-w-none mb-8">
               <p className="text-gray-700 text-lg leading-relaxed">
                 Automate complex payroll calculations with <strong>CannyHR's intelligent payroll engine</strong>. Handle
-                multi-location payroll, variable pay structures, statutory compliance, and banking integration—all in one platform.
+                multi-location payroll, variable pay structures, statutory compliance, and banking integration all in one platform.
                 Reduce payroll processing time by 60% while ensuring 100% accuracy.
               </p>
             </div>
@@ -665,73 +665,6 @@ export default function CannyHRProductPage() {
             </div>
           </section>
 
-          {/* Customer Testimonials */}
-          <section id="testimonials" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              What Our Clients Say
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              {[
-                {
-                  name: "Suresh Menon",
-                  role: "HR Director",
-                  company: "Manufacturing Company",
-                  testimonial: "CannyHR transformed our payroll from a 3-day manual process to 2 hours of automated processing. The biometric integration with our factory floor devices works flawlessly. Compliance reporting is now effortless.",
-                  rating: 5,
-                },
-                {
-                  name: "Anita Desai",
-                  role: "Operations Manager",
-                  company: "IT Services Firm",
-                  testimonial: "Managing 500+ remote employees was a nightmare before CannyHR. The mobile app gives employees full transparency, reducing HR queries by 70%. The Invoice OCR for expense claims is a game-changer.",
-                  rating: 5,
-                },
-                {
-                  name: "Dr. Vikram Singh",
-                  role: "Chief Administrator",
-                  company: "Multi-Specialty Hospital",
-                  testimonial: "Hospital shift management is complex, but CannyHR handles it perfectly. Night shift allowances, on-call duty tracking, and credential management for doctors are all automated. Highly recommended for healthcare.",
-                  rating: 5,
-                },
-              ].map((testimonial, idx) => (
-                <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-8">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <StarIcon key={i} sx={{ fontSize: 20, color: '#f59e0b' }} />
-                    ))}
-                  </div>
-                  <p className="text-gray-700 mb-6 italic leading-relaxed">
-                    "{testimonial.testimonial}"
-                  </p>
-                  <div>
-                    <div className="font-bold text-secondary">{testimonial.name}</div>
-                    <div className="text-sm text-gray-600">{testimonial.role}</div>
-                    <div className="text-sm text-gray-500">{testimonial.company}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-center bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
-              <div className="flex items-center justify-center gap-8 flex-wrap">
-                <div>
-                  <div className="text-2xl font-bold text-secondary">4.9/5.0</div>
-                  <div className="text-sm text-gray-600">Client Rating</div>
-                </div>
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <StarIcon key={i} sx={{ fontSize: 32, color: '#f59e0b' }} />
-                  ))}
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-secondary">10+</div>
-                  <div className="text-sm text-gray-600">Happy Clients</div>
-                </div>
-              </div>
-            </div>
-          </section>
-
           {/* Security & Compliance */}
           <section id="security" className="mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8">
@@ -844,7 +777,7 @@ export default function CannyHRProductPage() {
                 },
                 {
                   question: "Can CannyHR handle multi-location payroll?",
-                  answer: "Absolutely. CannyHR supports centralized payroll processing across multiple locations, branches, or subsidiaries. Each location can have different shift timings, leave policies, and statutory requirements—all managed from a single platform.",
+                  answer: "Absolutely. CannyHR supports centralized payroll processing across multiple locations, branches, or subsidiaries. Each location can have different shift timings, leave policies, and statutory requirements all managed from a single platform.",
                 },
                 {
                   question: "What is Invoice OCR for expense claims?",

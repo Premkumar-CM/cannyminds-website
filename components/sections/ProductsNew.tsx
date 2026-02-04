@@ -57,7 +57,7 @@ const products = [
   },
   {
     name: "CannyRMS",
-    title: "Retail Management System",
+    title: "Record Management System",
     description: "Complete retail solution for inventory, POS, multi-location operations, warehouse management, and real-time analytics.",
     icon: InventoryIcon,
     color: "from-purple-500 to-purple-700",

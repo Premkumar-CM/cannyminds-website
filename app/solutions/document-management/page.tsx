@@ -179,56 +179,56 @@ export default function CannyECMProductPage() {
         </nav>
 
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/5 via-white to-primary/5 py-16">
+        <section className="bg-gradient-to-br from-primary/5 via-white to-primary/5 py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
 
               <div>
-                <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                  <StarIcon sx={{ fontSize: 18 }} />
+                <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 py-1.5 rounded-full text-xs font-semibold mb-4">
+                  <StarIcon sx={{ fontSize: 16 }} />
                   Trusted by Growing Businesses Worldwide
                 </div>
 
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-6 leading-tight">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary mb-4 leading-tight">
                   Transform Your Document Management with <span className="text-primary">CannyECM</span>
                 </h1>
 
-                <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-700 mb-6 leading-relaxed">
                   Enterprise-grade document management system with <strong>80% OCR accuracy</strong>, intelligent workflow automation,
                   and military-grade security. Go paperless and organize <strong>50,000+ documents</strong> effortlessly with cloud,
                   on-premise, or hybrid deployment.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <div className="flex flex-col sm:flex-row gap-3 mb-4">
                   <Link
                     href="#get-started"
-                    className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
+                    className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-all shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2 text-sm"
                   >
                     Start 30-Day Free Trial
-                    <ArrowIcon sx={{ fontSize: 20 }} />
+                    <ArrowIcon sx={{ fontSize: 18 }} />
                   </Link>
                   <Link
                     href="#features"
-                    className="bg-white text-primary border-2 border-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary/5 transition-all inline-flex items-center justify-center gap-2"
+                    className="bg-white text-primary border-2 border-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/5 transition-all inline-flex items-center justify-center gap-2 text-sm"
                   >
                     Explore Features
-                    <DocumentIcon sx={{ fontSize: 20 }} />
+                    <DocumentIcon sx={{ fontSize: 18 }} />
                   </Link>
                 </div>
 
+                <div className="flex items-center gap-4 text-sm text-gray-600 flex-wrap mb-4">
+                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} /> No Credit Card</span>
+                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} /> Free Setup</span>
+                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} /> 24/7 Support</span>
+                </div>
+
                 {/* Social Share */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3">
                   <SocialShare
                     title="CannyECM - Enterprise Document Management Software"
                     description="Transform your document management with CannyECM. 80% OCR accuracy, workflow automation, and enterprise security."
                   />
-                  <span className="text-sm text-gray-600">Share this product</span>
-                </div>
-
-                <div className="flex items-center gap-6 text-sm text-gray-600 flex-wrap">
-                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 18, color: '#25d366' }} /> No Credit Card</span>
-                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 18, color: '#25d366' }} /> Free Setup</span>
-                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 18, color: '#25d366' }} /> 24/7 Support</span>
+                  <span className="text-xs text-gray-500">Share this product</span>
                 </div>
               </div>
 
@@ -317,8 +317,8 @@ export default function CannyECMProductPage() {
               </p>
 
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Built for modern businesses, CannyECM operates seamlessly on any browser and offers flexible deployment options—<strong>cloud,
-                on-premise, or hybrid</strong>. With advanced <strong>OCR technology powered by Elasticsearch</strong>, full-text search capabilities,
+                Built for modern businesses, CannyECM operates seamlessly on any browser and offers flexible deployment options <strong>cloud,
+                  on-premise, or hybrid</strong>. With advanced <strong>OCR technology powered by Elasticsearch</strong>, full-text search capabilities,
                 and intuitive workflow automation, CannyECM transforms how organizations handle document management challenges.
               </p>
 
@@ -348,7 +348,7 @@ export default function CannyECMProductPage() {
                 <h3 className="text-xl font-bold text-secondary mb-4">Advanced OCR & Full-Text Search</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Built-in Elasticsearch and OCR engine with <strong>80% accuracy</strong> enables instant full-text search across
-                  document names, metadata, and content—even within scanned images.
+                  document names, metadata, and content even within scanned images.
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start gap-2">
@@ -399,7 +399,7 @@ export default function CannyECMProductPage() {
                 </div>
                 <h3 className="text-xl font-bold text-secondary mb-4">Intelligent Workflow Automation</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Create custom approval workflows with automated alerts, email triggers, escalations, and deviation handling—no
+                  Create custom approval workflows with automated alerts, email triggers, escalations, and deviation handling no
                   coding required.
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600">
@@ -869,7 +869,7 @@ export default function CannyECMProductPage() {
 
             <div className="bg-gradient-to-br from-blue-50 to-white border-2 border-primary/20 rounded-xl p-8 mb-8">
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                CannyECM doesn't replace your existing tools—it enhances them. Our comprehensive API and pre-built connectors
+                CannyECM doesn't replace your existing tools it enhances them. Our comprehensive API and pre-built connectors
                 integrate seamlessly with your ERP, CRM, accounting software, and custom applications to create a unified document
                 management ecosystem.
               </p>
@@ -975,65 +975,6 @@ export default function CannyECMProductPage() {
             </div>
           </section>
 
-          {/* Customer Testimonials */}
-          <section className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              What Our Customers Say
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  quote: "CannyECM transformed our document workflow completely. We went from spending 2 hours daily searching for patient records to finding them in seconds. The OCR accuracy is impressive, and HIPAA compliance was seamless.",
-                  author: "Dr. Sarah Mitchell",
-                  role: "Medical Director",
-                  company: "Riverside Healthcare Center",
-                  rating: 5
-                },
-                {
-                  quote: "Implementation was smooth, and the ROI was evident within 3 months. We eliminated 5 filing cabinets and reduced document processing costs by 60%. The workflow automation saved our team 15 hours per week.",
-                  author: "Michael Chen",
-                  role: "Operations Manager",
-                  company: "Thompson Legal Associates",
-                  rating: 5
-                },
-                {
-                  quote: "The hybrid deployment option was perfect for our compliance needs. We keep sensitive data on-premise while leveraging cloud scalability. Integration with our ERP system was straightforward with their API.",
-                  author: "Jennifer Williams",
-                  role: "IT Director",
-                  company: "GlobalTech Manufacturing",
-                  rating: 5
-                },
-              ].map((testimonial, idx) => (
-                <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <StarIcon key={i} sx={{ fontSize: 20, color: '#FFD700' }} />
-                    ))}
-                  </div>
-                  <p className="text-gray-700 leading-relaxed mb-6 italic">
-                    &ldquo;{testimonial.quote}&rdquo;
-                  </p>
-                  <div className="border-t border-gray-200 pt-4">
-                    <p className="font-bold text-secondary">{testimonial.author}</p>
-                    <p className="text-sm text-gray-600">{testimonial.role}</p>
-                    <p className="text-sm text-primary font-semibold">{testimonial.company}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-12 text-center">
-              <div className="inline-flex items-center gap-3 bg-green-50 border-2 border-green-200 px-6 py-4 rounded-xl">
-                <StarIcon sx={{ fontSize: 28, color: '#FFD700' }} />
-                <div className="text-left">
-                  <div className="text-2xl font-bold text-secondary">4.9/5.0</div>
-                  <div className="text-sm text-gray-600">Based on client feedback</div>
-                </div>
-              </div>
-            </div>
-          </section>
-
           {/* Implementation Process */}
           <section id="implementation" className="mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
@@ -1049,7 +990,7 @@ export default function CannyECMProductPage() {
                 },
                 {
                   phase: "Phase 2: Configuration & Setup (Week 2)",
-                  description: "We configure CannyECM based on your requirements—setting up folder structures, metadata fields, user roles, permissions, and workflow templates. For on-premise deployments, we install and configure all necessary infrastructure.",
+                  description: "We configure CannyECM based on your requirements setting up folder structures, metadata fields, user roles, permissions, and workflow templates. For on-premise deployments, we install and configure all necessary infrastructure.",
                   deliverables: ["Configured CannyECM instance", "User accounts & permissions", "Workflow templates", "Integration setup"]
                 },
                 {
@@ -1115,7 +1056,7 @@ export default function CannyECMProductPage() {
                     },
                     {
                       title: "Comprehensive Audit Trails",
-                      description: "Track every action—view, edit, download, share—with timestamp, user, and IP address"
+                      description: "Track every action view, edit, download, share with timestamp, user, and IP address"
                     },
                     {
                       title: "Secure Authentication",
@@ -1259,7 +1200,7 @@ export default function CannyECMProductPage() {
                 },
                 {
                   q: "Can CannyECM handle workflow automation?",
-                  a: "Yes. CannyECM includes a drag-and-drop workflow builder for custom approval processes, automated notifications, and multi-level approvals—no coding required."
+                  a: "Yes. CannyECM includes a drag-and-drop workflow builder for custom approval processes, automated notifications, and multi-level approvals no coding required."
                 },
                 {
                   q: "How long does implementation take?",
@@ -1357,7 +1298,7 @@ export default function CannyECMProductPage() {
               Ready to Transform Your Document Management?
             </h2>
             <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto">
-              Join growing businesses using CannyECM to digitize and automate document workflows. Start your 30-day free trial today—no credit card required.
+              Join growing businesses using CannyECM to digitize and automate document workflows. Start your 30-day free trial today no credit card required.
             </p>
 
 

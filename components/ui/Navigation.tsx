@@ -89,7 +89,7 @@ export default function Navigation() {
 
   const businessNeeds = [
     {
-      name: "Document Management & Control",
+      name: "Enterprise Content Management (ECM)",
       href: "/solutions/document-management",
       description: "Centralize, secure & automate documents",
       icon: Description
@@ -113,7 +113,7 @@ export default function Navigation() {
       icon: Visibility
     },
     {
-      name: "Retail Management System",
+      name: "Record Management System",
       href: "/solutions/rms",
       description: "Complete retail & inventory solution",
       icon: Inventory

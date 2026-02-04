@@ -91,6 +91,7 @@ export default function SocialShare({ title, description, url }: SocialShareProp
               <button
                 onClick={() => handleShare('facebook')}
                 className="flex items-center gap-2 px-3 py-2 bg-[#1877f2] hover:bg-[#0c63d4] text-white rounded-lg transition-colors text-sm"
+                aria-label="Share on Facebook"
               >
                 <FacebookIcon sx={{ fontSize: 18 }} />
                 <span>Facebook</span>
@@ -99,6 +100,7 @@ export default function SocialShare({ title, description, url }: SocialShareProp
               <button
                 onClick={() => handleShare('twitter')}
                 className="flex items-center gap-2 px-3 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-lg transition-colors text-sm"
+                aria-label="Share on Twitter"
               >
                 <TwitterIcon sx={{ fontSize: 18 }} />
                 <span>Twitter</span>
@@ -107,6 +109,7 @@ export default function SocialShare({ title, description, url }: SocialShareProp
               <button
                 onClick={() => handleShare('linkedin')}
                 className="flex items-center gap-2 px-3 py-2 bg-[#0a66c2] hover:bg-[#004182] text-white rounded-lg transition-colors text-sm"
+                aria-label="Share on LinkedIn"
               >
                 <LinkedInIcon sx={{ fontSize: 18 }} />
                 <span>LinkedIn</span>
@@ -115,6 +118,7 @@ export default function SocialShare({ title, description, url }: SocialShareProp
               <button
                 onClick={() => handleShare('whatsapp')}
                 className="flex items-center gap-2 px-3 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors text-sm"
+                aria-label="Share on WhatsApp"
               >
                 <WhatsAppIcon sx={{ fontSize: 18 }} />
                 <span>WhatsApp</span>
@@ -123,6 +127,7 @@ export default function SocialShare({ title, description, url }: SocialShareProp
               <button
                 onClick={() => handleShare('reddit')}
                 className="flex items-center gap-2 px-3 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-colors text-sm"
+                aria-label="Share on Reddit"
               >
                 <RedditIcon sx={{ fontSize: 18 }} />
                 <span>Reddit</span>

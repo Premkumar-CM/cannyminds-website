@@ -7,91 +7,129 @@ import {
   CheckCircle as CheckIcon,
 } from "@mui/icons-material";
 
+import dynamic from "next/dynamic";
+
+const Hyperspeed = dynamic(() => import("@/components/ui/Hyperspeed/Hyperspeed"), {
+  ssr: false,
+});
+
+
+
 export default function HeroGenZ() {
   return (
-    <section className="relative bg-white pt-32 pb-20 overflow-hidden">
-      {/* Subtle Grid Background */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
+    <section className="relative bg-white pt-32 pb-20 overflow-hidden h-screen flex flex-col justify-center">
+      {/* Hyperspeed Background */}
+      <div className="absolute inset-0 z-0 mix-blend-multiply pointer-events-none">
+        <Hyperspeed
+          effectOptions={{
+            distortion: "turbulentDistortion",
+            length: 400,
+            roadWidth: 10,
+            islandWidth: 2,
+            lanesPerRoad: 3,
+            fov: 90,
+            fovSpeedUp: 150,
+            speedUp: 2,
+            carLightsFade: 0.4,
+            totalSideLightSticks: 20,
+            lightPairsPerRoadWay: 40,
+            shoulderLinesWidthPercentage: 0.05,
+            brokenLinesWidthPercentage: 0.1,
+            brokenLinesLengthPercentage: 0.5,
+            lightStickWidth: [0.12, 0.5],
+            lightStickHeight: [1.3, 1.7],
+            movingAwaySpeed: [60, 80],
+            movingCloserSpeed: [-120, -160],
+            carLightsLength: [400 * 0.03, 400 * 0.2],
+            carLightsRadius: [0.05, 0.14],
+            carWidthPercentage: [0.3, 0.5],
+            carShiftX: [-0.8, 0.8],
+            carFloorSeparation: [0, 5],
+            colors: {
+              roadColor: 0xffffff,
+              islandColor: 0xffffff,
+              background: 0xffffff,
+              shoulderLines: 0xffffff,
+              brokenLines: 0xffffff,
+              leftCars: [0xd856bf, 0x6750a2, 0xc247ac],
+              rightCars: [0x03b3c3, 0x0e5ea5, 0x324555],
+              sticks: 0x03b3c3
+            }
+          }}
+        />
+      </div>
 
-      <div className="container mx-auto px-6 relative">
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
-          {/* Main Content */}
-          <div className="text-center mb-16">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="mb-6"
-            >
-              <span className="text-sm font-semibold text-primary uppercase tracking-wide">
-                Enterprise Software Solutions
-              </span>
-            </motion.div>
 
+
+          {/* Main Content - Tagline */}
+          {/* Main Content - Tagline */}
+          <div className="text-center mb-16 relative z-10">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+              transition={{ duration: 0.5 }}
+              className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 tracking-tight"
             >
-              Digital Transformation for
-              <br />
-              <span className="text-primary">Modern Enterprises</span>
+              <span className="sr-only">CannyMinds Technology Solutions - </span>
+              Innovate <span className="text-primary mx-2">•</span> Digitalize <span className="text-primary mx-2">•</span> Transform
             </motion.h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto"
-            >
-              Comprehensive document management, HR automation, and business process solutions.
-              Serving 500+ organizations worldwide since 2003.
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
-            >
-              <Link href="/contact">
-                <button className="px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors inline-flex items-center justify-center gap-2 shadow-lg shadow-primary/25">
-                  Request Demo
-                  <ArrowIcon fontSize="small" />
-                </button>
-              </Link>
-              <Link href="/#solutions">
-                <button className="px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg border-2 border-gray-300 hover:border-primary hover:text-primary transition-colors">
-                  View Solutions
-                </button>
-              </Link>
-            </motion.div>
-
-            {/* Trust Indicators */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-600"
-            >
-              <div className="flex items-center gap-2">
-                <CheckIcon className="text-green-600" fontSize="small" />
-                <span>ISO 9001:2015 Certified</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckIcon className="text-green-600" fontSize="small" />
-                <span>FDA 21 CFR Part 11 Compliant</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckIcon className="text-green-600" fontSize="small" />
-                <span>20+ Years Experience</span>
-              </div>
-            </motion.div>
           </div>
 
-          {/* Stats Section */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto"
+          >
+            Comprehensive document management, HR automation, and business process solutions.
+            Serving 500+ organizations worldwide since 2003.
+          </motion.p>
+
           <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
+          >
+            <Link href="/contact">
+              <button className="px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors inline-flex items-center justify-center gap-2 shadow-lg shadow-primary/25">
+                Request Demo
+                <ArrowIcon fontSize="small" />
+              </button>
+            </Link>
+            <Link href="/#solutions">
+              <button className="px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg border-2 border-gray-300 hover:border-primary hover:text-primary transition-colors">
+                View Solutions
+              </button>
+            </Link>
+          </motion.div>
+
+          {/* Trust Indicators */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-600"
+          >
+            <div className="flex items-center gap-2">
+              <CheckIcon className="text-green-600" fontSize="small" />
+              <span>ISO 9001:2015 Certified</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckIcon className="text-green-600" fontSize="small" />
+              <span>FDA 21 CFR Part 11 Compliant</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckIcon className="text-green-600" fontSize="small" />
+              <span>20+ Years Experience</span>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Stats Section */}
+        {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
@@ -113,27 +151,9 @@ export default function HeroGenZ() {
               <div className="text-4xl font-bold text-gray-900 mb-2">24/7</div>
               <div className="text-sm text-gray-600">Support Available</div>
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          {/* Client Logos Placeholder */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            className="mt-20 pt-12 border-t border-gray-200"
-          >
-            <p className="text-center text-sm text-gray-500 mb-8 uppercase tracking-wide font-semibold">
-              Trusted by Leading Organizations
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center opacity-40">
-              {[1, 2, 3, 4, 5].map((i) => (
-                <div key={i} className="h-12 bg-gray-200 rounded flex items-center justify-center">
-                  <span className="text-gray-400 font-bold text-sm">CLIENT {i}</span>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
+
       </div>
     </section>
   );

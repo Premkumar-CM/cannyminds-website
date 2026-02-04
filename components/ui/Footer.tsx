@@ -27,8 +27,8 @@ export default function Footer() {
   const company = [
     { name: "About Us", href: "/about" },
     { name: "Contact", href: "/contact" },
-    { name: "Privacy Policy", href: "#" },
-    { name: "Terms of Service", href: "#" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
+    { name: "Terms of Service", href: "/terms" },
   ];
 
   const certifications = [
@@ -61,7 +61,14 @@ export default function Footer() {
               {["linkedin", "twitter", "facebook", "instagram"].map((social) => (
                 <motion.a
                   key={social}
-                  href="#"
+                  href={
+                    social === "linkedin" ? "https://www.linkedin.com/company/cannyminds" :
+                      social === "twitter" ? "https://twitter.com/cannyminds" :
+                        social === "facebook" ? "https://www.facebook.com/cannyminds" :
+                          social === "instagram" ? "https://www.instagram.com/cannyminds" : "#"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.1, y: -2 }}
                   className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors"
                   aria-label={social}
@@ -100,12 +107,12 @@ export default function Footer() {
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service}>
-                  <a
-                    href="#"
+                  <Link
+                    href="/#services"
                     className="text-blue-100 hover:text-white transition-colors"
                   >
                     {service}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

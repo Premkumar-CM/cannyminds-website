@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Reference files (not for deployment)
+/Client logo/
+/Content for ECM, Scan and RMS/
+/public/clients/
+
+# Claude Code
+.claude/

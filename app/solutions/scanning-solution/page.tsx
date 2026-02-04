@@ -8,44 +8,50 @@ import {
   Star as StarIcon,
   Scanner as ScannerIcon,
   Security as SecurityIcon,
-  PhotoLibrary as PhotoIcon,
+  AutoFixHigh as EnhanceIcon,
+  QrCodeScanner as BarcodeIcon,
+  FactCheck as QualityIcon,
+  Assessment as ReportIcon,
   CloudUpload as CloudIcon,
-  Assignment as WorkflowIcon,
-  Computer as ComputerIcon,
   ArrowForward as ArrowIcon,
   Description as DocumentIcon,
-  Assessment as AssessmentIcon,
+  Image as ImageIcon,
+  Compress as CompressIcon,
+  TextFields as OCRIcon,
+  Verified as VerifiedIcon,
+  RateReview as ReviewIcon,
 } from '@mui/icons-material';
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: "CannyScan - Professional Document Scanning Services",
-  description: "Professional scanning with 99.9% accuracy. Onsite/offsite options for all document types. Microfilm, blueprints, books. Secure cloud hosting.",
+  title: "CannyScan - Document Digitization & Scanning Solution | OCR & Barcode Extraction",
+  description: "Professional document digitization with image cleansing, OCR extraction, barcode reading, auto-cropping, and quality control workflows. Export to DMS with audit reports.",
   keywords: [
     "CannyScan",
-    "document scanning services",
-    "digitization services",
-    "microfilm scanning",
-    "large format scanning",
-    "book scanning services",
-    "paper to digital conversion",
-    "onsite scanning",
-    "offsite scanning",
-    "professional scanning services"
+    "document digitization",
+    "document scanning software",
+    "OCR extraction",
+    "barcode extraction",
+    "image cleansing",
+    "auto crop scanning",
+    "punch hole removal",
+    "document quality control",
+    "scanning workflow",
+    "digitization solution",
+    "DMS integration"
   ],
-  authors: [{ name: "Christopher" }],
+  authors: [{ name: "CannyMinds Technology Solutions" }],
   openGraph: {
-    title: "CannyScan - Professional Document Scanning Services",
-    description: "Professional scanning with 99.9% accuracy. Onsite/offsite options for all document types. Microfilm, blueprints, books. Secure cloud hosting.",
+    title: "CannyScan - Document Digitization & Scanning Solution",
+    description: "Professional document digitization with image cleansing, OCR extraction, barcode reading, and quality control workflows.",
     type: "article",
     url: "https://www.cannymindstech.com/solutions/scanning-solution",
-    authors: ["Christopher"],
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "CannyScan - Professional Document Scanning Services",
+        alt: "CannyScan Document Digitization Solution",
       },
     ],
   },
@@ -71,53 +77,22 @@ const jsonLd = {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Products",
-          "item": "https://cannymindstech.com/#products"
+          "name": "Solutions",
+          "item": "https://cannymindstech.com/#solutions"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "CannyScan - Document Scanning Services"
+          "name": "CannyScan - Document Digitization"
         }
       ]
     },
     {
-      "@type": "Article",
-      "headline": "CannyScan - Professional Document Scanning Services",
-      "description": "Comprehensive guide to CannyScan professional document scanning and digitization services with onsite/offsite options, large-format scanning, and secure cloud hosting.",
-      "image": "https://cannymindstech.com/images/cannyscan-service.jpg",
-      "author": {
-        "@type": "Person",
-        "name": "Christopher",
-        "jobTitle": "Head of Technical Department & Investor",
-        "url": "https://cannymindstech.com/about"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "CannyMinds Technology Solutions",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://cannymindstech.com/logo.png"
-        },
-        "url": "https://cannymindstech.com"
-      },
-      "datePublished": "2025-01-15",
-      "dateModified": new Date().toISOString(),
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://cannymindstech.com/solutions/scanning-solution"
-      }
-    },
-    {
-      "@type": "Service",
+      "@type": "SoftwareApplication",
       "name": "CannyScan",
-      "serviceType": "Document Scanning and Digitization Services",
-      "description": "Professional document scanning services for all document types including microfilm and large-format materials",
-      "provider": {
-        "@type": "Organization",
-        "name": "CannyMinds Technology Solutions"
-      },
-      "areaServed": "Worldwide",
+      "applicationCategory": "BusinessApplication",
+      "description": "Document digitization solution with image cleansing, OCR extraction, barcode reading, and quality control",
+      "operatingSystem": "Web, Windows",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
@@ -129,66 +104,34 @@ const jsonLd = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is CannyScan document scanning service?",
+          "name": "What is CannyScan?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "CannyScan is a professional document scanning and digitization service that converts paper documents into searchable digital files. We handle all document types—from standard office papers to large-format technical drawings, microfilm, books, and photographs—with high-quality scanning equipment and OCR technology."
+            "text": "CannyScan is a professional document digitization solution that provides image enhancement, OCR extraction, barcode reading, quality control workflows, and comprehensive reporting for converting paper documents into searchable digital assets."
           }
         },
         {
           "@type": "Question",
-          "name": "What types of documents can you scan?",
+          "name": "What features does CannyScan offer for image enhancement?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We scan all document types: standard office documents, legal files, medical records, blueprints (up to A0 size), technical manuals, microfilm/microfiche, bound books, photographs, maps, and historical documents. Our equipment handles sizes from business cards to large-format engineering drawings."
+            "text": "CannyScan provides image cleansing with auto crop, punch hole removal, edge deduction, automatic document separation with blank page detection, auto file name creation, and image compression for optimized storage."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you offer onsite or offsite scanning?",
+          "name": "Does CannyScan support OCR and barcode extraction?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Both. Offsite scanning is ideal for large projects where documents are transported to our secure facility. Onsite scanning is available for organizations that cannot remove documents from their premises due to security or compliance requirements. Both options include secure cloud hosting."
+            "text": "Yes. CannyScan includes barcode extraction, OCR (Optical Character Recognition) extraction, and data validation capabilities to convert scanned documents into searchable, indexed digital files."
           }
         },
         {
           "@type": "Question",
-          "name": "What is the accuracy of your OCR technology?",
+          "name": "How does CannyScan handle quality control?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our OCR (Optical Character Recognition) achieves 99.9% accuracy on clear, well-printed documents. All scanned text becomes searchable and editable. We use advanced OCR software that handles multiple languages, fonts, and document layouts with manual quality control reviews."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does a scanning project take?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Project timelines depend on document volume and complexity. Small projects (1,000-5,000 pages) typically complete within 5-7 business days. Large enterprise projects (100,000+ pages) are planned with phased delivery schedules. Rush services available for urgent requirements."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is my data secure during the scanning process?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. We follow strict security protocols including secure transportation, 24/7 monitored facilities, chain of custody tracking, and background-verified staff. Digital files are encrypted with 256-bit AES encryption. We maintain compliance with HIPAA, GLBA, and GDPR standards."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can scanned documents be integrated with CannyECM DMS?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. CannyScan integrates seamlessly with CannyECM Document Management System. Scanned files are uploaded directly to your CannyECM repository with proper indexing, metadata, and folder organization—ready for immediate use with full-text search capabilities."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does professional document scanning cost?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Pricing depends on document volume, type, complexity, and delivery timeline. Standard office documents typically range from ₹0.50-₹2 per page. Large-format, microfilm, and specialty scanning have custom pricing. Contact us for a free project assessment and detailed quote."
+            "text": "CannyScan offers manual and automatic verification of information and documents, review and comments functionality, and approve-reject workflows to ensure scanning quality meets organizational standards."
           }
         }
       ]
@@ -209,74 +152,74 @@ export default function CannyScanProductPage() {
         <nav className="bg-gray-50 border-b border-gray-200 py-4 mt-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <ol className="flex items-center space-x-2 text-xs sm:text-sm overflow-x-auto">
-              <li><Link href="/" className="text-primary hover:text-primary/80 whitespace-nowrap">Home</Link></li>
+              <li><Link href="/" className="text-purple-600 hover:text-purple-800 whitespace-nowrap">Home</Link></li>
               <li className="text-gray-400">/</li>
-              <li><Link href="/#solutions" className="text-primary hover:text-primary/80 whitespace-nowrap">Solutions</Link></li>
+              <li><Link href="/#solutions" className="text-purple-600 hover:text-purple-800 whitespace-nowrap">Solutions</Link></li>
               <li className="text-gray-400">/</li>
-              <li className="text-gray-600 font-medium truncate">CannyScan - Document Scanning Services</li>
+              <li className="text-gray-600 font-medium truncate">CannyScan - Document Digitization</li>
             </ol>
           </div>
         </nav>
 
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-purple-50 via-white to-purple-50 py-16">
+        <section className="bg-gradient-to-br from-purple-50 via-white to-purple-50 py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
 
               <div>
-                <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                  <StarIcon sx={{ fontSize: 18 }} />
-                  Professional Scanning Services
+                <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-3 py-1.5 rounded-full text-xs font-semibold mb-4">
+                  <ScannerIcon sx={{ fontSize: 16 }} />
+                  Document Digitization Solution
                 </div>
 
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-6 leading-tight">
-                  Transform Physical Documents into Digital Assets with <span className="text-purple-600">CannyScan</span>
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary mb-4 leading-tight">
+                  <span className="text-purple-600">CannyScan</span> - Complete Document Digitization
                 </h1>
 
-                <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-                  Professional document scanning and digitization services for all document types. From paper files to microfilm,
-                  large-format plans to historical books—we digitize everything with <strong>99.9% accuracy</strong>. Onsite and offsite
-                  options available with secure cloud hosting.
+                <p className="text-sm sm:text-base text-gray-700 mb-6 leading-relaxed">
+                  Professional document scanning with <strong>image cleansing, OCR extraction, barcode reading</strong>,
+                  and quality control workflows. Transform paper documents into searchable digital assets with
+                  comprehensive audit trails and DMS integration.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <div className="flex flex-col sm:flex-row gap-3 mb-4">
                   <Link
                     href="#get-started"
-                    className="bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
+                    className="bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2 text-sm"
                   >
-                    Request a Quote
-                    <ArrowIcon sx={{ fontSize: 20 }} />
+                    Request Demo
+                    <ArrowIcon sx={{ fontSize: 18 }} />
                   </Link>
                   <Link
-                    href="#services"
-                    className="bg-white text-purple-600 border-2 border-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-purple-50 transition-all inline-flex items-center justify-center gap-2"
+                    href="#features"
+                    className="bg-white text-purple-600 border-2 border-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-all inline-flex items-center justify-center gap-2 text-sm"
                   >
-                    Our Services
-                    <ScannerIcon sx={{ fontSize: 20 }} />
+                    Explore Features
+                    <ScannerIcon sx={{ fontSize: 18 }} />
                   </Link>
+                </div>
+
+                <div className="flex items-center gap-4 text-sm text-gray-600 flex-wrap mb-4">
+                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} /> Image Enhancement</span>
+                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} /> OCR & Barcode</span>
+                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} /> Quality Control</span>
                 </div>
 
                 {/* Social Share */}
-                <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-3">
                   <SocialShare
-                    title="CannyScan - Professional Document Scanning Services"
-                    description="Professional document digitization with 99.9% OCR accuracy, cloud storage, and secure archival. Transform your paper documents into searchable digital assets."
+                    title="CannyScan - Document Digitization Solution"
+                    description="Professional document digitization with image cleansing, OCR extraction, barcode reading, and quality control workflows."
                   />
-                  <span className="text-sm text-gray-600">Share this service</span>
-                </div>
-
-                <div className="flex items-center gap-6 text-sm text-gray-600 flex-wrap">
-                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 18, color: '#25d366' }} /> 99.9% Accuracy</span>
-                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 18, color: '#25d366' }} /> Onsite/Offsite Options</span>
-                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 18, color: '#25d366' }} /> Secure Cloud Hosting</span>
+                  <span className="text-xs text-gray-500">Share this product</span>
                 </div>
               </div>
 
               {/* Image Placeholder */}
-              <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl p-12 text-center" role="img" aria-label="CannyScan professional scanning equipment and digitized documents">
+              <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl p-12 text-center" role="img" aria-label="CannyScan Document Digitization Process Flow">
                 <ScannerIcon sx={{ fontSize: 120, color: '#94a3b8' }} aria-hidden="true" />
                 <p className="text-gray-600 font-semibold mt-6 text-lg">IMAGE PLACEHOLDER</p>
-                <p className="text-sm text-gray-500 mt-2">CannyScan Scanning Services</p>
+                <p className="text-sm text-gray-500 mt-2">CannyScan Process Flow Diagram</p>
                 <p className="text-xs text-gray-400 mt-1">Recommended size: 1200x800px</p>
               </div>
 
@@ -284,19 +227,20 @@ export default function CannyScanProductPage() {
           </div>
         </section>
 
-        {/* Stats Section */}
+        {/* Core Features Stats */}
         <section className="py-12 bg-purple-600">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-4 gap-8 text-center text-white">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-center text-white">
               {[
-                { number: "10+", label: "Happy Clients" },
-                { number: "1M+", label: "Documents Scanned" },
-                { number: "99.9%", label: "Accuracy Rate" },
-                { number: "A0", label: "Max Format Size" },
+                { label: "Enhance", icon: <EnhanceIcon sx={{ fontSize: 32 }} />, desc: "Image Cleansing" },
+                { label: "Extract", icon: <BarcodeIcon sx={{ fontSize: 32 }} />, desc: "OCR & Barcode" },
+                { label: "Quality Check", icon: <QualityIcon sx={{ fontSize: 32 }} />, desc: "Verify & Approve" },
+                { label: "Report", icon: <ReportIcon sx={{ fontSize: 32 }} />, desc: "Audit Trails" },
               ].map((stat, idx) => (
-                <div key={idx}>
-                  <div className="text-4xl md:text-5xl font-bold mb-2">{stat.number}</div>
-                  <div className="text-white/80">{stat.label}</div>
+                <div key={idx} className="flex flex-col items-center">
+                  <div className="mb-2 text-white/90">{stat.icon}</div>
+                  <div className="text-lg font-bold">{stat.label}</div>
+                  <div className="text-sm text-white/80">{stat.desc}</div>
                 </div>
               ))}
             </div>
@@ -313,16 +257,12 @@ export default function CannyScanProductPage() {
               <nav className="grid md:grid-cols-2 gap-4">
                 {[
                   { title: "What is CannyScan?", href: "#what-is" },
-                  { title: "Scanning Services & Capabilities", href: "#services" },
-                  { title: "Document Types We Handle", href: "#document-types" },
-                  { title: "Service Delivery Options", href: "#delivery-options" },
-                  { title: "Benefits of Document Digitization", href: "#benefits" },
-                  { title: "Industry Use Cases", href: "#use-cases" },
-                  { title: "How CannyScan Works", href: "#how-it-works" },
-                  { title: "Technical Specifications", href: "#technical-specs" },
+                  { title: "Enhance Features", href: "#enhance" },
+                  { title: "Extract Capabilities", href: "#extract" },
+                  { title: "Quality Check Workflow", href: "#quality" },
+                  { title: "Reporting & Audit", href: "#reporting" },
+                  { title: "Process Flow", href: "#process" },
                   { title: "Integration with CannyECM", href: "#integration" },
-                  { title: "Why Choose CannyScan", href: "#why-choose" },
-                  { title: "Security & Compliance", href: "#security" },
                   { title: "Frequently Asked Questions", href: "#faq" },
                 ].map((item, idx) => (
                   <a
@@ -345,843 +285,565 @@ export default function CannyScanProductPage() {
           {/* What is CannyScan */}
           <section id="what-is" className="mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8">
-              What is CannyScan Document Scanning Service?
+              CannyScan - Features
             </h2>
 
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                <strong>CannyScan</strong> is CannyMinds&apos; professional document scanning and digitization service designed to convert
-                your physical records into searchable, secure digital formats. Whether you&apos;re managing decades of paper archives,
-                microfilm collections, large-format engineering drawings, or historical books, CannyScan provides end-to-end digitization
-                solutions that <strong>reclaim office space, reduce storage costs, and enable instant digital access</strong>.
+                <strong>CannyScan</strong> is a comprehensive document digitization solution designed to transform
+                paper documents into high-quality, searchable digital assets. With advanced image enhancement,
+                OCR and barcode extraction, quality control workflows, and comprehensive reporting, CannyScan
+                ensures accurate, efficient, and auditable document digitization.
               </p>
 
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                With specialized equipment for every document type—from standard A4 pages to massive A0 blueprints and delicate microfilm—
-                CannyScan delivers high-quality digital images with OCR (Optical Character Recognition) for full-text searchability.
-                Choose between onsite scanning at your premises or offsite scanning at our secure facilities, with all digitized content
-                hosted in secure cloud storage for instant access.
-              </p>
+              <div className="bg-purple-50 border-l-4 border-purple-600 p-6 rounded-r-lg mb-8">
+                <p className="font-semibold text-secondary mb-2">CannyScan Core Capabilities:</p>
+                <div className="grid md:grid-cols-2 gap-4 text-gray-700">
+                  <div className="flex items-center gap-2">
+                    <EnhanceIcon sx={{ fontSize: 20, color: '#9333ea' }} />
+                    <span><strong>Enhance:</strong> Image cleansing & optimization</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <BarcodeIcon sx={{ fontSize: 20, color: '#9333ea' }} />
+                    <span><strong>Extract:</strong> OCR & barcode data capture</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <QualityIcon sx={{ fontSize: 20, color: '#9333ea' }} />
+                    <span><strong>Quality Check:</strong> Verify & approve workflow</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <ReportIcon sx={{ fontSize: 20, color: '#9333ea' }} />
+                    <span><strong>Reporting:</strong> Audit trails & analytics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-              <div className="bg-purple-50 border-l-4 border-purple-600 p-6 rounded-r-lg">
-                <p className="font-semibold text-secondary mb-2">Perfect For:</p>
+          {/* Core Features Grid */}
+          <section id="features" className="mb-20">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
+              CannyScan Feature Categories
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-8">
+
+              {/* Enhance */}
+              <div id="enhance" className="bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 rounded-xl p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center">
+                    <EnhanceIcon sx={{ fontSize: 32, color: '#9333ea' }} />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-secondary">Enhance</h3>
+                    <p className="text-purple-600 font-medium">Image Cleansing & Optimization</p>
+                  </div>
+                </div>
+
+                <p className="text-gray-700 mb-6">
+                  Advanced image processing to ensure high-quality, clean, and optimized scanned documents.
+                </p>
+
+                <div className="space-y-4">
+                  <div className="bg-white border border-purple-200 rounded-lg p-4">
+                    <div className="flex items-start gap-3">
+                      <ImageIcon sx={{ fontSize: 24, color: '#9333ea' }} className="mt-0.5" />
+                      <div>
+                        <h4 className="font-bold text-secondary">Image Cleansing</h4>
+                        <ul className="text-sm text-gray-600 mt-2 space-y-1">
+                          <li className="flex items-center gap-2">
+                            <CheckIcon sx={{ fontSize: 14, color: '#25d366' }} />
+                            <span>Auto Crop</span>
+                          </li>
+                          <li className="flex items-center gap-2">
+                            <CheckIcon sx={{ fontSize: 14, color: '#25d366' }} />
+                            <span>Punch Hole Removal</span>
+                          </li>
+                          <li className="flex items-center gap-2">
+                            <CheckIcon sx={{ fontSize: 14, color: '#25d366' }} />
+                            <span>Edge Deduction</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white border border-purple-200 rounded-lg p-4">
+                    <div className="flex items-start gap-3">
+                      <DocumentIcon sx={{ fontSize: 24, color: '#9333ea' }} className="mt-0.5" />
+                      <div>
+                        <h4 className="font-bold text-secondary">Automatic Document Separation</h4>
+                        <ul className="text-sm text-gray-600 mt-2 space-y-1">
+                          <li className="flex items-center gap-2">
+                            <CheckIcon sx={{ fontSize: 14, color: '#25d366' }} />
+                            <span>Blank Page Detection</span>
+                          </li>
+                          <li className="flex items-center gap-2">
+                            <CheckIcon sx={{ fontSize: 14, color: '#25d366' }} />
+                            <span>Auto File Name Creation</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white border border-purple-200 rounded-lg p-4">
+                    <div className="flex items-start gap-3">
+                      <CompressIcon sx={{ fontSize: 24, color: '#9333ea' }} className="mt-0.5" />
+                      <div>
+                        <h4 className="font-bold text-secondary">Image Compression</h4>
+                        <p className="text-sm text-gray-600 mt-1">
+                          Optimized file sizes without quality loss for efficient storage
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Extract */}
+              <div id="extract" className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 rounded-xl p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <BarcodeIcon sx={{ fontSize: 32, color: '#3170b5' }} />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-secondary">Extract</h3>
+                    <p className="text-blue-600 font-medium">Data Capture & Recognition</p>
+                  </div>
+                </div>
+
+                <p className="text-gray-700 mb-6">
+                  Intelligent data extraction from scanned documents using OCR and barcode recognition technology.
+                </p>
+
+                <div className="space-y-4">
+                  <div className="bg-white border border-blue-200 rounded-lg p-4">
+                    <div className="flex items-start gap-3">
+                      <BarcodeIcon sx={{ fontSize: 24, color: '#3170b5' }} className="mt-0.5" />
+                      <div>
+                        <h4 className="font-bold text-secondary">Bar-code Extraction</h4>
+                        <p className="text-sm text-gray-600 mt-1">
+                          Automatic barcode detection and data extraction for document indexing
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white border border-blue-200 rounded-lg p-4">
+                    <div className="flex items-start gap-3">
+                      <OCRIcon sx={{ fontSize: 24, color: '#3170b5' }} className="mt-0.5" />
+                      <div>
+                        <h4 className="font-bold text-secondary">OCR Extraction</h4>
+                        <p className="text-sm text-gray-600 mt-1">
+                          Optical Character Recognition to convert scanned text into searchable, editable content
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white border border-blue-200 rounded-lg p-4">
+                    <div className="flex items-start gap-3">
+                      <VerifiedIcon sx={{ fontSize: 24, color: '#3170b5' }} className="mt-0.5" />
+                      <div>
+                        <h4 className="font-bold text-secondary">Data Validation</h4>
+                        <p className="text-sm text-gray-600 mt-1">
+                          Automated validation of extracted data against business rules and formats
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Quality Check */}
+              <div id="quality" className="bg-gradient-to-br from-green-50 to-white border-2 border-green-200 rounded-xl p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center">
+                    <QualityIcon sx={{ fontSize: 32, color: '#22c55e' }} />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-secondary">Quality Check</h3>
+                    <p className="text-green-600 font-medium">Verification & Approval Workflow</p>
+                  </div>
+                </div>
+
+                <p className="text-gray-700 mb-6">
+                  Comprehensive quality assurance to ensure scanning accuracy meets organizational standards.
+                </p>
+
+                <div className="space-y-4">
+                  <div className="bg-white border border-green-200 rounded-lg p-4">
+                    <div className="flex items-start gap-3">
+                      <QualityIcon sx={{ fontSize: 24, color: '#22c55e' }} className="mt-0.5" />
+                      <div>
+                        <h4 className="font-bold text-secondary">Manual / Automatic Verification</h4>
+                        <p className="text-sm text-gray-600 mt-1">
+                          Verify information and documents through automated checks or manual review
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white border border-green-200 rounded-lg p-4">
+                    <div className="flex items-start gap-3">
+                      <ReviewIcon sx={{ fontSize: 24, color: '#22c55e' }} className="mt-0.5" />
+                      <div>
+                        <h4 className="font-bold text-secondary">Review and Comments</h4>
+                        <p className="text-sm text-gray-600 mt-1">
+                          Add review notes and comments for quality documentation
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white border border-green-200 rounded-lg p-4">
+                    <div className="flex items-start gap-3">
+                      <CheckIcon sx={{ fontSize: 24, color: '#22c55e' }} className="mt-0.5" />
+                      <div>
+                        <h4 className="font-bold text-secondary">Approve – Reject</h4>
+                        <p className="text-sm text-gray-600 mt-1">
+                          Structured approval workflow with accept/reject decisions
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Reporting */}
+              <div id="reporting" className="bg-gradient-to-br from-orange-50 to-white border-2 border-orange-200 rounded-xl p-8">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center">
+                    <ReportIcon sx={{ fontSize: 32, color: '#f97316' }} />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-secondary">Reporting</h3>
+                    <p className="text-orange-600 font-medium">Audit Trails & Analytics</p>
+                  </div>
+                </div>
+
+                <p className="text-gray-700 mb-6">
+                  Comprehensive reporting for tracking, auditing, and analyzing digitization activities.
+                </p>
+
+                <div className="space-y-4">
+                  <div className="bg-white border border-orange-200 rounded-lg p-4">
+                    <div className="flex items-start gap-3">
+                      <ReportIcon sx={{ fontSize: 24, color: '#f97316' }} className="mt-0.5" />
+                      <div>
+                        <h4 className="font-bold text-secondary">Total Records Scanned</h4>
+                        <p className="text-sm text-gray-600 mt-1">
+                          Track total volume of documents processed through the system
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white border border-orange-200 rounded-lg p-4">
+                    <div className="flex items-start gap-3">
+                      <CloudIcon sx={{ fontSize: 24, color: '#f97316' }} className="mt-0.5" />
+                      <div>
+                        <h4 className="font-bold text-secondary">Records Exported / Not Exported</h4>
+                        <p className="text-sm text-gray-600 mt-1">
+                          Monitor export status and identify pending items
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white border border-orange-200 rounded-lg p-4">
+                    <div className="flex items-start gap-3">
+                      <SecurityIcon sx={{ fontSize: 24, color: '#f97316' }} className="mt-0.5" />
+                      <div>
+                        <h4 className="font-bold text-secondary">Audit Reports</h4>
+                        <p className="text-sm text-gray-600 mt-1">
+                          Comprehensive audit trails for compliance and accountability
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          {/* Document Digitisation Process Flow */}
+          <section id="process" className="mb-20">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8 text-center">
+              Document Digitisation Process Flow
+            </h2>
+
+            <p className="text-gray-700 text-lg text-center mb-12 max-w-3xl mx-auto">
+              CannyScan follows a structured, end-to-end workflow to ensure high-quality document digitization
+              from initial data entry to final export.
+            </p>
+
+            <div className="relative">
+              {/* Process Steps */}
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                {[
+                  {
+                    step: "1",
+                    title: "Inventory / Data Entry",
+                    description: "Document receipt and initial data entry with tracking assignment",
+                    icon: <DocumentIcon sx={{ fontSize: 32 }} />,
+                    color: "purple"
+                  },
+                  {
+                    step: "2",
+                    title: "Batch Preparation",
+                    description: "Documents organized into batches for efficient scanning",
+                    icon: <DocumentIcon sx={{ fontSize: 32 }} />,
+                    color: "blue"
+                  },
+                  {
+                    step: "3",
+                    title: "Scanning",
+                    description: "High-quality document scanning with image enhancement",
+                    icon: <ScannerIcon sx={{ fontSize: 32 }} />,
+                    color: "green"
+                  },
+                  {
+                    step: "4",
+                    title: "Quality Check",
+                    description: "Verification of scan quality with approve/reject workflow",
+                    icon: <QualityIcon sx={{ fontSize: 32 }} />,
+                    color: "orange"
+                  },
+                ].map((item, idx) => (
+                  <div key={idx} className={`bg-gradient-to-br from-${item.color}-50 to-white border-2 border-${item.color}-200 rounded-xl p-6 text-center`}>
+                    <div className={`w-12 h-12 bg-${item.color}-100 rounded-full flex items-center justify-center mx-auto mb-4 text-${item.color}-600`}>
+                      <span className="text-xl font-bold">{item.step}</span>
+                    </div>
+                    <div className={`text-${item.color}-600 mb-2`}>{item.icon}</div>
+                    <h3 className="font-bold text-secondary mb-2">{item.title}</h3>
+                    <p className="text-sm text-gray-600">{item.description}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  {
+                    step: "5",
+                    title: "Indexing & Tagging",
+                    description: "Metadata assignment and document classification",
+                    icon: <BarcodeIcon sx={{ fontSize: 32 }} />,
+                    color: "cyan"
+                  },
+                  {
+                    step: "6",
+                    title: "Images & Metadata Extraction",
+                    description: "OCR and barcode extraction with data validation",
+                    icon: <OCRIcon sx={{ fontSize: 32 }} />,
+                    color: "indigo"
+                  },
+                  {
+                    step: "7",
+                    title: "Final QC & Export",
+                    description: "Final quality review and export preparation",
+                    icon: <VerifiedIcon sx={{ fontSize: 32 }} />,
+                    color: "pink"
+                  },
+                  {
+                    step: "8",
+                    title: "Export / Upload to DMS",
+                    description: "Digital documents uploaded to CannyECM or other DMS",
+                    icon: <CloudIcon sx={{ fontSize: 32 }} />,
+                    color: "teal"
+                  },
+                ].map((item, idx) => (
+                  <div key={idx} className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-6 text-center hover:border-purple-300 transition-all">
+                    <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 text-purple-600">
+                      <span className="text-xl font-bold">{item.step}</span>
+                    </div>
+                    <div className="text-purple-600 mb-2">{item.icon}</div>
+                    <h3 className="font-bold text-secondary mb-2">{item.title}</h3>
+                    <p className="text-sm text-gray-600">{item.description}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Re-scan and Rejection Flow Note */}
+              <div className="mt-8 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg">
                 <p className="text-gray-700">
-                  Organizations with large paper archives, government agencies, legal firms, architectural offices, libraries, museums,
-                  healthcare providers, and any business needing to digitize physical records for compliance, preservation, or accessibility.
+                  <strong>Re-Scan Flow:</strong> Documents that fail quality check are flagged for re-scanning.
+                  Rejected documents can be returned to the scanning stage with comments for correction.
                 </p>
               </div>
-            </div>
-          </section>
-
-          {/* Scanning Services */}
-          <section id="services" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              Comprehensive Scanning Services & Capabilities
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Standard Document Scanning",
-                  icon: <DocumentIcon sx={{ fontSize: 40 }} />,
-                  description: "High-speed scanning of standard paper documents (A4, Letter, Legal sizes) with automatic OCR and indexing.",
-                  features: ["Up to 120 pages/minute", "Automatic OCR processing", "Color/Grayscale/B&W", "PDF, TIFF, JPEG formats"]
-                },
-                {
-                  title: "Large-Format Scanning",
-                  icon: <PhotoIcon sx={{ fontSize: 40 }} />,
-                  description: "Specialized equipment for oversized documents including blueprints, maps, architectural plans, and engineering drawings.",
-                  features: ["A12 to A0 sizes supported", "Up to 44-inch width", "High-resolution scanning", "Preserves fine details"]
-                },
-                {
-                  title: "Microfilm & Microfiche",
-                  icon: <PhotoIcon sx={{ fontSize: 40 }} />,
-                  description: "Professional microfilm and microfiche digitization for archived engineering drawings, historical records, and newspapers.",
-                  features: ["16mm & 35mm microfilm", "Roll film & microfiche", "Restoration & enhancement", "Frame-by-frame scanning"]
-                },
-                {
-                  title: "Book & Bound Documents",
-                  icon: <DocumentIcon sx={{ fontSize: 40 }} />,
-                  description: "Specialized book scanners for textbooks, manuals, ledgers, and bound volumes without damaging bindings.",
-                  features: ["Non-destructive scanning", "Gutter shadow removal", "Page curl correction", "Maintains book integrity"]
-                },
-                {
-                  title: "Photo & Negative Scanning",
-                  icon: <PhotoIcon sx={{ fontSize: 40 }} />,
-                  description: "High-resolution scanning of photographs, photo albums, slides, and negatives for preservation and digital access.",
-                  features: ["Up to 4800 DPI resolution", "Color restoration", "Dust & scratch removal", "Album preservation"]
-                },
-                {
-                  title: "Technical Manual Scanning",
-                  icon: <WorkflowIcon sx={{ fontSize: 40 }} />,
-                  description: "Digitization of technical manuals, binders, and complex documents with detailed indexing and metadata.",
-                  features: ["Tab/section indexing", "Hyperlinked TOC", "Searchable bookmarks", "Multi-part assembly"]
-                },
-              ].map((service, idx) => (
-                <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-purple-600 transition-all">
-                  <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6 text-purple-600">
-                    {service.icon}
-                  </div>
-                  <h3 className="text-xl font-bold text-secondary mb-4">{service.title}</h3>
-                  <p className="text-gray-700 mb-6">{service.description}</p>
-                  <div className="space-y-2">
-                    {service.features.map((feature, fidx) => (
-                      <div key={fidx} className="flex items-start gap-2">
-                        <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                        <span className="text-sm text-gray-600">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* CTA - After Services */}
-          <section className="mb-20">
-            <div className="bg-gradient-to-r from-purple-100 to-purple-50 border-2 border-purple-300 rounded-xl p-8 text-center">
-              <h3 className="text-2xl md:text-3xl font-bold text-secondary mb-4">
-                Ready to Digitize Your Document Archives?
-              </h3>
-              <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-                Get a free consultation and quote for your scanning project. We handle projects of any size.
-              </p>
-              <Link
-                href="#get-started"
-                className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-700 transition-all shadow-lg hover:shadow-xl"
-              >
-                Get Free Quote
-                <ArrowIcon sx={{ fontSize: 20 }} />
-              </Link>
-            </div>
-          </section>
-
-          {/* Document Types */}
-          <section id="document-types" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              Document Types We Handle
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {[
-                {
-                  category: "Standard Documents",
-                  types: ["Invoices & receipts", "Contracts & agreements", "HR records & personnel files", "Medical records & charts", "Legal documents & court files", "Correspondence & letters"]
-                },
-                {
-                  category: "Large-Format Materials",
-                  types: ["Architectural blueprints", "Engineering drawings (A0 to A12)", "Construction plans", "Maps & surveys", "Technical schematics", "CAD drawings"]
-                },
-                {
-                  category: "Archived Media",
-                  types: ["Microfilm (16mm, 35mm)", "Microfiche cards", "Roll film", "Aperture cards", "Jacketed microfilm", "COM/CIM media"]
-                },
-                {
-                  category: "Books & Bound Materials",
-                  types: ["Textbooks & manuals", "Historical books", "Ledgers & journals", "Technical documentation", "Reference materials", "Bound reports"]
-                },
-                {
-                  category: "Photographs & Images",
-                  types: ["Printed photographs", "Photo albums", "Slides (35mm, 120mm)", "Negatives", "Transparencies", "Historical images"]
-                },
-                {
-                  category: "Specialized Documents",
-                  types: ["Technical manuals", "Indexed binders", "Ring-bound materials", "Multi-part forms", "Fragile documents", "Historical artifacts"]
-                },
-              ].map((category, idx) => (
-                <div key={idx} className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
-                  <h3 className="text-2xl font-bold text-secondary mb-6">{category.category}</h3>
-                  <div className="space-y-3">
-                    {category.types.map((type, tidx) => (
-                      <div key={tidx} className="flex items-start gap-2">
-                        <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">{type}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Service Delivery Options */}
-          <section id="delivery-options" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              Flexible Service Delivery Options
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 rounded-xl p-8 shadow-lg">
-                <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
-                  <ComputerIcon sx={{ fontSize: 32, color: '#9333ea' }} />
-                </div>
-                <h3 className="text-2xl font-bold text-secondary mb-4">Onsite Scanning</h3>
-                <p className="text-gray-700 mb-6">
-                  Our team brings professional scanning equipment directly to your location. Ideal for sensitive documents that
-                  cannot leave your premises or large-volume projects where transportation is impractical.
-                </p>
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 18, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-gray-600">Documents never leave your premises</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 18, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-gray-600">Professional equipment & trained operators</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 18, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-gray-600">Flexible scheduling (business hours or after-hours)</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 18, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-gray-600">Real-time progress monitoring</span>
-                  </div>
-                </div>
-                <p className="text-sm font-semibold text-secondary">Best for: Government, Healthcare, Legal, Financial Institutions</p>
-              </div>
-
-              <div className="bg-gradient-to-br from-primary-50 to-white border-2 border-primary-200 rounded-xl p-8 shadow-lg">
-                <div className="w-16 h-16 bg-primary-50 rounded-lg flex items-center justify-center mb-6">
-                  <SecurityIcon sx={{ fontSize: 32, color: '#3170b5' }} />
-                </div>
-                <h3 className="text-2xl font-bold text-secondary mb-4">Offsite Scanning</h3>
-                <p className="text-gray-700 mb-6">
-                  Documents are securely transported to our state-of-the-art scanning facilities with chain-of-custody tracking.
-                  Cost-effective for large projects with shorter turnaround times.
-                </p>
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 18, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-gray-600">Secure transportation with tracking</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 18, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-gray-600">Climate-controlled scanning environment</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 18, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-gray-600">Industrial-grade scanning equipment</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 18, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-gray-600">Faster turnaround times</span>
-                  </div>
-                </div>
-                <p className="text-sm font-semibold text-secondary">Best for: Businesses, Archives, Libraries, Small-Medium Projects</p>
-              </div>
-            </div>
-
-            <div className="mt-8 bg-gradient-to-br from-green-50 to-white border-2 border-green-200 rounded-xl p-8">
-              <div className="flex items-start gap-4">
-                <CloudIcon sx={{ fontSize: 32, color: '#22c55e' }} />
-                <div>
-                  <h4 className="text-xl font-bold text-secondary mb-3">Secure Cloud Hosting Included</h4>
-                  <p className="text-gray-700 mb-4">
-                    All digitized documents are uploaded to secure cloud storage with role-based access control. Access your digital
-                    archive from anywhere, anytime with encrypted connections and comprehensive audit trails.
-                  </p>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="flex items-start gap-2">
-                      <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-gray-600">AES-256 encryption at rest</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-gray-600">TLS 1.3 encryption in transit</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-gray-600">Role-based access control</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-gray-600">Automated backups & redundancy</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Benefits Section */}
-          <section id="benefits" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              Business Benefits of Document Digitization
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="text-center bg-gradient-to-br from-green-50 to-white border-2 border-green-200 rounded-xl p-8">
-                <div className="text-5xl font-bold text-green-600 mb-3">80%</div>
-                <h3 className="font-bold text-secondary text-lg mb-2">Space Savings</h3>
-                <p className="text-gray-600 text-sm">Eliminate 80% of physical storage space and reduce facility costs</p>
-              </div>
-              <div className="text-center bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 rounded-xl p-8">
-                <div className="text-5xl font-bold text-primary mb-3">10x</div>
-                <h3 className="font-bold text-secondary text-lg mb-2">Faster Access</h3>
-                <p className="text-gray-600 text-sm">Find documents in seconds instead of hours with digital search</p>
-              </div>
-              <div className="text-center bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 rounded-xl p-8">
-                <div className="text-5xl font-bold text-purple-600 mb-3">50%</div>
-                <h3 className="font-bold text-secondary text-lg mb-2">Cost Reduction</h3>
-                <p className="text-gray-600 text-sm">Lower operational costs through digital workflows</p>
-              </div>
-            </div>
-
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-              {[
-                {
-                  title: "1. Reclaim Premium Office Space",
-                  content: "Convert filing cabinets and storage rooms into productive workspace. The average filing cabinet costs $1,000+ annually in space and maintenance—digitization eliminates these ongoing costs while freeing up valuable real estate."
-                },
-                {
-                  title: "2. Instant Document Access from Anywhere",
-                  content: "Enable remote work and distributed teams with cloud-hosted digital archives. Employees can access documents instantly from any location, improving productivity and enabling flexible work arrangements."
-                },
-                {
-                  title: "3. Enhanced Document Security & Compliance",
-                  content: "Protect against fire, flood, and physical theft with encrypted digital storage. Maintain audit trails, enforce retention policies, and meet GDPR, HIPAA, and ISO 27001 compliance requirements automatically."
-                },
-                {
-                  title: "4. Disaster Recovery & Business Continuity",
-                  content: "Eliminate risk of catastrophic document loss from natural disasters. Automated backups and geo-redundant storage ensure your critical records survive any physical disaster."
-                },
-                {
-                  title: "5. Improved Collaboration & Productivity",
-                  content: "Multiple users can access the same document simultaneously without physical handling. Version control and change tracking prevent conflicts and lost updates."
-                },
-                {
-                  title: "6. Environmental Sustainability",
-                  content: "Reduce carbon footprint and demonstrate corporate social responsibility. Going paperless eliminates paper consumption, printing costs, and transportation emissions from document storage."
-                },
-              ].map((benefit, idx) => (
-                <div key={idx}>
-                  <h3 className="text-2xl font-bold text-secondary mb-3">{benefit.title}</h3>
-                  <p className="text-lg leading-relaxed">{benefit.content}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Use Cases */}
-          <section id="use-cases" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              Industry-Specific Use Cases
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {[
-                {
-                  industry: "Legal & Law Firms",
-                  icon: <DocumentIcon sx={{ fontSize: 32 }} />,
-                  description: "Digitize case files, court documents, contracts, and historical records for instant access and e-discovery.",
-                  use_cases: ["Case file digitization", "Contract archives", "Court document scanning", "E-discovery preparation"]
-                },
-                {
-                  industry: "Healthcare & Medical",
-                  icon: <SecurityIcon sx={{ fontSize: 32 }} />,
-                  description: "Convert patient records, medical charts, X-rays, and lab results to HIPAA-compliant digital formats.",
-                  use_cases: ["Patient record conversion", "Medical imaging digitization", "Lab result archives", "HIPAA compliance"]
-                },
-                {
-                  industry: "Government & Public Sector",
-                  icon: <SecurityIcon sx={{ fontSize: 32 }} />,
-                  description: "Digitize public records, permits, licenses, historical documents, and maps for citizen access.",
-                  use_cases: ["Public record digitization", "Historical document preservation", "Permit & license scanning", "Map digitization"]
-                },
-                {
-                  industry: "Architecture & Engineering",
-                  icon: <DocumentIcon sx={{ fontSize: 32 }} />,
-                  description: "Scan large-format blueprints, CAD drawings, site plans, and technical specifications.",
-                  use_cases: ["Blueprint scanning (A0-A12)", "CAD drawing archives", "Site plan digitization", "Technical specs"]
-                },
-                {
-                  industry: "Libraries & Museums",
-                  icon: <DocumentIcon sx={{ fontSize: 32 }} />,
-                  description: "Preserve rare books, historical documents, photographs, and archives for public digital access.",
-                  use_cases: ["Rare book digitization", "Historical preservation", "Photo archive scanning", "Microfilm conversion"]
-                },
-                {
-                  industry: "Financial Services",
-                  icon: <SecurityIcon sx={{ fontSize: 32 }} />,
-                  description: "Digitize loan files, account records, compliance documents, and customer correspondence.",
-                  use_cases: ["Loan document scanning", "Account record archives", "Compliance documentation", "Customer files"]
-                },
-              ].map((useCase, idx) => (
-                <div key={idx} className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
-                  <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6 text-purple-600">
-                    {useCase.icon}
-                  </div>
-                  <h3 className="text-2xl font-bold text-secondary mb-4">{useCase.industry}</h3>
-                  <p className="text-gray-700 mb-6">{useCase.description}</p>
-                  <div className="space-y-2">
-                    {useCase.use_cases.map((use_case, uidx) => (
-                      <div key={uidx} className="flex items-start gap-2">
-                        <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                        <span className="text-sm text-gray-600">{use_case}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* CTA - After Use Cases */}
-          <section className="mb-20">
-            <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-xl p-8 text-center text-white shadow-lg">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Ready to Start Your Digitization Project?
-              </h3>
-              <p className="text-lg text-white/90 mb-6 max-w-2xl mx-auto">
-                Get a free consultation and project quote. We handle projects of any size—from small archives to enterprise digitization.
-              </p>
-              <Link
-                href="/#contact"
-                className="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg"
-              >
-                Schedule Consultation
-                <ArrowIcon sx={{ fontSize: 20 }} />
-              </Link>
-            </div>
-          </section>
-
-          {/* How CannyScan Works */}
-          <section id="how-it-works" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8">
-              How CannyScan Document Scanning Works
-            </h2>
-
-            <div className="prose prose-lg max-w-none mb-12">
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Our professional scanning process ensures high-quality digitization with minimal disruption to your operations.
-                Whether you choose onsite or offsite scanning, we follow a proven workflow to deliver accurate, organized digital archives.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {[
-                {
-                  step: "Step 1",
-                  title: "Consultation & Assessment",
-                  description: "We assess your document volume, types, condition, and digitization requirements. Our team provides a detailed project plan with timeline and pricing.",
-                  icon: <AssessmentIcon sx={{ fontSize: 40 }} />,
-                },
-                {
-                  step: "Step 2",
-                  title: "Document Preparation & Indexing",
-                  description: "Documents are organized, indexed, and prepared for scanning. We remove staples, repair damaged pages, and create a tracking system for your files.",
-                  icon: <WorkflowIcon sx={{ fontSize: 40 }} />,
-                },
-                {
-                  step: "Step 3",
-                  title: "High-Quality Scanning & OCR",
-                  description: "Documents are scanned using professional equipment with quality control checks. OCR technology makes all text searchable and editable.",
-                  icon: <ScannerIcon sx={{ fontSize: 40 }} />,
-                },
-                {
-                  step: "Step 4",
-                  title: "Quality Control & Delivery",
-                  description: "Every scan is reviewed for quality. Digital files are organized, named according to your preferences, and delivered via secure cloud storage or physical media.",
-                  icon: <CheckIcon sx={{ fontSize: 40 }} />,
-                },
-              ].map((item, idx) => (
-                <div key={idx} className="bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 rounded-xl p-8">
-                  <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6 text-purple-600">
-                    {item.icon}
-                  </div>
-                  <div className="text-sm font-bold text-purple-600 mb-2">{item.step}</div>
-                  <h3 className="text-xl font-bold text-secondary mb-4">{item.title}</h3>
-                  <p className="text-gray-700 leading-relaxed">{item.description}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Technical Specifications */}
-          <section id="technical-specs" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8">
-              Technical Specifications & Capabilities
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white border-2 border-gray-200 rounded-xl p-8">
-                <h3 className="text-xl font-bold text-secondary mb-6 flex items-center gap-3">
-                  <ScannerIcon sx={{ fontSize: 28, color: '#7c3aed' }} />
-                  Scanning Equipment
-                </h3>
-                <div className="space-y-3">
-                  {[
-                    "Maximum Document Size: A0 (33.1\" × 46.8\")",
-                    "Minimum Document Size: Business card",
-                    "Flatbed Scanners: Up to 1200 DPI resolution",
-                    "Sheet-Fed Scanners: Up to 600 DPI, 120 pages/minute",
-                    "Large-Format Scanners: Technical drawings, blueprints",
-                    "Microfilm/Microfiche Readers: Digital conversion",
-                    "Book Scanners: Non-destructive scanning for bound materials",
-                  ].map((spec, idx) => (
-                    <div key={idx} className="flex items-start gap-2">
-                      <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-1 flex-shrink-0" />
-                      <span className="text-gray-700">{spec}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="bg-white border-2 border-gray-200 rounded-xl p-8">
-                <h3 className="text-xl font-bold text-secondary mb-6 flex items-center gap-3">
-                  <DocumentIcon sx={{ fontSize: 28, color: '#7c3aed' }} />
-                  Output Formats & Quality
-                </h3>
-                <div className="space-y-3">
-                  {[
-                    "Formats: PDF, PDF/A, TIFF, JPEG, PNG",
-                    "Searchable PDF: Full OCR with 99.9% accuracy",
-                    "Color: 24-bit color, 8-bit grayscale, or 1-bit B&W",
-                    "Compression: Optimized file sizes without quality loss",
-                    "Multi-page Documents: Automatically combined",
-                    "Metadata: Filename, date, keywords, custom fields",
-                    "Quality Assurance: Manual review of every scan",
-                  ].map((spec, idx) => (
-                    <div key={idx} className="flex items-start gap-2">
-                      <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-1 flex-shrink-0" />
-                      <span className="text-gray-700">{spec}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-8 bg-purple-50 border-l-4 border-purple-600 p-6 rounded-r-lg">
-              <p className="font-semibold text-secondary mb-2">Document Handling Capacity:</p>
-              <p className="text-gray-700">
-                We can handle projects of any size—from small 100-document archives to enterprise digitization projects
-                with millions of pages. Our equipment and processes scale to meet your timeline and quality requirements.
-              </p>
             </div>
           </section>
 
           {/* Integration with CannyECM */}
           <section id="integration" className="mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8">
-              Seamless Integration with CannyECM DMS
+              Seamless Integration with CannyECM
             </h2>
 
-            <div className="prose prose-lg max-w-none mb-8">
-              <p className="text-gray-700 text-lg leading-relaxed">
-                CannyScan professional scanning services integrate perfectly with <strong>CannyECM Document Management System</strong>.
-                Your scanned documents can be delivered directly into your CannyECM repository with proper indexing, metadata,
-                and folder organization—ready for immediate use.
-              </p>
-            </div>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="prose prose-lg max-w-none">
+                <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                  CannyScan integrates directly with <strong>CannyECM Enterprise Content Management</strong> system,
+                  enabling end-to-end document lifecycle management from paper to searchable digital archive.
+                </p>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Direct Upload to CannyECM",
-                  description: "Scanned documents are uploaded directly to your CannyECM repository with proper folder structure and permissions.",
-                  icon: <CloudIcon sx={{ fontSize: 40 }} />,
-                },
-                {
-                  title: "Automatic Metadata Tagging",
-                  description: "Document metadata, categories, and custom fields are automatically populated based on your indexing requirements.",
-                  icon: <WorkflowIcon sx={{ fontSize: 40 }} />,
-                },
-                {
-                  title: "OCR & Full-Text Search",
-                  description: "All scanned documents are OCR-processed, making them immediately searchable within CannyECM using keywords, dates, or metadata.",
-                  icon: <ScannerIcon sx={{ fontSize: 40 }} />,
-                },
-              ].map((feature, idx) => (
-                <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-purple-600 transition-all">
-                  <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6 text-purple-600">
-                    {feature.icon}
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckIcon sx={{ fontSize: 20, color: '#25d366' }} className="mt-0.5" />
+                    <span className="text-gray-700">Direct upload to CannyECM repository</span>
                   </div>
-                  <h3 className="text-xl font-bold text-secondary mb-4">{feature.title}</h3>
-                  <p className="text-gray-700">{feature.description}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-8 text-center">
-              <Link
-                href="/solutions/document-management"
-                className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-800 font-semibold text-lg"
-              >
-                Learn More About CannyECM DMS
-                <ArrowIcon sx={{ fontSize: 20 }} />
-              </Link>
-            </div>
-          </section>
-
-          {/* Customer Testimonials */}
-          <section id="testimonials" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              What Our Clients Say
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              {[
-                {
-                  name: "Rajesh Kumar",
-                  role: "Legal Compliance Manager",
-                  company: "Law Firm",
-                  testimonial: "CannyScan digitized 50,000 case files with incredible accuracy. The searchable PDFs have transformed how our team accesses legal documents. Project completed ahead of schedule.",
-                  rating: 5,
-                },
-                {
-                  name: "Priya Sharma",
-                  role: "Records Manager",
-                  company: "Healthcare Organization",
-                  testimonial: "Professional, secure, and HIPAA-compliant scanning of patient records. The team handled sensitive medical documents with care. We now have 30 years of records accessible digitally.",
-                  rating: 5,
-                },
-                {
-                  name: "Amit Patel",
-                  role: "Project Architect",
-                  company: "Engineering Firm",
-                  testimonial: "Large-format scanning of A0 blueprints exceeded our expectations. High resolution captures every detail. Integration with CannyECM made our entire archive searchable instantly.",
-                  rating: 5,
-                },
-              ].map((testimonial, idx) => (
-                <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-8">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <StarIcon key={i} sx={{ fontSize: 20, color: '#f59e0b' }} />
-                    ))}
+                  <div className="flex items-start gap-3">
+                    <CheckIcon sx={{ fontSize: 20, color: '#25d366' }} className="mt-0.5" />
+                    <span className="text-gray-700">Automatic metadata tagging and indexing</span>
                   </div>
-                  <p className="text-gray-700 mb-6 italic leading-relaxed">
-                    "{testimonial.testimonial}"
-                  </p>
-                  <div>
-                    <div className="font-bold text-secondary">{testimonial.name}</div>
-                    <div className="text-sm text-gray-600">{testimonial.role}</div>
-                    <div className="text-sm text-gray-500">{testimonial.company}</div>
+                  <div className="flex items-start gap-3">
+                    <CheckIcon sx={{ fontSize: 20, color: '#25d366' }} className="mt-0.5" />
+                    <span className="text-gray-700">Full-text search capability for scanned documents</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckIcon sx={{ fontSize: 20, color: '#25d366' }} className="mt-0.5" />
+                    <span className="text-gray-700">Workflow automation for document approval</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckIcon sx={{ fontSize: 20, color: '#25d366' }} className="mt-0.5" />
+                    <span className="text-gray-700">Audit trail continuity from scan to archive</span>
                   </div>
                 </div>
-              ))}
-            </div>
 
-            <div className="text-center bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
-              <div className="flex items-center justify-center gap-8 flex-wrap">
-                <div>
-                  <div className="text-2xl font-bold text-secondary">4.9/5.0</div>
-                  <div className="text-sm text-gray-600">Client Rating</div>
+                <div className="mt-8">
+                  <Link
+                    href="/solutions/document-management"
+                    className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-800 font-semibold"
+                  >
+                    Learn More About CannyECM
+                    <ArrowIcon sx={{ fontSize: 20 }} />
+                  </Link>
                 </div>
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <StarIcon key={i} sx={{ fontSize: 32, color: '#f59e0b' }} />
-                  ))}
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-secondary">10+</div>
-                  <div className="text-sm text-gray-600">Happy Clients</div>
+              </div>
+
+              <div className="bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl p-8">
+                <div className="text-center">
+                  <div className="flex justify-center gap-4 mb-6">
+                    <div className="w-20 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center">
+                      <ScannerIcon sx={{ fontSize: 40, color: '#9333ea' }} />
+                    </div>
+                    <div className="flex items-center">
+                      <ArrowIcon sx={{ fontSize: 32, color: '#6b7280' }} />
+                    </div>
+                    <div className="w-20 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center">
+                      <DocumentIcon sx={{ fontSize: 40, color: '#3170b5' }} />
+                    </div>
+                  </div>
+                  <p className="text-secondary font-semibold">CannyScan → CannyECM</p>
+                  <p className="text-sm text-gray-600 mt-2">Seamless document flow from scanning to archival</p>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* Security & Compliance */}
-          <section id="security" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8">
-              Security & Compliance Standards
-            </h2>
-
-            <div className="prose prose-lg max-w-none mb-8">
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Document security is our top priority. CannyScan follows strict protocols to protect your sensitive information
-                throughout the scanning process, from pickup to digital delivery.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              {[
-                {
-                  title: "Physical Security",
-                  features: [
-                    "Secure document transportation in locked containers",
-                    "24/7 monitored scanning facility with access controls",
-                    "Chain of custody tracking for every document",
-                    "Secure document destruction after scanning (if requested)",
-                    "Background-verified scanning technicians",
-                  ],
-                  icon: <SecurityIcon sx={{ fontSize: 40 }} />,
-                },
-                {
-                  title: "Digital Security",
-                  features: [
-                    "256-bit AES encryption for all digital files",
-                    "Secure cloud storage with redundant backups",
-                    "Password-protected file delivery",
-                    "Audit trails for all document access",
-                    "GDPR and data privacy compliance",
-                  ],
-                  icon: <CloudIcon sx={{ fontSize: 40 }} />,
-                },
-              ].map((category, idx) => (
-                <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-8">
-                  <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6 text-purple-600">
-                    {category.icon}
-                  </div>
-                  <h3 className="text-xl font-bold text-secondary mb-6">{category.title}</h3>
-                  <div className="space-y-3">
-                    {category.features.map((feature, fidx) => (
-                      <div key={fidx} className="flex items-start gap-2">
-                        <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-1 flex-shrink-0" />
-                        <span className="text-gray-700">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="bg-purple-50 border-l-4 border-purple-600 p-6 rounded-r-lg">
-              <p className="font-semibold text-secondary mb-2">Industry Compliance:</p>
-              <p className="text-gray-700">
-                We maintain compliance with industry-specific regulations including HIPAA (healthcare), GLBA (financial services),
-                and SOC 2 standards. Confidentiality agreements and custom security protocols available for sensitive projects.
-              </p>
-            </div>
-          </section>
-
-          {/* Author Bio */}
-          <section id="author" className="mb-20">
-            <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
-              <div className="flex items-start gap-6">
-                <div className="w-24 h-24 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-3xl font-bold text-purple-600">C</span>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-secondary mb-2">About the Author</h3>
-                  <p className="text-lg font-semibold text-purple-600 mb-4">
-                    Christopher - Head of Technical Department & Investor
-                  </p>
-                  <p className="text-gray-700 leading-relaxed mb-4">
-                    Christopher leads CannyMinds Technology Solutions' technical innovation and product development.
-                    As Head of the Technical Department and a key investor, he oversees the design and implementation
-                    of enterprise document management solutions, including CannyScan professional scanning services.
-                    With deep expertise in digitization workflows, OCR technology, and document security standards,
-                    Christopher ensures CannyScan delivers industry-leading accuracy and compliance for organizations
-                    transforming their paper archives into searchable digital assets.
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    <strong>Last Updated:</strong> {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* FAQ Section */}
+          {/* FAQ */}
           <section id="faq" className="mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
               Frequently Asked Questions
             </h2>
 
-            <div className="max-w-4xl mx-auto space-y-6">
+            <div className="space-y-6 max-w-4xl mx-auto">
               {[
                 {
-                  question: "What is CannyScan document scanning service?",
-                  answer: "CannyScan is a professional document scanning and digitization service that converts paper documents into searchable digital files. We handle all document types—from standard office papers to large-format technical drawings, microfilm, books, and photographs—with high-quality scanning equipment and OCR technology.",
+                  q: "What is CannyScan?",
+                  a: "CannyScan is a professional document digitization solution that provides image enhancement, OCR extraction, barcode reading, quality control workflows, and comprehensive reporting for converting paper documents into searchable digital assets."
                 },
                 {
-                  question: "What types of documents can you scan?",
-                  answer: "We scan all document types: standard office documents, legal files, medical records, blueprints (up to A0 size), technical manuals, microfilm/microfiche, bound books, photographs, maps, and historical documents. Our equipment handles sizes from business cards to large-format engineering drawings.",
+                  q: "What image enhancement features does CannyScan offer?",
+                  a: "CannyScan provides image cleansing with auto crop, punch hole removal, and edge deduction. It also includes automatic document separation with blank page detection, auto file name creation, and image compression for optimized storage."
                 },
                 {
-                  question: "Do you offer onsite or offsite scanning?",
-                  answer: "Both. Offsite scanning is ideal for large projects where documents are transported to our secure facility. Onsite scanning is available for organizations that cannot remove documents from their premises due to security or compliance requirements. Both options include secure cloud hosting.",
+                  q: "Does CannyScan support OCR and barcode extraction?",
+                  a: "Yes. CannyScan includes barcode extraction, OCR (Optical Character Recognition) extraction, and data validation capabilities to convert scanned documents into searchable, indexed digital files."
                 },
                 {
-                  question: "What is the accuracy of your OCR technology?",
-                  answer: "Our OCR (Optical Character Recognition) achieves 99.9% accuracy on clear, well-printed documents. All scanned text becomes searchable and editable. We use advanced OCR software that handles multiple languages, fonts, and document layouts with manual quality control reviews.",
+                  q: "How does CannyScan handle quality control?",
+                  a: "CannyScan offers both manual and automatic verification of scanned information and documents. It includes review and comments functionality, and a structured approve-reject workflow to ensure scanning quality meets organizational standards."
                 },
                 {
-                  question: "How long does a scanning project take?",
-                  answer: "Project timelines depend on document volume and complexity. Small projects (1,000-5,000 pages) typically complete within 5-7 business days. Large enterprise projects (100,000+ pages) are planned with phased delivery schedules. Rush services available for urgent requirements.",
+                  q: "What reporting capabilities does CannyScan provide?",
+                  a: "CannyScan provides reports on total records scanned, records exported vs. not exported, and comprehensive audit reports for compliance and tracking purposes."
                 },
                 {
-                  question: "What formats do you deliver scanned documents in?",
-                  answer: "We deliver documents in PDF, searchable PDF (with OCR), PDF/A (archival standard), TIFF, JPEG, or PNG formats. Files are organized according to your naming conventions and folder structure. All formats include metadata tagging for easy retrieval.",
+                  q: "Can CannyScan integrate with CannyECM?",
+                  a: "Yes. CannyScan integrates seamlessly with CannyECM Enterprise Content Management system. Digitized documents can be directly uploaded to CannyECM with proper metadata, indexing, and folder organization for immediate use."
                 },
                 {
-                  question: "Is my data secure during the scanning process?",
-                  answer: "Absolutely. We follow strict security protocols including secure transportation, 24/7 monitored facilities, chain of custody tracking, and background-verified staff. Digital files are encrypted with 256-bit AES encryption. We maintain compliance with HIPAA, GLBA, and GDPR standards.",
-                },
-                {
-                  question: "Can scanned documents be integrated with CannyECM DMS?",
-                  answer: "Yes. CannyScan integrates seamlessly with CannyECM Document Management System. Scanned files are uploaded directly to your CannyECM repository with proper indexing, metadata, and folder organization—ready for immediate use with full-text search capabilities.",
-                },
-                {
-                  question: "What happens to my original documents after scanning?",
-                  answer: "You decide. We can return original documents to you via secure transportation, store them in our climate-controlled facility, or provide secure destruction services with certificates of destruction. All options maintain chain of custody documentation.",
-                },
-                {
-                  question: "How much does professional document scanning cost?",
-                  answer: "Pricing depends on document volume, type, complexity, and delivery timeline. Standard office documents typically range from ₹0.50-₹2 per page. Large-format, microfilm, and specialty scanning have custom pricing. Contact us for a free project assessment and detailed quote.",
-                },
-                {
-                  question: "Do you handle sensitive or confidential documents?",
-                  answer: "Yes. We routinely handle sensitive legal, medical, financial, and government documents. Our team signs confidentiality agreements, and we implement custom security protocols for high-sensitivity projects. HIPAA-compliant processes available for healthcare organizations.",
-                },
-                {
-                  question: "Can you scan damaged or fragile documents?",
-                  answer: "Yes. We have specialized equipment and trained technicians for handling delicate, aged, or damaged documents. This includes fragile historical papers, brittle microfilm, torn pages, and bound materials. We assess document condition and recommend appropriate scanning methods.",
+                  q: "What happens if a scanned document fails quality check?",
+                  a: "Documents that fail quality check are flagged for re-scanning. The rejection workflow allows reviewers to add comments explaining the issue, and documents are returned to the scanning stage for correction."
                 },
               ].map((faq, idx) => (
-                <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-purple-600 transition-all">
-                  <h3 className="text-lg font-bold text-secondary mb-3 flex items-start gap-3">
-                    <span className="text-purple-600 flex-shrink-0">Q{idx + 1}.</span>
-                    <span>{faq.question}</span>
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed pl-8">{faq.answer}</p>
+                <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-purple-400 transition-colors">
+                  <h3 className="font-bold text-lg text-secondary mb-3">{faq.q}</h3>
+                  <p className="text-gray-700 leading-relaxed">{faq.a}</p>
                 </div>
               ))}
             </div>
           </section>
 
           {/* Related Products */}
-          <section id="related" className="mb-20">
+          <section className="mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              Related CannyMinds Products
+              Related Solutions
             </h2>
 
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
                   name: "CannyECM",
-                  tagline: "Document Management System",
-                  description: "Complete DMS with digital asset management, automated workflows, and 80% OCR accuracy. Manage scanned documents with version control and advanced search.",
+                  title: "Enterprise Content Management",
+                  description: "FDA 21 CFR Part 11 compliant ECM for SOPs, STPs, COAs, change control, and QMS integration.",
+                  features: ["Document Control", "Approval Workflows", "QMS Integration", "Audit Trails"],
                   link: "/solutions/document-management",
-                  color: "blue",
+                  color: "from-blue-50 to-white border-blue-200"
+                },
+                {
+                  name: "CannyRMS",
+                  title: "Physical Records Management",
+                  description: "Web-based system to digitize, control, and optimize physical file and storage management.",
+                  features: ["Rack Optimization", "Retrieval Tracking", "Audit Compliance", "Billing Support"],
+                  link: "/solutions/rms",
+                  color: "from-orange-50 to-white border-orange-200"
                 },
                 {
                   name: "CannyHR",
-                  tagline: "HR & Payroll Management",
-                  description: "Hire-to-Retire HRMS with payroll, attendance tracking, leave management, and 350+ biometric integrations. Digitize employee records and automate HR workflows.",
+                  title: "HR Management System",
+                  description: "Comprehensive HR solution for employee management, payroll, and attendance tracking.",
+                  features: ["Employee Records", "Payroll Automation", "Leave Management", "Performance Reviews"],
                   link: "/solutions/hr-management",
-                  color: "green",
-                },
-                {
-                  name: "CannyTrack",
-                  tagline: "Productivity Monitoring",
-                  description: "Workforce productivity tracking with activity monitoring, screenshots, and data loss prevention. Monitor remote teams with consent-based tracking.",
-                  link: "/solutions/tracking-system",
-                  color: "orange",
+                  color: "from-green-50 to-white border-green-200"
                 },
               ].map((product, idx) => (
                 <Link
                   key={idx}
                   href={product.link}
-                  className={`bg-gradient-to-br from-${product.color}-50 to-white border-2 border-${product.color}-200 rounded-xl p-8 hover:border-${product.color}-600 transition-all group`}
+                  className={`bg-gradient-to-br ${product.color} border-2 rounded-xl p-8 hover:shadow-lg transition-all group block`}
                 >
-                  <h3 className="text-2xl font-bold text-secondary mb-2">{product.name}</h3>
-                  <p className="text-sm font-semibold text-gray-600 mb-4">{product.tagline}</p>
+                  <h3 className="text-2xl font-bold text-secondary mb-2 group-hover:text-purple-600 transition-colors">
+                    {product.name}
+                  </h3>
+                  <p className="text-sm font-semibold text-purple-600 mb-4">{product.title}</p>
                   <p className="text-gray-700 mb-6 leading-relaxed">{product.description}</p>
-                  <div className={`inline-flex items-center gap-2 text-${product.color}-600 font-semibold group-hover:gap-3 transition-all`}>
+
+                  <div className="space-y-2 mb-6">
+                    {product.features.map((feature, fidx) => (
+                      <div key={fidx} className="flex items-start gap-2">
+                        <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
+                        <span className="text-sm text-gray-600">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="flex items-center gap-2 text-purple-600 font-semibold group-hover:gap-3 transition-all">
                     Learn More
-                    <ArrowIcon sx={{ fontSize: 20 }} />
+                    <ArrowIcon sx={{ fontSize: 18 }} />
                   </div>
                 </Link>
               ))}
@@ -1189,42 +851,43 @@ export default function CannyScanProductPage() {
           </section>
 
           {/* Final CTA */}
-          <section id="get-started" className="mb-20">
-            <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-xl p-12 text-center text-white shadow-2xl">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Digitize Your Document Archive?
-              </h2>
-              <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-                Transform your paper documents into searchable digital assets. Get a free consultation and project quote
-                for professional scanning services. No project too large or too small.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/#contact"
-                  className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg inline-flex items-center justify-center gap-2"
-                >
-                  Get Free Consultation
-                  <ArrowIcon sx={{ fontSize: 20 }} />
-                </Link>
-                <Link
-                  href="/#contact"
-                  className="bg-purple-700 text-white border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-purple-800 transition-all inline-flex items-center justify-center gap-2"
-                >
-                  Request Project Quote
-                  <DocumentIcon sx={{ fontSize: 20 }} />
-                </Link>
-              </div>
-              <p className="text-sm text-white/70 mt-6">
-                Trusted by 10+ organizations for secure, accurate document scanning
-              </p>
+          <section id="get-started" className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl p-12 text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Ready to Digitize Your Documents?
+            </h2>
+            <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto">
+              Transform paper documents into searchable digital assets with CannyScan.
+              Image enhancement, OCR extraction, quality control, and seamless DMS integration.
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+              <Link
+                href="/#contact"
+                className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg inline-flex items-center gap-2"
+              >
+                Request Demo
+                <ArrowIcon sx={{ fontSize: 20 }} />
+              </Link>
+              <Link
+                href="/#contact"
+                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all"
+              >
+                Contact Sales
+              </Link>
+            </div>
+
+            <div className="flex items-center justify-center gap-6 text-sm text-white/80 flex-wrap">
+              <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 18 }} /> Image Enhancement</span>
+              <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 18 }} /> OCR & Barcode</span>
+              <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 18 }} /> CannyECM Integration</span>
             </div>
           </section>
 
         </article>
 
-        <Footer />
-
       </div>
+
+      <Footer />
     </>
   );
 }

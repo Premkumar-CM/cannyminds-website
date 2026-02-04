@@ -206,13 +206,13 @@ export default function AboutPage() {
                   Founded in <strong>2003</strong>, CannyMinds Technology Solutions began with a simple mission: to help businesses harness the power of technology to achieve their goals. What started as a small IT services company in Chennai, India, has grown into a global technology solutions provider with offices across four countries.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                  Over the past two decades, we've evolved from traditional IT consulting to become a leader in <strong>digital transformation, AI-powered automation, and enterprise software development</strong>. Our flagship products—CannyECM, CannyHR, CannyScan, and CannyTrack—are trusted by organizations worldwide to streamline operations, enhance productivity, and secure sensitive data.
+                  Over the past two decades, we've evolved from traditional IT consulting to become a leader in <strong>digital transformation, AI-powered automation, and enterprise software development</strong>. Our flagship products CannyECM, CannyHR, CannyScan, and CannyTrack are trusted by organizations worldwide to streamline operations, enhance productivity, and secure sensitive data.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
                   Today, CannyMinds serves clients across <strong>India, USA, Nigeria, and UAE</strong>, delivering world-class solutions backed by ISO 27001 and ISO 9001:2015 certifications. Our team of 50+ technology experts works tirelessly to ensure every client achieves measurable business outcomes from their technology investments.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  As we look to the future, we remain committed to innovation, client success, and excellence in everything we do. We're not just building software—we're building lasting partnerships that transform businesses.
+                  As we look to the future, we remain committed to innovation, client success, and excellence in everything we do. We're not just building software we're building lasting partnerships that transform businesses.
                 </p>
               </div>
             </div>

@@ -91,43 +91,43 @@ export default function ServicePageLayout({
                 </nav>
 
                 {/* Hero Section */}
-                <section className="bg-gradient-to-br from-primary/5 via-white to-secondary/5 py-12 md:py-20 lg:py-24 relative overflow-hidden">
+                <section className="bg-gradient-to-br from-primary/5 via-white to-secondary/5 py-8 relative overflow-hidden">
                     {/* Background Pattern */}
                     <div className="absolute inset-0 opacity-10 bg-[url('/grid.svg')] z-0"></div>
 
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                        <div className="grid lg:grid-cols-2 gap-12 items-center">
+                        <div className="grid lg:grid-cols-2 gap-8 items-center">
                             <div>
-                                <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold mb-6 border border-blue-100 uppercase tracking-wider">
-                                    <Star sx={{ fontSize: 16 }} />
+                                <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full text-xs font-bold mb-4 border border-blue-100 uppercase tracking-wider">
+                                    <Star sx={{ fontSize: 14 }} />
                                     Enterprise Grade Solution
                                 </div>
 
-                                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-6 leading-tight">
+                                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary mb-4 leading-tight">
                                     {title}
                                 </h1>
 
-                                <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
+                                <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed max-w-2xl">
                                     {subtitle}
                                 </p>
 
-                                <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                                <div className="flex flex-col sm:flex-row gap-3 mb-4">
                                     <Link
                                         href="/contact"
-                                        className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30 inline-flex items-center justify-center gap-2 group"
+                                        className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-all shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2 group text-sm"
                                     >
                                         Get Started
-                                        <ArrowForward sx={{ fontSize: 20 }} className="group-hover:translate-x-1 transition-transform" />
+                                        <ArrowForward sx={{ fontSize: 18 }} className="group-hover:translate-x-1 transition-transform" />
                                     </Link>
                                     <Link
                                         href="#features"
-                                        className="bg-white text-secondary border border-gray-200 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-all inline-flex items-center justify-center gap-2 hover:border-gray-300"
+                                        className="bg-white text-secondary border border-gray-200 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-all inline-flex items-center justify-center gap-2 hover:border-gray-300 text-sm"
                                     >
                                         Learn More
                                     </Link>
                                 </div>
 
-                                <div className="flex items-center gap-6 text-sm text-gray-500 font-medium">
+                                <div className="flex items-center gap-4 text-sm text-gray-500 font-medium">
                                     <span className="flex items-center gap-1.5"><CheckCircle sx={{ fontSize: 16, color: '#25d366' }} /> No Credit Card</span>
                                     <span className="flex items-center gap-1.5"><CheckCircle sx={{ fontSize: 16, color: '#25d366' }} /> Free Consultation</span>
                                 </div>

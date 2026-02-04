@@ -7,12 +7,12 @@ import { Metadata } from "next";
  */
 
 export const enhancedSiteConfig = {
-  name: "CannyMinds Technology Solutions",
-  tagline: "Leading Digital Transformation Partner | AI & Automation Experts",
+  name: "CannyMinds",
+  tagline: "Enterprise Software & AI Experts",
 
-  // Primary description optimized for featured snippets
+  // Primary description optimized for featured snippets (Shortened < 160 chars)
   description:
-    "CannyMinds is a trusted IT solutions provider specializing in digital transformation, AI automation, and enterprise software development. ISO 9001:2015, ISO 15489:2016, ISO 22716:2007, and FDA 21 CFR Part 11 certified. Serving clients across India, USA, and Nigeria with proven expertise.",
+    "CannyMinds delivers ISO-certified digital transformation, AI automation, and enterprise software solutions. Serving global clients in India, USA, and Nigeria.",
 
   // Extended description for better keyword coverage
   longDescription:

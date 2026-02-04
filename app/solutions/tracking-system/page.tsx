@@ -176,56 +176,56 @@ export default function CannyTrackProductPage() {
         </nav>
 
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-orange-50 via-white to-orange-50 py-16">
+        <section className="bg-gradient-to-br from-orange-50 via-white to-orange-50 py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
 
               <div>
-                <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                  <StarIcon sx={{ fontSize: 18 }} />
+                <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-3 py-1.5 rounded-full text-xs font-semibold mb-4">
+                  <StarIcon sx={{ fontSize: 16 }} />
                   Consent-Based Productivity Monitoring
                 </div>
 
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-6 leading-tight">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary mb-4 leading-tight">
                   Boost Team Productivity with <span className="text-orange-600">CannyTrack</span>
                 </h1>
 
-                <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-700 mb-6 leading-relaxed">
                   Comprehensive workforce monitoring solution providing real-time visibility into remote employee activities.
                   Track productivity with <strong>consent-based monitoring</strong>, activity analytics, optional screenshots,
-                  app/URL tracking, and data loss prevention—all while maintaining transparency and employee privacy.
+                  app/URL tracking, and data loss prevention all while maintaining transparency and employee privacy.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <div className="flex flex-col sm:flex-row gap-3 mb-4">
                   <Link
                     href="#get-started"
-                    className="bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
+                    className="bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-all shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2 text-sm"
                   >
                     Request Demo
-                    <ArrowIcon sx={{ fontSize: 20 }} />
+                    <ArrowIcon sx={{ fontSize: 18 }} />
                   </Link>
                   <Link
                     href="#features"
-                    className="bg-white text-orange-600 border-2 border-orange-600 px-8 py-4 rounded-lg font-semibold hover:bg-orange-50 transition-all inline-flex items-center justify-center gap-2"
+                    className="bg-white text-orange-600 border-2 border-orange-600 px-6 py-3 rounded-lg font-semibold hover:bg-orange-50 transition-all inline-flex items-center justify-center gap-2 text-sm"
                   >
                     See Features
-                    <VisibilityIcon sx={{ fontSize: 20 }} />
+                    <VisibilityIcon sx={{ fontSize: 18 }} />
                   </Link>
                 </div>
 
+                <div className="flex items-center gap-4 text-sm text-gray-600 flex-wrap mb-4">
+                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} /> Consent-Based</span>
+                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} /> Real-Time Analytics</span>
+                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} /> Offline Support</span>
+                </div>
+
                 {/* Social Share */}
-                <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-3">
                   <SocialShare
                     title="CannyTrack - Productivity & Workforce Monitoring"
                     description="Transparent productivity monitoring with activity tracking, screenshots, and data loss prevention for remote teams. Consent-based, real-time analytics with offline support."
                   />
-                  <span className="text-sm text-gray-600">Share this product</span>
-                </div>
-
-                <div className="flex items-center gap-6 text-sm text-gray-600 flex-wrap">
-                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 18, color: '#25d366' }} /> Consent-Based</span>
-                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 18, color: '#25d366' }} /> Real-Time Analytics</span>
-                  <span className="flex items-center gap-2"><CheckIcon sx={{ fontSize: 18, color: '#25d366' }} /> Offline Support</span>
+                  <span className="text-xs text-gray-500">Share this product</span>
                 </div>
               </div>
 
@@ -310,7 +310,7 @@ export default function CannyTrackProductPage() {
                 <strong>CannyTrack</strong> is a comprehensive workforce management and productivity monitoring solution designed to
                 provide managers with real-time visibility into remote employee activities while maintaining transparency and consent.
                 The platform combines <strong>activity tracking, optional screenshot capture, app/URL monitoring, and data loss
-                prevention</strong> to help organizations optimize workforce utilization, identify productivity bottlenecks, and protect
+                  prevention</strong> to help organizations optimize workforce utilization, identify productivity bottlenecks, and protect
                 sensitive data.
               </p>
 
@@ -404,7 +404,7 @@ export default function CannyTrackProductPage() {
               <p className="text-gray-700 text-lg leading-relaxed">
                 CannyTrack provides <strong>real-time visibility</strong> into employee activity with mouse and keyboard tracking,
                 active/idle time detection, and work status monitoring. Managers see live dashboards showing who's working,
-                who's idle, and who's on break—enabling better resource allocation and productivity management.
+                who's idle, and who's on break enabling better resource allocation and productivity management.
               </p>
             </div>
 
@@ -638,73 +638,6 @@ export default function CannyTrackProductPage() {
                   </div>
                 </div>
               ))}
-            </div>
-          </section>
-
-          {/* Customer Testimonials */}
-          <section id="testimonials" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              What Our Clients Say
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              {[
-                {
-                  name: "Rohan Khanna",
-                  role: "Operations Director",
-                  company: "IT Services Company",
-                  testimonial: "CannyTrack gave us visibility into our 200+ remote developers without being intrusive. The consent-based approach maintained team morale while improving project delivery timelines by 25%. Data loss prevention caught two potential IP leaks.",
-                  rating: 5,
-                },
-                {
-                  name: "Meera Patel",
-                  role: "Compliance Officer",
-                  company: "Financial Services Firm",
-                  testimonial: "We needed GDPR-compliant monitoring for our customer data team. CannyTrack's audit trails and activity logs simplified our compliance reporting. The screenshot blurring protects sensitive customer information perfectly.",
-                  rating: 5,
-                },
-                {
-                  name: "Arjun Reddy",
-                  role: "CEO",
-                  company: "BPO Operations",
-                  testimonial: "Client billing accuracy improved dramatically with CannyTrack's time tracking. We now have screenshot evidence for every billable hour. The productivity analytics helped us identify top performers and optimize our workforce allocation.",
-                  rating: 5,
-                },
-              ].map((testimonial, idx) => (
-                <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-8">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <StarIcon key={i} sx={{ fontSize: 20, color: '#f59e0b' }} />
-                    ))}
-                  </div>
-                  <p className="text-gray-700 mb-6 italic leading-relaxed">
-                    "{testimonial.testimonial}"
-                  </p>
-                  <div>
-                    <div className="font-bold text-secondary">{testimonial.name}</div>
-                    <div className="text-sm text-gray-600">{testimonial.role}</div>
-                    <div className="text-sm text-gray-500">{testimonial.company}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-center bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
-              <div className="flex items-center justify-center gap-8 flex-wrap">
-                <div>
-                  <div className="text-2xl font-bold text-secondary">4.9/5.0</div>
-                  <div className="text-sm text-gray-600">Client Rating</div>
-                </div>
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <StarIcon key={i} sx={{ fontSize: 32, color: '#f59e0b' }} />
-                  ))}
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-secondary">10+</div>
-                  <div className="text-sm text-gray-600">Happy Clients</div>
-                </div>
-              </div>
             </div>
           </section>
 

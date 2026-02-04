@@ -98,7 +98,7 @@ const useCases = [
             "Slow checkout processes"
         ],
         solutions: [
-            "Omnichannel retail management system",
+            "Record management system",
             "AI-powered loyalty & personalization engine",
             "Mobile POS for faster checkout"
         ]
