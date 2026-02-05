@@ -39,7 +39,7 @@ const cardVariants = {
       damping: 15,
     },
   },
-};
+} as const;
 
 const iconVariants = {
   hidden: { scale: 0, opacity: 0 },
@@ -52,7 +52,7 @@ const iconVariants = {
       delay: 0.1,
     },
   },
-};
+} as const;
 
 const featureVariants = {
   hidden: { opacity: 0, x: -10 },
@@ -150,9 +150,10 @@ export default function ProductsNew() {
                 key={product.name}
                 variants={cardVariants}
                 whileHover={{
-                  scale: 1.02,
-                  y: -8,
-                  transition: { duration: 0.2 },
+                  scale: 1.05,
+                  y: -12,
+                  boxShadow: "0 25px 50px -12px rgba(37, 99, 235, 0.15)",
+                  transition: { type: "spring", stiffness: 300, damping: 20 },
                 }}
               >
                 <Link href={product.link}>

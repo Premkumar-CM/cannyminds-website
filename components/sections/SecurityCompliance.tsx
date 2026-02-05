@@ -38,7 +38,7 @@ const cardVariants = {
       damping: 15,
     },
   },
-};
+} as const;
 
 const iconVariants = {
   hidden: { scale: 0, rotate: -180 },
@@ -52,7 +52,7 @@ const iconVariants = {
       delay: 0.2,
     },
   },
-};
+} as const;
 
 const securityFeatures = [
   {
@@ -143,7 +143,15 @@ export default function SecurityCompliance() {
                 <div className="flex items-start gap-4">
                   <motion.div
                     variants={iconVariants}
-                    whileHover={{ rotate: 10, scale: 1.1 }}
+                    animate={{
+                      y: [0, -5, 0],
+                    }}
+                    transition={{
+                      duration: 3 + Math.random() * 2,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                    whileHover={{ rotate: 10, scale: 1.15 }}
                     className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0"
                   >
                     <IconComponent className="text-white" sx={{ fontSize: 24 }} />

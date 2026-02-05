@@ -39,7 +39,7 @@ const cardVariants = {
       damping: 14,
     },
   },
-};
+} as const;
 
 const textRevealVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -49,10 +49,10 @@ const textRevealVariants = {
     transition: {
       delay: i * 0.15,
       duration: 0.5,
-      ease: "easeOut",
+      ease: "easeOut" as const,
     },
   }),
-};
+} as const;
 
 const supportFeatures = [
   {
@@ -164,10 +164,10 @@ export default function SupportHighlights() {
                     key={feature.title}
                     variants={cardVariants}
                     whileHover={{
-                      scale: 1.03,
-                      y: -5,
-                      boxShadow: "0 10px 30px rgba(0,0,0,0.12)",
-                      transition: { duration: 0.2 },
+                      scale: 1.05,
+                      y: -10,
+                      boxShadow: "0 20px 40px rgba(0,0,0,0.12)",
+                      transition: { type: "spring", stiffness: 300, damping: 20 },
                     }}
                     className="bg-white rounded-xl p-5 border border-gray-200 hover:border-primary transition-colors cursor-pointer"
                   >

@@ -47,6 +47,26 @@ const faqs = [
   },
 ];
 
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 100, damping: 15 }
+  },
+} as const;
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2
+    }
+  }
+} as const;
+
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
@@ -71,58 +91,63 @@ export default function FAQ() {
           </div>
         </RevealOnScroll>
 
-        <div className="max-w-4xl mx-auto">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          className="max-w-4xl mx-auto"
+        >
           {faqs.map((faq, index) => (
-            <RevealOnScroll key={index} delay={index * 0.1}>
-              <motion.div
-                className="mb-3 sm:mb-4 bg-white rounded-lg sm:rounded-xl shadow-md border border-gray-100 overflow-hidden"
-                initial={false}
+            <motion.div
+              key={index}
+              variants={itemVariants}
+              className="mb-3 sm:mb-4 bg-white rounded-lg sm:rounded-xl shadow-md border border-gray-100 overflow-hidden"
+              initial={false}
+            >
+              <button
+                onClick={() => toggleFAQ(index)}
+                className="w-full text-left p-4 sm:p-6 flex items-center justify-between transition-colors hover:bg-gray-50"
+                aria-expanded={openIndex === index}
               >
-                <button
-                  onClick={() => toggleFAQ(index)}
-                  className="w-full text-left p-4 sm:p-6 flex items-center justify-between transition-colors hover:bg-gray-50"
-                  aria-expanded={openIndex === index}
-                >
-                  <span className="text-sm sm:text-base md:text-lg font-semibold text-secondary pr-4 sm:pr-8">
-                    {faq.question}
-                  </span>
-                  <motion.div
-                    animate={{ rotate: openIndex === index ? 180 : 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="flex-shrink-0"
-                  >
-                    <svg
-                      className="w-5 h-5 sm:w-6 sm:h-6 text-primary"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                  </motion.div>
-                </button>
-
+                <span className="text-sm sm:text-base md:text-lg font-semibold text-secondary pr-4 sm:pr-8">
+                  {faq.question}
+                </span>
                 <motion.div
-                  initial={false}
-                  animate={{
-                    height: openIndex === index ? "auto" : 0,
-                    opacity: openIndex === index ? 1 : 0,
-                  }}
-                  transition={{ duration: 0.3, ease: "easeInOut" }}
-                  className="overflow-hidden"
+                  animate={{ rotate: openIndex === index ? 180 : 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="flex-shrink-0"
                 >
-                  <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2">
-                    <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{faq.answer}</p>
-                  </div>
+                  <svg
+                    className="w-5 h-5 sm:w-6 sm:h-6 text-primary"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M19 9l-7 7-7-7"></path>
+                  </svg>
                 </motion.div>
-              </motion.div>
-            </RevealOnScroll>
-          ))}
-        </div>
+              </button>
 
+              <motion.div
+                initial={false}
+                animate={{
+                  height: openIndex === index ? "auto" : 0,
+                  opacity: openIndex === index ? 1 : 0,
+                }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="overflow-hidden"
+              >
+                <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{faq.answer}</p>
+                </div>
+              </motion.div>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );

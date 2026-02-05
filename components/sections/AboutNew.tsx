@@ -39,7 +39,7 @@ const statCardVariants = {
       damping: 12,
     },
   },
-};
+} as const;
 
 const certContainerVariants = {
   hidden: { opacity: 0 },
@@ -57,18 +57,20 @@ const certCardVariants = {
     opacity: 0,
     scale: 0.8,
     rotateY: -30,
+    y: 20
   },
   visible: {
     opacity: 1,
     scale: 1,
     rotateY: 0,
+    y: 0,
     transition: {
       type: "spring" as const,
-      stiffness: 80,
+      stiffness: 100,
       damping: 12,
     },
   },
-};
+} as const;
 
 const stats = [
   { value: "20+", label: "Years of Excellence", icon: GrowthIcon, color: "text-blue-600" },

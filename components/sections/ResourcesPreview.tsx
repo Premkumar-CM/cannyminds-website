@@ -38,7 +38,7 @@ const cardVariants = {
       damping: 15,
     },
   },
-};
+} as const;
 
 const titleVariants = {
   hidden: { opacity: 0, y: 30, scale: 0.95 },
@@ -51,7 +51,7 @@ const titleVariants = {
       ease: [0.22, 1, 0.36, 1],
     },
   },
-};
+} as const;
 
 const resources = [
   {
@@ -130,9 +130,10 @@ export default function ResourcesPreview() {
                 key={resource.title}
                 variants={cardVariants}
                 whileHover={{
-                  scale: 1.02,
-                  y: -8,
-                  transition: { duration: 0.2 },
+                  scale: 1.04,
+                  y: -12,
+                  boxShadow: "0 20px 40px rgba(0,0,0,0.12)",
+                  transition: { type: "spring", stiffness: 300, damping: 20 },
                 }}
               >
                 <Link href={resource.link} className="block group h-full">

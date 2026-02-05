@@ -45,7 +45,7 @@ export default function Navigation() {
   const [expandedMobileDepartment, setExpandedMobileDepartment] = useState<string | null>(null);
   const [expandedMobileService, setExpandedMobileService] = useState<string | null>(null);
 
-  const [activeMenuTab, setActiveMenuTab] = useState<'industry' | 'department' | 'service'>('industry');
+  const [activeMenuTab, setActiveMenuTab] = useState<'industry' | 'department' | 'service' | 'solutions'>('industry');
   const [hoveredIndustry, setHoveredIndustry] = useState<string | null>('financial-services');
   const [hoveredDepartment, setHoveredDepartment] = useState<string | null>('human-resources');
   const [hoveredService, setHoveredService] = useState<string | null>('document-management');
