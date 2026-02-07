@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server';
 // Nodemailer code (commented out - uncomment if you want to switch back to SMTP)
 // import nodemailer from 'nodemailer';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Simple in-memory rate limiting (for production, use Redis or similar)
 const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
@@ -55,6 +55,7 @@ export async function POST(request: Request) {
       );
     }
 
+    /*
     // Basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
@@ -102,75 +103,7 @@ export async function POST(request: Request) {
       to: [process.env.COMPANY_EMAIL],
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
-      html: `
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <style>
-              body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-              .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-              .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px 8px 0 0; }
-              .content { background: #f9f9f9; padding: 30px; border-radius: 0 0 8px 8px; }
-              .field { margin-bottom: 20px; }
-              .label { font-weight: bold; color: #667eea; margin-bottom: 5px; }
-              .value { background: white; padding: 12px; border-radius: 4px; border-left: 3px solid #667eea; }
-              .footer { text-align: center; margin-top: 20px; color: #666; font-size: 12px; }
-            </style>
-          </head>
-          <body>
-            <div class="container">
-              <div class="header">
-                <h2 style="margin: 0;">🔔 New Contact Form Submission</h2>
-              </div>
-              <div class="content">
-                <div class="field">
-                  <div class="label">👤 Name</div>
-                  <div class="value">${name}</div>
-                </div>
-                
-                <div class="field">
-                  <div class="label">📧 Email</div>
-                  <div class="value">${email}</div>
-                </div>
-                
-                ${phone ? `
-                <div class="field">
-                  <div class="label">📱 Phone</div>
-                  <div class="value">${phone}</div>
-                </div>
-                ` : ''}
-                
-                ${company ? `
-                <div class="field">
-                  <div class="label">🏢 Company</div>
-                  <div class="value">${company}</div>
-                </div>
-                ` : ''}
-                
-                ${service ? `
-                <div class="field">
-                  <div class="label">🎯 Service Interested In</div>
-                  <div class="value">${service}</div>
-                </div>
-                ` : ''}
-                
-                <div class="field">
-                  <div class="label">💬 Message</div>
-                  <div class="value">${message.replace(/\n/g, '<br>')}</div>
-                </div>
-                
-                <div class="footer">
-                  <p>This email was sent from the CannyMinds website contact form.</p>
-                  <p>Submitted on ${new Date().toLocaleString('en-US', { 
-                    dateStyle: 'full', 
-                    timeStyle: 'short' 
-                  })}</p>
-                </div>
-              </div>
-            </div>
-          </body>
-        </html>
-      `,
+      html: `...html content...`,
     });
 
     if (error) {
@@ -180,12 +113,16 @@ export async function POST(request: Request) {
         { status: 500 }
       );
     }
+    */
+
+    // MOCK RESPONSE FOR DEPLOYMENT
+    console.log("Contact form submitted (MOCKED):", body);
 
     return NextResponse.json(
-      { 
-        success: true, 
-        message: 'Your message has been sent successfully!',
-        emailId: data?.id 
+      {
+        success: true,
+        message: 'Your message has been received! (Demo Mode)',
+        emailId: 'mock-id'
       },
       { status: 200 }
     );
