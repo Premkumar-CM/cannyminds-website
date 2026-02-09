@@ -58,29 +58,20 @@ export default function HeroGenZ() {
         <div className="max-w-6xl mx-auto">
           {/* Main Content - Tagline */}
           <div className="text-center mb-12 relative z-10">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 tracking-tight mb-6">
+            <h1 className="font-bold text-gray-900 tracking-tight mb-6" style={{ fontSize: 'clamp(1.5rem, 5vw, 4.5rem)' }}>
               <span className="sr-only">CannyMinds Technology Solutions - </span>
-              <div className="inline-block">
+              <div className="inline-block whitespace-nowrap">
                 <TextAnimate animation="slideLeft" by="character">
                   Transform Your Business with
                 </TextAnimate>
               </div>
               <br />
-              <span className="text-primary inline-block">
+              <span className="text-primary inline-block whitespace-nowrap">
                 <TextAnimate animation="slideLeft" by="character" startDelay={0.8}>
                   Enterprise AI & Automation
                 </TextAnimate>
               </span>
             </h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1.2 }}
-              className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed"
-            >
-              Powering 500+ organizations globally with ISO-certified, FDA-compliant software solutions since 2003.
-            </motion.p>
           </div>
 
           <motion.div
