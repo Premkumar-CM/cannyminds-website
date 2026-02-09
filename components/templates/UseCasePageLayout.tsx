@@ -1,8 +1,8 @@
 "use client";
 
+import { motion, useScroll, useSpring } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
 import SocialShare from "@/components/ui/SocialShare";
@@ -91,19 +91,12 @@ export default function UseCasePageLayout({
     conclusionContent,
     jsonLd,
 }: UseCasePageLayoutProps) {
-    const [readingProgress, setReadingProgress] = useState(0);
-
-    useEffect(() => {
-        const updateReadingProgress = () => {
-            const scrollTop = window.scrollY;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const progress = (scrollTop / docHeight) * 100;
-            setReadingProgress(progress);
-        };
-
-        window.addEventListener("scroll", updateReadingProgress);
-        return () => window.removeEventListener("scroll", updateReadingProgress);
-    }, []);
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001
+    });
 
     const tocItems = [
         { id: "industry-context", title: "Industry Context" },
@@ -125,9 +118,9 @@ export default function UseCasePageLayout({
 
             {/* Reading Progress Bar */}
             <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 z-[60]">
-                <div
-                    className="h-full bg-primary transition-all duration-150"
-                    style={{ width: `${readingProgress}%` }}
+                <motion.div
+                    className="h-full bg-primary origin-left"
+                    style={{ scaleX }}
                 />
             </div>
 

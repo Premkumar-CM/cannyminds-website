@@ -11,35 +11,47 @@ export default function TableOfContents({ items }: TableOfContentsProps) {
     const [activeId, setActiveId] = useState<string>("");
 
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setActiveId(entry.target.id);
-                    }
-                });
-            },
-            { rootMargin: "-100px 0px -60% 0px" }
-        );
+        const handleScroll = () => {
+            const sections = items.map(item => document.getElementById(item.id));
+            const scrollPosition = window.scrollY + 150; // Offset for header
 
-        items.forEach((item) => {
-            const element = document.getElementById(item.id);
-            if (element) observer.observe(element);
-        });
+            let currentActive = "";
+            for (const section of sections) {
+                if (section && section.offsetTop <= scrollPosition) {
+                    currentActive = section.id;
+                }
+            }
+            if (currentActive !== activeId) {
+                setActiveId(currentActive);
+            }
+        };
 
-        return () => observer.disconnect();
-    }, [items]);
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        // Initial check
+        handleScroll();
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [items, activeId]);
 
     const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
         e.preventDefault();
-        const element = document.getElementById(id);
-        if (element) {
-            window.scrollTo({
-                top: element.offsetTop - 100, // Offset for sticky header
-                behavior: "smooth",
-            });
-            setActiveId(id);
+
+        // Use Lenis if available globally
+        if ((window as any).lenis) {
+            (window as any).lenis.scrollTo(`#${id}`, { offset: -100 });
+        } else {
+            // Fallback to native smooth scroll
+            const element = document.getElementById(id);
+            if (element) {
+                window.scrollTo({
+                    top: element.offsetTop - 100,
+                    behavior: "smooth",
+                });
+            }
         }
+
+        // Optimistic update
+        setActiveId(id);
     };
 
     return (
@@ -64,8 +76,8 @@ export default function TableOfContents({ items }: TableOfContentsProps) {
                                 href={`#${item.id}`}
                                 onClick={(e) => handleClick(e, item.id)}
                                 className={`block py-2 pl-4 text-sm transition-colors duration-200 ${isActive
-                                        ? "text-blue-600 font-medium bg-blue-50/50 rounded-r-md"
-                                        : "text-gray-500 hover:text-gray-900 hover:bg-gray-50/50 rounded-r-md"
+                                    ? "text-blue-600 font-medium bg-blue-50/50 rounded-r-md"
+                                    : "text-gray-500 hover:text-gray-900 hover:bg-gray-50/50 rounded-r-md"
                                     }`}
                             >
                                 {item.title}

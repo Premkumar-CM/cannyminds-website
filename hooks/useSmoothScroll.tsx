@@ -11,6 +11,9 @@ export const useSmoothScroll = () => {
       smoothWheel: true,
     });
 
+    // Expose lenis instance globally for other components to use
+    (window as any).lenis = lenis;
+
     function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -20,6 +23,8 @@ export const useSmoothScroll = () => {
 
     return () => {
       lenis.destroy();
+      // Clean up global reference
+      delete (window as any).lenis;
     };
   }, []);
 };
