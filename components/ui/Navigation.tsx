@@ -59,6 +59,7 @@ export default function Navigation() {
   const [hoveredIndustry, setHoveredIndustry] = useState<string | null>('financial-services');
   const [hoveredDepartment, setHoveredDepartment] = useState<string | null>('human-resources');
   const [hoveredService, setHoveredService] = useState<string | null>('document-management');
+  const [hoveredBpmCategory, setHoveredBpmCategory] = useState<string | null>('Document Lifecycle & Control Processes');
 
   const { scrollY } = useScroll();
 
@@ -157,14 +158,11 @@ export default function Navigation() {
     },
     'manufacturing': {
       name: "Manufacturing",
-      href: "/industries/manufacturing",
+      href: "/solutions/manufacturing",
       icon: Factory,
       subTopics: [
-        { name: "Overview", href: "/industries/manufacturing" },
-        { name: "Production Documents", href: "/industries/manufacturing/production" },
-        { name: "Quality Records", href: "/industries/manufacturing/quality" },
-        { name: "Supplier Management", href: "/industries/manufacturing/supplier" },
-        { name: "Compliance", href: "/industries/manufacturing/compliance" },
+        { name: "Overview", href: "/solutions/manufacturing" },
+        { name: "Shop Floor Automation", href: "/solutions/manufacturing/shop-floor-automation" },
       ]
     },
     'government': {
@@ -353,6 +351,120 @@ export default function Navigation() {
     { name: "Customer Service & Support", href: "/bpm#customer-service", icon: People },
     { name: "Records Retention & Legal Hold", href: "/bpm#records-retention", icon: Description },
   ];
+
+  const bpmDetails: Record<string, string[]> = {
+    "Document Lifecycle & Control Processes": [
+      "Document creation, review & approval",
+      "SOP creation, revision & periodic review",
+      "Policy approval & distribution",
+      "Document change control",
+      "Document archival & retention",
+      "Obsolete document withdrawal"
+    ],
+    "Quality Management Processes": [
+      "Deviation management",
+      "CAPA initiation, review & closure",
+      "Non-conformance (NCR) handling",
+      "Quality event investigation",
+      "Root cause analysis (RCA) approvals",
+      "Quality review board workflows"
+    ],
+    "Audit & Compliance Processes": [
+      "Internal audit planning & execution",
+      "Audit observation tracking",
+      "Management response & closure",
+      "Regulatory inspection readiness",
+      "Compliance checklist reviews",
+      "Evidence submission & sign-off"
+    ],
+    "Production & Operations Processes": [
+      "Batch record review & release",
+      "Production approval workflows",
+      "Line clearance approvals",
+      "Equipment usage authorization",
+      "Process deviation escalation",
+      "Manufacturing change approvals"
+    ],
+    "Engineering & Change Management": [
+      "Engineering Change Request (ECR)",
+      "Engineering Change Notice (ECN)",
+      "Impact assessment workflows",
+      "Technical document approvals",
+      "Equipment modification approvals",
+      "Process optimization approvals"
+    ],
+    "Validation & Qualification Processes": [
+      "Validation protocol review & approval",
+      "IQ / OQ / PQ document approvals",
+      "Validation deviation handling",
+      "Revalidation scheduling",
+      "Computer System Validation (CSV) approvals"
+    ],
+    "Healthcare & Clinical Processes": [
+      "Clinical documentation review",
+      "Patient consent approvals",
+      "Incident reporting & investigation",
+      "Clinical audit workflows",
+      "Discharge summary approvals",
+      "Accreditation compliance tracking"
+    ],
+    "Legal & Contract Management": [
+      "Contract drafting & review",
+      "Legal approval workflows",
+      "Contract execution & sign-off",
+      "Renewal & expiry approvals",
+      "Litigation document review",
+      "Client authorization workflows"
+    ],
+    "Finance & BFSI Processes": [
+      "Customer onboarding approvals (KYC)",
+      "Loan / credit approval workflows",
+      "Insurance claim processing",
+      "Risk & compliance approvals",
+      "Financial policy approvals",
+      "Audit sign-offs"
+    ],
+    "Procurement & Vendor Management": [
+      "Vendor onboarding & approval",
+      "Supplier document validation",
+      "Contract & PO approvals",
+      "Vendor compliance reviews",
+      "Certificate expiry alerts & renewals"
+    ],
+    "HR & Administration Processes": [
+      "Employee onboarding approvals",
+      "Policy acknowledgement workflows",
+      "Training & certification approvals",
+      "Employee exit clearances",
+      "Asset allocation & recovery"
+    ],
+    "IT & Information Security Processes": [
+      "Access request & approval",
+      "Role change workflows",
+      "Incident & breach reporting",
+      "Security policy approvals",
+      "System change approvals"
+    ],
+    "Risk Management & Governance": [
+      "Risk identification & assessment",
+      "Risk mitigation approvals",
+      "Governance committee reviews",
+      "Board-level document approvals",
+      "Compliance deviation escalations"
+    ],
+    "Customer Service & Support": [
+      "Complaint registration & routing",
+      "Investigation & resolution approvals",
+      "Customer communication sign-off",
+      "SLA escalation workflows"
+    ],
+    "Records Retention & Legal Hold": [
+      "Retention period approvals",
+      "Record destruction authorization",
+      "Legal hold initiation & release",
+      "Regulatory preservation workflows"
+    ]
+  };
 
   const useCaseIndustries = [
     { name: "Healthcare Industry", href: "/use-cases/healthcare", icon: LocalHospital },
@@ -716,40 +828,87 @@ export default function Navigation() {
                       }}
                     >
                       <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-7xl">
-                        <div className="flex items-center justify-between mb-6">
-                          <div className="flex items-center gap-2">
-                            <Settings sx={{ fontSize: 24, color: '#3170b5' }} />
-                            <h3 className="text-lg font-bold text-primary">
-                              CannyECM BPM Workflows
-                            </h3>
+                        <div className="grid grid-cols-12 min-h-[500px]">
+                          {/* Left Column: BPM Categories List */}
+                          <div className="col-span-4 p-6 border-r border-gray-200 overflow-y-auto max-h-[600px]">
+                            <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">
+                              Select Process Category
+                            </h4>
+                            <div className="space-y-1">
+                              {bpmCategories.map((category) => {
+                                const IconComponent = category.icon;
+                                const isActive = hoveredBpmCategory === category.name;
+                                return (
+                                  <button
+                                    key={category.name}
+                                    onMouseEnter={() => setHoveredBpmCategory(category.name)}
+                                    className={`w-full text-left px-3 py-2.5 rounded-lg text-sm transition-all flex items-center justify-between group ${isActive
+                                      ? 'bg-primary/10 text-primary'
+                                      : 'text-gray-700 hover:bg-gray-50'
+                                      }`}
+                                  >
+                                    <span className="flex items-center gap-2">
+                                      <IconComponent sx={{ fontSize: 18 }} className={isActive ? 'text-primary' : 'text-gray-400'} />
+                                      <span className="line-clamp-1">{category.name}</span>
+                                    </span>
+                                    {isActive && <KeyboardArrowRight sx={{ fontSize: 18 }} className="text-primary flex-shrink-0" />}
+                                  </button>
+                                );
+                              })}
+                            </div>
                           </div>
-                          <Link
-                            href="/bpm"
-                            onClick={() => setBpmDropdownOpen(false)}
-                            className="text-sm text-primary font-medium hover:underline flex items-center gap-1"
-                          >
-                            View All BPM Solutions
-                            <KeyboardArrowRight sx={{ fontSize: 18 }} />
-                          </Link>
-                        </div>
-                        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-3 max-w-7xl">
-                          {bpmCategories.map((category) => {
-                            const IconComponent = category.icon;
-                            return (
-                              <Link
-                                key={category.name}
-                                href={category.href}
-                                onClick={() => setBpmDropdownOpen(false)}
-                                className={`flex items-center gap-2 p-3 rounded-lg transition-colors group border w-fit ${pathname === category.href ? 'bg-primary/5 border-primary/30' : 'border-gray-100 hover:bg-primary/5 hover:border-primary/30'}`}
+
+                          {/* Right Column: Dynamic Content Details */}
+                          <div className="col-span-8 p-8 bg-gray-50/50 relative overflow-y-auto max-h-[600px]">
+                            {hoveredBpmCategory && bpmDetails[hoveredBpmCategory] ? (
+                              <motion.div
+                                initial={{ opacity: 0, x: 10 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                key={hoveredBpmCategory}
+                                transition={{ duration: 0.2 }}
                               >
-                                {pathname === category.href && <KeyboardArrowRight sx={{ fontSize: 16 }} className="text-primary" />}
-                                <IconComponent sx={{ fontSize: 18 }} className={`flex-shrink-0 ${pathname === category.href ? 'text-primary' : 'text-primary'}`} />
-                                <span className={`text-sm transition-colors leading-tight ${pathname === category.href ? 'text-primary font-medium' : 'text-gray-700 group-hover:text-primary'}`}>
-                                  {category.name}
-                                </span>
-                              </Link>
-                            );
-                          })}
+                                <div className="flex items-center gap-3 mb-6 pb-4 border-b border-gray-200">
+                                  {(() => {
+                                    const CategoryIcon = bpmCategories.find(c => c.name === hoveredBpmCategory)?.icon || Settings;
+                                    return <CategoryIcon sx={{ fontSize: 28 }} className="text-primary" />;
+                                  })()}
+                                  <h3 className="text-xl font-bold text-gray-800">
+                                    {hoveredBpmCategory}
+                                  </h3>
+                                </div>
+                                <div className="grid grid-cols-2 gap-4">
+                                  {bpmDetails[hoveredBpmCategory].map((point, index) => (
+                                    <Link
+                                      key={index}
+                                      href="/solutions/pharmaceutical/batch-record-automation"
+                                      onClick={() => setBpmDropdownOpen(false)}
+                                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-white hover:shadow-sm transition-all group border border-transparent hover:border-gray-100"
+                                    >
+                                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 group-hover:bg-primary flex-shrink-0 transition-colors" />
+                                      <span className="text-sm text-gray-600 group-hover:text-primary leading-relaxed font-medium">
+                                        {point}
+                                      </span>
+                                    </Link>
+                                  ))}
+                                </div>
+                                <div className="mt-8 pt-6 border-t border-gray-200 flex justify-end">
+                                  <Link
+                                    href="/bpm"
+                                    onClick={() => setBpmDropdownOpen(false)}
+                                    className="text-sm font-semibold text-primary hover:text-primary/80 flex items-center gap-1 group"
+                                  >
+                                    {/* View All BPM Solutions */}
+                                    {/* <KeyboardArrowRight sx={{ fontSize: 18 }} className="group-hover:translate-x-1 transition-transform" /> */}
+                                  </Link>
+                                </div>
+                              </motion.div>
+                            ) : (
+                              <div className="h-full flex flex-col items-center justify-center text-center text-gray-400">
+                                <Settings sx={{ fontSize: 48, opacity: 0.2, marginBottom: 2 }} />
+                                <p className="text-sm font-medium">Select a category from the left to view details</p>
+                              </div>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </motion.div>
