@@ -224,15 +224,7 @@ export default function AISolutionsPage() {
               transition={{ duration: 0.6 }}
               className="max-w-4xl mx-auto text-center"
             >
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.2 }}
-                className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6 pointer-events-auto"
-              >
-                <AutoAwesome sx={{ fontSize: 18 }} />
-                Generative AI Solutions
-              </motion.div>
+
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Industry-Specific{" "}

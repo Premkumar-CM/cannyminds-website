@@ -9,6 +9,7 @@ import {
   Inventory as InventoryIcon,
   ArrowForward as ArrowIcon,
   CheckCircle as CheckIcon,
+  Science as ScienceIcon,
 } from "@mui/icons-material";
 
 // Animation variants
@@ -77,12 +78,12 @@ const products = [
     features: ["99% OCR Accuracy", "Workflow Automation", "Cloud & On-Premise"],
   },
   {
-    name: "CannyHR",
-    title: "HR & Payroll Management",
-    description: "Complete hire-to-retire HRMS with payroll, attendance, and 350+ biometric integrations.",
-    icon: PeopleIcon,
-    link: "/solutions/product/hr-management",
-    features: ["Payroll Automation", "350+ Integrations", "Mobile App"],
+    name: "CannyScan",
+    title: "Document Scanning Services",
+    description: "Professional scanning for paper documents, microfilm, and blueprints with 99.9% accuracy.",
+    icon: ScanIcon,
+    link: "/solutions/product/scanning-solution",
+    features: ["99.9% Accuracy", "All Document Types", "Secure Storage"],
   },
   {
     name: "CannyRMS",
@@ -93,12 +94,12 @@ const products = [
     features: ["Barcode Tracking", "Audit Trails", "FDA Compliant"],
   },
   {
-    name: "CannyScan",
-    title: "Document Scanning Services",
-    description: "Professional scanning for paper documents, microfilm, and blueprints with 99.9% accuracy.",
-    icon: ScanIcon,
-    link: "/solutions/product/scanning-solution",
-    features: ["99.9% Accuracy", "All Document Types", "Secure Storage"],
+    name: "Canny eBMR",
+    title: "Electronic Batch Records",
+    description: "FDA 21 CFR Part 11 compliant eBMR for pharmaceutical manufacturing.",
+    icon: ScienceIcon,
+    link: "/solutions/product/ebmr",
+    features: ["FDA Compliant", "Audit Trails", "Review by Exception"],
   },
 ];
 

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About CannyMinds | Information Management & Digitization Solutions',
     description: 'CannyMinds is a trusted provider of information management and digitization solutions for regulated industries.',
-    url: 'https://www.cannymindstech.com/about',
+    url: 'https://cannyminds-website.vercel.app/about',
     type: 'website',
     images: [
       {
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://www.cannymindstech.com/about',
+    canonical: 'https://cannyminds-website.vercel.app/about',
   },
 };
 

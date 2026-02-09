@@ -17,6 +17,7 @@ import {
   ArrowForward as ArrowIcon,
   InsertChart as ChartIcon,
 } from '@mui/icons-material';
+import FAQ from "@/components/sections/FAQ";
 
 // SEO Metadata
 export const metadata: Metadata = {
@@ -728,72 +729,61 @@ export default function CannyTrackProductPage() {
           </section>
 
           {/* FAQ Section */}
-          <section id="faq" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              Frequently Asked Questions
-            </h2>
-
-            <div className="max-w-4xl mx-auto space-y-6">
-              {[
-                {
-                  question: "What is CannyTrack?",
-                  answer: "CannyTrack is a workforce productivity monitoring solution that provides visibility into remote employee activities with consent-based tracking, activity monitoring, screenshots, app/URL tracking, and data loss prevention.",
-                },
-                {
-                  question: "Is CannyTrack consent-based?",
-                  answer: "Yes. CannyTrack operates on a consent-based model with transparent employee notification. Employees are informed about what's monitored, why it's monitored, and have dashboard access to view their own tracking data. No stealth or hidden monitoring.",
-                },
-                {
-                  question: "Can employees see their own tracking data?",
-                  answer: "Absolutely. Employees have full dashboard access to view their activity logs, screenshots, productivity metrics, and application usage. This transparency builds trust and allows self-assessment.",
-                },
-                {
-                  question: "Does CannyTrack capture screenshots?",
-                  answer: "Yes, with configurable frequency (every 5-30 minutes). Screenshots can be blurred to hide sensitive data like passwords, financial information, or personal content. Organizations can customize screenshot settings based on their privacy policies.",
-                },
-                {
-                  question: "How does data loss prevention work?",
-                  answer: "CannyTrack monitors critical data movement activities including file uploads/downloads, email attachments, USB transfers, cloud storage access, and print jobs. Administrators receive real-time alerts for suspicious activities and can review audit trails for compliance.",
-                },
-                {
-                  question: "Does CannyTrack work offline?",
-                  answer: "Yes. The desktop agent stores tracking data locally during connectivity outages and automatically syncs to the cloud when the connection is restored. This ensures no data loss and preserves tracking integrity.",
-                },
-                {
-                  question: "Can I track time spent on specific applications and websites?",
-                  answer: "Yes. CannyTrack logs all application usage and website visits with time spent. Applications and URLs are automatically categorized as productive or unproductive. Customize categories based on your organization's workflow.",
-                },
-                {
-                  question: "Is CannyTrack GDPR compliant?",
-                  answer: "Yes. CannyTrack is designed for GDPR Article 88 compliance (workplace monitoring). We implement consent mechanisms, data minimization, purpose limitation, employee access rights, and data retention controls as required by GDPR.",
-                },
-                {
-                  question: "How do I prevent tracking personal activities?",
-                  answer: "Administrators can configure exclusion lists for personal applications (social media, banking apps) and websites. Employees can also request additions to the exclusion list. CannyTrack focuses on work-related activity only.",
-                },
-                {
-                  question: "Can CannyTrack be used for client billing?",
-                  answer: "Absolutely. CannyTrack provides precise time tracking with screenshot evidence for billable hours. Ideal for agencies, consulting firms, and outsourcing companies that need accurate client billing and project time allocation.",
-                },
-                {
-                  question: "What platforms does CannyTrack support?",
-                  answer: "CannyTrack desktop agents are available for Windows, macOS, and Linux. The web-based management dashboard works on all modern browsers. Mobile app support (iOS/Android) is under development.",
-                },
-                {
-                  question: "How long is tracking data retained?",
-                  answer: "Data retention is configurable based on your compliance and storage requirements. Default retention is 90 days for screenshots and 1 year for activity logs. Organizations can customize retention policies and enable auto-deletion after specified periods.",
-                },
-              ].map((faq, idx) => (
-                <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-orange-600 transition-all">
-                  <h3 className="text-lg font-bold text-secondary mb-3 flex items-start gap-3">
-                    <span className="text-orange-600 flex-shrink-0">Q{idx + 1}.</span>
-                    <span>{faq.question}</span>
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed pl-8">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+          <FAQ
+            id="faq"
+            className="mb-20"
+            title="Frequently Asked Questions"
+            items={[
+              {
+                question: "What is CannyTrack?",
+                answer: "CannyTrack is a workforce productivity monitoring solution that provides visibility into remote employee activities with consent-based tracking, activity monitoring, screenshots, app/URL tracking, and data loss prevention.",
+              },
+              {
+                question: "Is CannyTrack consent-based?",
+                answer: "Yes. CannyTrack operates on a consent-based model with transparent employee notification. Employees are informed about what's monitored, why it's monitored, and have dashboard access to view their own tracking data. No stealth or hidden monitoring.",
+              },
+              {
+                question: "Can employees see their own tracking data?",
+                answer: "Absolutely. Employees have full dashboard access to view their activity logs, screenshots, productivity metrics, and application usage. This transparency builds trust and allows self-assessment.",
+              },
+              {
+                question: "Does CannyTrack capture screenshots?",
+                answer: "Yes, with configurable frequency (every 5-30 minutes). Screenshots can be blurred to hide sensitive data like passwords, financial information, or personal content. Organizations can customize screenshot settings based on their privacy policies.",
+              },
+              {
+                question: "How does data loss prevention work?",
+                answer: "CannyTrack monitors critical data movement activities including file uploads/downloads, email attachments, USB transfers, cloud storage access, and print jobs. Administrators receive real-time alerts for suspicious activities and can review audit trails for compliance.",
+              },
+              {
+                question: "Does CannyTrack work offline?",
+                answer: "Yes. The desktop agent stores tracking data locally during connectivity outages and automatically syncs to the cloud when the connection is restored. This ensures no data loss and preserves tracking integrity.",
+              },
+              {
+                question: "Can I track time spent on specific applications and websites?",
+                answer: "Yes. CannyTrack logs all application usage and website visits with time spent. Applications and URLs are automatically categorized as productive or unproductive. Customize categories based on your organization's workflow.",
+              },
+              {
+                question: "Is CannyTrack GDPR compliant?",
+                answer: "Yes. CannyTrack is designed for GDPR Article 88 compliance (workplace monitoring). We implement consent mechanisms, data minimization, purpose limitation, employee access rights, and data retention controls as required by GDPR.",
+              },
+              {
+                question: "How do I prevent tracking personal activities?",
+                answer: "Administrators can configure exclusion lists for personal applications (social media, banking apps) and websites. Employees can also request additions to the exclusion list. CannyTrack focuses on work-related activity only.",
+              },
+              {
+                question: "Can CannyTrack be used for client billing?",
+                answer: "Absolutely. CannyTrack provides precise time tracking with screenshot evidence for billable hours. Ideal for agencies, consulting firms, and outsourcing companies that need accurate client billing and project time allocation.",
+              },
+              {
+                question: "What platforms does CannyTrack support?",
+                answer: "CannyTrack desktop agents are available for Windows, macOS, and Linux. The web-based management dashboard works on all modern browsers. Mobile app support (iOS/Android) is under development.",
+              },
+              {
+                question: "How long is tracking data retained?",
+                answer: "Data retention is configurable based on your compliance and storage requirements. Default retention is 90 days for screenshots and 1 year for activity logs. Organizations can customize retention policies and enable auto-deletion after specified periods.",
+              },
+            ]}
+          />
 
           {/* Related Products */}
           <section id="related" className="mb-20">

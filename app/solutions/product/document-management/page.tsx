@@ -20,6 +20,7 @@ import {
   ArrowForward as ArrowIcon,
   Cancel as CancelIcon,
 } from '@mui/icons-material';
+import FAQ from "@/components/sections/FAQ";
 
 // SEO Metadata
 export const metadata: Metadata = {
@@ -1171,61 +1172,53 @@ export default function CannyECMProductPage() {
           </section>
 
           {/* FAQ */}
-          <section id="faq" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              Frequently Asked Questions
-            </h2>
-
-            <div className="space-y-6 max-w-4xl mx-auto">
-              {[
-                {
-                  q: "What is CannyECM?",
-                  a: "CannyECM is an enterprise document management software that helps organizations digitize, organize, and manage documents with OCR technology, workflow automation, and secure cloud/on-premise storage."
-                },
-                {
-                  q: "How does CannyECM OCR work?",
-                  a: "CannyECM uses advanced OCR powered by Elasticsearch to convert scanned documents into searchable text with up to 99% accuracy, enabling full-text search across all document content."
-                },
-                {
-                  q: "Is CannyECM secure?",
-                  a: "Yes. CannyECM implements military-grade AES-256 encryption, role-based access control, detailed audit trails, and compliance with ISO 27001, GDPR, HIPAA, and SOC 2 standards."
-                },
-                {
-                  q: "What deployment options are available?",
-                  a: "CannyECM offers Cloud (SaaS), On-Premise, and Hybrid deployment models to match your compliance and infrastructure requirements."
-                },
-                {
-                  q: "What file formats does CannyECM support?",
-                  a: "CannyECM supports PDF, JPG, JPEG, PNG, and TIFF files. The OCR engine works best with PDF and high-quality scanned images."
-                },
-                {
-                  q: "Can CannyECM handle workflow automation?",
-                  a: "Yes. CannyECM includes a drag-and-drop workflow builder for custom approval processes, automated notifications, and multi-level approvals no coding required."
-                },
-                {
-                  q: "How long does implementation take?",
-                  a: "Cloud deployment takes 1-2 weeks including configuration and training. On-premise deployment takes 2-4 weeks for infrastructure setup and customization."
-                },
-                {
-                  q: "Is there a free trial?",
-                  a: "Yes. CannyECM offers a 30-day free trial with no credit card required, giving you full access to all features including OCR, workflows, and cloud storage."
-                },
-                {
-                  q: "Can I integrate CannyECM with other systems?",
-                  a: "Yes. CannyECM provides API integration for ERP systems, CRM platforms, accounting software, and custom applications. LDAP/Active Directory integration is also supported."
-                },
-                {
-                  q: "Does CannyECM support mobile access?",
-                  a: "Yes. CannyECM is fully responsive and accessible via mobile browsers on iOS and Android devices for viewing, searching, and sharing documents."
-                },
-              ].map((faq, idx) => (
-                <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-primary transition-colors">
-                  <h3 className="font-bold text-lg text-secondary mb-3">{faq.q}</h3>
-                  <p className="text-gray-700 leading-relaxed">{faq.a}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+          <FAQ
+            id="faq"
+            className="mb-20"
+            title="Frequently Asked Questions"
+            items={[
+              {
+                question: "What is CannyECM?",
+                answer: "CannyECM is an enterprise document management software that helps organizations digitize, organize, and manage documents with OCR technology, workflow automation, and secure cloud/on-premise storage."
+              },
+              {
+                question: "How does CannyECM OCR work?",
+                answer: "CannyECM uses advanced OCR powered by Elasticsearch to convert scanned documents into searchable text with up to 99% accuracy, enabling full-text search across all document content."
+              },
+              {
+                question: "Is CannyECM secure?",
+                answer: "Yes. CannyECM implements military-grade AES-256 encryption, role-based access control, detailed audit trails, and compliance with ISO 27001, GDPR, HIPAA, and SOC 2 standards."
+              },
+              {
+                question: "What deployment options are available?",
+                answer: "CannyECM offers Cloud (SaaS), On-Premise, and Hybrid deployment models to match your compliance and infrastructure requirements."
+              },
+              {
+                question: "What file formats does CannyECM support?",
+                answer: "CannyECM supports PDF, JPG, JPEG, PNG, and TIFF files. The OCR engine works best with PDF and high-quality scanned images."
+              },
+              {
+                question: "Can CannyECM handle workflow automation?",
+                answer: "Yes. CannyECM includes a drag-and-drop workflow builder for custom approval processes, automated notifications, and multi-level approvals no coding required."
+              },
+              {
+                question: "How long does implementation take?",
+                answer: "Cloud deployment takes 1-2 weeks including configuration and training. On-premise deployment takes 2-4 weeks for infrastructure setup and customization."
+              },
+              {
+                question: "Is there a free trial?",
+                answer: "Yes. CannyECM offers a 30-day free trial with no credit card required, giving you full access to all features including OCR, workflows, and cloud storage."
+              },
+              {
+                question: "Can I integrate CannyECM with other systems?",
+                answer: "Yes. CannyECM provides API integration for ERP systems, CRM platforms, accounting software, and custom applications. LDAP/Active Directory integration is also supported."
+              },
+              {
+                question: "Does CannyECM support mobile access?",
+                answer: "Yes. CannyECM is fully responsive and accessible via mobile browsers on iOS and Android devices for viewing, searching, and sharing documents."
+              },
+            ]}
+          />
 
           {/* Related Products */}
           <section className="mb-20">

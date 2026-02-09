@@ -163,6 +163,12 @@ export default function Navigation() {
       subTopics: [
         { name: "Overview", href: "/solutions/manufacturing" },
         { name: "Shop Floor Automation", href: "/solutions/manufacturing/shop-floor-automation" },
+        { name: "Document Control & SOPs", href: "/solutions/manufacturing/document-control" },
+        { name: "Quality Management", href: "/solutions/manufacturing/quality-management" },
+        { name: "Engineering Change Mgmt", href: "/solutions/manufacturing/engineering-change-management" },
+        { name: "Vendor & Procurement", href: "/solutions/manufacturing/vendor-procurement" },
+        { name: "Equipment Maintenance", href: "/solutions/manufacturing/equipment-maintenance" },
+        { name: "FMCG Digital Transformation", href: "/solutions/manufacturing/fmcg-digital-transformation" },
       ]
     },
     'government': {
@@ -469,8 +475,8 @@ export default function Navigation() {
   const useCaseIndustries = [
     { name: "Healthcare Industry", href: "/use-cases/healthcare", icon: LocalHospital },
     { name: "Pharmaceutical Manufacturing", href: "/use-cases/pharmaceutical", icon: Science },
-    { name: "Manufacturing & Engineering", href: "/use-cases/manufacturing-engineering", icon: Factory },
-    { name: "FMCG Manufacturing", href: "/use-cases/fmcg", icon: Factory },
+    { name: "Manufacturing & Engineering", href: "/solutions/manufacturing", icon: Factory },
+    { name: "FMCG Manufacturing", href: "/solutions/manufacturing/fmcg-digital-transformation", icon: Factory },
     { name: "Bottling Manufacturing", href: "/use-cases/bottling", icon: Factory },
     { name: "Banking, Finance & Insurance", href: "/use-cases/bfsi", icon: AccountBalance },
     { name: "Legal Firms", href: "/use-cases/legal", icon: Gavel },
@@ -593,6 +599,7 @@ export default function Navigation() {
                                 By Industry
                                 <KeyboardArrowRight sx={{ fontSize: 18 }} />
                               </button>
+                              {/* Hidden by request
                               <button
                                 onClick={() => setActiveMenuTab('department')}
                                 className={`w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium transition-all flex items-center justify-between ${activeMenuTab === 'department'
@@ -613,6 +620,7 @@ export default function Navigation() {
                                 By Service
                                 <KeyboardArrowRight sx={{ fontSize: 18 }} />
                               </button>
+                              */}
 
                               {/* Divider */}
                               <div className="border-t border-gray-200 my-3"></div>

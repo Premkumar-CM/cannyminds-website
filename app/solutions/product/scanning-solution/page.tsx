@@ -21,6 +21,7 @@ import {
   Verified as VerifiedIcon,
   RateReview as ReviewIcon,
 } from '@mui/icons-material';
+import FAQ from "@/components/sections/FAQ";
 
 // SEO Metadata
 export const metadata: Metadata = {
@@ -744,49 +745,41 @@ export default function CannyScanProductPage() {
           </section>
 
           {/* FAQ */}
-          <section id="faq" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              Frequently Asked Questions
-            </h2>
-
-            <div className="space-y-6 max-w-4xl mx-auto">
-              {[
-                {
-                  q: "What is CannyScan?",
-                  a: "CannyScan is a professional document digitization solution that provides image enhancement, OCR extraction, barcode reading, quality control workflows, and comprehensive reporting for converting paper documents into searchable digital assets."
-                },
-                {
-                  q: "What image enhancement features does CannyScan offer?",
-                  a: "CannyScan provides image cleansing with auto crop, punch hole removal, and edge deduction. It also includes automatic document separation with blank page detection, auto file name creation, and image compression for optimized storage."
-                },
-                {
-                  q: "Does CannyScan support OCR and barcode extraction?",
-                  a: "Yes. CannyScan includes barcode extraction, OCR (Optical Character Recognition) extraction, and data validation capabilities to convert scanned documents into searchable, indexed digital files."
-                },
-                {
-                  q: "How does CannyScan handle quality control?",
-                  a: "CannyScan offers both manual and automatic verification of scanned information and documents. It includes review and comments functionality, and a structured approve-reject workflow to ensure scanning quality meets organizational standards."
-                },
-                {
-                  q: "What reporting capabilities does CannyScan provide?",
-                  a: "CannyScan provides reports on total records scanned, records exported vs. not exported, and comprehensive audit reports for compliance and tracking purposes."
-                },
-                {
-                  q: "Can CannyScan integrate with CannyECM?",
-                  a: "Yes. CannyScan integrates seamlessly with CannyECM Enterprise Content Management system. Digitized documents can be directly uploaded to CannyECM with proper metadata, indexing, and folder organization for immediate use."
-                },
-                {
-                  q: "What happens if a scanned document fails quality check?",
-                  a: "Documents that fail quality check are flagged for re-scanning. The rejection workflow allows reviewers to add comments explaining the issue, and documents are returned to the scanning stage for correction."
-                },
-              ].map((faq, idx) => (
-                <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-purple-400 transition-colors">
-                  <h3 className="font-bold text-lg text-secondary mb-3">{faq.q}</h3>
-                  <p className="text-gray-700 leading-relaxed">{faq.a}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+          <FAQ
+            id="faq"
+            className="mb-20"
+            title="Frequently Asked Questions"
+            items={[
+              {
+                question: "What is CannyScan?",
+                answer: "CannyScan is a professional document digitization solution that provides image enhancement, OCR extraction, barcode reading, quality control workflows, and comprehensive reporting for converting paper documents into searchable digital assets."
+              },
+              {
+                question: "What image enhancement features does CannyScan offer?",
+                answer: "CannyScan provides image cleansing with auto crop, punch hole removal, and edge deduction. It also includes automatic document separation with blank page detection, auto file name creation, and image compression for optimized storage."
+              },
+              {
+                question: "Does CannyScan support OCR and barcode extraction?",
+                answer: "Yes. CannyScan includes barcode extraction, OCR (Optical Character Recognition) extraction, and data validation capabilities to convert scanned documents into searchable, indexed digital files."
+              },
+              {
+                question: "How does CannyScan handle quality control?",
+                answer: "CannyScan offers both manual and automatic verification of scanned information and documents. It includes review and comments functionality, and a structured approve-reject workflow to ensure scanning quality meets organizational standards."
+              },
+              {
+                question: "What reporting capabilities does CannyScan provide?",
+                answer: "CannyScan provides reports on total records scanned, records exported vs. not exported, and comprehensive audit reports for compliance and tracking purposes."
+              },
+              {
+                question: "Can CannyScan integrate with CannyECM?",
+                answer: "Yes. CannyScan integrates seamlessly with CannyECM Enterprise Content Management system. Digitized documents can be directly uploaded to CannyECM with proper metadata, indexing, and folder organization for immediate use."
+              },
+              {
+                question: "What happens if a scanned document fails quality check?",
+                answer: "Documents that fail quality check are flagged for re-scanning. The rejection workflow allows reviewers to add comments explaining the issue, and documents are returned to the scanning stage for correction."
+              },
+            ]}
+          />
 
           {/* Related Products */}
           <section className="mb-20">

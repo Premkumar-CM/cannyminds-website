@@ -987,162 +987,66 @@ export default function CannyRMSPage() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section id="faq" className="py-20 bg-white scroll-mt-28">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-              Common questions about CannyRMS and physical records management.
-            </p>
-
-            <div className="space-y-4">
-              {/* FAQ 1 */}
-              <details className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
-                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-100 transition-colors">
-                  <span className="font-semibold text-gray-900">What is CannyRMS?</span>
-                  <ArrowForward className="text-primary transform rotate-90 group-open:rotate-[-90deg] transition-transform" sx={{ fontSize: 20 }} />
-                </summary>
-                <div className="px-6 pb-6 text-gray-600">
-                  CannyRMS is a Physical Records Management System that creates a &apos;Digital Twin&apos; for your physical files. It uses barcode tracking and warehouse management to provide real-time visibility into offsite document storage.
-                </div>
-              </details>
-
-              {/* FAQ 2 */}
-              <details className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
-                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-100 transition-colors">
-                  <span className="font-semibold text-gray-900">How does barcode tracking work?</span>
-                  <ArrowForward className="text-primary transform rotate-90 group-open:rotate-[-90deg] transition-transform" sx={{ fontSize: 20 }} />
-                </summary>
-                <div className="px-6 pb-6 text-gray-600">
-                  Each physical file and storage location is assigned a unique barcode. When files are moved, checked out, or returned, staff scan the barcode to update the system. This creates a complete audit trail of every movement.
-                </div>
-              </details>
-
-              {/* FAQ 3 - Dynamic Barcode Range */}
-              <details className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
-                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-100 transition-colors">
-                  <span className="font-semibold text-gray-900">What is Dynamic Barcode Range?</span>
-                  <ArrowForward className="text-primary transform rotate-90 group-open:rotate-[-90deg] transition-transform" sx={{ fontSize: 20 }} />
-                </summary>
-                <div className="px-6 pb-6 text-gray-600">
-                  Dynamic Barcode Range allows you to generate barcode sequences on-the-fly based on configurable rules. Instead of pre-printing fixed barcode sheets, you can define a starting number, prefix, and range size. The system automatically assigns the next available barcode when a new file is registered, ensuring uniqueness and eliminating manual errors.
-                </div>
-              </details>
-
-              {/* FAQ 4 - Dynamic Reference */}
-              <details className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
-                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-100 transition-colors">
-                  <span className="font-semibold text-gray-900">What is Dynamic Reference?</span>
-                  <ArrowForward className="text-primary transform rotate-90 group-open:rotate-[-90deg] transition-transform" sx={{ fontSize: 20 }} />
-                </summary>
-                <div className="px-6 pb-6 text-gray-600">
-                  Dynamic Reference is a flexible metadata field that links physical records to external identifiers. For example, you can associate a file with a loan number, batch ID, case number, or employee ID. This allows cross-referencing between CannyRMS and your existing business systems, making searches and audits faster.
-                </div>
-              </details>
-
-              {/* FAQ 5 - Geolocation Tracking */}
-              <details className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
-                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-100 transition-colors">
-                  <span className="font-semibold text-gray-900">What is Geolocation Tracking in CannyRMS?</span>
-                  <ArrowForward className="text-primary transform rotate-90 group-open:rotate-[-90deg] transition-transform" sx={{ fontSize: 20 }} />
-                </summary>
-                <div className="px-6 pb-6 text-gray-600">
-                  Every action in CannyRMS is logged with the user&apos;s IP address and geographic location. This includes login attempts, file access, retrievals, approvals, and modifications. Geolocation tracking enables forensic analysis during security audits and helps identify unauthorized access from unexpected locations.
-                </div>
-              </details>
-
-              {/* FAQ 6 - Email Notifications */}
-              <details className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
-                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-100 transition-colors">
-                  <span className="font-semibold text-gray-900">Does CannyRMS send email notifications?</span>
-                  <ArrowForward className="text-primary transform rotate-90 group-open:rotate-[-90deg] transition-transform" sx={{ fontSize: 20 }} />
-                </summary>
-                <div className="px-6 pb-6 text-gray-600">
-                  Yes. CannyRMS sends automated email notifications for request submissions, manager approvals/rejections, overdue file alerts, and upcoming due date reminders. This reduces manual follow-ups and ensures timely action on pending tasks.
-                </div>
-              </details>
-
-              {/* FAQ 7 - Data Modification */}
-              <details className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
-                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-100 transition-colors">
-                  <span className="font-semibold text-gray-900">Can I modify record metadata after upload?</span>
-                  <ArrowForward className="text-primary transform rotate-90 group-open:rotate-[-90deg] transition-transform" sx={{ fontSize: 20 }} />
-                </summary>
-                <div className="px-6 pb-6 text-gray-600">
-                  Yes, through Data Modification Requests. Users can request changes to existing record metadata (like correcting a file number or category). These requests require manager approval, and every modification is logged in the audit trail with before/after values.
-                </div>
-              </details>
-
-              {/* FAQ 8 */}
-              <details className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
-                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-100 transition-colors">
-                  <span className="font-semibold text-gray-900">Is CannyRMS compliant with FDA 21 CFR Part 11?</span>
-                  <ArrowForward className="text-primary transform rotate-90 group-open:rotate-[-90deg] transition-transform" sx={{ fontSize: 20 }} />
-                </summary>
-                <div className="px-6 pb-6 text-gray-600">
-                  Yes. CannyRMS includes electronic signatures, immutable audit trails, and user authentication controls required for FDA 21 CFR Part 11 compliance, making it suitable for pharmaceutical and life sciences organizations.
-                </div>
-              </details>
-
-              {/* FAQ 9 - Delegate Handover */}
-              <details className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
-                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-100 transition-colors">
-                  <span className="font-semibold text-gray-900">What is Delegate Handover?</span>
-                  <ArrowForward className="text-primary transform rotate-90 group-open:rotate-[-90deg] transition-transform" sx={{ fontSize: 20 }} />
-                </summary>
-                <div className="px-6 pb-6 text-gray-600">
-                  Delegate Handover allows a requester to assign another person to collect documents on their behalf. For example, a manager can request files but assign their assistant as the delegate. The system tracks both the original requester and the actual recipient, maintaining complete chain of custody.
-                </div>
-              </details>
-
-              {/* FAQ 10 - Barcode Hierarchy */}
-              <details className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
-                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-100 transition-colors">
-                  <span className="font-semibold text-gray-900">How does the 3-level barcode system work?</span>
-                  <ArrowForward className="text-primary transform rotate-90 group-open:rotate-[-90deg] transition-transform" sx={{ fontSize: 20 }} />
-                </summary>
-                <div className="px-6 pb-6 text-gray-600">
-                  CannyRMS uses a hierarchical barcode structure: Carton (storage box) → File (folder within carton) → Document (individual paper within file). Each level has pre-allocated barcode ranges with automatic overlap detection to prevent duplicates. This enables tracking at any granularity level.
-                </div>
-              </details>
-
-              {/* FAQ 11 - Integration */}
-              <details className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
-                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-100 transition-colors">
-                  <span className="font-semibold text-gray-900">Can CannyRMS integrate with existing systems?</span>
-                  <ArrowForward className="text-primary transform rotate-90 group-open:rotate-[-90deg] transition-transform" sx={{ fontSize: 20 }} />
-                </summary>
-                <div className="px-6 pb-6 text-gray-600">
-                  Yes. CannyRMS integrates seamlessly with <Link href="/solutions/product/document-management" className="text-primary underline hover:text-primary/80">CannyECM</Link> (document management), <Link href="/solutions/product/scanning-solution" className="text-primary underline hover:text-primary/80">CannyScan</Link> (digitization), and third-party ERP systems via REST APIs.
-                </div>
-              </details>
-
-              {/* FAQ 7 */}
-              <details className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
-                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-100 transition-colors">
-                  <span className="font-semibold text-gray-900">How quickly can I find a file?</span>
-                  <ArrowForward className="text-primary transform rotate-90 group-open:rotate-[-90deg] transition-transform" sx={{ fontSize: 20 }} />
-                </summary>
-                <div className="px-6 pb-6 text-gray-600">
-                  With CannyRMS, you can locate any file in under 30 seconds. Search by document number, barcode, category, or any custom metadata field and get the exact rack/shelf/box location.
-                </div>
-              </details>
-
-              {/* FAQ 8 */}
-              <details className="group bg-gray-50 rounded-xl border border-gray-200 overflow-hidden">
-                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-100 transition-colors">
-                  <span className="font-semibold text-gray-900">What industries use CannyRMS?</span>
-                  <ArrowForward className="text-primary transform rotate-90 group-open:rotate-[-90deg] transition-transform" sx={{ fontSize: 20 }} />
-                </summary>
-                <div className="px-6 pb-6 text-gray-600">
-                  CannyRMS is used by banks (for loan files and KYC documents), pharmaceutical companies (for batch records and validation logs), legal firms (for case files and evidence), and government agencies (for archival records).
-                </div>
-              </details>
-            </div>
-          </div>
-        </section>
+        <FAQ
+          id="faq"
+          className="scroll-mt-28"
+          title="Frequently Asked Questions"
+          description="Everything you need to know about CannyRMS physical records management."
+          items={[
+            {
+              question: "What is CannyRMS?",
+              answer: "CannyRMS is a Physical Records Management System that creates a 'Digital Twin' for your physical files. It uses barcode tracking and warehouse management to provide real-time visibility into offsite document storage."
+            },
+            {
+              question: "How does barcode tracking work?",
+              answer: "Each physical file and storage location is assigned a unique barcode. When files are moved, checked out, or returned, staff scan the barcode to update the system. This creates a complete audit trail of every movement."
+            },
+            {
+              question: "What is Dynamic Barcode Range?",
+              answer: "Dynamic Barcode Range allows you to generate barcode sequences on-the-fly based on configurable rules. Instead of pre-printing fixed barcode sheets, you can define a starting number, prefix, and range size. The system automatically assigns the next available barcode when a new file is registered, ensuring uniqueness and eliminating manual errors."
+            },
+            {
+              question: "What is Dynamic Reference?",
+              answer: "Dynamic Reference is a flexible metadata field that links physical records to external identifiers. For example, you can associate a file with a loan number, batch ID, case number, or employee ID. This allows cross-referencing between CannyRMS and your existing business systems, making searches and audits faster."
+            },
+            {
+              question: "What is Geolocation Tracking in CannyRMS?",
+              answer: "Every action in CannyRMS is logged with the user's IP address and geographic location. This includes login attempts, file access, retrievals, approvals, and modifications. Geolocation tracking enables forensic analysis during security audits and helps identify unauthorized access from unexpected locations."
+            },
+            {
+              question: "Does CannyRMS send email notifications?",
+              answer: "Yes. CannyRMS sends automated email notifications for request submissions, manager approvals/rejections, overdue file alerts, and upcoming due date reminders. This reduces manual follow-ups and ensures timely action on pending tasks."
+            },
+            {
+              question: "Can I modify record metadata after upload?",
+              answer: "Yes, through Data Modification Requests. Users can request changes to existing record metadata (like correcting a file number or category). These requests require manager approval, and every modification is logged in the audit trail with before/after values."
+            },
+            {
+              question: "Is CannyRMS compliant with FDA 21 CFR Part 11?",
+              answer: "Yes. CannyRMS includes electronic signatures, immutable audit trails, and user authentication controls required for FDA 21 CFR Part 11 compliance, making it suitable for pharmaceutical and life sciences organizations."
+            },
+            {
+              question: "What is Delegate Handover?",
+              answer: "Delegate Handover allows a requester to assign another person to collect documents on their behalf. For example, a manager can request files but assign their assistant as the delegate. The system tracks both the original requester and the actual recipient, maintaining complete chain of custody."
+            },
+            {
+              question: "How does the 3-level barcode system work?",
+              answer: "CannyRMS uses a hierarchical barcode structure: Carton (storage box) → File (folder within carton) → Document (individual paper within file). Each level has pre-allocated barcode ranges with automatic overlap detection to prevent duplicates. This enables tracking at any granularity level."
+            },
+            {
+              question: "Can CannyRMS integrate with existing systems?",
+              answer: "Yes. CannyRMS integrates seamlessly with CannyECM (document management), CannyScan (digitization), and third-party ERP systems via REST APIs."
+            },
+            {
+              question: "How quickly can I find a file?",
+              answer: "With CannyRMS, you can locate any file in under 30 seconds. Search by document number, barcode, category, or any custom metadata field and get the exact rack/shelf/box location."
+            },
+            {
+              question: "What industries use CannyRMS?",
+              answer: "CannyRMS is used by banks (for loan files and KYC documents), pharmaceutical companies (for batch records and validation logs), legal firms (for case files and evidence), and government agencies (for archival records)."
+            }
+          ]}
+        />
 
         {/* Cross-Linking: Related Solutions */}
         <section className="py-16 bg-gray-50">

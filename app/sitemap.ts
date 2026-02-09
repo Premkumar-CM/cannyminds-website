@@ -20,7 +20,7 @@ function getBaseUrl(): string {
   }
 
   // Production fallback
-  return 'https://www.cannymindstech.com'
+  return 'https://cannyminds-website.vercel.app'
 }
 
 // Recursively find all page.tsx files in the app directory

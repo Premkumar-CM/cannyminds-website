@@ -79,7 +79,21 @@ const headerVariants = {
   }
 };
 
-export default function FAQ() {
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface FAQProps {
+  items?: FAQItem[]; // Optional, defaults to original list if not provided
+  title?: string;
+  description?: string;
+  className?: string;
+  id?: string;
+}
+
+export default function FAQ({ items = faqs, title = "Frequently Asked Questions", description = "Find answers to common questions about our IT solutions and services", className = "", id = "" }: FAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleFAQ = (index: number) => {
@@ -87,7 +101,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-12 sm:py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
+    <section id={id} className={`py-12 sm:py-16 md:py-24 bg-gradient-to-b from-white to-gray-50 ${className}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
         <motion.div
           variants={headerVariants}
@@ -112,17 +126,19 @@ export default function FAQ() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary mt-3 sm:mt-4 mb-4 sm:mb-6 px-4"
           >
-            Frequently Asked Questions
+            {title}
           </motion.h2>
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.25 }}
-            className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4"
-          >
-            Find answers to common questions about our IT solutions and services
-          </motion.p>
+          {description && (
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.25 }}
+              className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4"
+            >
+              {description}
+            </motion.p>
+          )}
         </motion.div>
 
         <motion.div
@@ -132,7 +148,7 @@ export default function FAQ() {
           viewport={{ once: true, margin: "-50px" }}
           className="max-w-4xl mx-auto"
         >
-          {faqs.map((faq, index) => (
+          {items.map((faq, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
@@ -190,3 +206,4 @@ export default function FAQ() {
     </section>
   );
 }
+

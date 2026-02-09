@@ -17,6 +17,7 @@ import {
   ArrowForward as ArrowIcon,
   Description as DocumentIcon,
 } from '@mui/icons-material';
+import FAQ from "@/components/sections/FAQ";
 
 // SEO Metadata
 export const metadata: Metadata = {
@@ -752,72 +753,6 @@ export default function CannyHRProductPage() {
           </section>
 
           {/* FAQ Section */}
-          <section id="faq" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              Frequently Asked Questions
-            </h2>
-
-            <div className="max-w-4xl mx-auto space-y-6">
-              {[
-                {
-                  question: "What is CannyHR?",
-                  answer: "CannyHR is a comprehensive Hire-to-Retire HR and payroll management platform that automates employee lifecycle management, payroll processing, time tracking, leave management, and performance reviews with mobile access.",
-                },
-                {
-                  question: "Does CannyHR support biometric devices?",
-                  answer: "Yes. CannyHR integrates with 350+ biometric devices for accurate attendance tracking and check-in/check-out functionality. We support fingerprint scanners, face recognition systems, RFID cards, and mobile GPS-based attendance from all major manufacturers.",
-                },
-                {
-                  question: "Is CannyHR available on mobile?",
-                  answer: "Yes. CannyHR provides native mobile applications for iOS and Android, enabling employees to access payslips, apply for leave, mark attendance, and manage their profiles on the go. Managers can approve requests and view team dashboards from mobile.",
-                },
-                {
-                  question: "How does CannyHR handle statutory compliance?",
-                  answer: "CannyHR automates statutory compliance for Provident Fund (PF), ESI, Professional Tax (PT), TDS, and other labor law requirements. The system generates compliant returns, challans, and reports automatically based on latest government regulations.",
-                },
-                {
-                  question: "Can CannyHR handle multi-location payroll?",
-                  answer: "Absolutely. CannyHR supports centralized payroll processing across multiple locations, branches, or subsidiaries. Each location can have different shift timings, leave policies, and statutory requirements all managed from a single platform.",
-                },
-                {
-                  question: "What is Invoice OCR for expense claims?",
-                  answer: "Invoice OCR uses optical character recognition to automatically extract data from uploaded expense receipts and invoices. This reduces manual data entry time by 70%, speeds up claim approvals, and minimizes errors in reimbursement processing.",
-                },
-                {
-                  question: "Does CannyHR support variable pay and incentives?",
-                  answer: "Yes. CannyHR handles complex variable pay structures including performance bonuses, sales commissions, production incentives, shift allowances, and one-time payments. All variable components are automatically integrated into payroll calculations.",
-                },
-                {
-                  question: "Can I customize leave policies in CannyHR?",
-                  answer: "Yes. CannyHR allows full customization of leave policies including earned leave, sick leave, casual leave, compensatory off, maternity/paternity leave, and custom leave types. Set accrual rules, carry-forward limits, and encashment policies per department or employee grade.",
-                },
-                {
-                  question: "How does performance management work in CannyHR?",
-                  answer: "CannyHR provides structured performance review cycles with 360-degree feedback, goal setting and tracking, KPI dashboards, and competency assessments. Managers can conduct appraisals, provide ratings, and link performance to salary increments and promotions.",
-                },
-                {
-                  question: "Is CannyHR available as cloud or on-premise?",
-                  answer: "Both. CannyHR is available as a cloud-hosted SaaS solution for quick deployment, or as an on-premise installation for organizations with specific data residency or security requirements. Hybrid deployment models also available.",
-                },
-                {
-                  question: "What integrations does CannyHR offer?",
-                  answer: "CannyHR integrates with banking systems for salary transfers, 350+ biometric devices, email systems (SMTP/Office 365), and provides REST APIs for integration with ERP, accounting software, and third-party applications.",
-                },
-                {
-                  question: "How long does CannyHR implementation take?",
-                  answer: "Implementation timelines depend on organization size and complexity. Small businesses (50-200 employees) typically go live in 2-3 weeks. Large enterprises (1,000+ employees) with complex requirements may take 6-8 weeks including data migration, customization, and training.",
-                },
-              ].map((faq, idx) => (
-                <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-green-600 transition-all">
-                  <h3 className="text-lg font-bold text-secondary mb-3 flex items-start gap-3">
-                    <span className="text-green-600 flex-shrink-0">Q{idx + 1}.</span>
-                    <span>{faq.question}</span>
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed pl-8">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
-          </section>
 
           {/* Related Products */}
           <section id="related" className="mb-20">

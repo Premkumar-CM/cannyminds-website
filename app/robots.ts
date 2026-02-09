@@ -18,7 +18,7 @@ function getBaseUrl(): string {
   }
 
   // Production fallback
-  return 'https://www.cannymindstech.com'
+  return 'https://cannyminds-website.vercel.app'
 }
 
 export default function robots(): MetadataRoute.Robots {
