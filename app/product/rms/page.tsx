@@ -5,6 +5,7 @@ import Footer from "@/components/ui/Footer";
 import SocialShare from "@/components/ui/SocialShare";
 import FAQ from "@/components/sections/FAQ";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   ArrowForward,
@@ -156,11 +157,13 @@ export default function CannyRMSPage() {
 
                 {/* Video container - no border */}
                 <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
-                  <img
+                  <Image
                     src="/videos/rms/cannyrms-demo.gif"
                     alt="CannyRMS Dashboard showing records management interface with barcode tracking and file search"
+                    width={1200}
+                    height={675}
                     className="w-full h-auto object-cover pointer-events-none select-none"
-                    loading="lazy"
+                    unoptimized
                     onContextMenu={(e) => e.preventDefault()}
                   />
                 </div>
@@ -730,11 +733,12 @@ export default function CannyRMSPage() {
                       {/* Left Side: Product Image */}
                       {step.image && (
                         <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-100 bg-gray-50 flex items-center justify-center">
-                          <img
+                          <Image
                             src={step.image}
                             alt={`CannyRMS ${step.title}`}
+                            width={1200}
+                            height={675}
                             className="w-full h-auto object-cover transform transition-transform duration-500 pointer-events-none select-none"
-                            loading="lazy"
                             onContextMenu={(e) => e.preventDefault()}
                           />
                           {step.caption && (
@@ -919,11 +923,12 @@ export default function CannyRMSPage() {
               </div>
 
               <div className="flex justify-center lg:justify-end">
-                <img
+                <Image
                   src="/images/common/security.png"
                   alt="CannyRMS Enterprise Security - Role Based Access Control, Audit Logs, and Geolocation Tracking"
+                  width={600}
+                  height={600}
                   className="w-1/2 h-auto object-contain pointer-events-none select-none"
-                  loading="lazy"
                   onContextMenu={(e) => e.preventDefault()}
                 />
               </div>

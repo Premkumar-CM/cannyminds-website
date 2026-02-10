@@ -73,7 +73,7 @@ function getPageConfig(route: string): { priority: number; changeFrequency: 'alw
     return { priority: 1.0, changeFrequency: 'weekly' }
   }
 
-  if (route.startsWith('/solutions/') || route.startsWith('/industries/') || route.startsWith('/bpm/') || route.startsWith('/services')) {
+  if (route.startsWith('/solutions/') || route.startsWith('/product/') || route === '/services') {
     return { priority: 0.9, changeFrequency: 'weekly' }
   }
 

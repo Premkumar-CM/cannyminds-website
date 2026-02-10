@@ -55,15 +55,6 @@ const titleVariants = {
 
 const resources = [
   {
-    type: "Industry Solution",
-    icon: Business,
-    title: "Banking & Finance Digital Transformation",
-    description: "Discover how financial institutions streamline compliance, KYC documentation, and audit trails with our solutions.",
-    date: "2026",
-    link: "/industries/banking-finance",
-    color: "bg-blue-500",
-  },
-  {
     type: "Product Guide",
     icon: Description,
     title: "CannyRMS: Physical Records Management System",
@@ -80,6 +71,15 @@ const resources = [
     date: "2026",
     link: "/use-cases",
     color: "bg-green-500",
+  },
+  {
+    type: "AI Solutions",
+    icon: Business,
+    title: "AI-Powered Enterprise Solutions",
+    description: "Discover how AI transforms document processing, workflow automation, and intelligent data extraction.",
+    date: "2026",
+    link: "/ai-solutions",
+    color: "bg-blue-500",
   },
 ];
 

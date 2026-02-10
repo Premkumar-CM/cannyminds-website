@@ -133,7 +133,7 @@ export default function ContactPage() {
                   <h3 className="text-2xl font-bold text-secondary mb-6">Follow Us</h3>
                   <div className="flex gap-4">
                     <a
-                      href="https://www.linkedin.com/company/cannyminds"
+                      href="https://in.linkedin.com/company/cannyminds-technology-solutions"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 bg-[#0a66c2] hover:bg-[#004182] rounded-lg flex items-center justify-center text-white transition-all"
@@ -142,7 +142,7 @@ export default function ContactPage() {
                       <LinkedInIcon />
                     </a>
                     <a
-                      href="https://twitter.com/cannyminds"
+                      href="https://x.com/cannyminds"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 bg-sky-500 hover:bg-sky-600 rounded-lg flex items-center justify-center text-white transition-all"
@@ -151,7 +151,7 @@ export default function ContactPage() {
                       <TwitterIcon />
                     </a>
                     <a
-                      href="https://www.facebook.com/cannyminds"
+                      href="https://www.facebook.com/p/CannyMinds-Technology-Solutions-100063646614219/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 bg-[#1877f2] hover:bg-[#0c63d4] rounded-lg flex items-center justify-center text-white transition-all"
@@ -160,7 +160,7 @@ export default function ContactPage() {
                       <FacebookIcon />
                     </a>
                     <a
-                      href="https://www.instagram.com/cannyminds"
+                      href="https://www.instagram.com/cannyminds_technology/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 rounded-lg flex items-center justify-center text-white transition-all"

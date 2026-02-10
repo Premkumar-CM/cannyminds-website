@@ -91,9 +91,10 @@ export const jsonLd = {
   logo: `${siteConfig.url}/logo.png`,
   image: siteConfig.ogImage,
   sameAs: [
-    "https://www.linkedin.com/company/cannyminds",
-    "https://twitter.com/cannyminds",
-    "https://www.facebook.com/cannyminds",
+    "https://in.linkedin.com/company/cannyminds-technology-solutions",
+    "https://x.com/cannyminds",
+    "https://www.facebook.com/p/CannyMinds-Technology-Solutions-100063646614219/",
+    "https://www.instagram.com/cannyminds_technology/",
   ],
   contactPoint: [
     {

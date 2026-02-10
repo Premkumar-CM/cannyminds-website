@@ -47,18 +47,11 @@ export default function Navigation() {
   const [mobileBpmOpen, setMobileBpmOpen] = useState(false);
   const [mobileUseCasesOpen, setMobileUseCasesOpen] = useState(false);
   const [mobileAiOpen, setMobileAiOpen] = useState(false);
-  const [mobileDepartmentOpen, setMobileDepartmentOpen] = useState(false);
-  const [mobileServiceCategoryOpen, setMobileServiceCategoryOpen] = useState(false);
-
   // State for tracking expanded items in mobile menu (3rd level)
   const [expandedMobileIndustry, setExpandedMobileIndustry] = useState<string | null>(null);
-  const [expandedMobileDepartment, setExpandedMobileDepartment] = useState<string | null>(null);
-  const [expandedMobileService, setExpandedMobileService] = useState<string | null>(null);
 
-  const [activeMenuTab, setActiveMenuTab] = useState<'industry' | 'department' | 'service' | 'solutions'>('industry');
-  const [hoveredIndustry, setHoveredIndustry] = useState<string | null>('financial-services');
-  const [hoveredDepartment, setHoveredDepartment] = useState<string | null>('human-resources');
-  const [hoveredService, setHoveredService] = useState<string | null>('document-management');
+  const [activeMenuTab, setActiveMenuTab] = useState<'industry' | 'solutions'>('industry');
+  const [hoveredIndustry, setHoveredIndustry] = useState<string | null>('healthcare');
   const [hoveredBpmCategory, setHoveredBpmCategory] = useState<string | null>('Document Lifecycle & Control Processes');
 
   const { scrollY } = useScroll();
@@ -119,19 +112,6 @@ export default function Navigation() {
     subTopics: { name: string; href: string }[];
     groups?: { title: string; items: { name: string; href: string }[] }[];
   }> = {
-    'financial-services': {
-      name: "Financial Services",
-      href: "/industries/financial-services",
-      icon: AccountBalance,
-      subTopics: [
-        { name: "Overview", href: "/industries/financial-services" },
-        { name: "Document Management", href: "/industries/financial-services/document-management" },
-        { name: "Records & Archives", href: "/industries/financial-services/records-archives" },
-        { name: "Digitization Services", href: "/industries/financial-services/digitization" },
-        { name: "Workflow Automation", href: "/industries/financial-services/workflow-automation" },
-        { name: "Compliance Solutions", href: "/industries/financial-services/compliance" },
-      ]
-    },
     'healthcare': {
       name: "Healthcare",
       href: "/use-cases/healthcare",
@@ -171,191 +151,26 @@ export default function Navigation() {
         { name: "FMCG Digital Transformation", href: "/solutions/manufacturing/fmcg-digital-transformation" },
       ]
     },
-    'government': {
-      name: "Government",
-      href: "/industries/government",
-      icon: AccountBalanceWallet,
-      subTopics: [
-        { name: "Overview", href: "/industries/government" },
-        { name: "Citizen Services", href: "/industries/government/citizen-services" },
-        { name: "Land Records", href: "/industries/government/land-records" },
-        { name: "e-Office", href: "/industries/government/e-office" },
-        { name: "Public Archives", href: "/industries/government/archives" },
-      ]
-    },
-    'legal': {
-      name: "Legal Services",
-      href: "/industries/legal",
-      icon: Gavel,
-      subTopics: [
-        { name: "Overview", href: "/industries/legal" },
-        { name: "Case Management", href: "/industries/legal/case-management" },
-        { name: "Contracts", href: "/industries/legal/contracts" },
-        { name: "Litigation Support", href: "/industries/legal/litigation" },
-        { name: "Compliance", href: "/industries/legal/compliance" },
-      ]
-    },
-    'insurance': {
-      name: "Insurance",
-      href: "/industries/insurance",
-      icon: VerifiedUser,
-      subTopics: [
-        { name: "Overview", href: "/industries/insurance" },
-        { name: "Policy Management", href: "/industries/insurance/policy" },
-        { name: "Claims Processing", href: "/industries/insurance/claims" },
-        { name: "Underwriting", href: "/industries/insurance/underwriting" },
-        { name: "Agent Management", href: "/industries/insurance/agents" },
-      ]
-    },
-    'education': {
-      name: "Education",
-      href: "/industries/education",
-      icon: School,
-      subTopics: [
-        { name: "Overview", href: "/industries/education" },
-        { name: "Student Records", href: "/industries/education/student-records" },
-        { name: "Admissions", href: "/industries/education/admissions" },
-        { name: "Examinations", href: "/industries/education/examinations" },
-        { name: "Faculty Management", href: "/industries/education/faculty" },
-      ]
-    },
   };
 
-  const departmentData: Record<string, { name: string; href: string; icon: typeof People; subTopics: { name: string; href: string }[] }> = {
-    'human-resources': {
-      name: "Human Resources",
-      href: "/departments/human-resources",
-      icon: People,
-      subTopics: [
-        { name: "Overview", href: "/departments/human-resources" },
-        { name: "Employee Records", href: "/departments/human-resources/employee-records" },
-        { name: "Onboarding", href: "/departments/human-resources/onboarding" },
-        { name: "Payroll", href: "/departments/human-resources/payroll" },
-        { name: "Attendance", href: "/departments/human-resources/attendance" },
-      ]
-    },
-    'finance': {
-      name: "Finance & Accounting",
-      href: "/departments/finance",
-      icon: Receipt,
-      subTopics: [
-        { name: "Overview", href: "/departments/finance" },
-        { name: "Invoice Processing", href: "/departments/finance/invoice-processing" },
-        { name: "Expense Management", href: "/departments/finance/expense" },
-        { name: "Audit Trail", href: "/departments/finance/audit" },
-      ]
-    },
-    'legal-compliance': {
-      name: "Legal & Compliance",
-      href: "/departments/legal-compliance",
-      icon: Gavel,
-      subTopics: [
-        { name: "Overview", href: "/departments/legal-compliance" },
-        { name: "Contracts", href: "/departments/legal-compliance/contracts" },
-        { name: "Regulatory Filing", href: "/departments/legal-compliance/regulatory" },
-        { name: "Policy Management", href: "/departments/legal-compliance/policy" },
-      ]
-    },
-    'operations': {
-      name: "Operations",
-      href: "/departments/operations",
-      icon: Settings,
-      subTopics: [
-        { name: "Overview", href: "/departments/operations" },
-        { name: "SOPs", href: "/departments/operations/sops" },
-        { name: "Vendor Management", href: "/departments/operations/vendor" },
-        { name: "Quality Records", href: "/departments/operations/quality" },
-      ]
-    },
-  };
 
-  const serviceData: Record<string, { name: string; href: string; icon: typeof Description; subTopics: { name: string; href: string }[] }> = {
-    'digitization': {
-      name: "Document Digitization",
-      href: "/services/digitization",
-      icon: Scanner,
-      subTopics: [
-        { name: "Overview", href: "/services/digitization" },
-        { name: "Bulk Scanning", href: "/services/digitization/bulk-scanning" },
-        { name: "OCR & Indexing", href: "/services/digitization/ocr-indexing" },
-        { name: "Quality Assurance", href: "/services/digitization/quality-assurance" },
-        { name: "Secure Delivery", href: "/services/digitization/secure-delivery" },
-      ]
-    },
-    'manpower': {
-      name: "Scanning Manpower",
-      href: "/services/manpower",
-      icon: People,
-      subTopics: [
-        { name: "Overview", href: "/services/manpower" },
-        { name: "On-site Resources", href: "/services/manpower/on-site" },
-        { name: "Dedicated Teams", href: "/services/manpower/dedicated-teams" },
-        { name: "Managed Services", href: "/services/manpower/managed-services" },
-      ]
-    },
-    'implementation': {
-      name: "Implementation & Migration",
-      href: "/services/implementation",
-      icon: Settings,
-      subTopics: [
-        { name: "Overview", href: "/services/implementation" },
-        { name: "System Setup", href: "/services/implementation/setup" },
-        { name: "Data Migration", href: "/services/implementation/data-migration" },
-        { name: "Integration Services", href: "/services/implementation/integration" },
-        { name: "Go-Live Support", href: "/services/implementation/go-live" },
-      ]
-    },
-    'training': {
-      name: "Software Training",
-      href: "/services/training",
-      icon: School,
-      subTopics: [
-        { name: "Overview", href: "/services/training" },
-        { name: "User Training", href: "/services/training/user-training" },
-        { name: "Admin Training", href: "/services/training/admin-training" },
-        { name: "Train the Trainer", href: "/services/training/train-the-trainer" },
-      ]
-    },
-    'consulting': {
-      name: "Consulting & Advisory",
-      href: "/services/consulting",
-      icon: BusinessCenter,
-      subTopics: [
-        { name: "Overview", href: "/services/consulting" },
-        { name: "Process Assessment", href: "/services/consulting/process-assessment" },
-        { name: "Digital Strategy", href: "/services/consulting/digital-strategy" },
-        { name: "Compliance Advisory", href: "/services/consulting/compliance" },
-      ]
-    },
-    'support': {
-      name: "Support & Maintenance",
-      href: "/services/support",
-      icon: Construction,
-      subTopics: [
-        { name: "Overview", href: "/services/support" },
-        { name: "Annual Maintenance", href: "/services/support/amc" },
-        { name: "Helpdesk Support", href: "/services/support/helpdesk" },
-        { name: "System Upgrades", href: "/services/support/upgrades" },
-      ]
-    },
-  };
 
   const bpmCategories = [
-    { name: "Document Lifecycle & Control Processes", href: "/bpm#document-lifecycle", icon: Description },
-    { name: "Quality Management Processes", href: "/bpm#quality-management", icon: VerifiedUser },
-    { name: "Audit & Compliance Processes", href: "/bpm#audit-compliance", icon: VerifiedUser },
-    { name: "Production & Operations Processes", href: "/bpm#production-operations", icon: Factory },
-    { name: "Engineering & Change Management", href: "/bpm#engineering-change", icon: Construction },
-    { name: "Validation & Qualification Processes", href: "/bpm#validation-qualification", icon: VerifiedUser },
-    { name: "Healthcare & Clinical Processes", href: "/bpm#healthcare-clinical", icon: LocalHospital },
-    { name: "Legal & Contract Management", href: "/bpm#legal-contract", icon: Gavel },
-    { name: "Finance & BFSI Processes", href: "/bpm#finance-bfsi", icon: AccountBalance },
-    { name: "Procurement & Vendor Management", href: "/bpm#procurement-vendor", icon: Business },
-    { name: "HR & Administration Processes", href: "/bpm#hr-administration", icon: People },
-    { name: "IT & Information Security Processes", href: "/bpm#it-security", icon: Settings },
-    { name: "Risk Management & Governance", href: "/bpm#risk-governance", icon: HealthAndSafety },
-    { name: "Customer Service & Support", href: "/bpm#customer-service", icon: People },
-    { name: "Records Retention & Legal Hold", href: "/bpm#records-retention", icon: Description },
+    { name: "Document Lifecycle & Control Processes", icon: Description },
+    { name: "Quality Management Processes", icon: VerifiedUser },
+    { name: "Audit & Compliance Processes", icon: VerifiedUser },
+    { name: "Production & Operations Processes", icon: Factory },
+    { name: "Engineering & Change Management", icon: Construction },
+    { name: "Validation & Qualification Processes", icon: VerifiedUser },
+    { name: "Healthcare & Clinical Processes", icon: LocalHospital },
+    { name: "Legal & Contract Management", icon: Gavel },
+    { name: "Finance & BFSI Processes", icon: AccountBalance },
+    { name: "Procurement & Vendor Management", icon: Business },
+    { name: "HR & Administration Processes", icon: People },
+    { name: "IT & Information Security Processes", icon: Settings },
+    { name: "Risk Management & Governance", icon: HealthAndSafety },
+    { name: "Customer Service & Support", icon: People },
+    { name: "Records Retention & Legal Hold", icon: Description },
   ];
 
   const bpmDetails: Record<string, string[]> = {
@@ -599,28 +414,7 @@ export default function Navigation() {
                                 By Industry
                                 <KeyboardArrowRight sx={{ fontSize: 18 }} />
                               </button>
-                              {/* Hidden by request
-                              <button
-                                onClick={() => setActiveMenuTab('department')}
-                                className={`w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium transition-all flex items-center justify-between ${activeMenuTab === 'department'
-                                  ? 'bg-primary text-white'
-                                  : 'text-gray-700 hover:bg-gray-100'
-                                  }`}
-                              >
-                                By Department
-                                <KeyboardArrowRight sx={{ fontSize: 18 }} />
-                              </button>
-                              <button
-                                onClick={() => setActiveMenuTab('service')}
-                                className={`w-full text-left px-3 py-2.5 rounded-lg text-sm font-medium transition-all flex items-center justify-between ${activeMenuTab === 'service'
-                                  ? 'bg-primary text-white'
-                                  : 'text-gray-700 hover:bg-gray-100'
-                                  }`}
-                              >
-                                By Service
-                                <KeyboardArrowRight sx={{ fontSize: 18 }} />
-                              </button>
-                              */}
+
 
                               {/* Divider */}
                               <div className="border-t border-gray-200 my-3"></div>
@@ -644,7 +438,7 @@ export default function Navigation() {
                           {/* Column 2: Industry/Department/Service List */}
                           <div className="col-span-4 p-6 border-r border-gray-200">
                             <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">
-                              {activeMenuTab === 'industry' ? 'Select Industry' : activeMenuTab === 'department' ? 'Select Department' : 'Select Service'}
+                              Select Industry
                             </h4>
                             <div className="space-y-1">
                               {activeMenuTab === 'industry' && (
@@ -669,50 +463,7 @@ export default function Navigation() {
                                   );
                                 })
                               )}
-                              {activeMenuTab === 'department' && (
-                                Object.entries(departmentData).map(([key, dept]) => {
-                                  const IconComponent = dept.icon;
-                                  return (
-                                    <button
-                                      key={key}
-                                      onMouseEnter={() => setHoveredDepartment(key)}
-                                      onClick={() => setHoveredDepartment(key)}
-                                      className={`w-full text-left px-3 py-2.5 rounded-lg text-sm transition-all flex items-center justify-between group ${hoveredDepartment === key
-                                        ? 'bg-primary/10 text-primary'
-                                        : 'text-gray-700 hover:bg-gray-50'
-                                        }`}
-                                    >
-                                      <span className="flex items-center gap-2">
-                                        <IconComponent sx={{ fontSize: 18 }} className={hoveredDepartment === key ? 'text-primary' : 'text-gray-400'} />
-                                        {dept.name}
-                                      </span>
-                                      <KeyboardArrowRight sx={{ fontSize: 18 }} className={hoveredDepartment === key ? 'text-primary' : 'text-gray-300'} />
-                                    </button>
-                                  );
-                                })
-                              )}
-                              {activeMenuTab === 'service' && (
-                                Object.entries(serviceData).map(([key, service]) => {
-                                  const IconComponent = service.icon;
-                                  return (
-                                    <button
-                                      key={key}
-                                      onMouseEnter={() => setHoveredService(key)}
-                                      onClick={() => setHoveredService(key)}
-                                      className={`w-full text-left px-3 py-2.5 rounded-lg text-sm transition-all flex items-center justify-between group ${hoveredService === key
-                                        ? 'bg-primary/10 text-primary'
-                                        : 'text-gray-700 hover:bg-gray-50'
-                                        }`}
-                                    >
-                                      <span className="flex items-center gap-2">
-                                        <IconComponent sx={{ fontSize: 18 }} className={hoveredService === key ? 'text-primary' : 'text-gray-400'} />
-                                        {service.name}
-                                      </span>
-                                      <KeyboardArrowRight sx={{ fontSize: 18 }} className={hoveredService === key ? 'text-primary' : 'text-gray-300'} />
-                                    </button>
-                                  );
-                                })
-                              )}
+
                             </div>
                           </div>
 
@@ -766,55 +517,8 @@ export default function Navigation() {
                                 </div>
                               </motion.div>
                             )}
-                            {activeMenuTab === 'department' && hoveredDepartment && departmentData[hoveredDepartment] && (
-                              <motion.div
-                                initial={{ opacity: 0, x: 10 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.2 }}
-                                key={hoveredDepartment}
-                              >
-                                <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">
-                                  {departmentData[hoveredDepartment].name}
-                                </h4>
-                                <div className="grid grid-cols-2 gap-2">
-                                  {departmentData[hoveredDepartment].subTopics.map((topic) => (
-                                    <Link
-                                      key={topic.name}
-                                      href={topic.href}
-                                      onClick={() => setSolutionsDropdownOpen(false)}
-                                      className={`px-3 py-2.5 rounded-lg text-sm transition-all duration-200 flex items-center gap-2 w-fit ${pathname === topic.href ? 'text-primary bg-primary/5 font-medium' : 'text-gray-600 hover:text-primary hover:bg-white hover:shadow-sm'}`}
-                                    >
-                                      {pathname === topic.href && <KeyboardArrowRight sx={{ fontSize: 16 }} className="text-primary" />}
-                                      {topic.name}
-                                    </Link>
-                                  ))}
-                                </div>
-                              </motion.div>
-                            )}
-                            {activeMenuTab === 'service' && hoveredService && serviceData[hoveredService] && (
-                              <motion.div
-                                initial={{ opacity: 0, x: 10 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.2 }}
-                                key={hoveredService}
-                              >
-                                <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">
-                                  {serviceData[hoveredService].name}
-                                </h4>
-                                <div className="grid grid-cols-2 gap-2">
-                                  {serviceData[hoveredService].subTopics.map((topic) => (
-                                    <Link
-                                      key={topic.name}
-                                      href={topic.href}
-                                      onClick={() => setSolutionsDropdownOpen(false)}
-                                      className={`px-3 py-2.5 rounded-lg text-sm transition-all duration-200 ${pathname === topic.href ? 'text-primary bg-primary/5 font-medium' : 'text-gray-600 hover:text-primary hover:bg-white hover:shadow-sm'}`}
-                                    >
-                                      {topic.name}
-                                    </Link>
-                                  ))}
-                                </div>
-                              </motion.div>
-                            )}
+
+
                           </div>
                         </div>
                       </div>
@@ -886,17 +590,15 @@ export default function Navigation() {
                                 </div>
                                 <div className="grid grid-cols-2 gap-4">
                                   {bpmDetails[hoveredBpmCategory].map((point, index) => (
-                                    <Link
+                                    <div
                                       key={index}
-                                      href="/solutions/pharmaceutical/batch-record-automation"
-                                      onClick={() => setBpmDropdownOpen(false)}
-                                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-white hover:shadow-sm transition-all group border border-transparent hover:border-gray-100"
+                                      className="flex items-start gap-3 p-3 rounded-lg bg-white border border-gray-100"
                                     >
-                                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 group-hover:bg-primary flex-shrink-0 transition-colors" />
-                                      <span className="text-sm text-gray-600 group-hover:text-primary leading-relaxed font-medium">
+                                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 flex-shrink-0" />
+                                      <span className="text-sm text-gray-600 leading-relaxed font-medium">
                                         {point}
                                       </span>
-                                    </Link>
+                                    </div>
                                   ))}
                                 </div>
                                 <div className="mt-8 pt-6 border-t border-gray-200 flex justify-end">
@@ -1205,127 +907,7 @@ export default function Navigation() {
                           )}
                         </div>
 
-                        {/* By Department - Mobile */}
-                        <div className="bg-gray-50 rounded-lg p-2">
-                          <button
-                            onClick={() => setMobileDepartmentOpen(!mobileDepartmentOpen)}
-                            className="flex items-center justify-between w-full text-sm font-semibold text-primary py-2 px-2"
-                          >
-                            <span className="flex items-center gap-2">
-                              <People sx={{ fontSize: 18 }} />
-                              By Department
-                            </span>
-                            <KeyboardArrowDown
-                              sx={{ fontSize: 18 }}
-                              className={`transition-transform ${mobileDepartmentOpen ? 'rotate-180' : ''}`}
-                            />
-                          </button>
-                          {mobileDepartmentOpen && (
-                            <div className="mt-1 space-y-1">
-                              {Object.entries(departmentData).map(([key, dept]) => {
-                                const IconComponent = dept.icon;
-                                const isExpanded = expandedMobileDepartment === key;
-                                return (
-                                  <div key={dept.name} className="border-b border-gray-100 last:border-0">
-                                    <button
-                                      onClick={() => setExpandedMobileDepartment(isExpanded ? null : key)}
-                                      className="w-full flex items-center justify-between text-gray-700 hover:text-primary hover:bg-white text-xs py-2 px-3 transition-colors rounded-md"
-                                    >
-                                      <div className="flex items-center gap-2">
-                                        <IconComponent sx={{ fontSize: 16 }} />
-                                        <span>{dept.name}</span>
-                                      </div>
-                                      <KeyboardArrowDown
-                                        sx={{ fontSize: 16 }}
-                                        className={`transition-transform ${isExpanded ? 'rotate-180' : ''}`}
-                                      />
-                                    </button>
-                                    {isExpanded && (
-                                      <div className="ml-6 mt-1 space-y-1 mb-2">
-                                        {dept.subTopics.map((topic) => (
-                                          <Link
-                                            key={topic.name}
-                                            href={topic.href}
-                                            onClick={() => {
-                                              setIsMobileMenuOpen(false);
-                                              setMobileSolutionsOpen(false);
-                                              setMobileDepartmentOpen(false);
-                                              setExpandedMobileDepartment(null);
-                                            }}
-                                            className="block text-gray-600 hover:text-primary text-sm py-2 px-3 transition-colors"
-                                          >
-                                            {topic.name}
-                                          </Link>
-                                        ))}
-                                      </div>
-                                    )}
-                                  </div>
-                                );
-                              })}
-                            </div>
-                          )}
-                        </div>
 
-                        {/* By Service - Mobile */}
-                        <div className="bg-gray-50 rounded-lg p-2">
-                          <button
-                            onClick={() => setMobileServiceCategoryOpen(!mobileServiceCategoryOpen)}
-                            className="flex items-center justify-between w-full text-sm font-semibold text-primary py-2 px-2"
-                          >
-                            <span className="flex items-center gap-2">
-                              <Settings sx={{ fontSize: 18 }} />
-                              By Service
-                            </span>
-                            <KeyboardArrowDown
-                              sx={{ fontSize: 18 }}
-                              className={`transition-transform ${mobileServiceCategoryOpen ? 'rotate-180' : ''}`}
-                            />
-                          </button>
-                          {mobileServiceCategoryOpen && (
-                            <div className="mt-1 space-y-1">
-                              {Object.entries(serviceData).map(([key, service]) => {
-                                const IconComponent = service.icon;
-                                const isExpanded = expandedMobileService === key;
-                                return (
-                                  <div key={service.name} className="border-b border-gray-100 last:border-0">
-                                    <button
-                                      onClick={() => setExpandedMobileService(isExpanded ? null : key)}
-                                      className="w-full flex items-center justify-between text-gray-700 hover:text-primary hover:bg-white text-xs py-2 px-3 transition-colors rounded-md"
-                                    >
-                                      <div className="flex items-center gap-2">
-                                        <IconComponent sx={{ fontSize: 16 }} />
-                                        <span>{service.name}</span>
-                                      </div>
-                                      <KeyboardArrowDown
-                                        sx={{ fontSize: 16 }}
-                                        className={`transition-transform ${isExpanded ? 'rotate-180' : ''}`}
-                                      />
-                                    </button>
-                                    {isExpanded && (
-                                      <div className="ml-6 mt-1 space-y-1 mb-2">
-                                        {service.subTopics.map((topic) => (
-                                          <Link
-                                            key={topic.name}
-                                            href={topic.href}
-                                            onClick={() => {
-                                              setIsMobileMenuOpen(false);
-                                              setMobileSolutionsOpen(false);
-                                              setMobileServiceCategoryOpen(false);
-                                              setExpandedMobileService(null);
-                                            }}
-                                            className="block text-gray-600 hover:text-primary text-sm py-2 px-3 transition-colors"
-                                          >
-                                            {topic.name}
-                                          </Link>
-                                        ))}
-                                      </div>
-                                    )}
-                                  </div>
-                                );
-                              })}
-                            </div>
-                          )}
-                        </div>
                       </motion.div>
                     )}
 
@@ -1346,19 +928,15 @@ export default function Navigation() {
                             {bpmCategories.map((category) => {
                               const IconComponent = category.icon;
                               return (
-                                <Link
+                                <div
                                   key={category.name}
-                                  href={category.href}
-                                  onClick={() => {
-                                    setIsMobileMenuOpen(false);
-                                    setMobileBpmOpen(false);
-                                  }}
-                                  className="flex items-center gap-2 text-gray-600 hover:text-primary hover:bg-white text-xs py-2 px-3 transition-colors rounded-md"
+                                  className="flex items-center gap-2 text-gray-600 text-xs py-2 px-3 bg-white rounded-md"
                                 >
                                   <IconComponent sx={{ fontSize: 14 }} />
                                   {category.name}
-                                </Link>
+                                </div>
                               );
+
                             })}
                           </div>
                           <Link

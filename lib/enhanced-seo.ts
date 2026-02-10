@@ -87,10 +87,10 @@ export const enhancedSiteConfig = {
 
   // Social media profiles
   socialProfiles: {
-    linkedin: "https://www.linkedin.com/company/cannyminds",
-    twitter: "https://twitter.com/cannyminds",
-    facebook: "https://www.facebook.com/cannyminds",
-    instagram: "https://www.instagram.com/cannyminds",
+    linkedin: "https://in.linkedin.com/company/cannyminds-technology-solutions",
+    twitter: "https://x.com/cannyminds",
+    facebook: "https://www.facebook.com/p/CannyMinds-Technology-Solutions-100063646614219/",
+    instagram: "https://www.instagram.com/cannyminds_technology/",
     youtube: "https://www.youtube.com/cannyminds",
   },
 };

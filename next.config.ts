@@ -179,12 +179,48 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/use-cases/fmcg',
-        destination: '/industries/manufacturing',
+        destination: '/solutions/manufacturing',
         permanent: true,
       },
       {
         source: '/use-cases/manufacturing-engineering',
-        destination: '/industries/manufacturing',
+        destination: '/solutions/manufacturing',
+        permanent: true,
+      },
+      // BPM redirects (pages removed)
+      {
+        source: '/bpm/safety-compliance',
+        destination: '/solutions/manufacturing',
+        permanent: true,
+      },
+      {
+        source: '/bpm/legal-management',
+        destination: '/product/document-management',
+        permanent: true,
+      },
+      {
+        source: '/bpm/invoice-management',
+        destination: '/product/document-management',
+        permanent: true,
+      },
+      {
+        source: '/bpm/procurement',
+        destination: '/product/document-management',
+        permanent: true,
+      },
+      {
+        source: '/bpm/custom-workflows',
+        destination: '/product/document-management',
+        permanent: true,
+      },
+      {
+        source: '/product/invoice-management',
+        destination: '/product/document-management',
+        permanent: true,
+      },
+      {
+        source: '/product/ai-solutions',
+        destination: '/ai-solutions',
         permanent: true,
       },
     ];

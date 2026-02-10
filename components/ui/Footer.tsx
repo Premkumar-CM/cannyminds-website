@@ -15,7 +15,6 @@ export default function Footer() {
     { name: "CannyScan", href: "/product/scanning-solution" },
     { name: "CannyTrack", href: "/product/tracking-system" },
     { name: "CannyRMS", href: "/product/rms" },
-    { name: "CannySCM", href: "/product/cms" }, // Assuming CMS is SCM equivalent based on typical naming, or just remove if unsure. Actually, simply removing AI Solutions line is safer.
     { name: "Canny eBMR", href: "/product/ebmr" },
   ];
 
@@ -64,10 +63,10 @@ export default function Footer() {
                 <motion.a
                   key={social}
                   href={
-                    social === "linkedin" ? "https://www.linkedin.com/company/cannyminds" :
-                      social === "twitter" ? "https://twitter.com/cannyminds" :
-                        social === "facebook" ? "https://www.facebook.com/cannyminds" :
-                          social === "instagram" ? "https://www.instagram.com/cannyminds" : "#"
+                    social === "linkedin" ? "https://in.linkedin.com/company/cannyminds-technology-solutions" :
+                      social === "twitter" ? "https://x.com/cannyminds" :
+                        social === "facebook" ? "https://www.facebook.com/p/CannyMinds-Technology-Solutions-100063646614219/" :
+                          social === "instagram" ? "https://www.instagram.com/cannyminds_technology/" : "#"
                   }
                   target="_blank"
                   rel="noopener noreferrer"

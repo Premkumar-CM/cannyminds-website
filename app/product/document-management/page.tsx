@@ -119,6 +119,18 @@ const jsonLd = {
       "applicationCategory": "BusinessApplication",
       "description": "Enterprise document management system with OCR and workflow automation",
       "operatingSystem": "Web, Windows, macOS, Linux",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://cannyminds-website.vercel.app/product/document-management",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "Custom Pricing",
+          "priceCurrency": "INR"
+        }
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
@@ -312,7 +324,7 @@ export default function CannyECMProductPage() {
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
                 <strong>CannyECM</strong> is a comprehensive enterprise document management system (DMS) designed to eliminate paper-based
-                workflows and digitize your entire document ecosystem. Whether you&apos;re managing <Link href="/bpm/invoice-management" className="text-primary hover:underline">invoices</Link>, contracts, <Link href="/product/hr-management" className="text-primary hover:underline">HR records</Link>, or
+                workflows and digitize your entire document ecosystem. Whether you&apos;re managing invoices, contracts, <Link href="/product/hr-management" className="text-primary hover:underline">HR records</Link>, or
                 compliance documentation, CannyECM provides a centralized platform to <strong>organize, search, retrieve, and share</strong> professional
                 documents with military-grade security.
               </p>
@@ -326,7 +338,7 @@ export default function CannyECMProductPage() {
               <div className="bg-primary-50 border-l-4 border-primary p-6 rounded-r-lg">
                 <p className="font-semibold text-secondary mb-2">🎯 Perfect For:</p>
                 <p className="text-gray-700">
-                  <Link href="/use-cases/healthcare" className="text-primary hover:underline">Healthcare</Link>, <Link href="/use-cases/legal" className="text-primary hover:underline">Legal</Link>, <Link href="/industries/banking-finance" className="text-primary hover:underline">Finance</Link>, <Link href="/industries/manufacturing" className="text-primary hover:underline">Manufacturing</Link>, <Link href="/industries/government" className="text-primary hover:underline">Government</Link>, and any organization managing large volumes of documents
+                  <Link href="/use-cases/healthcare" className="text-primary hover:underline">Healthcare</Link>, <Link href="/use-cases/legal" className="text-primary hover:underline">Legal</Link>, <Link href="/use-cases/bfsi" className="text-primary hover:underline">Finance</Link>, <Link href="/solutions/manufacturing" className="text-primary hover:underline">Manufacturing</Link>, Government, and any organization managing large volumes of documents
                   requiring compliance, security, and efficient retrieval. For pharmaceutical compliance, explore our <Link href="/solutions/pharmaceutical" className="text-primary hover:underline">Pharmaceutical Solutions</Link>.
                 </p>
               </div>
@@ -423,14 +435,14 @@ export default function CannyECMProductPage() {
               <div className="bg-white border border-gray-200 rounded-lg p-5">
                 <h3 className="text-lg font-bold text-primary mb-2">Workflow & Approvals</h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  Create approval workflows for documents that need review by multiple people. Design workflows with visual diagram builder. Add multiple approvers with conditions and set deadlines with automatic reminders. For advanced business process automation, explore our <Link href="/bpm/custom-workflows" className="text-primary hover:underline">Custom Workflow Solutions</Link> or <Link href="/bpm/invoice-management" className="text-primary hover:underline">Invoice Management</Link> module.
+                  Create approval workflows for documents that need review by multiple people. Design workflows with visual diagram builder. Add multiple approvers with conditions and set deadlines with automatic reminders.
                 </p>
               </div>
 
               <div className="bg-white border border-gray-200 rounded-lg p-5">
                 <h3 className="text-lg font-bold text-primary mb-2">Metadata & Custom Fields</h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  Add custom information to documents like expiry dates, invoice numbers, or business-specific data. Create custom fields with validation rules. Set retention periods and reminders. For vendor and procurement documents, see our <Link href="/bpm/procurement" className="text-primary hover:underline">Procurement Management</Link> solution.
+                  Add custom information to documents like expiry dates, invoice numbers, or business-specific data. Create custom fields with validation rules. Set retention periods and reminders.
                 </p>
               </div>
 
@@ -682,7 +694,7 @@ export default function CannyECMProductPage() {
                 </div>
                 <h3 className="text-2xl font-bold text-secondary mb-4">Legal & Law Firms</h3>
                 <p className="text-gray-700 mb-6">
-                  Organize case files, contracts, legal briefs, and client communications with matter-based filing. Explore our <Link href="/use-cases/legal" className="text-primary hover:underline">legal document management</Link> and <Link href="/bpm/legal-management" className="text-primary hover:underline">legal workflow solutions</Link>.
+                  Organize case files, contracts, legal briefs, and client communications with matter-based filing. Explore our <Link href="/use-cases/legal" className="text-primary hover:underline">legal document management solutions</Link>.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">Matter-centric organization</span></div>
@@ -699,7 +711,7 @@ export default function CannyECMProductPage() {
                 </div>
                 <h3 className="text-2xl font-bold text-secondary mb-4">Finance & Banking</h3>
                 <p className="text-gray-700 mb-6">
-                  Handle loan applications, KYC documents, compliance reports with SOX and regulatory compliance. See our <Link href="/use-cases/bfsi" className="text-primary hover:underline">BFSI solutions</Link> and <Link href="/industries/banking-finance" className="text-primary hover:underline">banking industry page</Link>.
+                  Handle loan applications, KYC documents, compliance reports with SOX and regulatory compliance. See our <Link href="/use-cases/bfsi" className="text-primary hover:underline">BFSI solutions</Link>.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">KYC/AML documentation</span></div>
@@ -716,7 +728,7 @@ export default function CannyECMProductPage() {
                 </div>
                 <h3 className="text-2xl font-bold text-secondary mb-4">Manufacturing</h3>
                 <p className="text-gray-700 mb-6">
-                  Manage quality certificates, supplier contracts, and shipping documents across global operations. Digitize your <Link href="/solutions/manufacturing/shop-floor-automation" className="text-primary hover:underline">shop floor</Link> paperwork and explore <Link href="/industries/manufacturing" className="text-primary hover:underline">manufacturing solutions</Link> including <Link href="/solutions/manufacturing/document-control" className="text-primary hover:underline">document control</Link> and <Link href="/solutions/manufacturing/quality-management" className="text-primary hover:underline">quality management</Link>.
+                  Manage quality certificates, supplier contracts, and shipping documents across global operations. Digitize your <Link href="/solutions/manufacturing/shop-floor-automation" className="text-primary hover:underline">shop floor</Link> paperwork and explore <Link href="/solutions/manufacturing" className="text-primary hover:underline">manufacturing solutions</Link> including <Link href="/solutions/manufacturing/document-control" className="text-primary hover:underline">document control</Link> and <Link href="/solutions/manufacturing/quality-management" className="text-primary hover:underline">quality management</Link>.
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">Certificate tracking</span></div>

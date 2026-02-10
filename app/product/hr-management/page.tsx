@@ -116,6 +116,18 @@ const jsonLd = {
       "applicationCategory": "BusinessApplication",
       "description": "Complete HR and payroll management system with attendance tracking and performance management",
       "operatingSystem": "Web, Windows, macOS, Linux, iOS, Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://cannyminds-website.vercel.app/product/hr-management",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "Custom Pricing",
+          "priceCurrency": "INR"
+        }
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
