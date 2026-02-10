@@ -29,7 +29,7 @@ export const pharmaContent = {
         subtitle: "Compliance, Quality, Efficiency, and Cost Optimization",
         description: (
             <>
-                Transform your pharmaceutical operations with <Link href="/solutions/product/ebmr" className="text-blue-600 hover:underline">FDA-compliant Generative AI</Link>. From <Link href="/solutions/product/ebmr" className="text-blue-600 hover:underline">eBMR</Link> to Regulatory Audits, we ensure integrity, speed, and precision.
+                Transform your pharmaceutical operations with <Link href="/product/ebmr" className="text-blue-600 hover:underline">FDA-compliant Generative AI</Link>. From <Link href="/product/ebmr" className="text-blue-600 hover:underline">eBMR</Link> to Regulatory Audits, we ensure integrity, speed, and precision.
             </>
         ),
     },

@@ -1074,7 +1074,7 @@ export default function CannyRMSPage() {
                 <p className="text-gray-600 text-sm mb-4">
                   Comprehensive digital document management with workflow automation, OCR, and FDA 21 CFR Part 11 compliance.
                 </p>
-                <Link href="/solutions/product/document-management" className="text-primary font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
+                <Link href="/product/document-management" className="text-primary font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
                   Learn about CannyECM <ArrowForward sx={{ fontSize: 16 }} />
                 </Link>
               </div>
@@ -1093,7 +1093,7 @@ export default function CannyRMSPage() {
                 <p className="text-gray-600 text-sm mb-4">
                   High-speed document scanning with OCR, batch processing, and direct integration with CannyRMS and CannyECM.
                 </p>
-                <Link href="/solutions/product/scanning-solution" className="text-primary font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
+                <Link href="/product/scanning-solution" className="text-primary font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
                   Explore CannyScan <ArrowForward sx={{ fontSize: 16 }} />
                 </Link>
               </div>
@@ -1112,7 +1112,7 @@ export default function CannyRMSPage() {
                 <p className="text-gray-600 text-sm mb-4">
                   Real-time tracking of documents with barcode scanning, chain of custody management, and automated alerts.
                 </p>
-                <Link href="/solutions/product/tracking-system" className="text-primary font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
+                <Link href="/product/tracking-system" className="text-primary font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
                   Discover CannyTrack <ArrowForward sx={{ fontSize: 16 }} />
                 </Link>
               </div>

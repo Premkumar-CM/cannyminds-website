@@ -17,7 +17,7 @@ export const textileContent = {
         subtitle: "Design Faster, Produce Smarter, Deliver Better",
         description: (
             <>
-                Transform your textile operations with <Link href="/solutions/product/tracking-system" className="text-blue-600 hover:underline">AI-powered merchandising automation</Link>, intelligent quality control, trend-driven design intelligence, and seamless buyer communication that accelerates your design-to-production cycle.
+                Transform your textile operations with <Link href="/product/tracking-system" className="text-blue-600 hover:underline">AI-powered merchandising automation</Link>, intelligent quality control, trend-driven design intelligence, and seamless buyer communication that accelerates your design-to-production cycle.
             </>
         ),
     },

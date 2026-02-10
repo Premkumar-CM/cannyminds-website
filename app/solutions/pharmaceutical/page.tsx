@@ -350,7 +350,7 @@ export default function PharmaceuticalOverviewPage() {
                                     </div>
                                     <h3 className="text-2xl font-bold text-gray-900 mb-4">Digitization Services</h3>
                                     <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-                                        Convert paper batch records, logbooks, and legacy documents into searchable digital formats. Our <Link href="/solutions/product/scanning-solution" className="text-primary hover:underline font-medium">scanning and digitization services</Link> include image enhancement, OCR extraction, barcode reading, and quality verification—all integrated with your document management systems.
+                                        Convert paper batch records, logbooks, and legacy documents into searchable digital formats. Our <Link href="/product/scanning-solution" className="text-primary hover:underline font-medium">scanning and digitization services</Link> include image enhancement, OCR extraction, barcode reading, and quality verification—all integrated with your document management systems.
                                     </p>
                                     <ul className="space-y-4">
                                         {[
@@ -382,7 +382,7 @@ export default function PharmaceuticalOverviewPage() {
                                     </div>
                                     <h3 className="text-2xl font-bold text-gray-900 mb-4">Records Management</h3>
                                     <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-                                        Manage physical records with complete traceability. Our <Link href="/solutions/product/rms" className="text-primary hover:underline font-medium">records management system</Link> provides secure storage, retrieval tracking, and audit trails for batch records, stability samples, and regulatory archives.
+                                        Manage physical records with complete traceability. Our <Link href="/product/rms" className="text-primary hover:underline font-medium">records management system</Link> provides secure storage, retrieval tracking, and audit trails for batch records, stability samples, and regulatory archives.
                                     </p>
                                     <ul className="space-y-4">
                                         {[

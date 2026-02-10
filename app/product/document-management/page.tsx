@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "CannyECM - Enterprise DMS | Document Management 2026",
     description: "Enterprise DMS with 99% OCR accuracy, workflow automation, cloud/on-premise. Organize 50,000+ documents. 30-day free trial available.",
     type: "article",
-    url: "https://cannyminds-website.vercel.app/solutions/document-management",
+    url: "https://cannyminds-website.vercel.app/product/document-management",
     authors: ["Christopher"],
     images: [
       {
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://cannyminds-website.vercel.app/solutions/document-management",
+    canonical: "https://cannyminds-website.vercel.app/product/document-management",
   },
   robots: { index: true, follow: true },
 };
@@ -312,7 +312,7 @@ export default function CannyECMProductPage() {
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
                 <strong>CannyECM</strong> is a comprehensive enterprise document management system (DMS) designed to eliminate paper-based
-                workflows and digitize your entire document ecosystem. Whether you&apos;re managing <Link href="/bpm/invoice-management" className="text-primary hover:underline">invoices</Link>, contracts, <Link href="/solutions/product/hr-management" className="text-primary hover:underline">HR records</Link>, or
+                workflows and digitize your entire document ecosystem. Whether you&apos;re managing <Link href="/bpm/invoice-management" className="text-primary hover:underline">invoices</Link>, contracts, <Link href="/product/hr-management" className="text-primary hover:underline">HR records</Link>, or
                 compliance documentation, CannyECM provides a centralized platform to <strong>organize, search, retrieve, and share</strong> professional
                 documents with military-grade security.
               </p>
@@ -360,7 +360,7 @@ export default function CannyECMProductPage() {
               <div className="bg-white border border-gray-200 rounded-lg p-5">
                 <h3 className="text-lg font-bold text-primary mb-2">User Management</h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  Create, update, and deactivate users easily. Clone user settings to quickly create similar accounts. Add guest users with time-limited access and assign reporting managers. When an employee leaves, reassign their documents to another user. Import and export users in bulk for easy onboarding. For complete HR workflows, explore our <Link href="/solutions/product/hr-management" className="text-primary hover:underline">HR Management System</Link>.
+                  Create, update, and deactivate users easily. Clone user settings to quickly create similar accounts. Add guest users with time-limited access and assign reporting managers. When an employee leaves, reassign their documents to another user. Import and export users in bulk for easy onboarding. For complete HR workflows, explore our <Link href="/product/hr-management" className="text-primary hover:underline">HR Management System</Link>.
                 </p>
               </div>
 
@@ -374,14 +374,14 @@ export default function CannyECMProductPage() {
               <div className="bg-white border border-gray-200 rounded-lg p-5">
                 <h3 className="text-lg font-bold text-primary mb-2">Powerful Search</h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  Find any document in seconds using OCR technology that reads even scanned files. For high-volume document digitization, our <Link href="/solutions/product/scanning-solution" className="text-primary hover:underline">Enterprise Scanning Solution</Link> integrates seamlessly. Search by metadata, tags, document type, date range, or file type. Use AND/OR filters for precise results.
+                  Find any document in seconds using OCR technology that reads even scanned files. For high-volume document digitization, our <Link href="/product/scanning-solution" className="text-primary hover:underline">Enterprise Scanning Solution</Link> integrates seamlessly. Search by metadata, tags, document type, date range, or file type. Use AND/OR filters for precise results.
                 </p>
               </div>
 
               <div className="bg-white border border-gray-200 rounded-lg p-5">
                 <h3 className="text-lg font-bold text-primary mb-2">Reports & Audit Trail</h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  Track every action on your documents with detailed logs. See who viewed, edited, or downloaded files along with device and IP details. Generate audit reports in PDF format with hash verification. For physical document tracking with barcode and chain of custody, see our <Link href="/solutions/product/tracking-system" className="text-primary hover:underline">Document Tracking System</Link>.
+                  Track every action on your documents with detailed logs. See who viewed, edited, or downloaded files along with device and IP details. Generate audit reports in PDF format with hash verification. For physical document tracking with barcode and chain of custody, see our <Link href="/product/tracking-system" className="text-primary hover:underline">Document Tracking System</Link>.
                 </p>
               </div>
 

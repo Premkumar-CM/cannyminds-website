@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "CannyTrack - Employee Productivity Monitoring Software",
     description: "Workforce productivity monitoring with activity tracking, screenshots, and data loss prevention. Consent-based, real-time analytics with offline support.",
     type: "article",
-    url: "https://cannyminds-website.vercel.app/solutions/tracking-system",
+    url: "https://cannyminds-website.vercel.app/product/tracking-system",
     authors: ["Christopher"],
     images: [
       {
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://cannyminds-website.vercel.app/solutions/tracking-system",
+    canonical: "https://cannyminds-website.vercel.app/product/tracking-system",
   },
   robots: { index: true, follow: true },
 };

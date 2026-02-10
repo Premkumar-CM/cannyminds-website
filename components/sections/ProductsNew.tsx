@@ -74,7 +74,7 @@ const products = [
     title: "Enterprise Content Management",
     description: "Enterprise-grade ECM with OCR, workflow automation, and cloud/on-premise deployment.",
     icon: DocIcon,
-    link: "/solutions/product/document-management",
+    link: "/product/document-management",
     features: ["99% OCR Accuracy", "Workflow Automation", "Cloud & On-Premise"],
   },
   {
@@ -82,7 +82,7 @@ const products = [
     title: "Document Scanning Services",
     description: "Professional scanning for paper documents, microfilm, and blueprints with 99.9% accuracy.",
     icon: ScanIcon,
-    link: "/solutions/product/scanning-solution",
+    link: "/product/scanning-solution",
     features: ["99.9% Accuracy", "All Document Types", "Secure Storage"],
   },
   {
@@ -90,7 +90,7 @@ const products = [
     title: "Records Management System",
     description: "Physical records management with barcode tracking, audit trails, and compliance support.",
     icon: InventoryIcon,
-    link: "/solutions/product/rms",
+    link: "/product/rms",
     features: ["Barcode Tracking", "Audit Trails", "FDA Compliant"],
   },
   {
@@ -98,7 +98,7 @@ const products = [
     title: "Electronic Batch Records",
     description: "FDA 21 CFR Part 11 compliant eBMR for pharmaceutical manufacturing.",
     icon: ScienceIcon,
-    link: "/solutions/product/ebmr",
+    link: "/product/ebmr",
     features: ["FDA Compliant", "Audit Trails", "Review by Exception"],
   },
 ];

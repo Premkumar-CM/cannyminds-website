@@ -69,7 +69,7 @@ const resources = [
     title: "CannyRMS: Physical Records Management System",
     description: "Complete guide to managing physical records with barcode tracking, audit trails, and FDA compliance.",
     date: "2026",
-    link: "/solutions/product/rms",
+    link: "/product/rms",
     color: "bg-purple-500",
   },
   {

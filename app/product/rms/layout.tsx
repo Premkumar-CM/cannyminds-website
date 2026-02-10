@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         title: "CannyRMS - Physical Records Management | Barcode Tracking 2026",
         description: "Enterprise RMS with 8-step workflow, barcode scanning, approval system. Manage 100,000+ physical records. 30-day free trial.",
         type: "article",
-        url: "https://cannyminds-website.vercel.app/solutions/rms",
+        url: "https://cannyminds-website.vercel.app/product/rms",
         siteName: "CannyMinds Technology Solutions",
         images: [
             {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
         images: ["/images/rms/cannyrms-dashboard.png"],
     },
     alternates: {
-        canonical: "https://cannyminds-website.vercel.app/solutions/rms",
+        canonical: "https://cannyminds-website.vercel.app/product/rms",
     },
     robots: {
         index: true,

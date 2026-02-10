@@ -26,7 +26,7 @@ export const manufacturingContent = {
         subtitle: "Safety, Efficiency, and Quality at Scale",
         description: (
             <>
-                Transform your manufacturing operations with <Link href="/bpm/safety-compliance" className="text-blue-600 hover:underline">AI-powered safety monitoring</Link>, <Link href="/solutions/product/tracking-system" className="text-blue-600 hover:underline">predictive maintenance</Link>, intelligent quality inspection, and smart supply chain management that delivers zero-defect production and reduced downtime.
+                Transform your manufacturing operations with <Link href="/bpm/safety-compliance" className="text-blue-600 hover:underline">AI-powered safety monitoring</Link>, <Link href="/product/tracking-system" className="text-blue-600 hover:underline">predictive maintenance</Link>, intelligent quality inspection, and smart supply chain management that delivers zero-defect production and reduced downtime.
             </>
         ),
     },

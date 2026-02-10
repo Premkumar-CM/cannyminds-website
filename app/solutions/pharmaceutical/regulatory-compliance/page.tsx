@@ -500,7 +500,7 @@ export default function RegulatoryCompliancePage() {
                                 </div>
 
                                 <p className="text-gray-600 mb-6 leading-relaxed">
-                                    Our AI-assisted document generation accelerates regulatory submissions while ensuring consistency. Legacy paper documents can be converted through our <Link href="/solutions/product/scanning-solution" className="text-primary hover:underline font-medium">digitization services</Link>, and archived submissions are securely stored in our <Link href="/solutions/product/rms" className="text-primary hover:underline font-medium">records management system</Link> for quick retrieval during audits.
+                                    Our AI-assisted document generation accelerates regulatory submissions while ensuring consistency. Legacy paper documents can be converted through our <Link href="/product/scanning-solution" className="text-primary hover:underline font-medium">digitization services</Link>, and archived submissions are securely stored in our <Link href="/product/rms" className="text-primary hover:underline font-medium">records management system</Link> for quick retrieval during audits.
                                 </p>
 
                                 <ul className="space-y-3">

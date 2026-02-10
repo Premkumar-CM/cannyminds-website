@@ -10,13 +10,13 @@ export default function Footer() {
   const products = [
     { name: "Manufacturing", href: "/solutions/manufacturing" },
     { name: "FMCG Digital Transformation", href: "/solutions/manufacturing/fmcg-digital-transformation" },
-    { name: "CannyECM", href: "/solutions/product/document-management" },
-    { name: "CannyHR", href: "/solutions/product/hr-management" },
-    { name: "CannyScan", href: "/solutions/product/scanning-solution" },
-    { name: "CannyTrack", href: "/solutions/product/tracking-system" },
-    { name: "CannyRMS", href: "/solutions/product/rms" },
-    { name: "CannySCM", href: "/solutions/product/cms" }, // Assuming CMS is SCM equivalent based on typical naming, or just remove if unsure. Actually, simply removing AI Solutions line is safer.
-    { name: "Canny eBMR", href: "/solutions/product/ebmr" },
+    { name: "CannyECM", href: "/product/document-management" },
+    { name: "CannyHR", href: "/product/hr-management" },
+    { name: "CannyScan", href: "/product/scanning-solution" },
+    { name: "CannyTrack", href: "/product/tracking-system" },
+    { name: "CannyRMS", href: "/product/rms" },
+    { name: "CannySCM", href: "/product/cms" }, // Assuming CMS is SCM equivalent based on typical naming, or just remove if unsure. Actually, simply removing AI Solutions line is safer.
+    { name: "Canny eBMR", href: "/product/ebmr" },
   ];
 
   const services = [

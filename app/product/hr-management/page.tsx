@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "CannyHR - HR & Payroll Management | HRMS Solution 2026",
     description: "Complete HRMS with payroll, time tracking, leave management, and performance reviews. 350+ biometric integrations. Mobile app included.",
     type: "article",
-    url: "https://cannyminds-website.vercel.app/solutions/hr-management",
+    url: "https://cannyminds-website.vercel.app/product/hr-management",
     authors: ["Christopher"],
     images: [
       {
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://cannyminds-website.vercel.app/solutions/hr-management",
+    canonical: "https://cannyminds-website.vercel.app/product/hr-management",
   },
   robots: { index: true, follow: true },
 };

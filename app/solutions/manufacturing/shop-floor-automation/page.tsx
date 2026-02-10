@@ -114,7 +114,7 @@ export default function ShopFloorAutomationPage() {
     ];
 
     const benefits = [
-        { benefit: "No paper handling", description: <span>Eliminate physical forms and manual data entry with digital <Link href="/solutions/product/document-management" className="text-orange-600 hover:underline">document management</Link></span> },
+        { benefit: "No paper handling", description: <span>Eliminate physical forms and manual data entry with digital <Link href="/product/document-management" className="text-orange-600 hover:underline">document management</Link></span> },
         { benefit: "No missing or damaged records", description: "All data stored securely in the system" },
         { benefit: "Accurate hourly tracking", description: "Real-time production data capture" },
         { benefit: "Faster approvals", description: "Streamlined digital approval workflow" },
@@ -535,7 +535,7 @@ export default function ShopFloorAutomationPage() {
                                     <div className="bg-white border border-gray-200 rounded-xl p-6 text-center">
                                         <Storage className="text-orange-500 mb-3" sx={{ fontSize: 40 }} />
                                         <h4 className="font-bold text-gray-900 mb-2">Stored Securely</h4>
-                                        <p className="text-sm text-gray-600">Protected in our <Link href="/solutions/product/rms" className="text-orange-600 hover:underline">RMS</Link> with encryption</p>
+                                        <p className="text-sm text-gray-600">Protected in our <Link href="/product/rms" className="text-orange-600 hover:underline">RMS</Link> with encryption</p>
                                     </div>
                                     <div className="bg-white border border-gray-200 rounded-xl p-6 text-center">
                                         <VerifiedUser className="text-green-500 mb-3" sx={{ fontSize: 40 }} />

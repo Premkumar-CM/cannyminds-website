@@ -269,7 +269,7 @@ export default function BatchRecordAutomationPage() {
                                 </div>
 
                                 <p className="text-gray-600 mb-6 leading-relaxed">
-                                    Many pharmaceutical companies still rely on paper batch records, creating bottlenecks in batch release and increasing compliance risk. Our <Link href="/solutions/product/scanning-solution" className="text-primary hover:underline font-medium">document digitization services</Link> convert these paper records into searchable digital formats, enabling AI-powered review and faster batch release.
+                                    Many pharmaceutical companies still rely on paper batch records, creating bottlenecks in batch release and increasing compliance risk. Our <Link href="/product/scanning-solution" className="text-primary hover:underline font-medium">document digitization services</Link> convert these paper records into searchable digital formats, enabling AI-powered review and faster batch release.
                                 </p>
 
                                 <ul className="space-y-3">
@@ -369,7 +369,7 @@ export default function BatchRecordAutomationPage() {
                                 </div>
 
                                 <p className="text-gray-600 mb-6 leading-relaxed">
-                                    Our IoT-enabled predictive maintenance solution analyzes real-time sensor data to predict equipment failures before they occur. Historical maintenance records stored in our <Link href="/solutions/product/rms" className="text-primary hover:underline font-medium">records management system</Link> provide the data foundation for accurate predictions.
+                                    Our IoT-enabled predictive maintenance solution analyzes real-time sensor data to predict equipment failures before they occur. Historical maintenance records stored in our <Link href="/product/rms" className="text-primary hover:underline font-medium">records management system</Link> provide the data foundation for accurate predictions.
                                 </p>
 
                                 <ul className="space-y-3">

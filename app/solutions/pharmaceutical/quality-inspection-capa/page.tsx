@@ -286,7 +286,7 @@ export default function QualityInspectionCapaPage() {
                                 </div>
 
                                 <p className="text-gray-600 mb-6 leading-relaxed">
-                                    Our computer vision solution provides 24/7 automated inspection without fatigue. Quality images and inspection records are stored through our <Link href="/solutions/product/scanning-solution" className="text-primary hover:underline font-medium">digitization services</Link>, creating a complete visual quality history for each batch.
+                                    Our computer vision solution provides 24/7 automated inspection without fatigue. Quality images and inspection records are stored through our <Link href="/product/scanning-solution" className="text-primary hover:underline font-medium">digitization services</Link>, creating a complete visual quality history for each batch.
                                 </p>
 
                                 <ul className="space-y-3">
@@ -386,7 +386,7 @@ export default function QualityInspectionCapaPage() {
                                 </div>
 
                                 <p className="text-gray-600 mb-6 leading-relaxed">
-                                    Our deviation management integrates with our <Link href="/solutions/product/rms" className="text-primary hover:underline font-medium">records management system</Link> to provide complete traceability from deviation to resolution, with all supporting evidence securely stored and easily retrievable for audits.
+                                    Our deviation management integrates with our <Link href="/product/rms" className="text-primary hover:underline font-medium">records management system</Link> to provide complete traceability from deviation to resolution, with all supporting evidence securely stored and easily retrievable for audits.
                                 </p>
 
                                 <ul className="space-y-3">

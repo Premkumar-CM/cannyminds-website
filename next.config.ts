@@ -71,12 +71,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/solutions/pharmaceutical/digitization',
-        destination: '/solutions/product/scanning-solution',
+        destination: '/product/scanning-solution',
         permanent: true,
       },
       {
         source: '/solutions/pharmaceutical/records',
-        destination: '/solutions/product/rms',
+        destination: '/product/rms',
         permanent: true,
       },
       {
@@ -97,6 +97,94 @@ const nextConfig: NextConfig = {
       {
         source: '/solutions/pharmaceutical/change-control',
         destination: '/solutions/pharmaceutical/regulatory-compliance',
+        permanent: true,
+      },
+      // Fix 404 redirects - redirect old paths to new /product/ structure
+      {
+        source: '/solutions/rms',
+        destination: '/product/rms',
+        permanent: true,
+      },
+      {
+        source: '/solutions/hr-management',
+        destination: '/product/hr-management',
+        permanent: true,
+      },
+      {
+        source: '/solutions/scanning-solution',
+        destination: '/product/scanning-solution',
+        permanent: true,
+      },
+      {
+        source: '/solutions/tracking-system',
+        destination: '/product/tracking-system',
+        permanent: true,
+      },
+      {
+        source: '/solutions/document-management',
+        destination: '/product/document-management',
+        permanent: true,
+      },
+      {
+        source: '/solutions/product/ai-solutions',
+        destination: '/ai-solutions',
+        permanent: true,
+      },
+      {
+        source: '/solutions/product/cms',
+        destination: '/product/document-management',
+        permanent: true,
+      },
+      {
+        source: '/solutions/product/invoice-management',
+        destination: '/product/document-management',
+        permanent: true,
+      },
+      // Redirect old /solutions/product/ paths to new /product/ paths
+      {
+        source: '/solutions/product/rms',
+        destination: '/product/rms',
+        permanent: true,
+      },
+      {
+        source: '/solutions/product/hr-management',
+        destination: '/product/hr-management',
+        permanent: true,
+      },
+      {
+        source: '/solutions/product/scanning-solution',
+        destination: '/product/scanning-solution',
+        permanent: true,
+      },
+      {
+        source: '/solutions/product/tracking-system',
+        destination: '/product/tracking-system',
+        permanent: true,
+      },
+      {
+        source: '/solutions/product/document-management',
+        destination: '/product/document-management',
+        permanent: true,
+      },
+      {
+        source: '/solutions/product/ebmr',
+        destination: '/product/ebmr',
+        permanent: true,
+      },
+      // Use cases redirects
+      {
+        source: '/use-cases/pharmaceutical',
+        destination: '/solutions/pharmaceutical',
+        permanent: true,
+      },
+      {
+        source: '/use-cases/fmcg',
+        destination: '/industries/manufacturing',
+        permanent: true,
+      },
+      {
+        source: '/use-cases/manufacturing-engineering',
+        destination: '/industries/manufacturing',
         permanent: true,
       },
     ];

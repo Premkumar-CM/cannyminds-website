@@ -238,7 +238,7 @@ export default function VendorProcurementPage() {
                                         <ArrowForward sx={{ fontSize: 20 }} />
                                     </Link>
                                     <Link
-                                        href="/solutions/product/document-management"
+                                        href="/product/document-management"
                                         className="px-8 py-4 bg-white text-orange-600 font-semibold rounded-lg hover:bg-orange-50 transition-colors border border-orange-200"
                                     >
                                         Explore CannyECM

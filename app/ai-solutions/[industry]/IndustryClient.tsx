@@ -327,7 +327,7 @@ const industryData: Record<string, {
     heroSubtitle: "Automate Claims, Detect Fraud, Accelerate Underwriting",
     heroDescription: (
       <>
-        Transform insurance operations with <Link href="/solutions/product/document-management" className="text-blue-600 hover:underline">intelligent document processing</Link>, AI-powered claims automation, advanced fraud detection, and data-driven underwriting decisions that improve loss ratios and customer satisfaction.
+        Transform insurance operations with <Link href="/product/document-management" className="text-blue-600 hover:underline">intelligent document processing</Link>, AI-powered claims automation, advanced fraud detection, and data-driven underwriting decisions that improve loss ratios and customer satisfaction.
       </>
     ),
     overview: "Insurance companies process millions of documents and claims annually, facing challenges with manual processing delays, fraudulent claims, and inconsistent underwriting decisions. CannyMinds Insurance AI solutions leverage Intelligent Document Processing (IDP), machine learning fraud detection, and generative AI to automate end-to-end insurance workflows—from policy issuance to claims settlement.",
@@ -561,7 +561,7 @@ const industryData: Record<string, {
     heroSubtitle: "Optimize Production, Ensure Safety, Predict Maintenance",
     heroDescription: (
       <>
-        Transform manufacturing operations with AI-powered safety monitoring, <Link href="/solutions/product/tracking-system" className="text-orange-600 hover:underline">predictive maintenance</Link>, automated quality inspection, and intelligent document processing for Shop Floor, EHS, and R&D functions.
+        Transform manufacturing operations with AI-powered safety monitoring, <Link href="/product/tracking-system" className="text-orange-600 hover:underline">predictive maintenance</Link>, automated quality inspection, and intelligent document processing for Shop Floor, EHS, and R&D functions.
       </>
     ),
     overview: "Manufacturing and automotive industries face intense pressure to improve productivity, ensure worker safety, maintain quality, and reduce costs. CannyMinds Manufacturing AI solutions leverage computer vision, IoT analytics, and generative AI to automate safety compliance, predict equipment failures, detect defects in real-time, and digitize paper-based processes across the shop floor.",

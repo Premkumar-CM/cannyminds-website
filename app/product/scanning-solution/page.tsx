@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "CannyScan - Document Digitization & Scanning Solution",
     description: "Professional document digitization with image cleansing, OCR extraction, barcode reading, and quality control workflows.",
     type: "article",
-    url: "https://cannyminds-website.vercel.app/solutions/scanning-solution",
+    url: "https://cannyminds-website.vercel.app/product/scanning-solution",
     images: [
       {
         url: "/og-image.jpg",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://cannyminds-website.vercel.app/solutions/scanning-solution",
+    canonical: "https://cannyminds-website.vercel.app/product/scanning-solution",
   },
   robots: { index: true, follow: true },
 };
@@ -715,7 +715,7 @@ export default function CannyScanProductPage() {
 
                 <div className="mt-8">
                   <Link
-                    href="/solutions/product/document-management"
+                    href="/product/document-management"
                     className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-800 font-semibold"
                   >
                     Learn More About CannyECM
