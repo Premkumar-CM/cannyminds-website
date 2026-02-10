@@ -24,7 +24,7 @@ import FAQ from "@/components/sections/FAQ";
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: "CannyECM - Enterprise DMS | Document Management 2025",
+  title: "CannyECM - Enterprise DMS | Document Management 2026",
   description: "Enterprise DMS with 99% OCR accuracy, workflow automation, cloud/on-premise. Organize 50,000+ documents. 30-day free trial available.",
   keywords: [
     "CannyECM",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Christopher" }],
   openGraph: {
-    title: "CannyECM - Enterprise DMS | Document Management 2025",
+    title: "CannyECM - Enterprise DMS | Document Management 2026",
     description: "Enterprise DMS with 99% OCR accuracy, workflow automation, cloud/on-premise. Organize 50,000+ documents. 30-day free trial available.",
     type: "article",
     url: "https://cannyminds-website.vercel.app/solutions/document-management",
@@ -106,7 +106,7 @@ const jsonLd = {
         },
         "url": "https://cannyminds-website.vercel.app"
       },
-      "datePublished": "2025-01-15",
+      "datePublished": "2026-01-15",
       "dateModified": new Date().toISOString(),
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -312,7 +312,7 @@ export default function CannyECMProductPage() {
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
                 <strong>CannyECM</strong> is a comprehensive enterprise document management system (DMS) designed to eliminate paper-based
-                workflows and digitize your entire document ecosystem. Whether you're managing invoices, contracts, HR records, or
+                workflows and digitize your entire document ecosystem. Whether you&apos;re managing <Link href="/bpm/invoice-management" className="text-primary hover:underline">invoices</Link>, contracts, <Link href="/solutions/product/hr-management" className="text-primary hover:underline">HR records</Link>, or
                 compliance documentation, CannyECM provides a centralized platform to <strong>organize, search, retrieve, and share</strong> professional
                 documents with military-grade security.
               </p>
@@ -326,8 +326,8 @@ export default function CannyECMProductPage() {
               <div className="bg-primary-50 border-l-4 border-primary p-6 rounded-r-lg">
                 <p className="font-semibold text-secondary mb-2">🎯 Perfect For:</p>
                 <p className="text-gray-700">
-                  Healthcare, Legal, Finance, Manufacturing, Government, and any organization managing large volumes of documents
-                  requiring compliance, security, and efficient retrieval.
+                  <Link href="/use-cases/healthcare" className="text-primary hover:underline">Healthcare</Link>, <Link href="/use-cases/legal" className="text-primary hover:underline">Legal</Link>, <Link href="/industries/banking-finance" className="text-primary hover:underline">Finance</Link>, <Link href="/industries/manufacturing" className="text-primary hover:underline">Manufacturing</Link>, <Link href="/industries/government" className="text-primary hover:underline">Government</Link>, and any organization managing large volumes of documents
+                  requiring compliance, security, and efficient retrieval. For pharmaceutical compliance, explore our <Link href="/solutions/pharmaceutical" className="text-primary hover:underline">Pharmaceutical Solutions</Link>.
                 </p>
               </div>
             </div>
@@ -335,168 +335,139 @@ export default function CannyECMProductPage() {
 
           {/* Key Features */}
           <section id="features" className="mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-12 text-center">
-              Powerful Features That Set CannyECM Apart
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8 text-center">
+              Complete Features of CannyECM
             </h2>
+            <p className="text-center text-gray-600 mb-10 max-w-3xl mx-auto">
+              CannyECM comes packed with everything you need to manage documents efficiently. Here&apos;s what you can do with our system.
+            </p>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-              {/* Feature 1 */}
-              <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-primary hover:shadow-xl transition-all">
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-                  <SearchIcon sx={{ fontSize: 32, color: '#3170b5' }} />
-                </div>
-                <h3 className="text-xl font-bold text-secondary mb-4">Advanced OCR & Full-Text Search</h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  Built-in Elasticsearch and OCR engine with <strong>99% accuracy</strong> enables instant full-text search across
-                  document names, metadata, and content even within scanned images.
+            <div className="space-y-4">
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">Secure Login & Authentication</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Log in securely using your company credentials through SSO or LDAP integration. Enable two-factor authentication (MFA) for extra protection. Login with Azure, Google, or OAuth. Administrators can restrict access by IP address, set auto-logout after inactivity, and configure password policies with expiry and reset options.
                 </p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Search by name, content, or metadata</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Supports PDF, JPG, JPEG formats</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Instant retrieval from 50,000+ documents</span>
-                  </li>
-                </ul>
               </div>
 
-              {/* Feature 2 */}
-              <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-primary hover:shadow-xl transition-all">
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-                  <SecurityIcon sx={{ fontSize: 32, color: '#3170b5' }} />
-                </div>
-                <h3 className="text-xl font-bold text-secondary mb-4">Enterprise-Grade Security</h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  Military-grade AES-256 encryption, role-based access control, and comprehensive audit trails ensure your
-                  sensitive documents remain secure and compliant.
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">Dashboard & Analytics</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Get a quick overview of your entire document system at a glance. See total cabinets, folders, and files count along with storage usage. Track active users and view metadata statistics to understand how your document library is growing.
                 </p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Auto-encrypt all documents</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Role-based permissions (RBAC)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>LDAP/Active Directory integration</span>
-                  </li>
-                </ul>
               </div>
 
-              {/* Feature 3 */}
-              <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-primary hover:shadow-xl transition-all">
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-                  <WorkflowIcon sx={{ fontSize: 32, color: '#3170b5' }} />
-                </div>
-                <h3 className="text-xl font-bold text-secondary mb-4">Intelligent Workflow Automation</h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  Create custom approval workflows with automated alerts, email triggers, escalations, and deviation handling no
-                  coding required.
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">User Management</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Create, update, and deactivate users easily. Clone user settings to quickly create similar accounts. Add guest users with time-limited access and assign reporting managers. When an employee leaves, reassign their documents to another user. Import and export users in bulk for easy onboarding. For complete HR workflows, explore our <Link href="/solutions/product/hr-management" className="text-primary hover:underline">HR Management System</Link>.
                 </p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Drag-and-drop workflow builder</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Multi-level approval processes</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Automated email notifications</span>
-                  </li>
-                </ul>
               </div>
 
-              {/* Feature 4 */}
-              <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-primary hover:shadow-xl transition-all">
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-                  <ShareIcon sx={{ fontSize: 32, color: '#3170b5' }} />
-                </div>
-                <h3 className="text-xl font-bold text-secondary mb-4">Secure Document Sharing</h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  Share documents securely with time-bound encrypted links, email distribution, and granular permissions for
-                  internal and external collaboration.
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">Roles & Permissions</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Control who can view, edit, or delete files by creating custom roles for different teams. Set permissions at file, folder, or cabinet level and apply them to all subfolders automatically. Use ready-made role templates and track permission changes for audit purposes.
                 </p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Time-bound encrypted links</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Email documents directly</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Version control & watermarking</span>
-                  </li>
-                </ul>
               </div>
 
-              {/* Feature 5 */}
-              <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-primary hover:shadow-xl transition-all">
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-                  <CloudIcon sx={{ fontSize: 32, color: '#3170b5' }} />
-                </div>
-                <h3 className="text-xl font-bold text-secondary mb-4">Flexible Cloud & On-Premise</h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  Choose your deployment model: Cloud (SaaS), On-Premise (full control), or Hybrid (best of both worlds) based
-                  on your compliance and infrastructure needs.
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">Powerful Search</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Find any document in seconds using OCR technology that reads even scanned files. For high-volume document digitization, our <Link href="/solutions/product/scanning-solution" className="text-primary hover:underline">Enterprise Scanning Solution</Link> integrates seamlessly. Search by metadata, tags, document type, date range, or file type. Use AND/OR filters for precise results.
                 </p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Bulk upload via drag-and-drop</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Automatic backup & disaster recovery</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Unlimited scalable storage</span>
-                  </li>
-                </ul>
               </div>
 
-              {/* Feature 6 */}
-              <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:border-primary hover:shadow-xl transition-all">
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-                  <StorageIcon sx={{ fontSize: 32, color: '#3170b5' }} />
-                </div>
-                <h3 className="text-xl font-bold text-secondary mb-4">Smart Document Organization</h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  Organize with unlimited folder hierarchies, custom metadata fields, document sets, and intelligent tagging for
-                  effortless categorization.
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">Reports & Audit Trail</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Track every action on your documents with detailed logs. See who viewed, edited, or downloaded files along with device and IP details. Generate audit reports in PDF format with hash verification. For physical document tracking with barcode and chain of custody, see our <Link href="/solutions/product/tracking-system" className="text-primary hover:underline">Document Tracking System</Link>.
                 </p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Unlimited folder hierarchy</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Custom metadata & indexing</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                    <span>Auto-link related documents</span>
-                  </li>
-                </ul>
               </div>
 
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">Document Organization</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Organize documents in cabinets and folders with unlimited folder levels. Switch between thumbnail and list view. Sort by name, date modified, or date created. Navigate easily with tree view and copy or move files between folders. See storage used per cabinet or folder.
+                </p>
+              </div>
+
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">File Viewing & Editing</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  View documents directly in your browser without downloading. Upload files using drag and drop. Add annotations, sticky notes, stamps, watermarks, and digital signatures. Zoom, rotate, and view in full screen. Print or download files with annotations included.
+                </p>
+              </div>
+
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">Version Control</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Never lose previous versions of your documents. The system automatically saves new versions when you edit files. See what changed between versions and restore any previous version with one click. Smart detection prevents duplicate uploads.
+                </p>
+              </div>
+
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">Office Document Editing</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Edit Word, Excel, and PowerPoint files directly in your browser. Multiple users can collaborate on the same file at the same time. All changes are saved automatically as new versions.
+                </p>
+              </div>
+
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">Supports All File Types</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Store and view PDF documents, Microsoft Office files (Word, Excel, PowerPoint), images (JPG, PNG, GIF, BMP, TIFF), audio and video files, CAD drawings (DWG format), and text or CSV files.
+                </p>
+              </div>
+
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">Workflow & Approvals</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Create approval workflows for documents that need review by multiple people. Design workflows with visual diagram builder. Add multiple approvers with conditions and set deadlines with automatic reminders. For advanced business process automation, explore our <Link href="/bpm/custom-workflows" className="text-primary hover:underline">Custom Workflow Solutions</Link> or <Link href="/bpm/invoice-management" className="text-primary hover:underline">Invoice Management</Link> module.
+                </p>
+              </div>
+
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">Metadata & Custom Fields</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Add custom information to documents like expiry dates, invoice numbers, or business-specific data. Create custom fields with validation rules. Set retention periods and reminders. For vendor and procurement documents, see our <Link href="/bpm/procurement" className="text-primary hover:underline">Procurement Management</Link> solution.
+                </p>
+              </div>
+
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">Master Data Management</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Manage groups, departments, designations, locations, and categories in one place. Create document types and tags to classify files. Set up email templates for notifications. Import or export master data in bulk.
+                </p>
+              </div>
+
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">System Configuration</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Set up company details and logo. Configure email settings for notifications. Set password policies and session timeouts. Configure SSO for company login and set up bulk upload configurations.
+                </p>
+              </div>
+
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">File Sync & Storage</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Sync files from network drives or cloud storage. Choose manual or automatic sync and import files with metadata from CSV. Connect to local storage or Amazon S3. Handle conflicts when the same file is modified in multiple places.
+                </p>
+              </div>
+
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">System Monitoring</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Monitor system health and track background processes. Track file encryption and OCR processing queues. Monitor email and download queues. View system health status and analyze logs to identify issues.
+                </p>
+              </div>
+
+              <div className="bg-white border border-gray-200 rounded-lg p-5">
+                <h3 className="text-lg font-bold text-primary mb-2">Trash & Recovery</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Deleted files go to trash first, so you can recover them if needed. View file properties before restoring. Permanently delete files only when certain they are no longer needed.
+                </p>
+              </div>
             </div>
           </section>
 
@@ -687,48 +658,73 @@ export default function CannyECMProductPage() {
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8">
-              {[
-                {
-                  industry: "Healthcare & Medical",
-                  icon: <SecurityIcon sx={{ fontSize: 32 }} />,
-                  description: "Manage patient records, medical histories, insurance claims, and lab results with HIPAA-compliant security.",
-                  features: ["Electronic Health Records (EHR)", "HIPAA compliance", "Patient portal access", "Automated retention policies"]
-                },
-                {
-                  industry: "Legal & Law Firms",
-                  icon: <DocumentIcon sx={{ fontSize: 32 }} />,
-                  description: "Organize case files, contracts, legal briefs, and client communications with matter-based filing.",
-                  features: ["Matter-centric organization", "Client portals", "Conflict checking", "Version control"]
-                },
-                {
-                  industry: "Finance & Banking",
-                  icon: <SecurityIcon sx={{ fontSize: 32 }} />,
-                  description: "Handle loan applications, KYC documents, compliance reports with SOX and regulatory compliance.",
-                  features: ["KYC/AML documentation", "Loan processing workflows", "SOX compliance", "Audit trails"]
-                },
-                {
-                  industry: "Manufacturing",
-                  icon: <StorageIcon sx={{ fontSize: 32 }} />,
-                  description: "Manage quality certificates, supplier contracts, shipping documents across global operations.",
-                  features: ["Certificate tracking", "Supplier management", "ISO quality integration", "Multi-location access"]
-                },
-              ].map((useCase, idx) => (
-                <div key={idx} className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
-                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
-                    {useCase.icon}
-                  </div>
-                  <h3 className="text-2xl font-bold text-secondary mb-4">{useCase.industry}</h3>
-                  <p className="text-gray-700 mb-6">{useCase.description}</p>
-                  <div className="space-y-2">
-                    {useCase.features.map((feature, fidx) => (
-                      <div key={fidx} className="flex items-start gap-2">
-                        <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" />
-                        <span className="text-sm text-gray-600">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
+              {/* Healthcare */}
+              <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
+                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+                  <SecurityIcon sx={{ fontSize: 32 }} />
                 </div>
-              ))}
+                <h3 className="text-2xl font-bold text-secondary mb-4">Healthcare & Medical</h3>
+                <p className="text-gray-700 mb-6">
+                  Manage patient records, medical histories, insurance claims, and lab results with HIPAA-compliant security. <Link href="/use-cases/healthcare" className="text-primary hover:underline">Learn more about healthcare solutions</Link>.
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">Electronic Health Records (EHR)</span></div>
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">HIPAA compliance</span></div>
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">Patient portal access</span></div>
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">Automated retention policies</span></div>
+                </div>
+              </div>
+
+              {/* Legal */}
+              <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
+                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+                  <DocumentIcon sx={{ fontSize: 32 }} />
+                </div>
+                <h3 className="text-2xl font-bold text-secondary mb-4">Legal & Law Firms</h3>
+                <p className="text-gray-700 mb-6">
+                  Organize case files, contracts, legal briefs, and client communications with matter-based filing. Explore our <Link href="/use-cases/legal" className="text-primary hover:underline">legal document management</Link> and <Link href="/bpm/legal-management" className="text-primary hover:underline">legal workflow solutions</Link>.
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">Matter-centric organization</span></div>
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">Client portals</span></div>
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">Conflict checking</span></div>
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">Version control</span></div>
+                </div>
+              </div>
+
+              {/* Finance */}
+              <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
+                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+                  <SecurityIcon sx={{ fontSize: 32 }} />
+                </div>
+                <h3 className="text-2xl font-bold text-secondary mb-4">Finance & Banking</h3>
+                <p className="text-gray-700 mb-6">
+                  Handle loan applications, KYC documents, compliance reports with SOX and regulatory compliance. See our <Link href="/use-cases/bfsi" className="text-primary hover:underline">BFSI solutions</Link> and <Link href="/industries/banking-finance" className="text-primary hover:underline">banking industry page</Link>.
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">KYC/AML documentation</span></div>
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">Loan processing workflows</span></div>
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">SOX compliance</span></div>
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">Audit trails</span></div>
+                </div>
+              </div>
+
+              {/* Manufacturing */}
+              <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-8">
+                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+                  <StorageIcon sx={{ fontSize: 32 }} />
+                </div>
+                <h3 className="text-2xl font-bold text-secondary mb-4">Manufacturing</h3>
+                <p className="text-gray-700 mb-6">
+                  Manage quality certificates, supplier contracts, and shipping documents across global operations. Digitize your <Link href="/solutions/manufacturing/shop-floor-automation" className="text-primary hover:underline">shop floor</Link> paperwork and explore <Link href="/industries/manufacturing" className="text-primary hover:underline">manufacturing solutions</Link> including <Link href="/solutions/manufacturing/document-control" className="text-primary hover:underline">document control</Link> and <Link href="/solutions/manufacturing/quality-management" className="text-primary hover:underline">quality management</Link>.
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">Certificate tracking</span></div>
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">Supplier management</span></div>
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">ISO quality integration</span></div>
+                  <div className="flex items-start gap-2"><CheckIcon sx={{ fontSize: 16, color: '#25d366' }} className="mt-0.5 flex-shrink-0" /><span className="text-sm text-gray-600">Multi-location access</span></div>
+                </div>
+              </div>
             </div>
           </section>
 

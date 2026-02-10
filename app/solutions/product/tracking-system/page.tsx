@@ -103,7 +103,7 @@ const jsonLd = {
         },
         "url": "https://cannyminds-website.vercel.app"
       },
-      "datePublished": "2025-01-15",
+      "datePublished": "2026-01-15",
       "dateModified": new Date().toISOString(),
       "mainEntityOfPage": {
         "@type": "WebPage",

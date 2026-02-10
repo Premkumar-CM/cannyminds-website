@@ -176,7 +176,7 @@ npm run build
 
 ## 📄 License
 
-© 2025 CannyMinds Technology Solutions. All rights reserved.
+© 2026 CannyMinds Technology Solutions. All rights reserved.
 
 ## 🤝 Support
 

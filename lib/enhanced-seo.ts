@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 /**
  * Enhanced SEO Configuration for CannyMinds Landing Page
- * Optimized for Google's 2025 Algorithm Updates
+ * Optimized for Google's 2026 Algorithm Updates
  * Includes E-E-A-T, Local SEO, and Rich Snippets
  */
 

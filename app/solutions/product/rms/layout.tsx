@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "CannyRMS - Physical Records Management | 2025",
+    title: "CannyRMS - Physical Records Management | 2026",
     description: "Enterprise physical records management with 8-step workflow, barcode tracking, and complete audit trails. Manage 100,000+ cartons. 30-day free trial.",
     keywords: [
         "CannyRMS",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     ],
     authors: [{ name: "CannyMinds Technology Solutions" }],
     openGraph: {
-        title: "CannyRMS - Physical Records Management | Barcode Tracking 2025",
+        title: "CannyRMS - Physical Records Management | Barcode Tracking 2026",
         description: "Enterprise RMS with 8-step workflow, barcode scanning, approval system. Manage 100,000+ physical records. 30-day free trial.",
         type: "article",
         url: "https://cannyminds-website.vercel.app/solutions/rms",
@@ -103,8 +103,8 @@ const jsonLd = {
                 },
                 "url": "https://cannyminds-website.vercel.app"
             },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-02-04",
+            "datePublished": "2026-01-15",
+            "dateModified": "2026-02-04",
             "mainEntityOfPage": {
                 "@type": "WebPage",
                 "@id": "https://cannyminds-website.vercel.app/solutions/rms"

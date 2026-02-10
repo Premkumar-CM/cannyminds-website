@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import SmoothScroll from "@/components/ui/SmoothScroll";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
@@ -44,6 +45,13 @@ export default function RootLayout({
       >
         <SmoothScroll>{children}</SmoothScroll>
         <WhatsAppButton />
+
+        {/* Ahrefs Web Analytics */}
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="QbxXapxGO7HZtUXkS83kLA"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

@@ -21,7 +21,7 @@ import FAQ from "@/components/sections/FAQ";
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: "CannyHR - HR & Payroll Management | HRMS Solution 2025",
+  title: "CannyHR - HR & Payroll Management | HRMS Solution 2026",
   description: "Complete HRMS with payroll, time tracking, leave management, and performance reviews. 350+ biometric integrations. Mobile app included.",
   keywords: [
     "CannyHR",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Christopher" }],
   openGraph: {
-    title: "CannyHR - HR & Payroll Management | HRMS Solution 2025",
+    title: "CannyHR - HR & Payroll Management | HRMS Solution 2026",
     description: "Complete HRMS with payroll, time tracking, leave management, and performance reviews. 350+ biometric integrations. Mobile app included.",
     type: "article",
     url: "https://cannyminds-website.vercel.app/solutions/hr-management",
@@ -103,7 +103,7 @@ const jsonLd = {
         },
         "url": "https://cannyminds-website.vercel.app"
       },
-      "datePublished": "2025-01-15",
+      "datePublished": "2026-01-15",
       "dateModified": new Date().toISOString(),
       "mainEntityOfPage": {
         "@type": "WebPage",

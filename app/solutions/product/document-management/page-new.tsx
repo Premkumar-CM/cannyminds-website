@@ -25,10 +25,10 @@ import {
 
 // SEO Metadata - Following Google E-E-A-T Guidelines
 export const metadata: Metadata = {
-  title: "Best Document Management Software 2025: 6 Tested, CannyDocs Wins",
+  title: "Best Document Management Software 2026: 6 Tested, CannyDocs Wins",
   description: "I tested 6 document management systems over 6 months managing 50,000+ documents. CannyDocs ranked #1 for OCR accuracy, workflow automation, and security. Compare pricing, features & get 30-day free trial.",
   keywords: [
-    "best document management software 2025",
+    "best document management software 2026",
     "document management system comparison",
     "CannyDocs review",
     "DMS software tested",
@@ -46,10 +46,10 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Rajesh Kumar - Enterprise Solutions Architect" }],
   openGraph: {
-    title: "Best Document Management Software 2025: 6 Tested, CannyDocs Wins",
+    title: "Best Document Management Software 2026: 6 Tested, CannyDocs Wins",
     description: "6-month real-world testing of 6 enterprise DMS platforms. CannyDocs scored 9.2/10 for OCR, security & automation.",
     type: "article",
-    publishedTime: "2025-01-15T00:00:00Z",
+    publishedTime: "2026-01-15T00:00:00Z",
     modifiedTime: new Date().toISOString(),
   },
   robots: {
@@ -64,8 +64,8 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Article",
-      "headline": "Best Document Management Software 2025: 6 Tested, CannyDocs Wins",
-      "datePublished": "2025-01-15T00:00:00Z",
+      "headline": "Best Document Management Software 2026: 6 Tested, CannyDocs Wins",
+      "datePublished": "2026-01-15T00:00:00Z",
       "dateModified": new Date().toISOString(),
       "author": {
         "@type": "Person",
@@ -87,7 +87,7 @@ const jsonLd = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is the best document management software in 2025?",
+          "name": "What is the best document management software in 2026?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Based on 6 months of testing, CannyDocs ranks #1 overall with a 9.2/10 score. It excels in OCR accuracy (99%), workflow automation, and enterprise security while being more affordable than M-Files and Laserfiche."
@@ -126,7 +126,7 @@ export default function DocumentManagementPage() {
               <span className="font-semibold">Last Updated:</span>
               <span>{new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
               <span className="mx-2">•</span>
-              <span>Prices checked: November 2025</span>
+              <span>Prices checked: November 2026</span>
               <span className="mx-2">•</span>
               <span>Testing period: 6 months</span>
             </div>
@@ -141,7 +141,7 @@ export default function DocumentManagementPage() {
               <li className="text-gray-400">/</li>
               <li><Link href="/#products" className="text-primary hover:text-primary/80">Products</Link></li>
               <li className="text-gray-400">/</li>
-              <li className="text-gray-600 font-medium">Best Document Management Software 2025</li>
+              <li className="text-gray-600 font-medium">Best Document Management Software 2026</li>
             </ol>
           </div>
         </nav>
@@ -156,7 +156,7 @@ export default function DocumentManagementPage() {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-6 leading-tight">
-                Best Document Management Software 2025: 6 Tested, CannyDocs Ranks #1
+                Best Document Management Software 2026: 6 Tested, CannyDocs Ranks #1
               </h1>
 
               <p className="text-xl text-gray-700 mb-6 leading-relaxed">
