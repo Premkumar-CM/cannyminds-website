@@ -2,22 +2,19 @@ import { MetadataRoute } from 'next'
 
 // Get base URL from environment variables or use production URL as fallback
 function getBaseUrl(): string {
-  // Check for Vercel deployment URL
-  if (process.env.VERCEL_URL) {
-    return `https://${process.env.VERCEL_URL}`
-  }
-
-  // Check for custom domain or Next.js public URL
-  if (process.env.NEXT_PUBLIC_SITE_URL) {
-    return process.env.NEXT_PUBLIC_SITE_URL
-  }
-
   // Development environment
   if (process.env.NODE_ENV === 'development') {
     return 'http://localhost:3000'
   }
 
-  // Production fallback
+  // Always use production URL (not preview URLs)
+  // Check for custom production domain first
+  if (process.env.NEXT_PUBLIC_SITE_URL) {
+    return process.env.NEXT_PUBLIC_SITE_URL
+  }
+
+  // Production fallback - always use this
+  // Never use VERCEL_URL as it returns preview URLs on staging deployments
   return 'https://cannyminds-website.vercel.app'
 }
 
