@@ -143,7 +143,7 @@ export default function ResourcesPreview() {
                       <div className="flex items-center gap-2">
                         <motion.div
                           whileHover={{ scale: 1.15, rotate: 5 }}
-                          className={`w-8 h-8 ${resource.color} rounded-lg flex items-center justify-center`}
+                          className={`w-8 h-8 ${resource.color} rounded-[10px] flex items-center justify-center`}
                         >
                           <IconComponent className="text-white" sx={{ fontSize: 16 }} />
                         </motion.div>
