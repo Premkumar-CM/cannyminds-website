@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import TableOfContents from "@/components/ui/TableOfContents";
-import Navigation from "@/components/ui/Navigation";
-import Footer from "@/components/ui/Footer";
 import { TextAnimate } from "@/registry/magicui/text-animate";
 import { manufacturingContent } from "./content";
 import {
@@ -45,7 +43,6 @@ export default function ManufacturingSolutionsPage() {
 
     return (
         <>
-            <Navigation />
             <main className="min-h-screen bg-white">
 
                 {/* HERO SECTION */}
@@ -389,7 +386,6 @@ export default function ManufacturingSolutionsPage() {
                 </section>
 
             </main>
-            <Footer />
         </>
     );
 }

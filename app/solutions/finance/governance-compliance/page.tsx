@@ -125,7 +125,6 @@ export default function GovernanceCompliancePage() {
 
     return (
         <>
-            <Navigation />
             <main className="min-h-screen bg-white">
                 {/* JSON-LD */}
                 <script
@@ -308,7 +307,6 @@ export default function GovernanceCompliancePage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

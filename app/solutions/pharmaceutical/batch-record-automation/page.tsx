@@ -124,7 +124,6 @@ export default function BatchRecordAutomationPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <Navigation />
 
             <main className="min-h-screen bg-white">
                 {/* Hero Section */}
@@ -487,7 +486,6 @@ export default function BatchRecordAutomationPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

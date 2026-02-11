@@ -143,7 +143,7 @@ export default function Hero() {
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-6 sm:px-8 py-3 sm:py-4 bg-white text-primary font-semibold rounded-lg border-2 border-primary transition-all duration-300 shadow-lg cursor-pointer text-center"
+                  className="px-6 sm:px-8 py-3 sm:py-4 bg-white text-primary font-semibold rounded-lg border-2 border-primary hover:bg-primary-50 transition-all duration-300 shadow-lg cursor-pointer text-center"
                 >
                   Explore Solutions
                 </motion.div>

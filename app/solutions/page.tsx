@@ -1,6 +1,4 @@
 import type { Metadata } from 'next';
-import Navigation from '@/components/ui/Navigation';
-import Footer from '@/components/ui/Footer';
 import AllProductsShowcase from '@/components/solutions/AllProductsShowcase';
 
 export const metadata: Metadata = {
@@ -27,10 +25,8 @@ export const metadata: Metadata = {
 
 export default function AllSolutionsPage() {
     return (
-        <>
-            <Navigation />
+        <main>
             <AllProductsShowcase />
-            <Footer />
-        </>
+        </main>
     );
 }

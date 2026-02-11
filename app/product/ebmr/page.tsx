@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Navigation from "@/components/ui/Navigation";
-import Footer from "@/components/ui/Footer";
+
 import {
     ArrowForward,
     CheckCircle,
@@ -160,7 +159,7 @@ export default function CannyEBMRPage() {
 
     return (
         <>
-            <Navigation />
+
             <main className="min-h-screen bg-white">
                 {/* JSON-LD */}
                 <script
@@ -471,7 +470,7 @@ export default function CannyEBMRPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
+
         </>
     );
 }

@@ -141,7 +141,6 @@ export default function QualityInspectionCapaPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <Navigation />
 
             <main className="min-h-screen bg-white">
                 {/* Hero Section */}
@@ -607,7 +606,6 @@ export default function QualityInspectionCapaPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Navigation from "@/components/ui/Navigation";
-import Footer from "@/components/ui/Footer";
+
 import {
     ArrowForward,
     AccountBalance,
@@ -126,7 +125,6 @@ export default function BankingTechnologyPage() {
 
     return (
         <>
-            <Navigation />
             <main className="min-h-screen bg-white">
                 {/* JSON-LD */}
                 <script
@@ -309,7 +307,6 @@ export default function BankingTechnologyPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

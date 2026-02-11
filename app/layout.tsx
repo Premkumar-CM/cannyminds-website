@@ -4,6 +4,8 @@ import Script from "next/script";
 import "./globals.css";
 import SmoothScroll from "@/components/ui/SmoothScroll";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import Navigation from "@/components/ui/Navigation";
+import Footer from "@/components/ui/Footer";
 import { enhancedMetadata as seoMetadata, enhancedJsonLd as jsonLd } from "@/lib/enhanced-seo";
 
 const geistSans = Geist({
@@ -44,7 +46,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
       >
-        <SmoothScroll>{children}</SmoothScroll>
+        <SmoothScroll>
+          <Navigation />
+          {children}
+          <Footer />
+        </SmoothScroll>
         <WhatsAppButton />
 
         {/* Ahrefs Web Analytics */}

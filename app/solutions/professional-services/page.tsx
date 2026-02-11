@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Navigation from "@/components/ui/Navigation";
-import Footer from "@/components/ui/Footer";
+
 import {
     ArrowForward,
     Gavel,
@@ -98,7 +97,6 @@ export default function ProfessionalServicesPage() {
 
     return (
         <>
-            <Navigation />
             <main className="min-h-screen bg-white">
                 {/* JSON-LD */}
                 <script
@@ -248,7 +246,6 @@ export default function ProfessionalServicesPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

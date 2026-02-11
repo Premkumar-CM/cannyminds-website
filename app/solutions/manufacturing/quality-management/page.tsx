@@ -168,7 +168,7 @@ export default function QualityManagementPage() {
 
     return (
         <>
-            <Navigation />
+
             <main className="min-h-screen bg-white">
                 {/* JSON-LD */}
                 <script
@@ -412,7 +412,6 @@ export default function QualityManagementPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

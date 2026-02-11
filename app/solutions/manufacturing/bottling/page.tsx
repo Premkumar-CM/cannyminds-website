@@ -144,7 +144,7 @@ export default function BottlingSolutionsPage() {
 
     return (
         <>
-            <Navigation />
+
             <main className="min-h-screen bg-white">
                 {/* JSON-LD */}
                 <script
@@ -362,7 +362,6 @@ export default function BottlingSolutionsPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

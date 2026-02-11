@@ -1,7 +1,5 @@
 
 import Link from "next/link";
-import Navigation from "@/components/ui/Navigation";
-import Footer from "@/components/ui/Footer";
 import { ArrowForward, CheckCircle } from "@mui/icons-material";
 import { SvgIconComponent } from "@mui/icons-material";
 import { ReactNode } from "react";
@@ -109,7 +107,7 @@ export default function IndustryPageLayout({
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <Navigation />
+
 
             <main className="min-h-screen">
                 {/* SECTION 1: HERO */}
@@ -328,7 +326,7 @@ export default function IndustryPageLayout({
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
+
     );
 }

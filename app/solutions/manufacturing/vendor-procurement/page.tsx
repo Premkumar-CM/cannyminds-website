@@ -185,7 +185,7 @@ export default function VendorProcurementPage() {
 
     return (
         <>
-            <Navigation />
+
             <main className="min-h-screen bg-white">
                 {/* JSON-LD */}
                 <script
@@ -477,7 +477,6 @@ export default function VendorProcurementPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

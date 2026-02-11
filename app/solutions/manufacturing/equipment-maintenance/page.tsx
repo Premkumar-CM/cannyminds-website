@@ -181,7 +181,7 @@ export default function EquipmentMaintenancePage() {
 
     return (
         <>
-            <Navigation />
+
             <main className="min-h-screen bg-white">
                 {/* JSON-LD */}
                 <script
@@ -496,7 +496,6 @@ export default function EquipmentMaintenancePage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

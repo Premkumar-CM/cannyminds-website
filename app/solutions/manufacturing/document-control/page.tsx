@@ -151,7 +151,7 @@ export default function DocumentControlPage() {
 
     return (
         <>
-            <Navigation />
+
             <main className="min-h-screen bg-white">
                 {/* JSON-LD */}
                 <script
@@ -459,7 +459,6 @@ export default function DocumentControlPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

@@ -68,7 +68,7 @@ const jsonLd = {
 export default function FMCGTransformationPage() {
     return (
         <>
-            <Navigation />
+
             <main className="min-h-screen bg-white">
                 {/* JSON-LD */}
                 <script
@@ -484,7 +484,6 @@ export default function FMCGTransformationPage() {
                 </section>
 
             </main>
-            <Footer />
         </>
     );
 }

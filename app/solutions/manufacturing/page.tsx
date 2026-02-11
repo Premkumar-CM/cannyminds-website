@@ -1,7 +1,5 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Navigation from "@/components/ui/Navigation";
-import Footer from "@/components/ui/Footer";
 import {
     ArrowForward,
     CheckCircle,
@@ -116,7 +114,6 @@ export default function ManufacturingOverviewPage() {
 
     return (
         <>
-            <Navigation />
             <main className="min-h-screen bg-white">
                 {/* JSON-LD */}
                 <script
@@ -225,7 +222,6 @@ export default function ManufacturingOverviewPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

@@ -1,7 +1,5 @@
 "use client";
 
-import Navigation from "@/components/ui/Navigation";
-import Footer from "@/components/ui/Footer";
 import SocialShare from "@/components/ui/SocialShare";
 import Link from "next/link";
 import {
@@ -73,8 +71,6 @@ export default function ServicePageLayout({
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-
-            <Navigation />
 
             <main className="min-h-screen bg-white">
                 {/* Breadcrumb */}
@@ -302,7 +298,6 @@ export default function ServicePageLayout({
                 </section>
 
             </main>
-            <Footer />
         </>
     );
 }

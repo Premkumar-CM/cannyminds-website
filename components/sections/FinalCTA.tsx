@@ -27,7 +27,7 @@ export default function FinalCTA() {
                                 <motion.button
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
-                                    className="px-10 py-4 bg-white text-primary font-bold rounded-xl shadow-xl hover:bg-gray-50 transition-all flex items-center justify-center gap-2"
+                                    className="px-10 py-4 bg-white text-primary font-bold rounded-xl shadow-xl hover:bg-primary-50 transition-all flex items-center justify-center gap-2"
                                 >
                                     Contact Us Now
                                     <ArrowIcon />

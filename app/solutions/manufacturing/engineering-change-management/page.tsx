@@ -182,7 +182,7 @@ export default function EngineeringChangeManagementPage() {
 
     return (
         <>
-            <Navigation />
+
             <main className="min-h-screen bg-white">
                 {/* JSON-LD */}
                 <script
@@ -471,7 +471,6 @@ export default function EngineeringChangeManagementPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

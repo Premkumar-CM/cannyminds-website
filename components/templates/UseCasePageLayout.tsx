@@ -3,8 +3,6 @@
 import { motion, useScroll, useSpring } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import Navigation from "@/components/ui/Navigation";
-import Footer from "@/components/ui/Footer";
 import SocialShare from "@/components/ui/SocialShare";
 import TableOfContents from "@/components/ui/TableOfContents";
 import {
@@ -118,7 +116,6 @@ export default function UseCasePageLayout({
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <Navigation />
 
             {/* Reading Progress Bar */}
             <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 z-[60]">
@@ -522,7 +519,6 @@ export default function UseCasePageLayout({
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }
