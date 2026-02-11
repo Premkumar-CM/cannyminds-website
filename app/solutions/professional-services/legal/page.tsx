@@ -124,7 +124,6 @@ export default function LegalFirmsPage() {
 
     return (
         <>
-            <Navigation />
             <main className="min-h-screen bg-white">
                 {/* JSON-LD */}
                 <script
@@ -307,7 +306,6 @@ export default function LegalFirmsPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

@@ -190,7 +190,7 @@ export default function DocumentDigitizationPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <Navigation />
+
 
             <main className="min-h-screen bg-white">
                 {/* Breadcrumb */}
@@ -582,7 +582,6 @@ export default function DocumentDigitizationPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

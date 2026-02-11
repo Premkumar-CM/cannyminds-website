@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Navigation from "@/components/ui/Navigation";
-import Footer from "@/components/ui/Footer";
 import {
     ArrowForward,
     CheckCircle,
@@ -150,7 +148,6 @@ export default function PharmaceuticalOverviewPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <Navigation />
 
             <main className="min-h-screen bg-white">
                 {/* Hero Section */}
@@ -470,7 +467,6 @@ export default function PharmaceuticalOverviewPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

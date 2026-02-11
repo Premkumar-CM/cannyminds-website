@@ -105,7 +105,7 @@ export default function HeroNew() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="group px-6 py-3 bg-primary text-white rounded-lg font-semibold text-base shadow-xl shadow-primary/30 hover:shadow-2xl hover:shadow-primary/40 transition-all duration-300 flex items-center gap-2"
+                  className="group px-6 py-3 bg-primary text-white rounded-lg font-semibold text-base shadow-xl shadow-primary/30 hover:bg-primary-600 hover:shadow-2xl hover:shadow-primary/40 transition-all duration-300 flex items-center gap-2"
                 >
                   Get Started Free
                   <ArrowIcon className="group-hover:translate-x-1 transition-transform" />
@@ -116,7 +116,7 @@ export default function HeroNew() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-6 py-3 bg-white text-primary border-2 border-primary rounded-lg font-semibold text-base hover:bg-primary hover:text-white transition-all duration-300"
+                  className="px-6 py-3 bg-white text-primary border-2 border-primary rounded-lg font-semibold text-base hover:bg-primary-50 transition-all duration-300"
                 >
                   View Solutions
                 </motion.button>

@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Navigation from "@/components/ui/Navigation";
-import Footer from "@/components/ui/Footer";
 import SocialShare from "@/components/ui/SocialShare";
 import {
   CheckCircle as CheckIcon,
@@ -174,9 +172,7 @@ export default function CannyECMProductPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <Navigation />
-
-      <div className="min-h-screen bg-white">
+      <main className="min-h-screen bg-white">
 
         {/* Breadcrumb */}
         <nav className="bg-gray-50 border-b border-gray-200 py-4 mt-20">
@@ -1328,9 +1324,7 @@ export default function CannyECMProductPage() {
 
         </article>
 
-      </div>
-
-      <Footer />
+      </main>
     </>
   );
 }

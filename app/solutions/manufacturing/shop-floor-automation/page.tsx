@@ -1,8 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import SecureImage from "@/components/ui/SecureImage";
-import Navigation from "@/components/ui/Navigation";
-import Footer from "@/components/ui/Footer";
 import {
     ArrowForward,
     CheckCircle,
@@ -124,7 +122,6 @@ export default function ShopFloorAutomationPage() {
 
     return (
         <>
-            <Navigation />
             <main className="min-h-screen bg-white">
                 {/* JSON-LD */}
                 <script
@@ -723,7 +720,6 @@ export default function ShopFloorAutomationPage() {
                     </div>
                 </section>
             </main >
-            <Footer />
         </>
     );
 }

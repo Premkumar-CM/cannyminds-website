@@ -126,7 +126,6 @@ export default function InsuranceTechnologyPage() {
 
     return (
         <>
-            <Navigation />
             <main className="min-h-screen bg-white">
                 {/* JSON-LD */}
                 <script
@@ -309,7 +308,6 @@ export default function InsuranceTechnologyPage() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 }

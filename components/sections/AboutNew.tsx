@@ -250,7 +250,7 @@ export default function AboutNew() {
               whileTap={{ scale: 0.95 }}
             >
               <Link href="/about">
-                <button className="px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center gap-2">
+                <button className="px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary-600 transition-colors inline-flex items-center gap-2">
                   Learn More About Us
                   <ArrowIcon fontSize="small" />
                 </button>

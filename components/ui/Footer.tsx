@@ -1,5 +1,6 @@
 "use client";
 
+import { LinkedIn, X, Facebook, Instagram } from "@mui/icons-material";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -42,12 +43,17 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-gray-900 to-primary text-white">
       <div className="container mx-auto px-6 lg:px-12 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-primary font-bold text-2xl">C</span>
+              <div className="w-12 h-12 relative overflow-hidden rounded-lg">
+                <Image
+                  src="/og-image.jpg"
+                  alt="CannyMinds Logo"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div>
                 <div className="text-xl font-bold">CannyMinds</div>
@@ -59,27 +65,27 @@ export default function Footer() {
               digital transformation services.
             </p>
             <div className="flex gap-4">
-              {["linkedin", "twitter", "facebook", "instagram"].map((social) => (
+              {[
+                { id: "linkedin", icon: LinkedIn, label: "LinkedIn" },
+                { id: "twitter", icon: X, label: "X (Twitter)" },
+                { id: "facebook", icon: Facebook, label: "Facebook" },
+                { id: "instagram", icon: Instagram, label: "Instagram" },
+              ].map((social) => (
                 <motion.a
-                  key={social}
+                  key={social.id}
                   href={
-                    social === "linkedin" ? "https://in.linkedin.com/company/cannyminds-technology-solutions" :
-                      social === "twitter" ? "https://x.com/cannyminds" :
-                        social === "facebook" ? "https://www.facebook.com/p/CannyMinds-Technology-Solutions-100063646614219/" :
-                          social === "instagram" ? "https://www.instagram.com/cannyminds_technology/" : "#"
+                    social.id === "linkedin" ? "https://in.linkedin.com/company/cannyminds-technology-solutions" :
+                      social.id === "twitter" ? "https://x.com/cannyminds" :
+                        social.id === "facebook" ? "https://www.facebook.com/p/CannyMinds-Technology-Solutions-100063646614219/" :
+                          social.id === "instagram" ? "https://www.instagram.com/cannyminds_technology/" : "#"
                   }
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors"
-                  aria-label={social}
+                  whileHover={{ scale: 1.2, y: -2 }}
+                  className="flex items-center justify-center text-blue-100 hover:text-white transition-colors"
+                  aria-label={social.label}
                 >
-                  <span className="text-lg">
-                    {social === "linkedin" && "in"}
-                    {social === "twitter" && "𝕏"}
-                    {social === "facebook" && "f"}
-                    {social === "instagram" && "📷"}
-                  </span>
+                  <social.icon sx={{ fontSize: 26 }} />
                 </motion.a>
               ))}
             </div>
@@ -103,7 +109,7 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-bold mb-4">Services</h3>
             <ul className="space-y-2">
               {services.map((service) => (
@@ -117,7 +123,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Company */}
           <div>
@@ -143,15 +149,15 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-2">Certified & Compliant</h3>
             <p className="text-blue-100 text-sm">Trusted by organizations worldwide for quality and compliance</p>
           </div>
-          <div className="flex flex-wrap justify-center items-center gap-8">
+          <div className="flex flex-wrap justify-center items-center gap-6">
             {certifications.map((cert) => (
-              <div key={cert.name} className="bg-white rounded-lg p-3 hover:shadow-xl transition-shadow">
-                <div className="relative w-20 h-20">
+              <div key={cert.name} className="bg-white rounded-full p-2 hover:shadow-xl transition-shadow w-16 h-16 flex items-center justify-center border border-white/10">
+                <div className="relative w-10 h-10">
                   <Image
                     src={cert.image}
                     alt={cert.name}
                     fill
-                    className="object-contain"
+                    className="object-contain rounded-full"
                   />
                 </div>
               </div>

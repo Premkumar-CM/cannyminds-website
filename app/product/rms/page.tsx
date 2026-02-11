@@ -1,7 +1,5 @@
 "use client";
 
-import Navigation from "@/components/ui/Navigation";
-import Footer from "@/components/ui/Footer";
 import SocialShare from "@/components/ui/SocialShare";
 import FAQ from "@/components/sections/FAQ";
 import Link from "next/link";
@@ -58,7 +56,6 @@ import {
 export default function CannyRMSPage() {
   return (
     <>
-      <Navigation />
 
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -1126,7 +1123,6 @@ export default function CannyRMSPage() {
         </section>
       </div >
 
-      <Footer />
     </>
   );
 }

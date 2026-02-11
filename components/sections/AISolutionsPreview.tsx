@@ -287,7 +287,7 @@ export default function AISolutionsPreview() {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 href="/ai-solutions"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-blue-50 transition-colors"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-primary-50 transition-colors"
               >
                 <Psychology sx={{ fontSize: 20 }} />
                 Explore All AI Solutions

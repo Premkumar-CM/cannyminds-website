@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Navigation from "@/components/ui/Navigation";
-import Footer from "@/components/ui/Footer";
 import SocialShare from "@/components/ui/SocialShare";
 import {
   CheckCircle as CheckIcon,
@@ -145,7 +143,6 @@ export default function CannyScanProductPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <Navigation />
 
       <div className="min-h-screen bg-white">
 
@@ -880,7 +877,6 @@ export default function CannyScanProductPage() {
 
       </div>
 
-      <Footer />
     </>
   );
 }

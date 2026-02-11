@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import Navigation from "@/components/ui/Navigation";
-import Footer from "@/components/ui/Footer";
+
+
 import {
   Psychology,
   Speed,
@@ -1291,7 +1291,7 @@ export default function IndustryClient({ industrySlug }: { industrySlug: string 
 
   return (
     <>
-      <Navigation />
+
       <main className="min-h-screen pt-20">
         {/* Hero Section - No Gradient */}
         <section className={`relative min-h-[60vh] flex items-center ${industry.lightBg} overflow-hidden`}>
@@ -1793,7 +1793,6 @@ export default function IndustryClient({ industrySlug }: { industrySlug: string 
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
