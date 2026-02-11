@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import SecureImage from "@/components/ui/SecureImage";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
@@ -26,7 +27,6 @@ import {
     Build,
     Rule,
 } from "@mui/icons-material";
-import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
@@ -203,9 +203,14 @@ export default function BottlingSolutionsPage() {
                                 </div>
                             </div>
 
-                            <div className="relative">
-                                {/* Use a placeholder or relevant image here */}
-                                <ImagePlaceholder className="aspect-[4/3] rounded-2xl bg-cyan-200" text="Bottling Plant Automation" />
+                            <div className="relative flex justify-center">
+                                <Image
+                                    src="/images/solutions/manfactureing/bottling/hero.png"
+                                    alt="Bottling Plant Automation"
+                                    width={600}
+                                    height={450}
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>
@@ -269,14 +274,17 @@ export default function BottlingSolutionsPage() {
                                             ))}
                                         </ul>
                                     </div>
-                                    <div className={`relative ${index % 2 === 1 ? 'md:order-1' : ''}`}>
-                                        <div className="aspect-video bg-white rounded-2xl shadow-lg border border-gray-100 flex items-center justify-center p-8">
-                                            {/* Placeholder for feature visualization */}
-                                            <div className="text-center text-gray-400">
-                                                <feature.icon sx={{ fontSize: 48, marginBottom: 2, opacity: 0.5 }} />
-                                                <p className="text-sm font-medium">Visualization: {feature.title}</p>
-                                            </div>
-                                        </div>
+                                    <div className={`relative ${index % 2 === 1 ? 'md:order-1' : ''} flex justify-center`}>
+                                        <Image
+                                            src={`/images/solutions/manfactureing/bottling/${index === 0 ? 'Electronic-Batch-Records-bottle.png' :
+                                                index === 1 ? 'Quality-Control-Lab-Automation.png' :
+                                                    index === 2 ? 'End-to-End-Traceability.png' :
+                                                        'Maintenance-CIP-Management.png'
+                                                }`}
+                                            alt={feature.title}
+                                            width={800}
+                                            height={450}
+                                        />
                                     </div>
                                 </div>
                             ))}

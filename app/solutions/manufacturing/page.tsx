@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
     ArrowForward,
@@ -164,8 +165,14 @@ export default function ManufacturingOverviewPage() {
                                 </div>
                             </div>
 
-                            <div className="relative">
-                                <ImagePlaceholder className="aspect-[4/3] rounded-2xl" text="Manufacturing Solutions" />
+                            <div className="relative flex justify-center">
+                                <Image
+                                    src="/images/solutions/manfactureing/overview/Mechanical-overview.png"
+                                    alt="Mechanical Engineering Overview"
+                                    width={600}
+                                    height={450}
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>

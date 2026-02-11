@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
 import {
@@ -19,7 +20,6 @@ import {
     Assignment,
     Timeline,
 } from "@mui/icons-material";
-import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
@@ -212,8 +212,14 @@ export default function DocumentControlPage() {
                                 </div>
                             </div>
 
-                            <div className="relative">
-                                <ImagePlaceholder className="aspect-[4/3] rounded-2xl" text="Document Control Dashboard" />
+                            <div className="relative flex justify-center">
+                                <Image
+                                    src="/images/solutions/manfactureing/Document-Control-And-SOP-Management/Document-Control-SOP-Management.png"
+                                    alt="Document Control Dashboard"
+                                    width={600}
+                                    height={450}
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>
@@ -278,8 +284,13 @@ export default function DocumentControlPage() {
                                 </div>
                             </div>
 
-                            <div>
-                                <ImagePlaceholder className="aspect-[4/3] rounded-2xl" text="Engineering Drawing Management" />
+                            <div className="relative flex justify-center">
+                                <Image
+                                    src="/images/solutions/manfactureing/Document-Control-And-SOP-Management/CAD-Viewer.png"
+                                    alt="Engineering Drawing Management"
+                                    width={600}
+                                    height={450}
+                                />
                             </div>
                         </div>
                     </div>
@@ -289,8 +300,13 @@ export default function DocumentControlPage() {
                 <section className="py-16 px-6 lg:px-12 bg-gray-50">
                     <div className="container mx-auto max-w-6xl">
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
-                            <div className="order-2 lg:order-1">
-                                <ImagePlaceholder className="aspect-[4/3] rounded-2xl" text="SOP & Work Instruction Control" />
+                            <div className="order-2 lg:order-1 relative flex justify-center">
+                                <Image
+                                    src="/images/solutions/manfactureing/Document-Control-And-SOP-Management/SOP-Work-Instruction.png"
+                                    alt="SOP & Work Instruction Control"
+                                    width={600}
+                                    height={450}
+                                />
                             </div>
 
                             <div className="order-1 lg:order-2">

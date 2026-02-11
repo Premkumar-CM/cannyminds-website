@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
 import {
@@ -19,7 +20,6 @@ import {
     Assessment,
     Gavel,
 } from "@mui/icons-material";
-import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
@@ -229,8 +229,14 @@ export default function QualityManagementPage() {
                                 </div>
                             </div>
 
-                            <div className="relative">
-                                <ImagePlaceholder className="aspect-[4/3] rounded-2xl" text="Quality Management Dashboard" />
+                            <div className="relative flex justify-center">
+                                <Image
+                                    src="/images/solutions/manfactureing/Quality-Management-System/Quality-Management-System.png"
+                                    alt="Quality Management Dashboard"
+                                    width={600}
+                                    height={450}
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>
