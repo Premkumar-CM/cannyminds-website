@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import SecureImage from "@/components/ui/SecureImage";
 import SocialShare from "@/components/ui/SocialShare";
 import {
   CheckCircle as CheckIcon,
@@ -230,12 +231,12 @@ export default function CannyTrackProductPage() {
 
               {/* Hero Image */}
               <div className="relative flex justify-center">
-                <Image
+                <SecureImage
                   src="/images/products/cannytrack/cannytrack.png"
                   alt="CannyTrack dashboard showing productivity analytics"
                   width={600}
                   height={400}
-                  className="rounded-2xl"
+                  className="rounded-2xl select-none"
                   priority
                 />
               </div>
@@ -341,12 +342,12 @@ export default function CannyTrackProductPage() {
 
             {/* Feature Diagram Image */}
             <div className="mb-12 relative flex justify-center max-w-4xl mx-auto">
-              <Image
+              <SecureImage
                 src="/images/products/cannytrack/cannytrack2.png"
                 alt="CannyTrack Comprehensive Monitoring Features Diagram"
                 width={800}
                 height={400}
-                className="rounded-2xl object-contain h-[400px]"
+                className="rounded-2xl object-contain h-[400px] select-none"
               />
             </div>
 
@@ -424,12 +425,12 @@ export default function CannyTrackProductPage() {
 
             {/* Activity Monitoring Diagram Image */}
             <div className="mt-8 mb-16 relative flex justify-center max-w-4xl mx-auto">
-              <Image
+              <SecureImage
                 src="/images/products/cannytrack/cannytrack5.png?v=1.2"
                 alt="CannyTrack Real-Time Activity Tracking Diagram"
                 width={800}
                 height={400}
-                className="rounded-2xl object-contain h-[400px]"
+                className="rounded-2xl object-contain h-[400px] select-none"
                 unoptimized
               />
             </div>
@@ -490,12 +491,12 @@ export default function CannyTrackProductPage() {
 
             {/* Consent Monitoring Diagram Image */}
             <div className="mt-8 mb-16 relative flex justify-center max-w-4xl mx-auto">
-              <Image
+              <SecureImage
                 src="/images/products/cannytrack/cannytrack4.png?v=1.2"
                 alt="CannyTrack Consent-Based Monitoring Diagram"
                 width={800}
                 height={400}
-                className="rounded-2xl object-contain h-[400px]"
+                className="rounded-2xl object-contain h-[400px] select-none"
                 unoptimized
               />
             </div>

@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import SecureImage from "@/components/ui/SecureImage";
 
 import {
     ArrowForward,
@@ -228,8 +230,14 @@ export default function CannyEBMRPage() {
                                 </div>
                             </div>
 
-                            <div className="relative">
-                                <ImagePlaceholder className="aspect-[4/3] rounded-2xl" text="e-BMR Dashboard Interface" />
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
+                                <SecureImage
+                                    src="/images/products/cannyE-bmr/cannyecm2.png"
+                                    alt="e-BMR Dashboard Interface"
+                                    width={1200}
+                                    height={900}
+                                    className="w-full h-auto"
+                                />
                             </div>
                         </div>
                     </div>
@@ -266,15 +274,17 @@ export default function CannyEBMRPage() {
                 {/* Solution Section */}
                 <section className="py-16 px-6 lg:px-12 bg-gray-50">
                     <div className="container mx-auto max-w-6xl">
-                        <div className="grid lg:grid-cols-2 gap-12 items-center">
-                            <div>
+                        <div className="container mx-auto max-w-4xl">
+                            <div className="text-center mb-10">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                                     CannyECM e-BMR Solution
                                 </h2>
-                                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                                <p className="text-lg text-gray-600 leading-relaxed">
                                     CannyECM provides a secure and centralized Electronic Batch Manufacturing Record (e-BMR) platform that covers the entire batch lifecycle—from material issuance to final batch release.
                                 </p>
+                            </div>
 
+                            <div className="max-w-2xl mx-auto bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100">
                                 <h3 className="text-lg font-bold text-gray-900 mb-4">Key capabilities include:</h3>
                                 <ul className="space-y-3">
                                     {[
@@ -290,10 +300,6 @@ export default function CannyEBMRPage() {
                                         </li>
                                     ))}
                                 </ul>
-                            </div>
-
-                            <div>
-                                <ImagePlaceholder className="aspect-[4/3] rounded-2xl" text="e-BMR Workflow Diagram" />
                             </div>
                         </div>
                     </div>

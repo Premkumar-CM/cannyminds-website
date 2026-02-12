@@ -10,7 +10,7 @@ export default function SecureImage(props: ImageProps) {
             {...rest}
             draggable={false}
             onContextMenu={(e) => e.preventDefault()}
-            className={`${className || ""} select-none pointer-events-none`}
+            className={`${className || ""} select-none`}
         />
     );
 }
