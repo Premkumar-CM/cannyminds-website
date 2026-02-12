@@ -6,7 +6,6 @@ import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
 import { enhancedMetadata as seoMetadata, enhancedJsonLd as jsonLd } from "@/lib/enhanced-seo";
-import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,11 +39,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#3170b5" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <Script
-          src="https://analytics.ahrefs.com/analytics.js"
-          data-key="0QPPHEaCa6E3iNGO8b5ttw"
-          strategy="beforeInteractive"
-        />
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="0QPPHEaCa6E3iNGO8b5ttw" async></script>
         <meta name="ahrefs-site-verification" content="99e32a8d5cf6c0e56b76bd14a0ba19104d7bc3a634f23bfb63da66d0abdaf6e2" />
       </head>
       <body

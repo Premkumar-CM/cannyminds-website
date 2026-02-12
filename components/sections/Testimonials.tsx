@@ -18,7 +18,7 @@ const testimonials = [
         rating: 5
     },
     {
-        quote: "CannyMinds successfully digitized approximately 1 crore documents and implemented an integrated Enterprise Document Management and Physical Record Management solution for our organization. Their expertise, structured execution, and advanced software capabilities significantly improved our document control, compliance, and operational efficiency. We highly recommend CannyMinds for reliable and scalable document digitization and management solutions.",
+        quote: "CannyMinds successfully digitized approximately 1 crore documents and implemented an integrated Enterprise Content Management and Physical Record Management solution for our organization. Their expertise, structured execution, and advanced software capabilities significantly improved our document control, compliance, and operational efficiency. We highly recommend CannyMinds for reliable and scalable document digitization and management solutions.",
         author: "Dr. Saravana Kumar",
         company: "Steril-Gene Life Sciences (P) Ltd.",
         rating: 5

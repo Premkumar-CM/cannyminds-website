@@ -167,7 +167,7 @@ const jsonLd = {
                     "name": "Can CannyRMS integrate with other systems?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes. CannyRMS integrates with CannyECM (digital document management), CannyScan (document scanning), and other enterprise systems via REST APIs. It can also connect to existing ERP and HR systems."
+                        "text": "Yes. CannyRMS integrates with CannyECM (digital content management), CannyScan (document scanning), and other enterprise systems via REST APIs. It can also connect to existing ERP and HR systems."
                     }
                 },
                 {

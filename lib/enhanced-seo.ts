@@ -37,11 +37,11 @@ export const enhancedSiteConfig = {
     "enterprise software UAE",
 
     // Product-specific keywords
-    "document management software",
+    "content management software",
     "HR payroll management system",
     "document scanning services",
     "employee productivity monitoring",
-    "CannyECM document management",
+    "CannyECM content management",
     "CannyHR payroll software",
     "CannyScan digitization",
     "CannyTrack productivity tool",
@@ -318,7 +318,7 @@ export const enhancedJsonLd = {
                   "@type": "SoftwareApplication",
                   name: "CannyECM",
                   applicationCategory: "BusinessApplication",
-                  description: "Smart document management software",
+                  description: "Smart content management software",
                 },
               },
               {
@@ -484,7 +484,7 @@ export const enhancedJsonLd = {
           name: "What is CannyECM?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "CannyECM is a smart document management software that enables professional document organization, version control, quick search, and instant retrieval through secure web browsers with cloud storage capabilities.",
+            text: "CannyECM is a smart content management software that enables professional document organization, version control, quick search, and instant retrieval through secure web browsers with cloud storage capabilities.",
           },
         },
       ],

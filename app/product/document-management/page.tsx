@@ -24,24 +24,25 @@ import FAQ from "@/components/sections/FAQ";
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: "CannyECM - Enterprise DMS | Document Management 2026",
-  description: "Enterprise DMS with 99% OCR accuracy, workflow automation, cloud/on-premise. Organize 50,000+ documents. 30-day free trial available.",
+  title: "CannyECM - Enterprise ECM | Content Management 2026",
+  description: "Enterprise Content Management with 99% OCR accuracy, workflow automation, cloud/on-premise. Organize 50,000+ documents. 30-day free trial available.",
   keywords: [
     "CannyECM",
-    "document management software",
-    "enterprise DMS",
-    "OCR document management",
+    "content management software",
+    "enterprise ECM",
+    "enterprise content management",
+    "OCR content management",
     "workflow automation software",
     "cloud document storage",
-    "on-premise DMS",
-    "document management system",
+    "on-premise ECM",
+    "content management system",
     "paperless office solution",
     "secure document storage"
   ],
   authors: [{ name: "Christopher" }],
   openGraph: {
-    title: "CannyECM - Enterprise DMS | Document Management 2026",
-    description: "Enterprise DMS with 99% OCR accuracy, workflow automation, cloud/on-premise. Organize 50,000+ documents. 30-day free trial available.",
+    title: "CannyECM - Enterprise ECM | Content Management 2026",
+    description: "Enterprise Content Management with 99% OCR accuracy, workflow automation, cloud/on-premise. Organize 50,000+ documents. 30-day free trial available.",
     type: "article",
     url: "https://www.cannymindstech.com/product/document-management",
     authors: ["Christopher"],
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "CannyECM Document Management Software",
+        alt: "CannyECM Content Management Software",
       },
     ],
   },
@@ -82,14 +83,14 @@ const jsonLd = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "CannyECM - Document Management Software"
+          "name": "CannyECM - Content Management Software"
         }
       ]
     },
     {
       "@type": "Article",
-      "headline": "CannyECM - Enterprise Document Management Software",
-      "description": "Comprehensive guide to CannyECM enterprise document management system with OCR, workflow automation, and cloud/on-premise deployment options.",
+      "headline": "CannyECM - Enterprise Content Management Software",
+      "description": "Comprehensive guide to CannyECM enterprise content management system with OCR, workflow automation, and cloud/on-premise deployment options.",
       "image": "https://www.cannymindstech.com/images/CannyECM-dashboard.jpg",
       "author": {
         "@type": "Person",
@@ -117,7 +118,7 @@ const jsonLd = {
       "@type": "SoftwareApplication",
       "name": "CannyECM",
       "applicationCategory": "BusinessApplication",
-      "description": "Enterprise document management system with OCR and workflow automation",
+      "description": "Enterprise content management system with OCR and workflow automation",
       "operatingSystem": "Web, Windows, macOS, Linux",
       "offers": {
         "@type": "Offer",
@@ -145,7 +146,7 @@ const jsonLd = {
           "name": "What is CannyECM?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "CannyECM is an enterprise document management software that helps organizations digitize, organize, and manage documents with OCR technology, workflow automation, and secure cloud/on-premise storage."
+            "text": "CannyECM is an enterprise content management software that helps organizations digitize, organize, and manage documents with OCR technology, workflow automation, and secure cloud/on-premise storage."
           }
         },
         {
@@ -184,7 +185,7 @@ export default function CannyECMProductPage() {
               <li className="text-gray-400">/</li>
               <li><Link href="/#products" className="text-primary hover:text-primary/80 whitespace-nowrap">Products</Link></li>
               <li className="text-gray-400">/</li>
-              <li className="text-gray-600 font-medium truncate">CannyECM - Document Management Software</li>
+              <li className="text-gray-600 font-medium truncate">CannyECM - Content Management Software</li>
             </ol>
           </div>
         </nav>
@@ -236,8 +237,8 @@ export default function CannyECMProductPage() {
                 {/* Social Share */}
                 <div className="flex items-center gap-3">
                   <SocialShare
-                    title="CannyECM - Enterprise Document Management Software"
-                    description="Transform your document management with CannyECM. 99% OCR accuracy, workflow automation, and enterprise security."
+                    title="CannyECM - Enterprise Content Management Software"
+                    description="Transform your content management with CannyECM. 99% OCR accuracy, workflow automation, and enterprise security."
                   />
                   <span className="text-xs text-gray-500">Share this product</span>
                 </div>
@@ -319,12 +320,12 @@ export default function CannyECMProductPage() {
           {/* What is CannyECM */}
           <section id="what-is" className="mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-8">
-              What is CannyECM Document Management Software?
+              What is CannyECM Content Management Software?
             </h2>
 
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                <strong>CannyECM</strong> is a comprehensive enterprise document management system (DMS) designed to eliminate paper-based
+                <strong>CannyECM</strong> is a comprehensive enterprise content management system (ECM) designed to eliminate paper-based
                 workflows and digitize your entire document ecosystem. Whether you&apos;re managing invoices, contracts, <Link href="/product/hr-management" className="text-primary hover:underline">HR records</Link>, or
                 compliance documentation, CannyECM provides a centralized platform to <strong>organize, search, retrieve, and share</strong> professional
                 documents with military-grade security.
@@ -333,7 +334,7 @@ export default function CannyECMProductPage() {
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
                 Built for modern businesses, CannyECM operates seamlessly on any browser and offers flexible deployment options <strong>cloud,
                   on-premise, or hybrid</strong>. With advanced <strong>OCR technology powered by Elasticsearch</strong>, full-text search capabilities,
-                and intuitive workflow automation, CannyECM transforms how organizations handle document management challenges.
+                and intuitive workflow automation, CannyECM transforms how organizations handle content management challenges.
               </p>
 
               <div className="bg-primary-50 border-l-4 border-primary p-6 rounded-r-lg">
@@ -1147,12 +1148,12 @@ export default function CannyECMProductPage() {
                     <p className="text-sm text-gray-600">Head of Technical Department & Investor | CannyMinds Technology Solutions</p>
                   </div>
                   <p className="text-gray-700 leading-relaxed mb-4">
-                    Christopher is the Head of Technical Department and Investor at CannyMinds Technology Solutions with over 10 years of experience in enterprise software development and document management systems. He leads the technical vision and development of CannyECM and oversees all product innovation, ensuring cutting-edge solutions that help businesses achieve digital transformation and operational efficiency.
+                    Christopher is the Head of Technical Department and Investor at CannyMinds Technology Solutions with over 10 years of experience in enterprise software development and content management systems. He leads the technical vision and development of CannyECM and oversees all product innovation, ensuring cutting-edge solutions that help businesses achieve digital transformation and operational efficiency.
                   </p>
                   <div className="flex flex-wrap gap-4 text-sm text-gray-600">
                     <div className="flex items-center gap-2">
                       <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} />
-                      <span>10+ years DMS experience</span>
+                      <span>10+ years ECM experience</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <CheckIcon sx={{ fontSize: 16, color: '#25d366' }} />
@@ -1181,7 +1182,7 @@ export default function CannyECMProductPage() {
             items={[
               {
                 question: "What is CannyECM?",
-                answer: "CannyECM is an enterprise document management software that helps organizations digitize, organize, and manage documents with OCR technology, workflow automation, and secure cloud/on-premise storage."
+                answer: "CannyECM is an enterprise content management software that helps organizations digitize, organize, and manage documents with OCR technology, workflow automation, and secure cloud/on-premise storage."
               },
               {
                 question: "How does CannyECM OCR work?",

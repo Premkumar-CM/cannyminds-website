@@ -37,7 +37,7 @@ export default function TermsPage() {
                 CannyMinds Technology Solutions provides enterprise software solutions including but not limited to:
               </p>
               <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                <li>Document Management Systems (CannyECM)</li>
+                <li>Content Management Systems (CannyECM)</li>
                 <li>HR Management Solutions (CannyHR)</li>
                 <li>Scanning and Digitization Services (CannyScan)</li>
                 <li>Document Tracking Systems (CannyTrack)</li>

@@ -536,7 +536,7 @@ export default function DocumentDigitizationPage() {
                                 href="/product/document-management"
                                 className="px-6 py-3 bg-blue-50 text-blue-700 rounded-lg hover:bg-blue-100 transition-colors font-medium text-sm"
                             >
-                                CannyECM: Document Management →
+                                CannyECM: Content Management →
                             </Link>
                             <Link
                                 href="/product/rms"

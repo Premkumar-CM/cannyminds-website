@@ -67,7 +67,7 @@ export default function ContactForm() {
   };
 
   const services = [
-    "CannyECM - Document Management",
+    "CannyECM - Content Management",
     "CannyScan - Document Scanning",
     "CannyHR - HR & Payroll Management",
     "CannyTrack - Productivity Monitoring",

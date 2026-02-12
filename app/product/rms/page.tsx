@@ -1037,7 +1037,7 @@ export default function CannyRMSPage() {
             },
             {
               question: "Can CannyRMS integrate with existing systems?",
-              answer: "Yes. CannyRMS integrates seamlessly with CannyECM (document management), CannyScan (digitization), and third-party ERP systems via REST APIs."
+              answer: "Yes. CannyRMS integrates seamlessly with CannyECM (content management), CannyScan (digitization), and third-party ERP systems via REST APIs."
             },
             {
               question: "How quickly can I find a file?",

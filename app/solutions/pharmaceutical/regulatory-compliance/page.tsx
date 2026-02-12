@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         "audit trail software",
         "change control management",
         "21 CFR Part 11 software",
-        "electronic document management",
+        "electronic content management",
     ],
     alternates: {
         canonical: "/solutions/pharmaceutical/regulatory-compliance",

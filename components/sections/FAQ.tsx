@@ -20,9 +20,9 @@ const faqs = [
       "CannyMinds has global offices in India (Chennai), USA (McKinney, Texas), Nigeria (Lagos), and UAE (Dubai), serving clients across 50+ countries with 24/7 support.",
   },
   {
-    question: "What is CannyECM document management software?",
+    question: "What is CannyECM content management software?",
     answer:
-      "CannyECM is a smart document management software that enables professional document organization, version control, quick search, and instant retrieval through secure web browsers with cloud storage capabilities. It's perfect for enterprises looking to digitize their document workflows.",
+      "CannyECM is a smart content management software that enables professional document organization, version control, quick search, and instant retrieval through secure web browsers with cloud storage capabilities. It's perfect for enterprises looking to digitize their content workflows.",
   },
   {
     question: "How can CannyMinds help with digital transformation?",

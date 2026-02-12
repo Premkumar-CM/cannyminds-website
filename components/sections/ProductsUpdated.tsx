@@ -18,7 +18,7 @@ const products = [
     name: "CannyECM",
     icon: DescriptionIcon,
     description:
-      "Enterprise document management software enabling professional organization and instant retrieval through secure web browsers.",
+      "Enterprise content management software enabling professional organization and instant retrieval through secure web browsers.",
     features: ["Cloud Storage", "Quick Search", "Version Control", "Secure Access"],
     color: "from-blue-500 to-cyan-500",
     link: "/product/document-management",
