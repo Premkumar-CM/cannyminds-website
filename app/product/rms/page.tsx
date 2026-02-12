@@ -4,6 +4,7 @@ import SocialShare from "@/components/ui/SocialShare";
 import FAQ from "@/components/sections/FAQ";
 import Link from "next/link";
 import Image from "next/image";
+import SecureImage from "@/components/ui/SecureImage";
 import { motion } from "framer-motion";
 import {
   ArrowForward,
@@ -153,15 +154,14 @@ export default function CannyRMSPage() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-transparent via-white/20 to-transparent rounded-2xl animate-shimmer"></div>
 
                 {/* Video container - no border */}
-                <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
-                  <Image
+                <div className="relative bg-white">
+                  <SecureImage
                     src="/videos/rms/cannyrms-demo.gif"
                     alt="CannyRMS Dashboard showing records management interface with barcode tracking and file search"
                     width={1200}
                     height={675}
-                    className="w-full h-auto object-cover pointer-events-none select-none"
+                    className="w-full h-auto object-cover select-none"
                     unoptimized
-                    onContextMenu={(e) => e.preventDefault()}
                   />
                 </div>
               </motion.div>
@@ -729,14 +729,13 @@ export default function CannyRMSPage() {
                     <div className="grid lg:grid-cols-[1.85fr_1fr] gap-10 items-start">
                       {/* Left Side: Product Image */}
                       {step.image && (
-                        <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-100 bg-gray-50 flex items-center justify-center">
-                          <Image
+                        <div className="border border-gray-100 bg-gray-50 flex items-center justify-center">
+                          <SecureImage
                             src={step.image}
                             alt={`CannyRMS ${step.title}`}
                             width={1200}
                             height={675}
-                            className="w-full h-auto object-cover transform transition-transform duration-500 pointer-events-none select-none"
-                            onContextMenu={(e) => e.preventDefault()}
+                            className="w-full h-auto object-cover transform transition-transform duration-500 select-none"
                           />
                           {step.caption && (
                             <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg text-xs font-bold text-gray-700 shadow-lg border border-gray-100">
@@ -920,12 +919,12 @@ export default function CannyRMSPage() {
               </div>
 
               <div className="flex justify-center lg:justify-end">
-                <Image
+                <SecureImage
                   src="/images/common/security.png"
                   alt="CannyRMS Enterprise Security - Role Based Access Control, Audit Logs, and Geolocation Tracking"
                   width={600}
                   height={600}
-                  className="w-1/2 h-auto object-contain pointer-events-none select-none"
+                  className="w-1/2 h-auto object-contain select-none"
                   onContextMenu={(e) => e.preventDefault()}
                 />
               </div>

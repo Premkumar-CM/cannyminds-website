@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import SecureImage from "@/components/ui/SecureImage";
 import SocialShare from "@/components/ui/SocialShare";
 import {
   CheckCircle as CheckIcon,
@@ -241,12 +243,15 @@ export default function CannyECMProductPage() {
                 </div>
               </div>
 
-              {/* Image Placeholder */}
-              <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-2xl p-12 text-center" role="img" aria-label="CannyECM Dashboard Screenshot showing document management interface with search, folders, and workflow features">
-                <DocumentIcon sx={{ fontSize: 120, color: '#94a3b8' }} aria-hidden="true" />
-                <p className="text-gray-600 font-semibold mt-6 text-lg">IMAGE PLACEHOLDER</p>
-                <p className="text-sm text-gray-500 mt-2">CannyECM Dashboard Screenshot</p>
-                <p className="text-xs text-gray-400 mt-1">Recommended size: 1200x800px</p>
+              {/* Product Image */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
+                <SecureImage
+                  src="/images/products/cannyecm/cannyecm1.png"
+                  alt="CannyECM Dashboard Screenshot showing document management interface with search, folders, and workflow features"
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto"
+                />
               </div>
 
             </div>
@@ -479,13 +484,7 @@ export default function CannyECMProductPage() {
             </div>
           </section>
 
-          {/* Image Placeholder: Features Overview */}
-          <div className="mb-20 bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl p-12 text-center" role="img" aria-label="CannyECM Features Infographic illustrating OCR technology, workflow automation, cloud storage, and security features">
-            <TrendingUpIcon sx={{ fontSize: 80, color: '#94a3b8' }} aria-hidden="true" />
-            <p className="text-gray-600 font-semibold mt-6 text-lg">IMAGE PLACEHOLDER</p>
-            <p className="text-sm text-gray-500 mt-2">CannyECM Features Infographic</p>
-            <p className="text-xs text-gray-400 mt-1">Recommended size: 1400x700px</p>
-          </div>
+
 
           {/* Benefits Section */}
           <section id="benefits" className="mb-20">
@@ -651,13 +650,7 @@ export default function CannyECMProductPage() {
             </div>
           </section>
 
-          {/* Image Placeholder: Deployment */}
-          <div className="mb-20 bg-gray-100 border-2 border-dashed border-gray-300 rounded-xl p-12 text-center" role="img" aria-label="Deployment Options Diagram showing Cloud, On-Premise, and Hybrid deployment architectures for CannyECM">
-            <PublicIcon sx={{ fontSize: 80, color: '#94a3b8' }} aria-hidden="true" />
-            <p className="text-gray-600 font-semibold mt-6 text-lg">IMAGE PLACEHOLDER</p>
-            <p className="text-sm text-gray-500 mt-2">Deployment Options Diagram</p>
-            <p className="text-xs text-gray-400 mt-1">Recommended size: 1200x600px</p>
-          </div>
+
 
           {/* Use Cases */}
           <section id="use-cases" className="mb-20">

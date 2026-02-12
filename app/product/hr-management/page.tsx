@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import SecureImage from "@/components/ui/SecureImage";
 import SocialShare from "@/components/ui/SocialShare";
 import {
   CheckCircle as CheckIcon,
@@ -242,12 +243,12 @@ export default function CannyHRProductPage() {
 
               {/* Hero Image */}
               <div className="relative flex justify-center">
-                <Image
+                <SecureImage
                   src="/images/products/cannyhr/cannyhr4.png?v=1.1"
                   alt="CannyHR Dashboard showing employee management, payroll, and attendance tracking"
                   width={1200}
                   height={800}
-                  className="rounded-2xl object-contain"
+                  className="rounded-2xl object-contain select-none"
                   priority
                   unoptimized
                 />
@@ -353,12 +354,12 @@ export default function CannyHRProductPage() {
 
             {/* Features Diagram Image */}
             <div className="mb-12 relative flex justify-center max-w-4xl mx-auto">
-              <Image
+              <SecureImage
                 src="/images/products/cannyhr/cannyhr1.png?v=1.0"
                 alt="CannyHR Complete HR Modules Overview"
                 width={800}
                 height={400}
-                className="rounded-2xl object-contain h-[400px]"
+                className="rounded-2xl object-contain h-[400px] select-none"
                 unoptimized
               />
             </div>
@@ -516,12 +517,12 @@ export default function CannyHRProductPage() {
 
             {/* Attendance Monitoring Diagram Image */}
             <div className="mt-8 mb-16 relative flex justify-center max-w-4xl mx-auto">
-              <Image
+              <SecureImage
                 src="/images/products/cannyhr/cannyhr3.png?v=1.1"
                 alt="CannyHR Time & Attendance Monitoring Diagram"
                 width={800}
                 height={400}
-                className="rounded-2xl object-contain h-[400px]"
+                className="rounded-2xl object-contain h-[400px] select-none"
                 unoptimized
               />
             </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import SecureImage from "@/components/ui/SecureImage";
 import SocialShare from "@/components/ui/SocialShare";
 import {
   CheckCircle as CheckIcon,
@@ -216,12 +217,12 @@ export default function CannyScanProductPage() {
 
               {/* Hero Image */}
               <div className="relative flex justify-center">
-                <Image
+                <SecureImage
                   src="/images/products/cannyscan2.png"
                   alt="CannyScan Document Digitization Process Flow"
                   width={600}
                   height={400}
-                  className="rounded-2xl"
+                  className="rounded-2xl select-none"
                   priority
                 />
               </div>
@@ -586,12 +587,12 @@ export default function CannyScanProductPage() {
             <div className="relative">
               {/* Process Flow Diagram Image */}
               <div className="mb-12 relative flex justify-center">
-                <Image
+                <SecureImage
                   src="/images/products/cannyscan1.jpg"
                   alt="Document Digitisation Process Flow Diagram"
                   width={1000}
                   height={600}
-                  className="rounded-2xl shadow-sm"
+                  className="rounded-2xl shadow-sm select-none"
                 />
               </div>
 
@@ -738,12 +739,12 @@ export default function CannyScanProductPage() {
               </div>
 
               <div className="relative flex justify-center">
-                <Image
+                <SecureImage
                   src="/images/products/cannyscan.png"
                   alt="CannyScan and CannyECM Integration"
                   width={600}
                   height={400}
-                  className="rounded-2xl"
+                  className="rounded-2xl select-none"
                 />
               </div>
             </div>
