@@ -40,6 +40,11 @@ export default function RootLayout({
         <meta name="theme-color" content="#3170b5" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="0QPPHEaCa6E3iNGO8b5ttw"
+          async
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -51,11 +56,7 @@ export default function RootLayout({
           <Footer />
         </SmoothScroll>
         <WhatsAppButton />
-        <Script
-          src="https://analytics.ahrefs.com/analytics.js"
-          data-key="0QPPHEaCa6E3iNGO8b5ttw"
-          strategy="afterInteractive"
-        />
+
       </body>
     </html>
   );
