@@ -45,6 +45,7 @@ export default function RootLayout({
           data-key="0QPPHEaCa6E3iNGO8b5ttw"
           async
         />
+        <meta name="ahrefs-site-verification" content="99e32a8d5cf6c0e56b76bd14a0ba19104d7bc3a634f23bfb63da66d0abdaf6e2" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
