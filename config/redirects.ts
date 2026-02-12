@@ -305,5 +305,6 @@ export const redirects: NextConfig['redirects'] = async () => {
             permanent: redirect.permanent,
         }));
 
-    return [...baseRedirects, ...htmlRedirects];
+    // Combine and filter out self-redirects to prevent infinite loops
+    return [...baseRedirects, ...htmlRedirects].filter(redirect => redirect.source !== redirect.destination);
 };

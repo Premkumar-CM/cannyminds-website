@@ -12,7 +12,19 @@ import {
 } from "@mui/icons-material";
 
 // Global offices with region information
-const globalOffices = [
+interface Office {
+  region: string;
+  country: string;
+  city: string;
+  address: string;
+  phone: string;
+  phone2?: string;
+  email: string;
+  hours: string;
+  flag: string;
+}
+
+const globalOffices: Office[] = [
   {
     region: "Asia Pacific",
     country: "India",
