@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
 import {
@@ -93,25 +94,29 @@ export default function AuditFirmsPage() {
             title: "Digital Working Papers",
             description: "Standardize your audit files. Link evidence directly to audit steps for a clear trail from planning to reporting.",
             icon: Topic,
-            benefits: ["Standardized folder structures", "Cross-referencing", "Review notes tracking"]
+            benefits: ["Standardized folder structures", "Cross-referencing", "Review notes tracking"],
+            image: "/images/solutions/Quality%20Audits%20start%20with%20Quality%20Documentation/Digital%20Working%20Papers.png"
         },
         {
             title: "Evidence Management",
             description: "Centralize all audit evidence. Upload, tag, and secure client documents in a single, searchable repository.",
             icon: FactCheck,
-            benefits: ["Support for all file types", "Version control", "Tamper-proof logs"]
+            benefits: ["Support for all file types", "Version control", "Tamper-proof logs"],
+            image: "/images/solutions/Quality%20Audits%20start%20with%20Quality%20Documentation/Evidence%20Management.png"
         },
         {
             title: "Client Collaboration Portal",
             description: "Request and receive PBC (Provided by Client) documents securely. Track outstanding items automatically.",
             icon: Groups,
-            benefits: ["Automated reminders", "Secure upload link", "Audit trail of submissions"]
+            benefits: ["Automated reminders", "Secure upload link", "Audit trail of submissions"],
+            image: "/images/solutions/Quality%20Audits%20start%20with%20Quality%20Documentation/Client%20Collaboration%20Portal.png"
         },
         {
             title: "Review & Sign-off",
             description: "Streamline the review process with digital stamps, review notes, and tiered approval workflows.",
             icon: AssignmentTurnedIn,
-            benefits: ["Partner sign-off", "Review query management", "Dashboard visibility"]
+            benefits: ["Partner sign-off", "Review query management", "Dashboard visibility"],
+            image: "/images/solutions/Quality%20Audits%20start%20with%20Quality%20Documentation/Review%20&%20Sign-off.png"
         }
     ];
 
@@ -185,7 +190,14 @@ export default function AuditFirmsPage() {
                             </div>
 
                             <div className="relative">
-                                <ImagePlaceholder className="aspect-[4/3] rounded-2xl bg-slate-800 border border-slate-700" text="Audit Working Paper Dashboard" />
+                                <Image
+                                    src="/images/solutions/Quality%20Audits%20start%20with%20Quality%20Documentation/Quality%20Audits%20start%20with%20Quality%20Documentation.png"
+                                    alt="Audit Management Dashboard"
+                                    width={600}
+                                    height={450}
+                                    className="w-full h-auto object-contain"
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>
@@ -250,11 +262,14 @@ export default function AuditFirmsPage() {
                                         </ul>
                                     </div>
                                     <div className={`relative ${index % 2 === 1 ? 'md:order-1' : ''}`}>
-                                        <div className="aspect-video bg-white rounded-2xl shadow-lg border border-gray-100 flex items-center justify-center p-8">
-                                            <div className="text-center text-gray-400">
-                                                <feature.icon sx={{ fontSize: 48, marginBottom: 2, opacity: 0.5 }} />
-                                                <p className="text-sm font-medium">Screen: {feature.title}</p>
-                                            </div>
+                                        <div className="relative">
+                                            <Image
+                                                src={feature.image}
+                                                alt={feature.title}
+                                                width={600}
+                                                height={450}
+                                                className="w-full h-auto object-contain"
+                                            />
                                         </div>
                                     </div>
                                 </div>

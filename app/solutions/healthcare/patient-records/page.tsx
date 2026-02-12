@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
 import {
@@ -118,6 +119,7 @@ export default function PatientRecordsPage() {
             description:
                 "Whether it's a new admission form from reception, a lab report from the pathology department, or an insurance document from billing: scan it with your existing scanner or upload the digital file. The system accepts PDFs, images, Word files, and most other common formats.",
             icon: Assignment,
+            image: "/images/solutions/healthcare/How%20Hospitals%20Manage%20Patient%20Records%20with%20CannyECM/Scan%20or%20Upload%20the%20Document.png",
         },
         {
             step: "2",
@@ -125,6 +127,7 @@ export default function PatientRecordsPage() {
             description:
                 "CannyECM reads the document using OCR and extracts key information: patient name, ID, date, department. The document gets filed into the correct patient folder automatically. You can also add custom metadata like visit number, doctor name, or insurance reference.",
             icon: FolderShared,
+            image: "/images/solutions/healthcare/How%20Hospitals%20Manage%20Patient%20Records%20with%20CannyECM/System%20Tags%20and%20Files%20It%20Automatically.png",
         },
         {
             step: "3",
@@ -132,6 +135,7 @@ export default function PatientRecordsPage() {
             description:
                 "A doctor needs this patient's blood work from last month? Type the patient name or ID in the search bar. Every document linked to that patient shows up: lab reports, prescriptions, discharge summaries, consent forms. Filter by date, department, or document type to narrow it down.",
             icon: Search,
+            image: "/images/solutions/healthcare/How%20Hospitals%20Manage%20Patient%20Records%20with%20CannyECM/Clinicians%20Search%20and%20Retrieve%20Instantly.png",
         },
         {
             step: "4",
@@ -139,6 +143,7 @@ export default function PatientRecordsPage() {
             description:
                 "Every time someone opens, downloads, prints, or shares a patient document, the system logs it: who, when, from which device, and from which IP address. This is essential for HIPAA compliance and internal accountability.",
             icon: Security,
+            image: "/images/solutions/healthcare/How%20Hospitals%20Manage%20Patient%20Records%20with%20CannyECM/Full%20Audit%20Trail%20of%20Who%20Accessed%20What.png",
         },
     ];
 
@@ -252,9 +257,13 @@ export default function PatientRecordsPage() {
                             </div>
 
                             <div className="relative">
-                                <ImagePlaceholder
-                                    className="aspect-[4/3] rounded-2xl"
-                                    text="Patient Record Management Dashboard"
+                                <Image
+                                    src="/images/solutions/healthcare/How%20Hospitals%20Manage%20Patient%20Records%20with%20CannyECM/How%20Hospitals%20Manage%20Patient%20Records%20with%20CannyECM.png"
+                                    alt="How Hospitals Manage Patient Records with CannyECM"
+                                    width={600}
+                                    height={450}
+                                    className="rounded-2xl w-full h-auto object-contain"
+                                    priority
                                 />
                             </div>
                         </div>
@@ -385,9 +394,12 @@ export default function PatientRecordsPage() {
                                         </p>
                                     </div>
                                     <div className={idx % 2 === 1 ? "lg:order-1" : ""}>
-                                        <ImagePlaceholder
-                                            className="aspect-[4/3] rounded-xl"
-                                            text={s.title}
+                                        <Image
+                                            src={s.image}
+                                            alt={s.title}
+                                            width={600}
+                                            height={450}
+                                            className="rounded-xl w-full h-auto object-contain bg-white border border-gray-100"
                                         />
                                     </div>
                                 </div>

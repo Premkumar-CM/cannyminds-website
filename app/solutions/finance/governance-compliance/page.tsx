@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
 import {
@@ -16,7 +17,7 @@ import {
     Lock,
     Rule,
 } from "@mui/icons-material";
-import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
+
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
@@ -184,7 +185,14 @@ export default function GovernanceCompliancePage() {
                             </div>
 
                             <div className="relative">
-                                <ImagePlaceholder className="aspect-[4/3] rounded-2xl bg-slate-100" text="Compliance Dashboard" />
+                                <Image
+                                    src="/images/solutions/Governance%20&%20Compliance/governance-and-compliance.png"
+                                    alt="Governance, Risk, and Compliance (GRC) Dashboard"
+                                    width={600}
+                                    height={450}
+                                    className="w-full h-auto object-contain"
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>
@@ -230,30 +238,24 @@ export default function GovernanceCompliancePage() {
 
                         <div className="space-y-12">
                             {keyFeatures.map((feature, index) => (
-                                <div key={index} className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
-                                    <div className={index % 2 === 1 ? 'md:order-2' : ''}>
-                                        <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-slate-200 text-slate-700 mb-6">
-                                            <feature.icon sx={{ fontSize: 24 }} />
+                                <div key={index} className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                                    <div className="flex flex-col md:flex-row gap-6 items-start">
+                                        <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-slate-100 text-slate-700 flex-shrink-0">
+                                            <feature.icon sx={{ fontSize: 32 }} />
                                         </div>
-                                        <h3 className="text-2xl font-bold text-gray-900 mb-4">{feature.title}</h3>
-                                        <p className="text-gray-600 mb-6 leading-relaxed">
-                                            {feature.description}
-                                        </p>
-                                        <ul className="space-y-3">
-                                            {feature.benefits.map((benefit, i) => (
-                                                <li key={i} className="flex items-center gap-3">
-                                                    <VerifiedUser className="text-green-500 flex-shrink-0" sx={{ fontSize: 20 }} />
-                                                    <span className="text-gray-700 font-medium">{benefit}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                    <div className={`relative ${index % 2 === 1 ? 'md:order-1' : ''}`}>
-                                        <div className="aspect-video bg-white rounded-2xl shadow-lg border border-gray-100 flex items-center justify-center p-8">
-                                            <div className="text-center text-gray-400">
-                                                <feature.icon sx={{ fontSize: 48, marginBottom: 2, opacity: 0.5 }} />
-                                                <p className="text-sm font-medium">Interface: {feature.title}</p>
-                                            </div>
+                                        <div>
+                                            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3">{feature.title}</h3>
+                                            <p className="text-gray-600 mb-6 leading-relaxed">
+                                                {feature.description}
+                                            </p>
+                                            <ul className="grid sm:grid-cols-2 gap-3">
+                                                {feature.benefits.map((benefit, i) => (
+                                                    <li key={i} className="flex items-center gap-2">
+                                                        <VerifiedUser className="text-green-500 flex-shrink-0" sx={{ fontSize: 18 }} />
+                                                        <span className="text-gray-700 font-medium text-sm">{benefit}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>

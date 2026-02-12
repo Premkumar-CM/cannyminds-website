@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 import {
     ArrowForward,
@@ -92,25 +93,29 @@ export default function BankingTechnologyPage() {
             title: "Digital Loan Origination",
             description: "Automate the entire loan lifecycle from application to disbursal. Integrated document checklist, credit bureau checks, and sanction letter generation.",
             icon: CreditScore,
-            benefits: ["Reduce TAT by 60%", "Paperless workflow", "Instant eligibility checks"]
+            benefits: ["Reduce TAT by 60%", "Paperless workflow", "Instant eligibility checks"],
+            image: "/images/solutions/Banking/digital-finance.png"
         },
         {
             title: "Automated KYC & Onboarding",
             description: "Seamless digital onboarding with AI-powered ID verification and liveliness checks. Compliant with Video KYC norms.",
             icon: VerifiedUser,
-            benefits: ["5-minute account opening", "Fraud prevention", "Enhanced customer experience"]
+            benefits: ["5-minute account opening", "Fraud prevention", "Enhanced customer experience"],
+            image: "/images/solutions/Banking/automated-kyc-onboarding.png"
         },
         {
             title: "Centralized Document Repository",
             description: "A secure, searchable digital vault for all customer mandates, agreements, and collateral documents.",
             icon: AccountBalance,
-            benefits: ["Instant retrieval", "Branch-level access control", "Secure archival"]
+            benefits: ["Instant retrieval", "Branch-level access control", "Secure archival"],
+            image: "/images/solutions/Banking/centralized-document-repository.png"
         },
         {
             title: "Credit Operation Workflows",
             description: "Streamline credit appraisal with multi-level approval hierarchies and automated deviation workflows.",
             icon: AssignmentTurnedIn,
-            benefits: ["Standardized decisioning", "Full audit trail", "Faster credit memos"]
+            benefits: ["Standardized decisioning", "Full audit trail", "Faster credit memos"],
+            image: "/images/solutions/Banking/credit-operation-workflows.png"
         }
     ];
 
@@ -184,7 +189,14 @@ export default function BankingTechnologyPage() {
                             </div>
 
                             <div className="relative">
-                                <ImagePlaceholder className="aspect-[4/3] rounded-2xl bg-blue-100" text="Digital Banking Workflow" />
+                                <Image
+                                    src="/images/solutions/Banking/next-gen-banking-technology.png"
+                                    alt="Next-Gen Banking Technology Dashboard showing loan processing metrics"
+                                    width={600}
+                                    height={450}
+                                    className="w-full h-auto object-contain"
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>
@@ -249,11 +261,14 @@ export default function BankingTechnologyPage() {
                                         </ul>
                                     </div>
                                     <div className={`relative ${index % 2 === 1 ? 'md:order-1' : ''}`}>
-                                        <div className="aspect-video bg-white rounded-2xl shadow-lg border border-gray-100 flex items-center justify-center p-8">
-                                            <div className="text-center text-gray-400">
-                                                <feature.icon sx={{ fontSize: 48, marginBottom: 2, opacity: 0.5 }} />
-                                                <p className="text-sm font-medium">Screen: {feature.title}</p>
-                                            </div>
+                                        <div className="relative">
+                                            <Image
+                                                src={feature.image}
+                                                alt={feature.title}
+                                                width={600}
+                                                height={450}
+                                                className="w-full h-auto object-contain"
+                                            />
                                         </div>
                                     </div>
                                 </div>

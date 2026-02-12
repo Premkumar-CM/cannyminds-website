@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
 import {
@@ -266,9 +267,13 @@ export default function ClinicalWorkflowsPage() {
                             </div>
 
                             <div className="relative">
-                                <ImagePlaceholder
-                                    className="aspect-[4/3] rounded-2xl"
-                                    text="Clinical Workflow Dashboard"
+                                <Image
+                                    src="/images/solutions/healthcare/automate%20clinical%20approvals/Automate%20Clinical%20Approvals.png"
+                                    alt="Automate Clinical Approvals Dashboard"
+                                    width={600}
+                                    height={450}
+                                    className="w-full h-auto object-contain"
+                                    priority
                                 />
                             </div>
                         </div>

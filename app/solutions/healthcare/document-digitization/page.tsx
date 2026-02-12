@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
 import {
@@ -285,9 +286,13 @@ export default function DocumentDigitizationPage() {
                             </div>
 
                             <div className="relative">
-                                <ImagePlaceholder
-                                    className="aspect-[4/3] rounded-2xl"
-                                    text="Document Digitization Workflow"
+                                <Image
+                                    src="/images/solutions/healthcare/How%20Hospitals%20Manage%20Patient%20Records%20with%20CannyECM/Clinicians%20Search%20and%20Retrieve%20Instantly.png"
+                                    alt="Document Digitization Workflow"
+                                    width={600}
+                                    height={450}
+                                    className="w-full h-auto object-contain"
+                                    priority
                                 />
                             </div>
                         </div>

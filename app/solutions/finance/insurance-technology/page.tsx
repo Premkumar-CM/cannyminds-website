@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
 import {
@@ -93,25 +94,29 @@ export default function InsuranceTechnologyPage() {
             title: "Automated Claims Processing",
             description: "End-to-end digital workflow for claims. From First Notice of Loss (FNOL) to final settlement, automate document collection and assessment.",
             icon: HealthAndSafety,
-            benefits: ["Instant claim registration", "AI-based damage assessment", "Faster payouts"]
+            benefits: ["Instant claim registration", "AI-based damage assessment", "Faster payouts"],
+            image: "/images/solutions/Insurance/automated-claims-processing.png"
         },
         {
             title: "Digital Policy Management",
             description: "Centralized repository for all policy documents. Generate, store, and retrieve policy schedules and endorsements instantly.",
             icon: Security,
-            benefits: ["Zero paper handling", "Version control", "Customer self-service access"]
+            benefits: ["Zero paper handling", "Version control", "Customer self-service access"],
+            image: "/images/solutions/Insurance/digital-policy-management.png"
         },
         {
             title: "Underwriting Workflows",
             description: "Streamline risk assessment with automated data collection and rules-based underwriting decisions.",
             icon: Assessment,
-            benefits: ["Consistent risk scoring", "Faster quote generation", "Reduced manual errors"]
+            benefits: ["Consistent risk scoring", "Faster quote generation", "Reduced manual errors"],
+            image: "/images/solutions/Insurance/insurance-workflow.png"
         },
         {
             title: "Fraud Detection",
             description: "Integrate with external databases and use pattern matching to flag suspicious claims before payout.",
             icon: VerifiedUser,
-            benefits: ["Reduced claims leakage", "Investigative case management", "ROI protection"]
+            benefits: ["Reduced claims leakage", "Investigative case management", "ROI protection"],
+            image: "/images/solutions/Insurance/fraud-detection.png"
         }
     ];
 
@@ -185,7 +190,14 @@ export default function InsuranceTechnologyPage() {
                             </div>
 
                             <div className="relative">
-                                <ImagePlaceholder className="aspect-[4/3] rounded-2xl bg-indigo-100" text="Insurance Digital Workflow" />
+                                <Image
+                                    src="/images/solutions/Insurance/intelligent-insurance-automation.png"
+                                    alt="Intelligent Insurance Automation Dashboard"
+                                    width={600}
+                                    height={450}
+                                    className="w-full h-auto object-contain"
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>
@@ -250,11 +262,14 @@ export default function InsuranceTechnologyPage() {
                                         </ul>
                                     </div>
                                     <div className={`relative ${index % 2 === 1 ? 'md:order-1' : ''}`}>
-                                        <div className="aspect-video bg-white rounded-2xl shadow-lg border border-gray-100 flex items-center justify-center p-8">
-                                            <div className="text-center text-gray-400">
-                                                <feature.icon sx={{ fontSize: 48, marginBottom: 2, opacity: 0.5 }} />
-                                                <p className="text-sm font-medium">Visualization: {feature.title}</p>
-                                            </div>
+                                        <div className="relative">
+                                            <Image
+                                                src={feature.image}
+                                                alt={feature.title}
+                                                width={600}
+                                                height={450}
+                                                className="w-full h-auto object-contain"
+                                            />
                                         </div>
                                     </div>
                                 </div>

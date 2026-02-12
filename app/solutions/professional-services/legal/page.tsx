@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
 import {
@@ -91,25 +92,29 @@ export default function LegalFirmsPage() {
             title: "Matter-Centric Management",
             description: "Organize everything by Case/Matter. All emails, documents, and notes in one searchable digital file.",
             icon: Gavel,
-            benefits: ["Instant retrieval", "Case timeline view", "Role-based access"]
+            benefits: ["Instant retrieval", "Case timeline view", "Role-based access"],
+            image: "/images/solutions/The%20Digital%20Backbone%20for%20Modern%20Law%20Firms/Matter-Centric%20Management.png"
         },
         {
             title: "Secure Client Portal",
             description: "Stop emailing attachments. Share documents securely with clients via encrypted portals with audit logs.",
             icon: Lock,
-            benefits: ["Bank-grade security", "Read/download tracking", "Professional image"]
+            benefits: ["Bank-grade security", "Read/download tracking", "Professional image"],
+            image: "/images/solutions/The%20Digital%20Backbone%20for%20Modern%20Law%20Firms/Secure%20Client%20Portal.png"
         },
         {
             title: "Contract Automation",
             description: "Draft, review, and approve contracts faster. Version control ensures you always work on the latest draft.",
             icon: AssignmentTurnedIn,
-            benefits: ["Clause library", "Automated redlining", "E-Signature integration"]
+            benefits: ["Clause library", "Automated redlining", "E-Signature integration"],
+            image: "/images/solutions/The%20Digital%20Backbone%20for%20Modern%20Law%20Firms/Contract%20Automation.png"
         },
         {
             title: "e-Discovery & Search",
             description: "Find the 'needle in the haystack' instantly with OCR and full-text search across all case files.",
             icon: Search,
-            benefits: ["Search inside scanned PDFs", "Metadata tagging", "Saved search queries"]
+            benefits: ["Search inside scanned PDFs", "Metadata tagging", "Saved search queries"],
+            image: "/images/solutions/The%20Digital%20Backbone%20for%20Modern%20Law%20Firms/e-Discovery%20&%20Search.png"
         }
     ];
 
@@ -183,7 +188,14 @@ export default function LegalFirmsPage() {
                             </div>
 
                             <div className="relative">
-                                <ImagePlaceholder className="aspect-[4/3] rounded-2xl bg-slate-800 border border-slate-700" text="Legal Case Dashboard" />
+                                <Image
+                                    src="/images/solutions/The%20Digital%20Backbone%20for%20Modern%20Law%20Firms/The%20Digital%20Backbone%20for%20Modern%20Law%20Firms.png"
+                                    alt="Legal Case Dashboard"
+                                    width={600}
+                                    height={450}
+                                    className="w-full h-auto object-contain"
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>
@@ -248,11 +260,14 @@ export default function LegalFirmsPage() {
                                         </ul>
                                     </div>
                                     <div className={`relative ${index % 2 === 1 ? 'md:order-1' : ''}`}>
-                                        <div className="aspect-video bg-white rounded-2xl shadow-lg border border-gray-100 flex items-center justify-center p-8">
-                                            <div className="text-center text-gray-400">
-                                                <feature.icon sx={{ fontSize: 48, marginBottom: 2, opacity: 0.5 }} />
-                                                <p className="text-sm font-medium">Screen: {feature.title}</p>
-                                            </div>
+                                        <div className="relative">
+                                            <Image
+                                                src={feature.image}
+                                                alt={feature.title}
+                                                width={600}
+                                                height={450}
+                                                className="w-full h-auto object-contain"
+                                            />
                                         </div>
                                     </div>
                                 </div>

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 import {
     ArrowForward,
@@ -179,7 +180,7 @@ export default function HealthcareOverviewPage() {
 
             <main className="min-h-screen bg-white">
                 {/* Hero Section */}
-                <section className="relative min-h-[60vh] flex items-center pt-24 pb-16 bg-gradient-to-b from-teal-50 to-white">
+                <section className="relative min-h-[60vh] flex items-center pt-24 pb-16 bg-gradient-to-b from-teal-50 to-white overflow-hidden">
                     <div className="absolute inset-0 opacity-5">
                         <div
                             className="absolute inset-0"
@@ -215,78 +216,91 @@ export default function HealthcareOverviewPage() {
                             <span className="text-gray-900 font-medium">Healthcare</span>
                         </nav>
 
-                        <div className="max-w-4xl">
-                            <div className="inline-flex items-center gap-2 bg-teal-100 text-teal-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                                <LocalHospital sx={{ fontSize: 18 }} />
-                                Healthcare Industry
+                        <div className="grid lg:grid-cols-2 gap-12 items-center">
+                            <div className="max-w-2xl">
+                                <div className="inline-flex items-center gap-2 bg-teal-100 text-teal-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                                    <LocalHospital sx={{ fontSize: 18 }} />
+                                    Healthcare Industry
+                                </div>
+
+                                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                                    Healthcare Document Management Solutions
+                                </h1>
+
+                                <div className="text-lg md:text-xl text-gray-600 mb-6 leading-relaxed">
+                                    Hospitals run on documents: patient records, consent forms,
+                                    discharge summaries, lab reports, insurance claims. When these
+                                    documents are stuck in paper files and disconnected systems,
+                                    things slow down, get lost, or fall out of compliance.{" "}
+                                    <Link
+                                        href="/product/document-management"
+                                        className="text-primary hover:underline font-medium"
+                                    >
+                                        CannyECM
+                                    </Link>{" "}
+                                    gives hospitals a single system to manage all of it.
+                                </div>
+
+                                <p className="text-lg text-gray-700 mb-8">
+                                    Our healthcare solutions are built around real hospital
+                                    workflows, not generic document management features. Whether
+                                    you need to{" "}
+                                    <Link
+                                        href="/solutions/healthcare/patient-records"
+                                        className="text-primary hover:underline"
+                                    >
+                                        organize patient records
+                                    </Link>
+                                    ,{" "}
+                                    <Link
+                                        href="/solutions/healthcare/clinical-workflows"
+                                        className="text-primary hover:underline"
+                                    >
+                                        automate clinical approvals
+                                    </Link>
+                                    , stay{" "}
+                                    <Link
+                                        href="/solutions/healthcare/compliance-audit"
+                                        className="text-primary hover:underline"
+                                    >
+                                        HIPAA and NABH compliant
+                                    </Link>
+                                    , or{" "}
+                                    <Link
+                                        href="/solutions/healthcare/document-digitization"
+                                        className="text-primary hover:underline"
+                                    >
+                                        digitize years of paper archives
+                                    </Link>
+                                    , we have you covered.
+                                </p>
+
+                                <div className="flex flex-wrap gap-4">
+                                    <Link
+                                        href="/contact"
+                                        className="px-8 py-4 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition-colors inline-flex items-center gap-2 shadow-lg"
+                                    >
+                                        Request Hospital Demo
+                                        <ArrowForward sx={{ fontSize: 20 }} />
+                                    </Link>
+                                    <Link
+                                        href="#solutions"
+                                        className="px-8 py-4 bg-white text-gray-700 font-semibold rounded-lg border-2 border-gray-200 hover:border-teal-500 hover:text-teal-600 transition-colors"
+                                    >
+                                        Explore Solutions
+                                    </Link>
+                                </div>
                             </div>
 
-                            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                                Healthcare Document Management Solutions
-                            </h1>
-
-                            <div className="text-lg md:text-xl text-gray-600 mb-6 leading-relaxed">
-                                Hospitals run on documents: patient records, consent forms,
-                                discharge summaries, lab reports, insurance claims. When these
-                                documents are stuck in paper files and disconnected systems,
-                                things slow down, get lost, or fall out of compliance.{" "}
-                                <Link
-                                    href="/product/document-management"
-                                    className="text-primary hover:underline font-medium"
-                                >
-                                    CannyECM
-                                </Link>{" "}
-                                gives hospitals a single system to manage all of it.
-                            </div>
-
-                            <p className="text-lg text-gray-700 mb-8">
-                                Our healthcare solutions are built around real hospital
-                                workflows, not generic document management features. Whether
-                                you need to{" "}
-                                <Link
-                                    href="/solutions/healthcare/patient-records"
-                                    className="text-primary hover:underline"
-                                >
-                                    organize patient records
-                                </Link>
-                                ,{" "}
-                                <Link
-                                    href="/solutions/healthcare/clinical-workflows"
-                                    className="text-primary hover:underline"
-                                >
-                                    automate clinical approvals
-                                </Link>
-                                , stay{" "}
-                                <Link
-                                    href="/solutions/healthcare/compliance-audit"
-                                    className="text-primary hover:underline"
-                                >
-                                    HIPAA and NABH compliant
-                                </Link>
-                                , or{" "}
-                                <Link
-                                    href="/solutions/healthcare/document-digitization"
-                                    className="text-primary hover:underline"
-                                >
-                                    digitize years of paper archives
-                                </Link>
-                                , we have you covered.
-                            </p>
-
-                            <div className="flex flex-wrap gap-4">
-                                <Link
-                                    href="/contact"
-                                    className="px-8 py-4 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition-colors inline-flex items-center gap-2 shadow-lg"
-                                >
-                                    Request Hospital Demo
-                                    <ArrowForward sx={{ fontSize: 20 }} />
-                                </Link>
-                                <Link
-                                    href="#solutions"
-                                    className="px-8 py-4 bg-white text-gray-700 font-semibold rounded-lg border-2 border-gray-200 hover:border-teal-500 hover:text-teal-600 transition-colors"
-                                >
-                                    Explore Solutions
-                                </Link>
+                            <div className="relative hidden lg:block">
+                                <Image
+                                    src="/images/solutions/healthcare/overview/Healthcare%20Document%20Management%20Solutions.png"
+                                    alt="Healthcare Document Management System Overview"
+                                    width={800}
+                                    height={600}
+                                    className="w-full h-auto object-contain"
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>

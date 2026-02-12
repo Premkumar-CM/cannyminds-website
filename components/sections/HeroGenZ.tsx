@@ -23,7 +23,7 @@ export default function HeroGenZ() {
   }, []);
 
   return (
-    <section className="relative bg-white pt-32 pb-20 overflow-hidden h-screen flex flex-col justify-center">
+    <section className="relative bg-white pt-32 pb-20 overflow-hidden min-h-[100vh] flex flex-col justify-center">
       {/* Hyperspeed Background — skipped on mobile for performance */}
       {!isMobile && (
         <div className="absolute inset-0 z-0 mix-blend-multiply pointer-events-none">
