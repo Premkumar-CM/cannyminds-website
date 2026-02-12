@@ -73,9 +73,9 @@ const certCardVariants = {
 } as const;
 
 const stats = [
-  { value: "20+", label: "Years of Excellence", icon: GrowthIcon, color: "text-blue-600" },
+  { value: "6+", label: "Years of Excellence", icon: GrowthIcon, color: "text-blue-600" },
   { value: "50+", label: "Happy Clients", icon: TeamIcon, color: "text-green-600" },
-  { value: "4", label: "Global Offices", icon: GlobalIcon, color: "text-purple-600" },
+  { value: "10+", label: "Global Offices", icon: GlobalIcon, color: "text-purple-600" },
   { value: "24/7", label: "Expert Support", icon: SupportIcon, color: "text-orange-600" },
 ];
 
@@ -111,11 +111,7 @@ const certifications = [
     description: "Information Security",
     image: "/certifications/iso-22716-2007.png"
   },
-  {
-    name: "NASSCOM",
-    description: "Member",
-    image: "/certifications/nasscom-logo.png"
-  },
+
 ];
 
 export default function AboutNew() {
@@ -147,11 +143,10 @@ export default function AboutNew() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto"
             >
-              CannyMinds Technology Solutions is a leading provider of enterprise software solutions,
-              specializing in digital transformation, AI automation, and business process optimization.
-              With offices in India, USA, and Nigeria, we serve clients across healthcare,
-              manufacturing, banking, government, and education sectors with ISO-certified,
-              FDA-compliant solutions.
+              CannyMinds is a trusted provider of information management and digitization solutions,
+              helping organizations securely manage, preserve, and transform their critical records
+              across their lifecycle. We specialize in Enterprise Content Management (ECM) and Physical Record Management, Onsite & Offsite
+              Digitization for regulated industries.
             </motion.p>
           </motion.div>
 
@@ -221,24 +216,21 @@ export default function AboutNew() {
               className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-5xl mx-auto"
             >
               {awards.map((award, index) => (
-                <div key={award.name} className="flex flex-col md:flex-row items-center gap-8">
-                  <motion.div
-                    variants={certCardVariants}
-                    className="bg-white rounded-lg p-6 text-center flex flex-col items-center justify-center max-w-sm"
-                  >
-                    <div className="relative w-full h-80 mb-4 flex items-center justify-center">
-                      <Image
-                        src={award.image}
-                        alt={award.name}
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="text-sm font-bold text-gray-900">{award.name}</div>
-                  </motion.div>
-
-                  {/* Arrow removed as per user request */}
-                </div>
+                <motion.div
+                  key={award.name}
+                  variants={certCardVariants}
+                  className="bg-white rounded-lg p-6 text-center flex flex-col items-center justify-center max-w-sm"
+                >
+                  <div className="relative w-full h-80 mb-4 flex items-center justify-center">
+                    <Image
+                      src={award.image}
+                      alt={award.name}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="text-sm font-bold text-gray-900">{award.name}</div>
+                </motion.div>
               ))}
             </motion.div>
           </motion.div>

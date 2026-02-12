@@ -366,18 +366,7 @@ export default function AboutPage() {
               <p className="text-sm text-gray-600">Compliance</p>
             </div>
 
-            <div className="bg-white border-2 border-sky-200 rounded-xl p-6 hover:border-sky-600 transition-all flex flex-col items-center text-center w-full sm:w-72">
-              <div className="relative w-full h-40 mb-4">
-                <Image
-                  src="/certifications/nasscom-logo.png"
-                  alt="NASSCOM Member"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <h3 className="text-lg font-bold text-secondary mb-2">NASSCOM</h3>
-              <p className="text-sm text-gray-600">Member</p>
-            </div>
+
           </div>
 
           <div className="max-w-4xl mx-auto mt-8 bg-gradient-to-br from-primary-50 to-white border-2 border-primary-200 rounded-xl p-8">

@@ -6,6 +6,7 @@ import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
 import { enhancedMetadata as seoMetadata, enhancedJsonLd as jsonLd } from "@/lib/enhanced-seo";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -50,6 +51,11 @@ export default function RootLayout({
           <Footer />
         </SmoothScroll>
         <WhatsAppButton />
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="0QPPHEaCa6E3iNGO8b5ttw"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

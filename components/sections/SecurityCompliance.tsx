@@ -39,7 +39,7 @@ const securityFeatures = [
     icon: CloudDone,
     title: "ISO Certified",
     description:
-      "ISO 9001:2015 and ISO 15489:2016 certified processes and infrastructure.",
+      "ISO 9001, ISO 15489, ISO 27001 & ISO 22716 certified processes and infrastructure.",
   },
   {
     icon: Security,
