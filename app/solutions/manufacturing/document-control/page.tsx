@@ -43,7 +43,23 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Document Control & SOP Management | Manufacturing Solutions",
         description: "Transform engineering documentation with centralized control, automated approvals, and complete traceability.",
-        images: [{ url: "/images/manufacturing-document-control-og.jpg", width: 1200, height: 630 }],
+        type: 'website',
+        siteName: 'CannyMinds',
+        locale: 'en_US',
+        images: [
+            {
+                url: "https://www.cannymindstech.com/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Document Control & SOP Management Solutions"
+            }
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: "Document Control & SOP Management | Manufacturing Solutions",
+        description: "Transform engineering documentation with centralized control, automated approvals, and complete traceability.",
+        images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
 };
 

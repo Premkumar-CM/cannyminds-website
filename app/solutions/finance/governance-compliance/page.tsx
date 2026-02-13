@@ -39,7 +39,23 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Governance & Compliance Solutions",
         description: "Stay audit-ready, always. Automate compliance and mitigate risk with CannyECM.",
-        images: [{ url: "/images/compliance-solutions-og.jpg", width: 1200, height: 630 }],
+        type: 'website',
+        siteName: 'CannyMinds',
+        locale: 'en_US',
+        images: [
+            {
+                url: "https://www.cannymindstech.com/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Governance & Compliance Solutions"
+            }
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: "Governance & Compliance Solutions",
+        description: "Stay audit-ready, always. Automate compliance and mitigate risk with CannyECM.",
+        images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
 };
 

@@ -31,14 +31,22 @@ export const metadata: Metadata = {
     description: 'Contact CannyMinds for digital transformation and enterprise software. Offices in India, USA, Nigeria. 24/7 support for enterprise clients.',
     url: 'https://www.cannymindstech.com/contact',
     type: 'website',
+    siteName: 'CannyMinds',
+    locale: 'en_US',
     images: [
       {
-        url: '/og-image.jpg',
+        url: 'https://www.cannymindstech.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Contact CannyMinds Technology Solutions',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact CannyMinds | Get in Touch Today',
+    description: 'Contact CannyMinds for digital transformation and enterprise software. Offices in India, USA, Nigeria. 24/7 support for enterprise clients.',
+    images: ['https://www.cannymindstech.com/og-image.jpg'],
   },
   alternates: {
     canonical: 'https://www.cannymindstech.com/contact',

@@ -43,13 +43,23 @@ export const metadata: Metadata = {
         title: "Clinical Workflow Automation | CannyMinds",
         description:
             "Stop chasing signatures. Route treatment plans, discharge summaries, and referrals automatically to the right people.",
+        type: 'website',
+        siteName: 'CannyMinds',
+        locale: 'en_US',
         images: [
             {
-                url: "/images/healthcare-clinical-workflows-og.jpg",
+                url: "https://www.cannymindstech.com/og-image.jpg",
                 width: 1200,
                 height: 630,
+                alt: "Clinical Workflow Automation Solutions",
             },
         ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: "Clinical Workflow Automation | CannyMinds",
+        description: "Stop chasing signatures. Route treatment plans, discharge summaries, and referrals automatically to the right people.",
+        images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
 };
 

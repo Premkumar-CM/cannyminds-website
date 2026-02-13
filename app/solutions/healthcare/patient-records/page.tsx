@@ -43,13 +43,23 @@ export const metadata: Metadata = {
         title: "Patient Record Management | CannyMinds",
         description:
             "One patient, one digital folder. Centralize, search, and secure every patient document in your hospital.",
+        type: 'website',
+        siteName: 'CannyMinds',
+        locale: 'en_US',
         images: [
             {
-                url: "/images/healthcare-patient-records-og.jpg",
+                url: "https://www.cannymindstech.com/og-image.jpg",
                 width: 1200,
                 height: 630,
+                alt: "Patient Record Management Solutions",
             },
         ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: "Patient Record Management | CannyMinds",
+        description: "One patient, one digital folder. Centralize, search, and secure every patient document in your hospital.",
+        images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
 };
 

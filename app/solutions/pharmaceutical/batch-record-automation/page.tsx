@@ -36,9 +36,25 @@ export const metadata: Metadata = {
         canonical: "/solutions/pharmaceutical/batch-record-automation",
     },
     openGraph: {
-        title: "Batch Record Automation",
+        title: "Batch Record Automation & eBMR",
         description: "Transform paper-intensive batch record review into intelligent, automated processes.",
-        images: [{ url: "/images/pharma-ebmr-og.jpg", width: 1200, height: 630 }],
+        type: 'website',
+        siteName: 'CannyMinds',
+        locale: 'en_US',
+        images: [
+            {
+                url: "https://www.cannymindstech.com/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Batch Record Automation & eBMR Solutions"
+            }
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: "Batch Record Automation & eBMR",
+        description: "Transform paper-intensive batch record review into intelligent, automated processes.",
+        images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
 };
 

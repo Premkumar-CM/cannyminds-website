@@ -37,14 +37,22 @@ export const metadata: Metadata = {
     description: 'CannyMinds is a trusted provider of information management and digitization solutions for regulated industries.',
     url: 'https://www.cannymindstech.com/about',
     type: 'website',
+    siteName: 'CannyMinds',
+    locale: 'en_US',
     images: [
       {
-        url: '/og-image.jpg',
+        url: 'https://www.cannymindstech.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'About CannyMinds Technology Solutions',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About CannyMinds | Information Management & Digitization Solutions',
+    description: 'CannyMinds is a trusted provider of information management and digitization solutions for regulated industries.',
+    images: ['https://www.cannymindstech.com/og-image.jpg'],
   },
   alternates: {
     canonical: 'https://www.cannymindstech.com/about',

@@ -43,7 +43,23 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Vendor & Procurement Management | Manufacturing Solutions",
         description: "Streamline vendor documentation and contract management with centralized control and automated workflows.",
-        images: [{ url: "/images/manufacturing-procurement-og.jpg", width: 1200, height: 630 }],
+        type: 'website',
+        siteName: 'CannyMinds',
+        locale: 'en_US',
+        images: [
+            {
+                url: "https://www.cannymindstech.com/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Vendor & Procurement Management Solutions"
+            }
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: "Vendor & Procurement Management | Manufacturing Solutions",
+        description: "Streamline vendor documentation and contract management with centralized control and automated workflows.",
+        images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
 };
 

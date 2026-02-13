@@ -41,13 +41,23 @@ export const metadata: Metadata = {
         title: "HIPAA Compliance & Audit Readiness | CannyMinds",
         description:
             "Complete audit trails, role-based access, automatic retention, and secure deletion — CannyECM keeps hospitals audit-ready.",
+        type: 'website',
+        siteName: 'CannyMinds',
+        locale: 'en_US',
         images: [
             {
-                url: "/images/healthcare-compliance-og.jpg",
+                url: "https://www.cannymindstech.com/og-image.jpg",
                 width: 1200,
                 height: 630,
+                alt: "HIPAA Compliance & Audit Readiness Solutions",
             },
         ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: "HIPAA Compliance & Audit Readiness | CannyMinds",
+        description: "Complete audit trails, role-based access, automatic retention, and secure deletion — CannyECM keeps hospitals audit-ready.",
+        images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
 };
 

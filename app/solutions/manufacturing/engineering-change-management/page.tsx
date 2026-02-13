@@ -42,7 +42,23 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Engineering Change Management | Manufacturing Solutions",
         description: "Streamline ECN/ECR workflows with automated impact analysis, approvals, and complete traceability.",
-        images: [{ url: "/images/manufacturing-ecm-og.jpg", width: 1200, height: 630 }],
+        type: 'website',
+        siteName: 'CannyMinds',
+        locale: 'en_US',
+        images: [
+            {
+                url: "https://www.cannymindstech.com/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Engineering Change Management Solutions"
+            }
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: "Engineering Change Management | Manufacturing Solutions",
+        description: "Streamline ECN/ECR workflows with automated impact analysis, approvals, and complete traceability.",
+        images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
 };
 

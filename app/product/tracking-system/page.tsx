@@ -39,17 +39,25 @@ export const metadata: Metadata = {
   openGraph: {
     title: "CannyTrack - Employee Productivity Monitoring Software",
     description: "Workforce productivity monitoring with activity tracking, screenshots, and data loss prevention. Consent-based, real-time analytics with offline support.",
-    type: "article",
+    type: "website",
+    siteName: 'CannyMinds',
+    locale: 'en_US',
     url: "https://www.cannymindstech.com/product/tracking-system",
     authors: ["Christopher"],
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://www.cannymindstech.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "CannyTrack - Employee Productivity Monitoring Software",
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "CannyTrack - Employee Productivity Monitoring Software",
+    description: "Workforce productivity monitoring with activity tracking, screenshots, and data loss prevention. Consent-based, real-time analytics with offline support.",
+    images: ['https://www.cannymindstech.com/og-image.jpg'],
   },
   alternates: {
     canonical: "https://www.cannymindstech.com/product/tracking-system",

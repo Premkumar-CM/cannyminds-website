@@ -44,7 +44,23 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Equipment Maintenance | Manufacturing Solutions",
         description: "Comprehensive equipment documentation and maintenance workflow management for operational continuity.",
-        images: [{ url: "/images/manufacturing-maintenance-og.jpg", width: 1200, height: 630 }],
+        type: 'website',
+        siteName: 'CannyMinds',
+        locale: 'en_US',
+        images: [
+            {
+                url: "https://www.cannymindstech.com/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Equipment Maintenance Solutions"
+            }
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: "Equipment Maintenance | Manufacturing Solutions",
+        description: "Comprehensive equipment documentation and maintenance workflow management for operational continuity.",
+        images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
 };
 

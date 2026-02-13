@@ -39,17 +39,25 @@ export const metadata: Metadata = {
   openGraph: {
     title: "CannyHR - HR & Payroll Management | HRMS Solution 2026",
     description: "Complete HRMS with payroll, time tracking, leave management, and performance reviews. 350+ biometric integrations. Mobile app included.",
-    type: "article",
+    type: "website",
+    siteName: 'CannyMinds',
+    locale: 'en_US',
     url: "https://www.cannymindstech.com/product/hr-management",
     authors: ["Christopher"],
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://www.cannymindstech.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "CannyHR - HR & Payroll Management Software",
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "CannyHR - HR & Payroll Management | HRMS Solution 2026",
+    description: "Complete HRMS with payroll, time tracking, leave management, and performance reviews. 350+ biometric integrations. Mobile app included.",
+    images: ['https://www.cannymindstech.com/og-image.jpg'],
   },
   alternates: {
     canonical: "https://www.cannymindstech.com/product/hr-management",

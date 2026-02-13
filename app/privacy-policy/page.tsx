@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-gray-50 pt-16 sm:pt-20">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-secondary to-secondary/80 text-white py-16">
         <div className="container mx-auto px-4">

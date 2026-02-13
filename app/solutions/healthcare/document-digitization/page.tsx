@@ -42,13 +42,23 @@ export const metadata: Metadata = {
         title: "Medical Document Digitization | CannyMinds",
         description:
             "Scan, OCR, and migrate paper medical records into a searchable digital system. Convert decades of paper archives.",
+        type: 'website',
+        siteName: 'CannyMinds',
+        locale: 'en_US',
         images: [
             {
-                url: "/images/healthcare-digitization-og.jpg",
+                url: "https://www.cannymindstech.com/og-image.jpg",
                 width: 1200,
                 height: 630,
+                alt: "Medical Document Digitization Solutions",
             },
         ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: "Medical Document Digitization | CannyMinds",
+        description: "Scan, OCR, and migrate paper medical records into a searchable digital system. Convert decades of paper archives.",
+        images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
 };
 

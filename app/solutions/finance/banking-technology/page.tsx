@@ -39,7 +39,23 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Banking Technology Solutions",
         description: "Transform your banking operations. From instant account opening to automated loan approvals.",
-        images: [{ url: "/images/banking-solutions-og.jpg", width: 1200, height: 630 }],
+        type: 'website',
+        siteName: 'CannyMinds',
+        locale: 'en_US',
+        images: [
+            {
+                url: "https://www.cannymindstech.com/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Banking Technology Solutions"
+            }
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: "Banking Technology Solutions",
+        description: "Transform your banking operations. From instant account opening to automated loan approvals.",
+        images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
 };
 

@@ -50,7 +50,23 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Bottling Manufacturing Solutions",
         description: "Digitize your bottling operations. From mixing and filling to packing and dispatch, ensure quality and compliance at every step.",
-        images: [{ url: "/images/manufacturing-solutions-og.jpg", width: 1200, height: 630 }],
+        type: 'website',
+        siteName: 'CannyMinds',
+        locale: 'en_US',
+        images: [
+            {
+                url: "https://www.cannymindstech.com/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Bottling Manufacturing Solutions"
+            }
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: "Bottling Manufacturing Solutions",
+        description: "Digitize your bottling operations. From mixing and filling to packing and dispatch, ensure quality and compliance at every step.",
+        images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
 };
 

@@ -43,17 +43,25 @@ export const metadata: Metadata = {
   openGraph: {
     title: "CannyECM - Enterprise ECM | Content Management 2026",
     description: "Enterprise Content Management with 99% OCR accuracy, workflow automation, cloud/on-premise. Organize 50,000+ documents. 30-day free trial available.",
-    type: "article",
+    type: "website",
+    siteName: 'CannyMinds',
+    locale: 'en_US',
     url: "https://www.cannymindstech.com/product/document-management",
     authors: ["Christopher"],
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://www.cannymindstech.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "CannyECM Content Management Software",
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "CannyECM - Enterprise ECM | Content Management 2026",
+    description: "Enterprise Content Management with 99% OCR accuracy, workflow automation, cloud/on-premise. Organize 50,000+ documents. 30-day free trial available.",
+    images: ['https://www.cannymindstech.com/og-image.jpg'],
   },
   alternates: {
     canonical: "https://www.cannymindstech.com/product/document-management",

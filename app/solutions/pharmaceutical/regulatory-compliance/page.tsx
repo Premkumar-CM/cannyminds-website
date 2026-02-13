@@ -40,7 +40,23 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Regulatory Compliance",
         description: "Streamline compliance with AI-driven document control and regulatory support.",
-        images: [{ url: "/images/pharma-compliance-og.jpg", width: 1200, height: 630 }],
+        type: 'website',
+        siteName: 'CannyMinds',
+        locale: 'en_US',
+        images: [
+            {
+                url: "https://www.cannymindstech.com/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Regulatory Compliance Solutions"
+            }
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: "Regulatory Compliance",
+        description: "Streamline compliance with AI-driven document control and regulatory support.",
+        images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
 };
 

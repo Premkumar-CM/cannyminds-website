@@ -52,7 +52,23 @@ export const metadata: Metadata = {
     openGraph: {
         title: "CannyECM e-BMR | Electronic Batch Manufacturing Record",
         description: "Transform paper-based batch records into a fully digital, compliant, and audit-ready system.",
-        images: [{ url: "/images/ebmr-og.jpg", width: 1200, height: 630 }],
+        type: 'website',
+        siteName: 'CannyMinds',
+        locale: 'en_US',
+        images: [
+            {
+                url: "https://www.cannymindstech.com/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "CannyECM e-BMR - Electronic Batch Manufacturing Record System"
+            }
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: "CannyECM e-BMR | Electronic Batch Manufacturing Record",
+        description: "Transform paper-based batch records into a fully digital, compliant, and audit-ready system.",
+        images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
 };
 

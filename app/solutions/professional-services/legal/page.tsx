@@ -38,7 +38,23 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Legal Document Management Solutions",
         description: "Win more cases with organized evidence and streamlined workflows.",
-        images: [{ url: "/images/legal-solutions-og.jpg", width: 1200, height: 630 }],
+        type: 'website',
+        siteName: 'CannyMinds',
+        locale: 'en_US',
+        images: [
+            {
+                url: "https://www.cannymindstech.com/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Legal Document Management Solutions"
+            }
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: "Legal Document Management Solutions",
+        description: "Win more cases with organized evidence and streamlined workflows.",
+        images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
 };
 
