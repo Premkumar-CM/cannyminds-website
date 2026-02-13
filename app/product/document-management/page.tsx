@@ -47,7 +47,6 @@ export const metadata: Metadata = {
     siteName: 'CannyMinds',
     locale: 'en_US',
     url: "https://www.cannymindstech.com/product/document-management",
-    authors: ["Christopher"],
     images: [
       {
         url: "https://www.cannymindstech.com/og-image.jpg",
