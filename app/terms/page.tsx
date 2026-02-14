@@ -7,6 +7,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.cannymindstech.com/terms',
   },
+  openGraph: {
+    type: 'website',
+    url: 'https://www.cannymindstech.com/terms',
+    title: 'Terms of Service | CannyMinds Technology Solutions',
+    description: 'Terms of Service for CannyMinds Technology Solutions. Read our terms and conditions for using our services and products.',
+    siteName: 'CannyMinds',
+    locale: 'en_US',
+    images: [
+      {
+        url: 'https://www.cannymindstech.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'CannyMinds Terms of Service',
+      },
+    ],
+  },
 };
 
 const jsonLd = {

@@ -44,6 +44,7 @@ export const metadata: Metadata = {
         description:
             "Stop chasing signatures. Route treatment plans, discharge summaries, and referrals automatically to the right people.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/healthcare/clinical-workflows",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [

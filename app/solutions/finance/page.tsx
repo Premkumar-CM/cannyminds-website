@@ -18,7 +18,7 @@ import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
-    title: "Finance & Insurance Solutions | Digital Transformation | CannyMinds",
+    title: "Finance & Insurance Solutions | Digital Transformation ",
     description: "Secure, compliant, and automated document management solutions for Banking, Financial Services, and Insurance (BFSI). Streamline loan processing, claims, and regulatory reporting.",
     keywords: [
         "banking document management software",
@@ -34,17 +34,20 @@ export const metadata: Metadata = {
         canonical: "https://www.cannymindstech.com/solutions/finance",
     },
     openGraph: {
-        title: "Finance & Insurance Solutions | CannyMinds",
+        type: "website",
+        locale: "en_US",
+        siteName: "CannyMinds",
+        title: "Finance & Insurance Solutions ",
         description: "Modernize your financial operations with CannyECM. Secure, compliant, and automated workflows for the digital age.",
         url: "https://www.cannymindstech.com/solutions/finance",
-        images: [{ url: "https://www.cannymindstech.com/og-image.jpg", width: 1200, height: 630 }],
+        images: [{ url: "https://www.cannymindstech.com/og-image.jpg", width: 1200, height: 630, alt: "Finance & Insurance Solutions" }],
     },
 };
 
 const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Finance & Insurance Solutions | CannyMinds",
+    "name": "Finance & Insurance Solutions ",
     "description": "Digital transformation solutions for the financial sector including Banking, Insurance, and Compliance management.",
     "publisher": {
         "@type": "Organization",

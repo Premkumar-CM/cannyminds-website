@@ -17,7 +17,7 @@ import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
-    title: "Professional Services Solutions | Legal & Audit Firms | CannyMinds",
+    title: "Professional Services Solutions | Legal & Audit Firms ",
     description: "Secure document management and compliance solutions for Law Firms, Audit Practices, and Consultancies. Ensure client confidentiality and regulatory alignment.",
     keywords: [
         "legal document management",
@@ -32,17 +32,20 @@ export const metadata: Metadata = {
         canonical: "https://www.cannymindstech.com/solutions/professional-services",
     },
     openGraph: {
-        title: "Professional Services Solutions | CannyMinds",
+        type: "website",
+        locale: "en_US",
+        siteName: "CannyMinds",
+        title: "Professional Services Solutions ",
         description: "Elevate your practice with secure, compliant, and efficient document workflows.",
         url: "https://www.cannymindstech.com/solutions/professional-services",
-        images: [{ url: "https://www.cannymindstech.com/og-image.jpg", width: 1200, height: 630 }],
+        images: [{ url: "https://www.cannymindstech.com/og-image.jpg", width: 1200, height: 630, alt: "Professional Services Solutions" }],
     },
 };
 
 const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Professional Services Solutions | CannyMinds",
+    "name": "Professional Services Solutions ",
     "description": "IT solutions for Legal and Audit firms focusing on document security and compliance.",
     "publisher": {
         "@type": "Organization",

@@ -9,6 +9,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const products = [
+    { name: "All Products", href: "/products" },
     { name: "Manufacturing", href: "/solutions/manufacturing" },
     { name: "FMCG Digital Transformation", href: "/solutions/manufacturing/fmcg-digital-transformation" },
     { name: "CannyECM", href: "/product/document-management" },
@@ -17,6 +18,15 @@ export default function Footer() {
     { name: "CannyTrack", href: "/product/tracking-system" },
     { name: "CannyRMS", href: "/product/rms" },
     { name: "Canny eBMR", href: "/product/ebmr" },
+  ];
+
+  const aiSolutions = [
+    { name: "Professional Services AI", href: "/ai-solutions/professional-services" },
+    { name: "NBFC & Finance AI", href: "/ai-solutions/nbfc" },
+    { name: "Banking Technology", href: "/solutions/finance/banking-technology" },
+    { name: "Insurance Technology", href: "/solutions/finance/insurance-technology" },
+    { name: "Governance & Compliance", href: "/solutions/finance/governance-compliance" },
+    { name: "Audit Management", href: "/solutions/professional-services/audit-firms" },
   ];
 
   const services = [
@@ -44,7 +54,7 @@ export default function Footer() {
     <footer className="bg-white border-t border-gray-200">
       {/* Main Footer Content */}
       <div className="container mx-auto px-6 lg:px-12 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
@@ -109,22 +119,22 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
-          {/* <div>
-            <h3 className="text-lg font-bold mb-4">Services</h3>
+          {/* AI Solutions */}
+          <div>
+            <h3 className="text-lg font-bold mb-4 text-gray-900">AI Solutions</h3>
             <ul className="space-y-2">
-              {services.map((service) => (
-                <li key={service}>
+              {aiSolutions.map((solution) => (
+                <li key={solution.name}>
                   <Link
-                    href="/#services"
-                    className="text-blue-100 hover:text-white transition-colors"
+                    href={solution.href}
+                    className="text-gray-600 hover:text-primary transition-colors"
                   >
-                    {service}
+                    {solution.name}
                   </Link>
                 </li>
               ))}
             </ul>
-          </div> */}
+          </div>
 
           {/* Company */}
           <div>

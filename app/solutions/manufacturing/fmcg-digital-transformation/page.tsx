@@ -24,7 +24,7 @@ import { baseUrl } from "@/lib/enhanced-seo";
 import FAQ from "@/components/sections/FAQ";
 
 export const metadata: Metadata = {
-    title: "FMCG Digital Transformation | Manufacturing Solutions | CannyMinds",
+    title: "FMCG Digital Transformation | Manufacturing Solutions ",
     description: "A comprehensive guide to digitizing FMCG manufacturing: from electronic batch records and quality control to vendor management and equipment maintenance.",
     keywords: [
         "FMCG digital transformation",
@@ -41,6 +41,7 @@ export const metadata: Metadata = {
         title: "FMCG Digital Transformation | CannyMinds Solutions",
         description: "Transform high-speed FMCG operations with end-to-end digital documentation and workflow automation.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/manufacturing/fmcg-digital-transformation",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [

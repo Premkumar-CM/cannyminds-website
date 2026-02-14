@@ -56,6 +56,7 @@ export const metadata: Metadata = {
         title: "Shop Floor Automation",
         description: "From manual paper entry to automated digital production reports. Transform your manufacturing floor operations.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/manufacturing/shop-floor-automation",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [

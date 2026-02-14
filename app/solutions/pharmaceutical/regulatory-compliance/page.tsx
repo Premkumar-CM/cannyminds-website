@@ -41,6 +41,7 @@ export const metadata: Metadata = {
         title: "Regulatory Compliance",
         description: "Streamline compliance with AI-driven document control and regulatory support.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/pharmaceutical/regulatory-compliance",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [

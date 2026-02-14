@@ -9,12 +9,16 @@ import SupportHighlights from "@/components/sections/SupportHighlights";
 import ResourcesPreview from "@/components/sections/ResourcesPreview";
 import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
-
-
+import { enhancedJsonLd } from "@/lib/enhanced-seo";
 
 export default function Home() {
   return (
-    <main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(enhancedJsonLd) }}
+      />
+      <main>
       <section id="home">
         <HeroGenZ />
       </section>
@@ -46,5 +50,6 @@ export default function Home() {
         <FinalCTA />
       </section>
     </main>
+    </>
   );
 }

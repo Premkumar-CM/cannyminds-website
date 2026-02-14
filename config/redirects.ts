@@ -153,11 +153,6 @@ export const redirects: NextConfig['redirects'] = async () => {
 
         // Solutions & Services
         {
-            source: '/ai-solutions/manufacturing',
-            destination: '/solutions/manufacturing',
-            permanent: true,
-        },
-        {
             source: '/education-management-Software',
             destination: '/solutions', // Fallback
             permanent: true,

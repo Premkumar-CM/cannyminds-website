@@ -44,6 +44,7 @@ export const metadata: Metadata = {
         description:
             "One patient, one digital folder. Centralize, search, and secure every patient document in your hospital.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/healthcare/patient-records",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [

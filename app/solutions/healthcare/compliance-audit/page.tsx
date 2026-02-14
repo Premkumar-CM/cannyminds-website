@@ -42,6 +42,7 @@ export const metadata: Metadata = {
         description:
             "Complete audit trails, role-based access, automatic retention, and secure deletion — CannyECM keeps hospitals audit-ready.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/healthcare/compliance-audit",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [

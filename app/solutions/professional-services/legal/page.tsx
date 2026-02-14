@@ -21,7 +21,7 @@ import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
-    title: "Legal Document Management Software | Law Firms | CannyMinds",
+    title: "Legal Document Management Software | Law Firms ",
     description: "Secure case management, e-Discovery, and client collaboration for law firms. Manage highly confidential legal documents with CannyECM.",
     keywords: [
         "legal practice management software",
@@ -39,6 +39,7 @@ export const metadata: Metadata = {
         title: "Legal Document Management Solutions",
         description: "Win more cases with organized evidence and streamlined workflows.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/professional-services/legal",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [
@@ -63,7 +64,7 @@ const jsonLd = {
     "@graph": [
         {
             "@type": "WebPage",
-            "name": "Legal Document Management Solutions | CannyMinds",
+            "name": "Legal Document Management Solutions ",
             "description": "Secure document management for law firms, legal departments, and solo practitioners.",
             "publisher": {
                 "@type": "Organization",

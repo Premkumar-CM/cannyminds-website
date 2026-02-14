@@ -43,6 +43,7 @@ export const metadata: Metadata = {
         description:
             "Scan, OCR, and migrate paper medical records into a searchable digital system. Convert decades of paper archives.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/healthcare/document-digitization",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [

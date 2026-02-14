@@ -22,7 +22,7 @@ import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
-    title: "Insurance Technology Solutions | Claims Processing & Policy Management | CannyMinds",
+    title: "Insurance Technology Solutions | Claims Processing & Policy Management ",
     description: "Automate insurance claims processing, streamline policy administration, and detect fraud with CannyECM. Digital transformation for modern insurers.",
     keywords: [
         "insurance claims automation",
@@ -41,6 +41,7 @@ export const metadata: Metadata = {
         title: "Insurance Technology Solutions",
         description: "Faster claims. Smarter underwriting. Better customer experiences.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/finance/insurance-technology",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [
@@ -65,7 +66,7 @@ const jsonLd = {
     "@graph": [
         {
             "@type": "WebPage",
-            "name": "Insurance Technology Solutions | CannyMinds",
+            "name": "Insurance Technology Solutions ",
             "description": "Digital insurance solutions for claims automation, policy management, and fraud detection.",
             "publisher": {
                 "@type": "Organization",

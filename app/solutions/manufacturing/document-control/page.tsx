@@ -23,7 +23,7 @@ import {
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
-    title: "Document Control & SOP Management | Manufacturing Solutions | CannyMinds",
+    title: "Document Control & SOP Management | Manufacturing Solutions ",
     description: "Centralized engineering drawing management, SOP control, and work instruction automation for manufacturing. Ensure version control, compliance, and traceability.",
     keywords: [
         "engineering document management",
@@ -44,6 +44,7 @@ export const metadata: Metadata = {
         title: "Document Control & SOP Management | Manufacturing Solutions",
         description: "Transform engineering documentation with centralized control, automated approvals, and complete traceability.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/manufacturing/document-control",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [
@@ -68,7 +69,7 @@ const jsonLd = {
     "@graph": [
         {
             "@type": "WebPage",
-            "name": "Document Control & SOP Management | CannyMinds",
+            "name": "Document Control & SOP Management ",
             "description": "Engineering drawing management, SOP control, and work instruction automation for manufacturing excellence.",
             "publisher": {
                 "@type": "Organization",

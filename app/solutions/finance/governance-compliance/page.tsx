@@ -21,7 +21,7 @@ import {
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
-    title: "Governance, Risk & Compliance (GRC) Solutions | CannyMinds",
+    title: "Governance, Risk & Compliance (GRC) Solutions ",
     description: "Ensure regulatory compliance, automate audit trails, and manage operational risk with CannyECM. Built for RBI, IRDAI, GDPR, and ISO standards.",
     keywords: [
         "GRC software",
@@ -40,6 +40,7 @@ export const metadata: Metadata = {
         title: "Governance & Compliance Solutions",
         description: "Stay audit-ready, always. Automate compliance and mitigate risk with CannyECM.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/finance/governance-compliance",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [
@@ -64,7 +65,7 @@ const jsonLd = {
     "@graph": [
         {
             "@type": "WebPage",
-            "name": "Governance & Compliance Solutions | CannyMinds",
+            "name": "Governance & Compliance Solutions ",
             "description": "GRC solutions for regulatory reporting, audit management, and risk mitigation.",
             "publisher": {
                 "@type": "Organization",

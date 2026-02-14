@@ -30,7 +30,7 @@ import {
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
-    title: "Bottling Manufacturing Solutions | Traceability & Compliance | CannyMinds",
+    title: "Bottling Manufacturing Solutions | Traceability & Compliance ",
     description: "End-to-end digital transformation for bottling plants. Automate batch records (BMR), ensure FSSAI/FDA compliance, and achieve 100% traceability from raw material to finished goods.",
     keywords: [
         "bottling manufacturing software",
@@ -51,6 +51,7 @@ export const metadata: Metadata = {
         title: "Bottling Manufacturing Solutions",
         description: "Digitize your bottling operations. From mixing and filling to packing and dispatch, ensure quality and compliance at every step.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/manufacturing/bottling",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [
@@ -75,7 +76,7 @@ const jsonLd = {
     "@graph": [
         {
             "@type": "WebPage",
-            "name": "Bottling Manufacturing Solutions | CannyMinds",
+            "name": "Bottling Manufacturing Solutions ",
             "description": "Comprehensive digital solutions for bottling manufacturing including Electronic Batch Records, Quality Control, and Compliance Management.",
             "publisher": {
                 "@type": "Organization",

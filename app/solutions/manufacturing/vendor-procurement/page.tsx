@@ -23,7 +23,7 @@ import {
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
-    title: "Vendor & Procurement Document Management | Manufacturing Solutions | CannyMinds",
+    title: "Vendor & Procurement Document Management | Manufacturing Solutions ",
     description: "Centralized vendor document repository and contract lifecycle management with approval workflows and easy retrieval for manufacturing procurement teams.",
     keywords: [
         "vendor document management",
@@ -44,6 +44,7 @@ export const metadata: Metadata = {
         title: "Vendor & Procurement Management | Manufacturing Solutions",
         description: "Streamline vendor documentation and contract management with centralized control and automated workflows.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/manufacturing/vendor-procurement",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [
@@ -68,7 +69,7 @@ const jsonLd = {
     "@graph": [
         {
             "@type": "WebPage",
-            "name": "Vendor & Procurement Management | CannyMinds",
+            "name": "Vendor & Procurement Management ",
             "description": "Comprehensive vendor document and contract management for manufacturing procurement.",
             "publisher": {
                 "@type": "Organization",

@@ -39,6 +39,7 @@ export const metadata: Metadata = {
         title: "Batch Record Automation & eBMR",
         description: "Transform paper-intensive batch record review into intelligent, automated processes.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/pharmaceutical/batch-record-automation",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [

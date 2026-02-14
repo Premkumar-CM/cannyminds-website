@@ -24,7 +24,7 @@ import {
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
-    title: "Equipment Maintenance & Asset Documentation | Manufacturing Solutions | CannyMinds",
+    title: "Equipment Maintenance & Asset Documentation | Manufacturing Solutions ",
     description: "Digital equipment manuals, service logs, and asset documentation management with maintenance workflows and secure long-term retention for manufacturing.",
     keywords: [
         "equipment maintenance documentation",
@@ -45,6 +45,7 @@ export const metadata: Metadata = {
         title: "Equipment Maintenance | Manufacturing Solutions",
         description: "Comprehensive equipment documentation and maintenance workflow management for operational continuity.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/manufacturing/equipment-maintenance",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [
@@ -69,7 +70,7 @@ const jsonLd = {
     "@graph": [
         {
             "@type": "WebPage",
-            "name": "Equipment Maintenance | CannyMinds",
+            "name": "Equipment Maintenance ",
             "description": "Digital equipment documentation and maintenance management for manufacturing operations.",
             "publisher": {
                 "@type": "Organization",

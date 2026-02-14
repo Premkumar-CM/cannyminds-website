@@ -23,7 +23,7 @@ import {
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
-    title: "Quality Management (QA/QC, CAPA, NCR) | Manufacturing Solutions | CannyMinds",
+    title: "Quality Management (QA/QC, CAPA, NCR) | Manufacturing Solutions ",
     description: "Digitized quality management with automated CAPA workflows, NCR tracking, root cause analysis, and complete audit trails for manufacturing excellence.",
     keywords: [
         "quality management system",
@@ -44,6 +44,7 @@ export const metadata: Metadata = {
         title: "Quality Management | Manufacturing Solutions",
         description: "Transform quality management with digitized QA/QC records, automated CAPA workflows, and comprehensive audit trails.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/manufacturing/quality-management",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [
@@ -68,7 +69,7 @@ const jsonLd = {
     "@graph": [
         {
             "@type": "WebPage",
-            "name": "Quality Management | CannyMinds",
+            "name": "Quality Management ",
             "description": "Comprehensive quality management solution for manufacturing with CAPA, NCR, and QA/QC automation.",
             "publisher": {
                 "@type": "Organization",

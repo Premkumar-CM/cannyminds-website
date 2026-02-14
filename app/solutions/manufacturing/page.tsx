@@ -21,7 +21,7 @@ import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
-    title: "Manufacturing Solutions | Digital Transformation for Industry 4.0 | CannyMinds",
+    title: "Manufacturing Solutions | Digital Transformation for Industry 4.0 ",
     description: "Comprehensive manufacturing solutions including shop floor automation, document control, quality management, engineering change management, and equipment maintenance.",
     keywords: [
         "manufacturing automation",
@@ -40,17 +40,20 @@ export const metadata: Metadata = {
         canonical: "https://www.cannymindstech.com/solutions/manufacturing",
     },
     openGraph: {
+        type: "website",
+        locale: "en_US",
+        siteName: "CannyMinds",
         title: "Manufacturing Solutions",
         description: "Transform your manufacturing operations with intelligent automation and real-time quality control.",
         url: "https://www.cannymindstech.com/solutions/manufacturing",
-        images: [{ url: "https://www.cannymindstech.com/og-image.jpg", width: 1200, height: 630 }],
+        images: [{ url: "https://www.cannymindstech.com/og-image.jpg", width: 1200, height: 630, alt: "Manufacturing Solutions" }],
     },
 };
 
 const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Manufacturing Solutions | CannyMinds",
+    "name": "Manufacturing Solutions ",
     "description": "Digital transformation solutions for manufacturing including shop floor automation, production recording, and workflow management.",
     "publisher": {
         "@type": "Organization",
@@ -111,6 +114,12 @@ export default function ManufacturingOverviewPage() {
             description: "End-to-end digital transformation solutions for fast-moving consumer goods manufacturing.",
             href: "/solutions/manufacturing/fmcg-digital-transformation",
             icon: LocalShipping,
+        },
+        {
+            title: "Bottling Manufacturing",
+            description: "Digitize your bottling operations with complete traceability from mixing and filling to packing and dispatch.",
+            href: "/solutions/manufacturing/bottling",
+            icon: Factory,
         },
     ];
 

@@ -23,7 +23,7 @@ import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
-    title: "Audit Management Software | CPA & Audit Firms | CannyMinds",
+    title: "Audit Management Software | CPA & Audit Firms ",
     description: "Streamline audit engagements with secure working papers, evidence management, and automated review workflows. Compliant with ICAI & International Standards.",
     keywords: [
         "audit documentation software",
@@ -38,9 +38,10 @@ export const metadata: Metadata = {
         canonical: "https://www.cannymindstech.com/solutions/professional-services/audit-firms",
     },
     openGraph: {
-        title: "Audit Management Solutions | CannyMinds",
+        title: "Audit Management Solutions ",
         description: "Ensure audit quality and compliance with structured, secure digital working papers.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/professional-services/audit-firms",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: "Audit Management Solutions | CannyMinds",
+        title: "Audit Management Solutions ",
         description: "Ensure audit quality and compliance with structured, secure digital working papers.",
         images: ['https://www.cannymindstech.com/og-image.jpg'],
     },
@@ -65,7 +66,7 @@ const jsonLd = {
     "@graph": [
         {
             "@type": "WebPage",
-            "name": "Audit Management Solutions | CannyMinds",
+            "name": "Audit Management Solutions ",
             "description": "Digital audit working papers and evidence management for audit firms.",
             "publisher": {
                 "@type": "Organization",

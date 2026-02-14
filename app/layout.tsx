@@ -5,7 +5,7 @@ import SmoothScroll from "@/components/ui/SmoothScroll";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
-import { enhancedMetadata as seoMetadata, enhancedJsonLd as jsonLd } from "@/lib/enhanced-seo";
+import { enhancedMetadata as seoMetadata } from "@/lib/enhanced-seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,10 +29,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/icon-192x192.png" />

@@ -31,7 +31,7 @@ import BookDownloadCard from "@/components/pharmaceutical/BookDownloadCard";
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
-    title: "CannyECM e-BMR | Electronic Batch Manufacturing Record | CannyMinds",
+    title: "CannyECM e-BMR | Electronic Batch Manufacturing Record ",
     description: "Digitize, control, and comply with confidence. Transform paper-based Batch Manufacturing Records into a fully digital, compliant, and audit-ready system.",
     keywords: [
         "electronic batch record",
@@ -53,6 +53,7 @@ export const metadata: Metadata = {
         title: "CannyECM e-BMR | Electronic Batch Manufacturing Record",
         description: "Transform paper-based batch records into a fully digital, compliant, and audit-ready system.",
         type: 'website',
+        url: "https://www.cannymindstech.com/product/ebmr",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [

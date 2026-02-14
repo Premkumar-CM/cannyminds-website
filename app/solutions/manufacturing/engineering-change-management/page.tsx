@@ -22,7 +22,7 @@ import {
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
-    title: "Engineering Change Management (ECN/ECR) | Manufacturing Solutions | CannyMinds",
+    title: "Engineering Change Management (ECN/ECR) | Manufacturing Solutions ",
     description: "Controlled ECN/ECR workflows with impact analysis, automated approvals, notifications, and complete change history for manufacturing engineering teams.",
     keywords: [
         "engineering change management",
@@ -43,6 +43,7 @@ export const metadata: Metadata = {
         title: "Engineering Change Management | Manufacturing Solutions",
         description: "Streamline ECN/ECR workflows with automated impact analysis, approvals, and complete traceability.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/manufacturing/engineering-change-management",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [
@@ -67,7 +68,7 @@ const jsonLd = {
     "@graph": [
         {
             "@type": "WebPage",
-            "name": "Engineering Change Management | CannyMinds",
+            "name": "Engineering Change Management ",
             "description": "Comprehensive ECN/ECR workflow management with impact analysis and automated approvals.",
             "publisher": {
                 "@type": "Organization",

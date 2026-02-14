@@ -36,12 +36,15 @@ export const metadata: Metadata = {
         canonical: "https://www.cannymindstech.com/solutions/healthcare",
     },
     openGraph: {
+        type: "website",
+        locale: "en_US",
+        siteName: "CannyMinds",
         title: "Healthcare Solutions | CannyMinds",
         description:
             "Document management built for hospitals. Patient records, clinical workflows, compliance, and digitization, all in one system.",
         url: "https://www.cannymindstech.com/solutions/healthcare",
         images: [
-            { url: "https://www.cannymindstech.com/og-image.jpg", width: 1200, height: 630 },
+            { url: "https://www.cannymindstech.com/og-image.jpg", width: 1200, height: 630, alt: "Healthcare Solutions" },
         ],
     },
 };

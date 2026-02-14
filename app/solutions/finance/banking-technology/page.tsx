@@ -21,7 +21,7 @@ import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 import { baseUrl } from "@/lib/enhanced-seo";
 
 export const metadata: Metadata = {
-    title: "Banking Technology Solutions | Loan Processing & KYC Automation | CannyMinds",
+    title: "Banking Technology Solutions | Loan Processing & KYC Automation ",
     description: "Accelerate loan origination, automate KYC/onboarding, and streamline credit approvals with CannyECM. Secure, compliant banking workflow automation.",
     keywords: [
         "loan origination system",
@@ -40,6 +40,7 @@ export const metadata: Metadata = {
         title: "Banking Technology Solutions",
         description: "Transform your banking operations. From instant account opening to automated loan approvals.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/finance/banking-technology",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [
@@ -64,7 +65,7 @@ const jsonLd = {
     "@graph": [
         {
             "@type": "WebPage",
-            "name": "Banking Technology Solutions | CannyMinds",
+            "name": "Banking Technology Solutions ",
             "description": "Digital banking solutions for loan processing, KYC automation, and customer onboarding.",
             "publisher": {
                 "@type": "Organization",

@@ -39,6 +39,7 @@ export const metadata: Metadata = {
         title: "Quality Inspection & CAPA",
         description: "Ensure consistent quality with AI-powered inspection and automated CAPA workflows.",
         type: 'website',
+        url: "https://www.cannymindstech.com/solutions/pharmaceutical/quality-inspection-capa",
         siteName: 'CannyMinds',
         locale: 'en_US',
         images: [
