@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import InsuranceSolutionsPage from './InsuranceClient'
+import { baseUrl } from '@/lib/enhanced-seo'
 
 export const metadata: Metadata = {
     title: 'AI for Insurance | Claims Processing & Fraud Detection',
@@ -25,6 +26,58 @@ export const metadata: Metadata = {
     },
 }
 
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "name": "AI for Insurance | CannyMinds",
+            "description": "Automate claims, detect fraud, and enhance underwriting with Generative AI for insurance.",
+            "url": `${baseUrl}/ai-solutions/insurance`,
+            "publisher": {
+                "@type": "Organization",
+                "name": "CannyMinds Technology Solutions",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": `${baseUrl}/logo.png`
+                }
+            },
+            "datePublished": new Date().toISOString().split('T')[0],
+            "dateModified": new Date().toISOString().split('T')[0]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": `${baseUrl}/`
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "AI Solutions",
+                    "item": `${baseUrl}/ai-solutions`
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Insurance AI Solutions"
+                }
+            ]
+        }
+    ]
+};
+
 export default function Page() {
-    return <InsuranceSolutionsPage />
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
+            <InsuranceSolutionsPage />
+        </>
+    );
 }

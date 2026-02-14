@@ -62,23 +62,92 @@ export const metadata: Metadata = {
 
 const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Digital Transformation in FMCG Manufacturing",
-    "description": "How to transition from paper-based operations to a fully digital, compliant, and efficient FMCG manufacturing environment.",
-    "author": {
-        "@type": "Organization",
-        "name": "CannyMinds Technology Solutions"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "CannyMinds Technology Solutions",
-        "logo": {
-            "@type": "ImageObject",
-            "url": `${baseUrl}/logo.png`
-        }
-    },
-    "datePublished": new Date().toISOString().split('T')[0],
-    "dateModified": new Date().toISOString().split('T')[0]
+    "@graph": [
+        {
+            "@type": "Article",
+            "headline": "Digital Transformation in FMCG Manufacturing",
+            "description": "How to transition from paper-based operations to a fully digital, compliant, and efficient FMCG manufacturing environment.",
+            "author": {
+                "@type": "Organization",
+                "name": "CannyMinds Technology Solutions"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "CannyMinds Technology Solutions",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": `${baseUrl}/logo.png`
+                }
+            },
+            "datePublished": new Date().toISOString().split('T')[0],
+            "dateModified": new Date().toISOString().split('T')[0]
+        },
+        {
+            "@type": "BreadcrumbList",
+            itemListElement: [
+                {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: `${baseUrl}/`,
+                },
+                {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Solutions",
+                    item: `${baseUrl}/solutions`,
+                },
+                {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Manufacturing Solutions",
+                    item: `${baseUrl}/solutions/manufacturing`,
+                },
+                {
+                    "@type": "ListItem",
+                    position: 4,
+                    name: "FMCG Digital Transformation",
+                },
+            ],
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Can this system integrate with our existing ERP?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, CannyMinds ECM seamlessly integrates with major ERPs like SAP, Oracle, and Microsoft Dynamics to sync material master data, POs, and batch information."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is the system suitable for high-speed bottling lines?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Absolutely. Our 'lite' shop floor interface is designed for rapid data capture, ensuring it keeps up with high-speed filling and packaging lines without slowing down operators."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How long does implementation take?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A typical pilot implementation for one manufacturing line can be completed in 4-6 weeks, with full plant roll-outs following a phased approach."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is the data stored securely?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We use enterprise-grade encryption for data at rest and in transit, with role-based access controls to ensuring only authorized personnel can view or approve sensitive records."
+                    }
+                }
+            ]
+        },
+    ],
 };
 
 export default function FMCGTransformationPage() {

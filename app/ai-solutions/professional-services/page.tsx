@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import ProfessionalServicesPage from './ProfessionalServicesClient'
+import { baseUrl } from '@/lib/enhanced-seo'
 
 export const metadata: Metadata = {
     title: 'AI for Professional Services | Legal & Consulting Automation',
@@ -25,6 +26,58 @@ export const metadata: Metadata = {
     },
 }
 
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "name": "AI for Professional Services | CannyMinds",
+            "description": "Streamline contract review, automate reports, and improve knowledge management for legal and consulting firms.",
+            "url": `${baseUrl}/ai-solutions/professional-services`,
+            "publisher": {
+                "@type": "Organization",
+                "name": "CannyMinds Technology Solutions",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": `${baseUrl}/logo.png`
+                }
+            },
+            "datePublished": new Date().toISOString().split('T')[0],
+            "dateModified": new Date().toISOString().split('T')[0]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": `${baseUrl}/`
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "AI Solutions",
+                    "item": `${baseUrl}/ai-solutions`
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Professional Services AI Solutions"
+                }
+            ]
+        }
+    ]
+};
+
 export default function Page() {
-    return <ProfessionalServicesPage />
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
+            <ProfessionalServicesPage />
+        </>
+    );
 }

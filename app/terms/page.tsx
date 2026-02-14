@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { baseUrl } from '@/lib/enhanced-seo';
 
 export const metadata: Metadata = {
   title: 'Terms of Service | CannyMinds Technology Solutions',
@@ -8,9 +9,50 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "Terms of Service | CannyMinds Technology Solutions",
+      "description": "Terms of Service for CannyMinds Technology Solutions. Read our terms and conditions for using our services and products.",
+      "url": `${baseUrl}/terms`,
+      "publisher": {
+        "@type": "Organization",
+        "name": "CannyMinds Technology Solutions",
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${baseUrl}/logo.png`
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": `${baseUrl}/`
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Terms of Service"
+        }
+      ]
+    }
+  ]
+};
+
 export default function TermsPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-secondary to-secondary/80 text-white py-16">
         <div className="container mx-auto px-4">
@@ -110,6 +152,7 @@ export default function TermsPage() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }

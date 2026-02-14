@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import IndustryClient from './IndustryClient';
+import { baseUrl } from '@/lib/enhanced-seo';
 
 // Helper to format title case
 const toTitleCase = (str: string) => {
@@ -48,5 +49,58 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function IndustryPage({ params }: Props) {
     const { industry } = await params;
-    return <IndustryClient industrySlug={industry} />;
+
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "name": `Generative AI for ${toTitleCase(industry)} | CannyMinds`,
+                "description": `Transform ${toTitleCase(industry)} operations with AI automation, intelligent workflows, and data-driven insights.`,
+                "url": `${baseUrl}/ai-solutions/${industry}`,
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "CannyMinds Technology Solutions",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": `${baseUrl}/logo.png`
+                    }
+                },
+                "datePublished": new Date().toISOString().split('T')[0],
+                "dateModified": new Date().toISOString().split('T')[0]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": `${baseUrl}/`
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "AI Solutions",
+                        "item": `${baseUrl}/ai-solutions`
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": `${toTitleCase(industry)} AI Solutions`
+                    }
+                ]
+            }
+        ]
+    };
+
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
+            <IndustryClient industrySlug={industry} />
+        </>
+    );
 }

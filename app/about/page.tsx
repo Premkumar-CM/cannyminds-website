@@ -18,6 +18,7 @@ import {
   Favorite as CustomerIcon,
   TrendingUp as ImprovementIcon,
 } from '@mui/icons-material';
+import { baseUrl } from '@/lib/enhanced-seo';
 
 export const metadata: Metadata = {
   title: 'About CannyMinds | Information Management & Digitization Solutions',
@@ -57,6 +58,42 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.cannymindstech.com/about',
   },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "name": "About CannyMinds | Information Management & Digitization Solutions",
+      "description": "CannyMinds is a trusted provider of information management and digitization solutions. ISO 9001, ISO 15489, ISO 27001 & FDA 21 CFR Part 11 compliant.",
+      "url": `${baseUrl}/about`,
+      "publisher": {
+        "@type": "Organization",
+        "name": "CannyMinds Technology Solutions",
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${baseUrl}/logo.png`
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": `${baseUrl}/`
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About"
+        }
+      ]
+    }
+  ]
 };
 
 export default function AboutPage() {
@@ -143,7 +180,12 @@ export default function AboutPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-white pt-16 sm:pt-20">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="min-h-screen bg-gradient-to-br from-gray-50 to-white pt-16 sm:pt-20">
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary to-secondary text-white py-20">
@@ -423,6 +465,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-    </main>
+      </main>
+    </>
   );
 }

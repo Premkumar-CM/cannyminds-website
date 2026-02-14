@@ -98,12 +98,18 @@ const jsonLd = {
                 {
                     "@type": "ListItem",
                     position: 2,
+                    name: "Solutions",
+                    item: `${baseUrl}/solutions`,
+                },
+                {
+                    "@type": "ListItem",
+                    position: 3,
                     name: "Healthcare Solutions",
                     item: `${baseUrl}/solutions/healthcare`,
                 },
                 {
                     "@type": "ListItem",
-                    position: 3,
+                    position: 4,
                     name: "Compliance & Audit Readiness",
                 },
             ],

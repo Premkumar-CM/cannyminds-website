@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import NBFCSolutionsPage from './NBFCClient'
+import { baseUrl } from '@/lib/enhanced-seo'
 
 export const metadata: Metadata = {
     title: 'AI for NBFCs & Fintech | Credit Scoring & Risk Management',
@@ -25,6 +26,58 @@ export const metadata: Metadata = {
     },
 }
 
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "name": "AI for NBFCs & Fintech | CannyMinds",
+            "description": "Enhance credit assessment, automate loan processing, and ensure compliance for Non-Banking Financial Companies.",
+            "url": `${baseUrl}/ai-solutions/nbfc`,
+            "publisher": {
+                "@type": "Organization",
+                "name": "CannyMinds Technology Solutions",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": `${baseUrl}/logo.png`
+                }
+            },
+            "datePublished": new Date().toISOString().split('T')[0],
+            "dateModified": new Date().toISOString().split('T')[0]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": `${baseUrl}/`
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "AI Solutions",
+                    "item": `${baseUrl}/ai-solutions`
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "NBFC AI Solutions"
+                }
+            ]
+        }
+    ]
+};
+
 export default function Page() {
-    return <NBFCSolutionsPage />
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
+            <NBFCSolutionsPage />
+        </>
+    );
 }

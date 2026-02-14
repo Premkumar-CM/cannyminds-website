@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import TextileSolutionsPage from './TextileClient'
+import { baseUrl } from '@/lib/enhanced-seo'
 
 export const metadata: Metadata = {
     title: 'AI for Textile & Apparel | Design & Supply Chain',
@@ -25,6 +26,58 @@ export const metadata: Metadata = {
     },
 }
 
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "name": "AI for Textile & Apparel | CannyMinds",
+            "description": "Optimize supply chains, predict trends, and automate quality inspection in textile manufacturing.",
+            "url": `${baseUrl}/ai-solutions/textile`,
+            "publisher": {
+                "@type": "Organization",
+                "name": "CannyMinds Technology Solutions",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": `${baseUrl}/logo.png`
+                }
+            },
+            "datePublished": new Date().toISOString().split('T')[0],
+            "dateModified": new Date().toISOString().split('T')[0]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": `${baseUrl}/`
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "AI Solutions",
+                    "item": `${baseUrl}/ai-solutions`
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Textile AI Solutions"
+                }
+            ]
+        }
+    ]
+};
+
 export default function Page() {
-    return <TextileSolutionsPage />
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
+            <TextileSolutionsPage />
+        </>
+    );
 }

@@ -64,29 +64,61 @@ export const metadata: Metadata = {
 
 const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Engineering Change Management | CannyMinds",
-    "description": "Comprehensive ECN/ECR workflow management with impact analysis and automated approvals.",
-    "publisher": {
-        "@type": "Organization",
-        "name": "CannyMinds Technology Solutions",
-        "logo": {
-            "@type": "ImageObject",
-            "url": `${baseUrl}/logo.png`
-        }
-    },
-    "author": {
-        "@type": "Organization",
-        "name": "CannyMinds Technology Solutions"
-    },
-    "mainEntity": {
-        "@type": "SoftwareApplication",
-        "name": "CannyECM Change Management",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Web-based"
-    },
-    "datePublished": new Date().toISOString().split('T')[0],
-    "dateModified": new Date().toISOString().split('T')[0]
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "name": "Engineering Change Management | CannyMinds",
+            "description": "Comprehensive ECN/ECR workflow management with impact analysis and automated approvals.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "CannyMinds Technology Solutions",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": `${baseUrl}/logo.png`
+                }
+            },
+            "author": {
+                "@type": "Organization",
+                "name": "CannyMinds Technology Solutions"
+            },
+            "mainEntity": {
+                "@type": "SoftwareApplication",
+                "name": "CannyECM Change Management",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web-based"
+            },
+            "datePublished": new Date().toISOString().split('T')[0],
+            "dateModified": new Date().toISOString().split('T')[0]
+        },
+        {
+            "@type": "BreadcrumbList",
+            itemListElement: [
+                {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: `${baseUrl}/`,
+                },
+                {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Solutions",
+                    item: `${baseUrl}/solutions`,
+                },
+                {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Manufacturing Solutions",
+                    item: `${baseUrl}/solutions/manufacturing`,
+                },
+                {
+                    "@type": "ListItem",
+                    position: 4,
+                    name: "Engineering Change Management",
+                },
+            ],
+        },
+    ],
 };
 
 export default function EngineeringChangeManagementPage() {

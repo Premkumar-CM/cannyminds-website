@@ -62,23 +62,55 @@ export const metadata: Metadata = {
 
 const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Insurance Technology Solutions | CannyMinds",
-    "description": "Digital insurance solutions for claims automation, policy management, and fraud detection.",
-    "publisher": {
-        "@type": "Organization",
-        "name": "CannyMinds Technology Solutions",
-        "logo": {
-            "@type": "ImageObject",
-            "url": `${baseUrl}/logo.png`
-        }
-    },
-    "author": {
-        "@type": "Organization",
-        "name": "CannyMinds Technology Solutions"
-    },
-    "datePublished": new Date().toISOString().split('T')[0],
-    "dateModified": new Date().toISOString().split('T')[0]
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "name": "Insurance Technology Solutions | CannyMinds",
+            "description": "Digital insurance solutions for claims automation, policy management, and fraud detection.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "CannyMinds Technology Solutions",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": `${baseUrl}/logo.png`
+                }
+            },
+            "author": {
+                "@type": "Organization",
+                "name": "CannyMinds Technology Solutions"
+            },
+            "datePublished": new Date().toISOString().split('T')[0],
+            "dateModified": new Date().toISOString().split('T')[0]
+        },
+        {
+            "@type": "BreadcrumbList",
+            itemListElement: [
+                {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: `${baseUrl}/`,
+                },
+                {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Solutions",
+                    item: `${baseUrl}/solutions`,
+                },
+                {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Finance Solutions",
+                    item: `${baseUrl}/solutions/finance`,
+                },
+                {
+                    "@type": "ListItem",
+                    position: 4,
+                    name: "Insurance Technology Solutions",
+                },
+            ],
+        },
+    ],
 };
 
 export default function InsuranceTechnologyPage() {

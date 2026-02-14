@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { baseUrl } from '@/lib/enhanced-seo';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | CannyMinds Technology Solutions',
@@ -8,9 +9,50 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "Privacy Policy | CannyMinds Technology Solutions",
+      "description": "Privacy Policy for CannyMinds Technology Solutions. Learn how we collect, use, and protect your personal information.",
+      "url": `${baseUrl}/privacy-policy`,
+      "publisher": {
+        "@type": "Organization",
+        "name": "CannyMinds Technology Solutions",
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${baseUrl}/logo.png`
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": `${baseUrl}/`
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Privacy Policy"
+        }
+      ]
+    }
+  ]
+};
+
 export default function PrivacyPolicyPage() {
   return (
-    <main className="min-h-screen bg-gray-50 pt-16 sm:pt-20">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="min-h-screen bg-gray-50 pt-16 sm:pt-20">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-secondary to-secondary/80 text-white py-16">
         <div className="container mx-auto px-4">
@@ -130,6 +172,7 @@ export default function PrivacyPolicyPage() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }

@@ -77,23 +77,55 @@ export const metadata: Metadata = {
 
 const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Shop Floor Automation | CannyMinds",
-    "description": "Transform manual paper-based hourly production recording into automated digital workflows with complete audit traceability.",
-    "publisher": {
-        "@type": "Organization",
-        "name": "CannyMinds Technology Solutions",
-        "logo": {
-            "@type": "ImageObject",
-            "url": `${baseUrl}/logo.png`
-        }
-    },
-    "author": {
-        "@type": "Organization",
-        "name": "CannyMinds Technology Solutions"
-    },
-    "datePublished": new Date().toISOString().split('T')[0],
-    "dateModified": new Date().toISOString().split('T')[0]
+    "@graph": [
+        {
+            "@type": "WebPage",
+            "name": "Shop Floor Automation | CannyMinds",
+            "description": "Transform manual paper-based hourly production recording into automated digital workflows with complete audit traceability.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "CannyMinds Technology Solutions",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": `${baseUrl}/logo.png`
+                }
+            },
+            "author": {
+                "@type": "Organization",
+                "name": "CannyMinds Technology Solutions"
+            },
+            "datePublished": new Date().toISOString().split('T')[0],
+            "dateModified": new Date().toISOString().split('T')[0]
+        },
+        {
+            "@type": "BreadcrumbList",
+            itemListElement: [
+                {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: `${baseUrl}/`,
+                },
+                {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Solutions",
+                    item: `${baseUrl}/solutions`,
+                },
+                {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Manufacturing Solutions",
+                    item: `${baseUrl}/solutions/manufacturing`,
+                },
+                {
+                    "@type": "ListItem",
+                    position: 4,
+                    name: "Shop Floor Automation",
+                },
+            ],
+        },
+    ],
 };
 
 export default function ShopFloorAutomationPage() {
@@ -711,11 +743,17 @@ export default function ShopFloorAutomationPage() {
                 {/* Last Updated */}
                 <div className="bg-slate-50 py-8 text-center text-sm text-gray-500">
                     <div className="container mx-auto">
-                        {jsonLd.dateModified && jsonLd.dateModified !== jsonLd.datePublished ? (
-                            <span>Last Updated: <time dateTime={jsonLd.dateModified}>{new Date(jsonLd.dateModified).toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' })}</time></span>
-                        ) : (
-                            <span>Published: <time dateTime={jsonLd.datePublished}>{new Date(jsonLd.datePublished).toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' })}</time></span>
-                        )}
+                        {(() => {
+                            const webPage = jsonLd["@graph"][0];
+                            if (webPage && "dateModified" in webPage && "datePublished" in webPage && webPage.dateModified && webPage.datePublished) {
+                                return webPage.dateModified !== webPage.datePublished ? (
+                                    <span>Last Updated: <time dateTime={webPage.dateModified}>{new Date(webPage.dateModified).toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' })}</time></span>
+                                ) : (
+                                    <span>Published: <time dateTime={webPage.datePublished}>{new Date(webPage.datePublished).toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' })}</time></span>
+                                );
+                            }
+                            return null;
+                        })()}
                     </div>
                 </div>
 
