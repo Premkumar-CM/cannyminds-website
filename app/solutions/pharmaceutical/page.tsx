@@ -411,7 +411,7 @@ export default function PharmaceuticalOverviewPage() {
                                     </div>
                                     <h3 className="text-2xl font-bold text-gray-900 mb-4">Records Management</h3>
                                     <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-                                        Manage physical records with complete traceability. Our <Link href="/product/rms" className="text-primary hover:underline font-medium">records management system</Link> provides secure storage, retrieval tracking, and audit trails for batch records, stability samples, and regulatory archives.
+                                        Manage physical records with complete traceability. Our <Link href="/product/physical-records-management" className="text-primary hover:underline font-medium">records management system</Link> provides secure storage, retrieval tracking, and audit trails for batch records, stability samples, and regulatory archives.
                                     </p>
                                     <ul className="space-y-4">
                                         {[

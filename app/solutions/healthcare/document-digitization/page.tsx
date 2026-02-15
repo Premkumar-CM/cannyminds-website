@@ -556,7 +556,7 @@ export default function DocumentDigitizationPage() {
                                 CannyECM: Content Management →
                             </Link>
                             <Link
-                                href="/product/rms"
+                                href="/product/physical-records-management"
                                 className="px-6 py-3 bg-purple-50 text-purple-700 rounded-lg hover:bg-purple-100 transition-colors font-medium text-sm"
                             >
                                 CannyRMS: Records Management →

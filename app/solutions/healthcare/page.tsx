@@ -452,7 +452,7 @@ export default function HealthcareOverviewPage() {
                                 </p>
                             </Link>
                             <Link
-                                href="/product/rms"
+                                href="/product/physical-records-management"
                                 className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary transition-all group"
                             >
                                 <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary">

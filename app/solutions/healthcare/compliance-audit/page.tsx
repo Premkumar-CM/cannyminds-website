@@ -598,7 +598,7 @@ export default function ComplianceAuditPage() {
                         <p className="text-slate-400 text-sm mt-8">
                             Need help managing physical records too? See our{" "}
                             <Link
-                                href="/product/rms"
+                                href="/product/physical-records-management"
                                 className="text-teal-400 hover:underline"
                             >
                                 Records Management System

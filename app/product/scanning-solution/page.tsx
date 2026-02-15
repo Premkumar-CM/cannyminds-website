@@ -816,7 +816,7 @@ export default function CannyScanProductPage() {
                   title: "Physical Records Management",
                   description: "Web-based system to digitize, control, and optimize physical file and storage management.",
                   features: ["Rack Optimization", "Retrieval Tracking", "Audit Compliance", "Billing Support"],
-                  link: "/product/rms",
+                  link: "/product/physical-records-management",
                   color: "from-orange-50 to-white border-orange-200"
                 },
                 {

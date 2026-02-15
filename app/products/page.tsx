@@ -77,7 +77,7 @@ const jsonLd = {
                         "name": "CannyRMS",
                         "applicationCategory": "BusinessApplication",
                         "description": "Physical Records Management System",
-                        "url": `${baseUrl}/product/rms`
+                        "url": `${baseUrl}/product/physical-records-management`
                     },
                     {
                         "@type": "SoftwareApplication",

@@ -442,7 +442,7 @@ export default function BatchRecordAutomationPage() {
                                 </div>
 
                                 <p className="text-gray-600 mb-6 leading-relaxed">
-                                    Our IoT-enabled predictive maintenance solution analyzes real-time sensor data to predict equipment failures before they occur. Historical maintenance records stored in our <Link href="/product/rms" className="text-primary hover:underline font-medium">records management system</Link> provide the data foundation for accurate predictions.
+                                    Our IoT-enabled predictive maintenance solution analyzes real-time sensor data to predict equipment failures before they occur. Historical maintenance records stored in our <Link href="/product/physical-records-management" className="text-primary hover:underline font-medium">records management system</Link> provide the data foundation for accurate predictions.
                                 </p>
 
                                 <ul className="space-y-3">

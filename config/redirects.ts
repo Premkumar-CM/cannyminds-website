@@ -46,6 +46,12 @@ export const redirects: NextConfig['redirects'] = async () => {
             destination: '/product/enterprise-content-management',
             permanent: true,
         },
+        // Redirect old rms URL to new physical-records-management URL
+        {
+            source: '/product/rms',
+            destination: '/product/physical-records-management',
+            permanent: true,
+        },
         {
             source: '/hr-payroll-management-software',
             destination: '/product/hr-management',
@@ -73,12 +79,12 @@ export const redirects: NextConfig['redirects'] = async () => {
         },
         {
             source: '/physical-record-management-services',
-            destination: '/product/rms',
+            destination: '/product/physical-records-management',
             permanent: true,
         },
         {
             source: '/record-management',
-            destination: '/product/rms',
+            destination: '/product/physical-records-management',
             permanent: true,
         },
         {

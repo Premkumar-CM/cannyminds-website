@@ -17,7 +17,7 @@ export default function Footer() {
     { name: "CannyHR", href: "/product/hr-management" },
     { name: "CannyScan", href: "/product/scanning-solution" },
     { name: "CannyTrack", href: "/product/tracking-system" },
-    { name: "CannyRMS", href: "/product/rms" },
+    { name: "Physical Records Management", href: "/product/physical-records-management" },
     { name: "Canny eBMR", href: "/product/ebmr" },
   ];
 

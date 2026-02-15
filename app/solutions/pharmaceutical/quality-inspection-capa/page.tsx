@@ -459,7 +459,7 @@ export default function QualityInspectionCapaPage() {
                                 </div>
 
                                 <p className="text-gray-600 mb-6 leading-relaxed">
-                                    Our deviation management integrates with our <Link href="/product/rms" className="text-primary hover:underline font-medium">records management system</Link> to provide complete traceability from deviation to resolution, with all supporting evidence securely stored and easily retrievable for audits.
+                                    Our deviation management integrates with our <Link href="/product/physical-records-management" className="text-primary hover:underline font-medium">records management system</Link> to provide complete traceability from deviation to resolution, with all supporting evidence securely stored and easily retrievable for audits.
                                 </p>
 
                                 <ul className="space-y-3">

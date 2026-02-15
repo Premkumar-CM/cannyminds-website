@@ -67,7 +67,7 @@ export default function CannyRMSPage() {
               <li className="text-gray-400">/</li>
               <li><Link href="/#products" className="text-primary hover:text-primary/80 whitespace-nowrap">Products</Link></li>
               <li className="text-gray-400">/</li>
-              <li className="text-gray-600 font-medium truncate">CannyRMS - Physical Records Management</li>
+              <li className="text-gray-600 font-medium truncate">Physical Records Management</li>
             </ol>
           </div>
         </nav>
@@ -78,12 +78,12 @@ export default function CannyRMSPage() {
             <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
               <div className="space-y-8">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary leading-tight">
-                  CannyRMS: How One Missing File May Result in a <span className="text-red-600">Critical Audit Finding</span>. Secure your Records!
+                  Physical Records Management System: One Missing File Could Result in a <span className="text-red-600">Critical Audit Finding</span>
                 </h1>
 
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  With CannyRMS, you have <strong>accurate tracking and auditing</strong>, ensuring your bank, pharma, or law firm is not caught out on
-                  <strong> compliance</strong>. Prepare your firm for <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/part-11-electronic-records-electronic-signatures-scope-and-application" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">FDA</a>, <a href="https://m.rbi.org.in/scripts/BS_ViewMasCirculardetails.aspx?id=9862" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">RBI</a>, and GDPR audits.
+                  CannyRMS is an enterprise physical records management system with <strong>accurate tracking and auditing</strong>, ensuring your bank, pharma, or law firm is never caught off guard during
+                  <strong> compliance audits</strong>. Be prepared for <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/part-11-electronic-records-electronic-signatures-scope-and-application" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">FDA</a>, <a href="https://m.rbi.org.in/scripts/BS_ViewMasCirculardetails.aspx?id=9862" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">RBI</a>, and GDPR audits with comprehensive physical records management.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">

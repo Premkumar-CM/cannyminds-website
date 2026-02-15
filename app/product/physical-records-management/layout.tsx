@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "CannyRMS - Physical Records Management | 2026",
-    description: "Enterprise physical records management with 8-step workflow, barcode tracking, and complete audit trails. Manage 100,000+ cartons. 30-day free trial.",
+    title: "Physical Records Management System | CannyRMS 2026",
+    description: "Physical records management system with 8-step workflow, barcode tracking, and complete audit trails. Enterprise solution to manage 100,000+ physical records with compliance-ready features. 30-day free trial.",
     keywords: [
-        "CannyRMS",
         "physical records management system",
+        "physical records management",
+        "physical record management",
+        "records management system",
+        "physical document management",
         "records management software",
+        "CannyRMS",
         "document tracking system",
         "barcode records management",
         "file tracking software",
@@ -29,10 +33,10 @@ export const metadata: Metadata = {
     ],
     authors: [{ name: "CannyMinds Technology Solutions" }],
     openGraph: {
-        title: "CannyRMS - Physical Records Management | Barcode Tracking 2026",
-        description: "Enterprise RMS with 8-step workflow, barcode scanning, approval system. Manage 100,000+ physical records. 30-day free trial.",
+        title: "Physical Records Management System | CannyRMS 2026",
+        description: "Physical records management system with 8-step workflow, barcode scanning, and approval workflows. Manage 100,000+ physical records with enterprise-grade compliance features.",
         type: "article",
-        url: "https://www.cannymindstech.com/product/rms",
+        url: "https://www.cannymindstech.com/product/physical-records-management",
         siteName: "CannyMinds Technology Solutions",
         images: [
             {
@@ -45,12 +49,12 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "CannyRMS - Physical Records Management System",
-        description: "Enterprise-grade records management with barcode tracking, workflow automation, and compliance-ready audit trails.",
+        title: "Physical Records Management System | CannyRMS",
+        description: "Physical records management system with barcode tracking, workflow automation, and compliance-ready audit trails for enterprises.",
         images: ["/images/rms/cannyrms-dashboard.png"],
     },
     alternates: {
-        canonical: "https://www.cannymindstech.com/product/rms",
+        canonical: "https://www.cannymindstech.com/product/physical-records-management",
     },
     robots: {
         index: true,
@@ -80,14 +84,14 @@ const jsonLd = {
                 {
                     "@type": "ListItem",
                     "position": 3,
-                    "name": "CannyRMS - Physical Records Management"
+                    "name": "Physical Records Management"
                 }
             ]
         },
         {
             "@type": "Article",
-            "headline": "CannyRMS - Enterprise Physical Records Management System",
-            "description": "Comprehensive guide to CannyRMS physical records management system with barcode tracking, approval workflows, and complete audit trails.",
+            "headline": "Physical Records Management System - CannyRMS",
+            "description": "Comprehensive guide to physical records management systems. Learn how CannyRMS delivers enterprise-grade physical records management with barcode tracking, approval workflows, and complete audit trails.",
             "image": "https://www.cannymindstech.com/images/rms/cannyrms-dashboard.png",
             "author": {
                 "@type": "Organization",
@@ -107,7 +111,7 @@ const jsonLd = {
             "dateModified": "2026-02-04",
             "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "https://www.cannymindstech.com/product/rms"
+                "@id": "https://www.cannymindstech.com/product/physical-records-management"
             }
         },
         {
@@ -127,13 +131,7 @@ const jsonLd = {
                 "Real-time storage utilization reports",
                 "Bulk Excel upload",
                 "Multi-location warehouse support"
-            ],
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.8",
-                "ratingCount": "150",
-                "bestRating": "5"
-            }
+            ]
         },
         {
             "@type": "FAQPage",

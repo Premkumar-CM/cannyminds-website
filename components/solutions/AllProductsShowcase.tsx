@@ -55,7 +55,7 @@ const products = [
         color: "text-indigo-600",
         bg: "bg-indigo-50",
         borderColor: "hover:border-indigo-500",
-        link: "/product/rms",
+        link: "/product/physical-records-management",
         features: ["Inventory Mgmt", "Multi-location POS", "Real-time Analytics", "Loyalty Programs", "Supplier Management"],
         stats: { value: "99.9%", label: "Uptime" },
     },

@@ -24,25 +24,28 @@ import FAQ from "@/components/sections/FAQ";
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: "CannyECM - Enterprise ECM | Content Management 2026",
-  description: "Enterprise Content Management with 99% OCR accuracy, workflow automation, cloud/on-premise. Organize 50,000+ documents. 30-day free trial available.",
+  title: "Enterprise Content Management System | CannyECM 2026",
+  description: "Enterprise content management system with 99% OCR accuracy, workflow automation, and cloud/on-premise deployment. Manage 50,000+ documents with advanced ECM features. 30-day free trial.",
   keywords: [
+    "enterprise content management system",
+    "enterprise content management",
+    "content management system",
+    "enterprise document management",
+    "ECM software",
     "CannyECM",
     "content management software",
-    "enterprise ECM",
-    "enterprise content management",
+    "document management system",
     "OCR content management",
     "workflow automation software",
     "cloud document storage",
     "on-premise ECM",
-    "content management system",
     "paperless office solution",
     "secure document storage"
   ],
   authors: [{ name: "Christopher" }],
   openGraph: {
-    title: "CannyECM - Enterprise ECM | Content Management 2026",
-    description: "Enterprise Content Management with 99% OCR accuracy, workflow automation, cloud/on-premise. Organize 50,000+ documents. 30-day free trial available.",
+    title: "Enterprise Content Management System | CannyECM 2026",
+    description: "Enterprise content management system with 99% OCR accuracy, workflow automation, and cloud/on-premise deployment. Manage 50,000+ documents with advanced ECM features.",
     type: "website",
     siteName: 'CannyMinds',
     locale: 'en_US',
@@ -58,8 +61,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "CannyECM - Enterprise ECM | Content Management 2026",
-    description: "Enterprise Content Management with 99% OCR accuracy, workflow automation, cloud/on-premise. Organize 50,000+ documents. 30-day free trial available.",
+    title: "Enterprise Content Management System | CannyECM 2026",
+    description: "Enterprise content management system with 99% OCR accuracy, workflow automation, and cloud/on-premise deployment. Manage 50,000+ documents.",
     images: ['https://www.cannymindstech.com/og-image.jpg'],
   },
   alternates: {
@@ -96,8 +99,8 @@ const jsonLd = {
     },
     {
       "@type": "Article",
-      "headline": "CannyECM - Enterprise Content Management Software",
-      "description": "Comprehensive guide to CannyECM enterprise content management system with OCR, workflow automation, and cloud/on-premise deployment options.",
+      "headline": "Enterprise Content Management System - CannyECM",
+      "description": "Comprehensive guide to enterprise content management systems. Learn how CannyECM delivers advanced ECM features with OCR, workflow automation, and flexible deployment options.",
       "image": "https://www.cannymindstech.com/images/CannyECM-dashboard.jpg",
       "author": {
         "@type": "Person",
@@ -192,7 +195,7 @@ export default function CannyECMProductPage() {
               <li className="text-gray-400">/</li>
               <li><Link href="/#products" className="text-primary hover:text-primary/80 whitespace-nowrap">Products</Link></li>
               <li className="text-gray-400">/</li>
-              <li className="text-gray-600 font-medium truncate">CannyECM - Content Management Software</li>
+              <li className="text-gray-600 font-medium truncate">Enterprise Content Management</li>
             </ol>
           </div>
         </nav>
@@ -209,13 +212,13 @@ export default function CannyECMProductPage() {
                 </div>
 
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary mb-4 leading-tight">
-                  Transform Your Document Management with <span className="text-primary">CannyECM</span>
+                  Enterprise Content Management System with <span className="text-primary">Advanced ECM Features</span>
                 </h1>
 
                 <p className="text-sm sm:text-base text-gray-700 mb-6 leading-relaxed">
-                  Enterprise-grade document management system with <strong>99% OCR accuracy</strong>, intelligent workflow automation,
+                  Transform your business with CannyECM, an enterprise content management system featuring <strong>99% OCR accuracy</strong>, intelligent workflow automation,
                   and military-grade security. Go paperless and organize <strong>50,000+ documents</strong> effortlessly with cloud,
-                  on-premise, or hybrid deployment.
+                  on-premise, or hybrid deployment options.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-3 mb-4">

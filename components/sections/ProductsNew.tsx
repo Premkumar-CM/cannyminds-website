@@ -36,7 +36,7 @@ const products = [
     description:
       "Physical records management with barcode/RFID tracking, audit trails, and compliance support.",
     icon: InventoryIcon,
-    link: "/product/rms",
+    link: "/product/physical-records-management",
     features: ["Barcode/RFID Tracking", "Audit Trails", "FDA Compliant"],
     number: "03",
   },

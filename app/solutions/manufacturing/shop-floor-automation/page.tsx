@@ -583,7 +583,7 @@ export default function ShopFloorAutomationPage() {
                                     <div className="bg-white border border-gray-200 rounded-xl p-6 text-center">
                                         <Storage className="text-orange-500 mb-3" sx={{ fontSize: 40 }} />
                                         <h4 className="font-bold text-gray-900 mb-2">Stored Securely</h4>
-                                        <p className="text-sm text-gray-600">Protected in our <Link href="/product/rms" className="text-orange-600 hover:underline">RMS</Link> with encryption</p>
+                                        <p className="text-sm text-gray-600">Protected in our <Link href="/product/physical-records-management" className="text-orange-600 hover:underline">RMS</Link> with encryption</p>
                                     </div>
                                     <div className="bg-white border border-gray-200 rounded-xl p-6 text-center">
                                         <VerifiedUser className="text-green-500 mb-3" sx={{ fontSize: 40 }} />
