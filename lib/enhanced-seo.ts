@@ -202,14 +202,6 @@ export const enhancedJsonLd = {
         value: enhancedSiteConfig.business.employees,
       },
 
-      // Ratings
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: enhancedSiteConfig.business.rating,
-        reviewCount: enhancedSiteConfig.business.reviews,
-        bestRating: "5",
-        worstRating: "1",
-      },
 
       // Multiple contact points
       contactPoint: [
@@ -382,21 +374,12 @@ export const enhancedJsonLd = {
       "@id": `${enhancedSiteConfig.url}/#website`,
       url: enhancedSiteConfig.url,
       name: enhancedSiteConfig.name,
+      alternateName: ["CannyMinds Technology Solutions", "CannyMinds Tech"],
       description: enhancedSiteConfig.description,
       publisher: {
         "@id": `${enhancedSiteConfig.url}/#organization`,
       },
       inLanguage: "en-US",
-
-      // Search action for site search
-      potentialAction: {
-        "@type": "SearchAction",
-        target: {
-          "@type": "EntryPoint",
-          urlTemplate: `${enhancedSiteConfig.url}/search?q={search_term_string}`,
-        },
-        "query-input": "required name=search_term_string",
-      },
     },
 
     // WebPage Schema

@@ -172,6 +172,13 @@ export default function ManufacturingOverviewPage() {
                                         Request Demo
                                         <ArrowForward sx={{ fontSize: 20 }} />
                                     </Link>
+                                    <Link
+                                        href="/ai-solutions/manufacturing"
+                                        className="px-8 py-4 bg-white text-orange-600 font-semibold rounded-lg border-2 border-orange-600 hover:bg-orange-50 transition-colors inline-flex items-center gap-2"
+                                    >
+                                        Explore AI Solutions
+                                        <ArrowForward sx={{ fontSize: 20 }} />
+                                    </Link>
                                 </div>
                             </div>
 

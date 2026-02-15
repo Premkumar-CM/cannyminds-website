@@ -12,6 +12,7 @@ export default function Footer() {
     { name: "All Products", href: "/products" },
     { name: "Manufacturing", href: "/solutions/manufacturing" },
     { name: "FMCG Digital Transformation", href: "/solutions/manufacturing/fmcg-digital-transformation" },
+    { name: "Bottling Manufacturing", href: "/solutions/manufacturing/bottling" },
     { name: "CannyECM", href: "/product/document-management" },
     { name: "CannyHR", href: "/product/hr-management" },
     { name: "CannyScan", href: "/product/scanning-solution" },
@@ -21,6 +22,7 @@ export default function Footer() {
   ];
 
   const aiSolutions = [
+    { name: "Manufacturing AI", href: "/ai-solutions/manufacturing" },
     { name: "Professional Services AI", href: "/ai-solutions/professional-services" },
     { name: "NBFC & Finance AI", href: "/ai-solutions/nbfc" },
     { name: "Banking Technology", href: "/solutions/finance/banking-technology" },

@@ -573,6 +573,49 @@ export default function FMCGTransformationPage() {
                     </div>
                 </section>
 
+                {/* Related Solutions */}
+                <section className="py-12 px-6 lg:px-12 bg-gray-50">
+                    <div className="container mx-auto max-w-6xl">
+                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
+                            Related Manufacturing Solutions
+                        </h2>
+                        <div className="grid md:grid-cols-2 gap-6">
+                            <Link
+                                href="/solutions/manufacturing/bottling"
+                                className="bg-white rounded-lg p-6 border border-gray-200 hover:border-orange-500 hover:shadow-lg transition-all group"
+                            >
+                                <div className="flex items-start gap-4">
+                                    <Factory className="text-orange-600 mt-1" sx={{ fontSize: 32 }} />
+                                    <div>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">
+                                            Bottling Manufacturing
+                                        </h3>
+                                        <p className="text-gray-600">
+                                            Complete traceability from mixing and filling to packing and dispatch for bottling operations.
+                                        </p>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link
+                                href="/ai-solutions/manufacturing"
+                                className="bg-white rounded-lg p-6 border border-gray-200 hover:border-orange-500 hover:shadow-lg transition-all group"
+                            >
+                                <div className="flex items-start gap-4">
+                                    <Settings className="text-orange-600 mt-1" sx={{ fontSize: 32 }} />
+                                    <div>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">
+                                            AI in Manufacturing
+                                        </h3>
+                                        <p className="text-gray-600">
+                                            AI-powered predictive maintenance, quality control, and smart factory solutions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Conclusion / CTA */}
                 <section className="py-12 px-6 lg:px-12 bg-gray-900 text-white text-center">
                     <div className="container mx-auto max-w-4xl">
