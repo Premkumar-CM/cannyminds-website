@@ -1,10 +1,8 @@
 "use client";
 
 import { useState } from 'react';
-import {
-  Send as SendIcon,
-  CheckCircle as CheckCircleIcon,
-} from '@mui/icons-material';
+import { Send as SendIcon } from '@mui/icons-material';
+import Toast, { ToastType } from '@/components/ui/Toast';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -16,8 +14,19 @@ export default function ContactForm() {
     message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
-  const [submitError, setSubmitError] = useState('');
+  const [toast, setToast] = useState<{ isVisible: boolean; message: string; type: ToastType }>({
+    isVisible: false,
+    message: '',
+    type: 'success'
+  });
+
+  const showToast = (message: string, type: ToastType) => {
+    setToast({ isVisible: true, message, type });
+  };
+
+  const closeToast = () => {
+    setToast(prev => ({ ...prev, isVisible: false }));
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -29,7 +38,9 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmitError('');
+
+    // Close any existing toast
+    closeToast();
 
     try {
       const response = await fetch('/api/contact', {
@@ -46,7 +57,8 @@ export default function ContactForm() {
         throw new Error(data.error || 'Failed to send message');
       }
 
-      setSubmitSuccess(true);
+      showToast('Message sent successfully! We will get back to you shortly.', 'success');
+
       setFormData({
         name: '',
         email: '',
@@ -56,11 +68,9 @@ export default function ContactForm() {
         message: '',
       });
 
-      // Reset success message after 5 seconds
-      setTimeout(() => setSubmitSuccess(false), 5000);
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Failed to send message. Please try again or contact us directly via email.';
-      setSubmitError(errorMessage);
+      const errorMessage = error instanceof Error ? error.message : 'Failed to send message. Please try again.';
+      showToast(errorMessage, 'error');
     } finally {
       setIsSubmitting(false);
     }
@@ -74,29 +84,22 @@ export default function ContactForm() {
     "Custom Software Development",
     "Digital Transformation Consulting",
     "Other Services",
+    "Product Inquiry",
+    "Partnership Opportunities",
+    "Careers",
   ];
 
   return (
-    <div className="bg-white border-2 border-gray-200 rounded-xl p-8 shadow-lg">
+    <div className="bg-white border-2 border-gray-200 rounded-xl p-8 shadow-lg relative">
       <h2 className="text-3xl font-bold text-secondary mb-6">Send Us a Message</h2>
 
-      {submitSuccess && (
-        <div className="mb-6 bg-green-50 border-2 border-green-500 rounded-lg p-4 flex items-start gap-3">
-          <CheckCircleIcon sx={{ fontSize: 24, color: '#22c55e' }} className="flex-shrink-0" />
-          <div>
-            <h3 className="font-bold text-green-800 mb-1">Message Sent Successfully!</h3>
-            <p className="text-sm text-green-700">
-              Thank you for contacting us. We'll get back to you within 24 hours.
-            </p>
-          </div>
-        </div>
-      )}
-
-      {submitError && (
-        <div className="mb-6 bg-red-50 border-2 border-red-500 rounded-lg p-4">
-          <p className="text-sm text-red-700">{submitError}</p>
-        </div>
-      )}
+      {/* Toast Notification */}
+      <Toast
+        message={toast.message}
+        type={toast.type}
+        isVisible={toast.isVisible}
+        onClose={closeToast}
+      />
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>

@@ -99,8 +99,8 @@ export async function POST(request: Request) {
     // 5. Create Transporter
     const transporter = nodemailer.createTransport({
       host: smtpConfig.host,
-      port: 465, // Try 465 SSL
-      secure: true, // true for 465
+      port: smtpConfig.port, // Use port from config
+      secure: smtpConfig.port === 465, // True for 465, false for other ports
       auth: {
         user: smtpConfig.user,
         pass: smtpConfig.pass,
@@ -108,14 +108,30 @@ export async function POST(request: Request) {
       tls: {
         rejectUnauthorized: false
       },
+      // Increase timeouts for reliability (helps with cold starts)
+      connectionTimeout: 20000, // 20 seconds
+      greetingTimeout: 20000,   // 20 seconds
+      socketTimeout: 20000,     // 20 seconds
       debug: true, // Enable debug logging
       logger: true // Enable internal logger
     });
 
-    // 6. Send Email
-    console.log(`Attempting to send email to ${smtpConfig.to} from ${smtpConfig.user}...`);
+    // Verify connection configuration
+    try {
+      await transporter.verify();
+      console.log('✅ SMTP Connection Verified');
+    } catch (verifyError) {
+      console.error('❌ SMTP Connection Verification Failed:', verifyError);
+      return NextResponse.json(
+        { error: 'Failed to connect to email server.', details: verifyError },
+        { status: 500 }
+      );
+    }
 
-    const info = await transporter.sendMail({
+    // 6. Send Admin Notification Email
+    console.log(`Attempting to send admin notification to ${smtpConfig.to}...`);
+
+    const adminMailOptions = {
       from: `"${process.env.EMAIL_FROM_NAME || 'CannyMinds Website'}" <${smtpConfig.user}>`,
       to: smtpConfig.to,
       replyTo: email,
@@ -174,17 +190,85 @@ export async function POST(request: Request) {
           </div>
         </div>
       `
+    };
+
+    const adminInfo = await transporter.sendMail(adminMailOptions);
+
+    console.log('✅ Admin Notification Sent:', {
+      messageId: adminInfo.messageId,
+      accepted: adminInfo.accepted
     });
 
-    console.log('✅ Email Send Response:', {
-      messageId: info.messageId,
-      accepted: info.accepted,
-      rejected: info.rejected,
-      response: info.response,
-      envelope: info.envelope
-    });
+    // 7. Send Auto-Reply to User
+    console.log(`Attempting to send auto-reply to user ${email}...`);
 
-    console.log('✅ Email sent successfully');
+    const autoReplyMailOptions = {
+      from: `"CannyMinds (No-Reply)" <${smtpConfig.user}>`,
+      to: email, // Send to the user
+      replyTo: 'no-reply@cannymindstech.com',
+      subject: `We've received your message - CannyMinds`,
+      text: `
+        Hi ${name},
+
+        Thank you for contacting CannyMinds. We have received your inquiry regarding "${service}".
+
+        Our team will review your message and get back to you within 24 hours.
+
+        Best regards,
+        The CannyMinds Team
+        https://www.cannymindstech.com
+      `,
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e2e8f0; border-radius: 8px;">
+          <div style="text-align: center; margin-bottom: 30px;">
+            <h1 style="color: #1e3a8a; margin-bottom: 10px;">Thank You for Reaching Out!</h1>
+            <p style="color: #64748b; font-size: 16px;">We have received your message.</p>
+          </div>
+          
+          <div style="padding: 20px; background-color: #f8fafc; border-radius: 8px; margin-bottom: 30px;">
+            <p style="color: #334155; line-height: 1.6; margin-bottom: 15px;">Hi <strong>${name}</strong>,</p>
+            <p style="color: #334155; line-height: 1.6; margin-bottom: 15px;">
+              Thank you for contacting CannyMinds Technology Solutions. We appreciate your interest in our <strong>${service}</strong> services.
+            </p>
+            <p style="color: #334155; line-height: 1.6;">
+              Our team usually responds within 24 hours to schedule a detailed discussion about your requirements.
+            </p>
+          </div>
+
+          <div style="text-align: center; border-top: 1px solid #e2e8f0; padding-top: 20px; margin-top: 30px;">
+            <p style="color: #64748b; font-size: 14px; margin-bottom: 5px;">Best regards,</p>
+            <p style="color: #1e3a8a; font-weight: bold; font-size: 16px; margin: 0;">The CannyMinds Team</p>
+            <a href="https://www.cannymindstech.com" style="color: #3b82f6; text-decoration: none; font-size: 14px; display: inline-block; margin-top: 5px;">www.cannymindstech.com</a>
+
+            <div style="margin-top: 20px;">
+              <p style="color: #64748b; font-size: 12px; margin-bottom: 10px;">Connect with us:</p>
+              <a href="https://in.linkedin.com/company/cannyminds-technology-solutions" style="text-decoration: none; margin: 0 5px;">
+                <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" width="24" height="24" style="display: inline-block; vertical-align: middle;">
+              </a>
+              <a href="https://x.com/cannyminds" style="text-decoration: none; margin: 0 5px;">
+                <img src="https://img.icons8.com/color/48/twitter--v1.png" alt="X (Twitter)" width="24" height="24" style="display: inline-block; vertical-align: middle;">
+              </a>
+              <a href="https://www.facebook.com/p/CannyMinds-Technology-Solutions-100063646614219/" style="text-decoration: none; margin: 0 5px;">
+                <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook" width="24" height="24" style="display: inline-block; vertical-align: middle;">
+              </a>
+              <a href="https://www.instagram.com/cannyminds_technology/" style="text-decoration: none; margin: 0 5px;">
+                <img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram" width="24" height="24" style="display: inline-block; vertical-align: middle;">
+              </a>
+            </div>
+          </div>
+        </div>
+      `
+    };
+
+    // Send auto-reply asynchronously (don't block response on it, but log error if fails)
+    try {
+      await transporter.sendMail(autoReplyMailOptions);
+      console.log('✅ Auto-reply sent successfully');
+    } catch (replyError) {
+      console.error('⚠️ Failed to send auto-reply:', replyError);
+      // We don't fail the request if auto-reply fails, as the admin notification is more important
+    }
+
     return NextResponse.json({ success: true, message: 'Message sent!' }, { status: 200 });
 
   } catch (error: any) {
