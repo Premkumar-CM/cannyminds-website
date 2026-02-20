@@ -8,30 +8,34 @@ const offices = [
   {
     country: "India",
     flag: "🇮🇳",
-    address: "No 88 Ram Nagar 6th St, Velachery, Chennai-600042",
-    phone: ["+91-9361801926"],
+    address: "No 88 Ram Nagar 6th St, Velachery\nChennai-600042, Tamil Nadu",
+    phone: "+91 93618 01926",
+    phone2: "+91 93618 01928",
     email: "info@cannymindstech.com",
   },
   {
     country: "United States",
     flag: "🇺🇸",
-    address: "8751 Collin McKinney Pkwy Suite 1102, McKinney, TX 75070",
-    phone: ["+1 (214) 727-0422", "+1 (214) 272-0230"],
-    email: "usa@cannymindstech.com",
+    address: "8751 Collin McKinney Pkwy, Suite 1102 #525\nMcKinney, TX 75070",
+    phone: "+91 93618 01926",
+    phone2: "+91 93618 01928",
+    email: "info@cannymindstech.com",
   },
   {
     country: "Nigeria",
     flag: "🇳🇬",
-    address: "No 16, Adeola Adeleye Street, Lagos",
-    phone: ["+234 708 632 3687"],
-    email: "nigeria@cannymindstech.com",
+    address: "Eco Bank, 4th Floor, Opp 680 Hotel\nCBD, Nairobi",
+    phone: "+91 93618 01926",
+    phone2: "+91 93618 01928",
+    email: "info@cannymindstech.com",
   },
   {
     country: "UAE",
     flag: "🇦🇪",
-    address: "Dubai, United Arab Emirates",
-    phone: ["+971 XX XXX XXXX"],
-    email: "uae@cannymindstech.com",
+    address: "Victoria Island\nLagos, Nigeria",
+    phone: "+91 93618 01926",
+    phone2: "+91 93618 01928",
+    email: "info@cannymindstech.com",
   },
 ];
 
@@ -82,8 +86,8 @@ export default function GlobalOffices() {
                 whileHover={{ y: -8, scale: 1.02 }}
                 onClick={() => setActiveOffice(index)}
                 className={`cursor-pointer bg-white rounded-xl p-6 shadow-lg border-2 transition-all duration-300 ${activeOffice === index
-                    ? "border-primary shadow-xl shadow-primary/20"
-                    : "border-gray-100"
+                  ? "border-primary shadow-xl shadow-primary/20"
+                  : "border-gray-100"
                   }`}
               >
                 <div className="text-5xl mb-3">{office.flag}</div>
@@ -128,15 +132,25 @@ export default function GlobalOffices() {
                   <div className="text-blue-200 text-sm mb-2 font-semibold">
                     Phone
                   </div>
-                  {offices[activeOffice].phone.map((phone, idx) => (
+                  {/* Phone rendering */}
+                  <a
+                    href={`https://wa.me/${offices[activeOffice].phone.replace(/[^0-9]/g, "")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-lg font-medium mb-1 hover:underline"
+                  >
+                    {offices[activeOffice].phone}
+                  </a>
+                  {offices[activeOffice].phone2 && (
                     <a
-                      key={idx}
-                      href={`tel:${phone}`}
+                      href={`https://wa.me/${offices[activeOffice].phone2.replace(/[^0-9]/g, "")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="block text-lg font-medium mb-1 hover:underline"
                     >
-                      {phone}
+                      {offices[activeOffice].phone2}
                     </a>
-                  ))}
+                  )}
                 </div>
 
                 <div>

@@ -144,7 +144,7 @@ export function TextAnimate({
                             variants={itemVariants}
                             className={cn("inline-block", segmentClassName)}
                         >
-                            {segment === " " ? "\u00A0" : segment}
+                            {segment === " " ?  "\u00A0" : segment}
                         </motion.span>
                         {by === "word" && i < segments.length - 1 && " "}
                     </Fragment>

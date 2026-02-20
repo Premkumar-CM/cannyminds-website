@@ -7,6 +7,8 @@ const RATE_LIMIT_WINDOW = 60 * 60 * 1000; // 1 hour
 const MAX_REQUESTS = 5; // Max 5 submissions per hour per IP
 
 function checkRateLimit(ip: string): boolean {
+
+
   const now = Date.now();
   const record = rateLimitMap.get(ip);
 
@@ -55,6 +57,21 @@ export async function POST(request: Request) {
       console.warn('Missing required fields:', { name: !!name, email: !!email, message: !!message, service: !!service });
       return NextResponse.json(
         { error: 'Name, email, service, and message are required.' },
+        { status: 400 }
+      );
+    }
+
+    // Checking for work email
+    const FREE_EMAIL_DOMAINS = [
+      'gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com',
+      'icloud.com', 'mail.com', 'yandex.com', 'protonmail.com', 'zoho.com',
+      'live.com', 'msn.com', 'yahoo.co.in', 'yahoo.co.uk', 'googlemail.com'
+    ];
+
+    const emailDomain = email.split('@')[1]?.toLowerCase();
+    if (emailDomain && FREE_EMAIL_DOMAINS.includes(emailDomain)) {
+      return NextResponse.json(
+        { error: 'Please provide a valid work email address.' },
         { status: 400 }
       );
     }

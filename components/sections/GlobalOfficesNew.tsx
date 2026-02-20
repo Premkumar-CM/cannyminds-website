@@ -27,6 +27,7 @@ const allOffices: Office[] = [
     city: "Chennai",
     address: "No 88 Ram Nagar 6th St, Velachery\nChennai-600042, Tamil Nadu",
     phone: "+91 93618 01926",
+    phone2: "+91 93618 01928",
     email: "info@cannymindstech.com",
     flag: "🇮🇳",
   },
@@ -35,18 +36,10 @@ const allOffices: Office[] = [
     country: "United States",
     city: "McKinney",
     address: "8751 Collin McKinney Pkwy, Suite 1102 #525\nMcKinney, TX 75070",
-    phone: "+1 (281) 810-1926",
+    phone: "+91 93618 01926",
+    phone2: "+91 93618 01928",
     email: "info@cannymindstech.com",
     flag: "🇺🇸",
-  },
-  {
-    region: "Africa",
-    country: "Nigeria",
-    city: "Lagos",
-    address: "Victoria Island\nLagos, Nigeria",
-    phone: "+234 (0) 813 618 0192",
-    email: "info@cannymindstech.com",
-    flag: "🇳🇬",
   },
   {
     region: "Africa",
@@ -54,6 +47,7 @@ const allOffices: Office[] = [
     city: "Illupeju",
     address: "No:16, Adeola Adeleye Street, Off Coker Road\nIllupeju, Lagos",
     phone: "+91 93618 01926",
+    phone2: "+91 93618 01928",
     email: "info@cannymindstech.com",
     flag: "🇳🇬",
   },
@@ -64,6 +58,7 @@ const allOffices: Office[] = [
     city: "Nairobi",
     address: "Eco Bank, 4th Floor, Opp 680 Hotel\nCBD, Nairobi",
     phone: "+91 93618 01926",
+    phone2: "+91 93618 01928",
     email: "info@cannymindstech.com",
     flag: "🇰🇪",
   },
@@ -73,6 +68,7 @@ const allOffices: Office[] = [
     city: "Gaborone",
     address: "Plot 20614, Gaborone (P.O. Box 405694)\nBotswana",
     phone: "+91 93618 01926",
+    phone2: "+91 93618 01928",
     email: "info@cannymindstech.com",
     flag: "🇧🇼",
   },
@@ -82,6 +78,7 @@ const allOffices: Office[] = [
     city: "Kinshasa",
     address: "Av.No.1538, De l’avenue Mondjiba, No-1527\nC/Nagaliema, Boulevard, Kinshasa",
     phone: "+91 93618 01926",
+    phone2: "+91 93618 01928",
     email: "info@cannymindstech.com",
     flag: "🇨🇩",
   },
@@ -91,6 +88,7 @@ const allOffices: Office[] = [
     city: "Lusaka",
     address: "12553 Zambezi Road, Roma\nLusaka, Zambia",
     phone: "+91 93618 01926",
+    phone2: "+91 93618 01928",
     email: "info@cannymindstech.com",
     flag: "🇿🇲",
   },
@@ -100,6 +98,7 @@ const allOffices: Office[] = [
     city: "Kampala",
     address: "IPO Box No. 5454, 1st floor, Above Ruby Supermarket\nOld Port Bell Road, Luzira Kampala",
     phone: "+91 93618 01926",
+    phone2: "+91 93618 01928",
     email: "info@cannymindstech.com",
     flag: "🇺🇬",
   },
@@ -109,6 +108,7 @@ const allOffices: Office[] = [
     city: "Dar es Salaam",
     address: "Sky City Mall, 5th Floor, University Road\nDar es Salaam",
     phone: "+91 93618 01926",
+    phone2: "+91 93618 01928",
     email: "info@cannymindstech.com",
     flag: "🇹🇿",
   },
@@ -179,14 +179,18 @@ export default function GlobalOfficesNew() {
                       <WhatsAppIcon className="text-green-600 flex-shrink-0" sx={{ fontSize: 18 }} />
                       <div className="flex flex-col">
                         <a
-                          href={`tel:${office.phone.replace(/[^0-9+]/g, "")}`}
+                          href={`https://wa.me/${office.phone.replace(/[^0-9]/g, "")}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-sm text-gray-700 hover:text-primary transition-colors font-medium"
                         >
                           {office.phone}
                         </a>
                         {office.phone2 && (
                           <a
-                            href={`tel:${office.phone2.replace(/[^0-9+]/g, "")}`}
+                            href={`https://wa.me/${office.phone2.replace(/[^0-9]/g, "")}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-sm text-gray-700 hover:text-primary transition-colors font-medium"
                           >
                             {office.phone2}

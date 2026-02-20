@@ -12,7 +12,7 @@ const offices = [
     country: "India",
     countryCode: "IN",
     address: "No 88 Ram Nagar 6th St, Velachery, Chennai-600042",
-    phone: ["+91-9361801926"],
+    phone: ["+91 93618 01926", "+91 93618 01928"],
     email: "info@cannymindstech.com",
     color: "from-orange-500 to-green-500",
   },
@@ -20,7 +20,7 @@ const offices = [
     country: "United States",
     countryCode: "US",
     address: "8751 Collin McKinney Pkwy Suite 1102, McKinney, TX 75070",
-    phone: ["+1 (214) 727-0422", "+1 (214) 272-0230"],
+    phone: ["+91 93618 01926", "+91 93618 01928"],
     email: "usa@cannymindstech.com",
     color: "from-blue-600 to-red-600",
   },
@@ -28,7 +28,7 @@ const offices = [
     country: "Nigeria",
     countryCode: "NG",
     address: "No 16, Adeola Adeleye Street, Lagos",
-    phone: ["+234 708 632 3687"],
+    phone: ["+91 93618 01926", "+91 93618 01928"],
     email: "nigeria@cannymindstech.com",
     color: "from-green-700 to-green-500",
   },
@@ -36,7 +36,7 @@ const offices = [
     country: "UAE",
     countryCode: "AE",
     address: "Dubai, United Arab Emirates",
-    phone: ["+971 XX XXX XXXX"],
+    phone: ["+91 93618 01926", "+91 93618 01928"],
     email: "uae@cannymindstech.com",
     color: "from-red-600 to-green-600",
   },
@@ -89,8 +89,8 @@ export default function GlobalOfficesUpdated() {
                 whileHover={{ y: -8, scale: 1.02 }}
                 onClick={() => setActiveOffice(index)}
                 className={`cursor-pointer bg-white rounded-lg sm:rounded-xl p-5 sm:p-6 shadow-lg border-2 transition-all duration-300 h-full flex flex-col ${activeOffice === index
-                    ? "border-primary shadow-xl shadow-primary/20"
-                    : "border-gray-100"
+                  ? "border-primary shadow-xl shadow-primary/20"
+                  : "border-gray-100"
                   }`}
               >
                 <div className={`w-14 h-14 sm:w-16 sm:h-16 rounded-lg bg-gradient-to-br ${office.color} flex items-center justify-center mb-3 sm:mb-4 opacity-90`}>
@@ -144,7 +144,9 @@ export default function GlobalOfficesUpdated() {
                   {offices[activeOffice].phone.map((phone, idx) => (
                     <a
                       key={idx}
-                      href={`tel:${phone}`}
+                      href={`https://wa.me/${phone.replace(/[^0-9]/g, "")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="block text-sm sm:text-base md:text-lg font-medium mb-1 hover:underline"
                     >
                       {phone}

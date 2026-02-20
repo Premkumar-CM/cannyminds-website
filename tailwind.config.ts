@@ -153,6 +153,13 @@ const config: Config = {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
 			},
+			backgroundSize: {
+				'size-200': '200% 100%'
+			},
+			backgroundPosition: {
+				'pos-0': '0% 0%',
+				'pos-100': '100% 0%'
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
