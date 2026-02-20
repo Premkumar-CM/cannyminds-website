@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/ui/SmoothScroll";
-import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import Navigation from "@/components/ui/Navigation";
 import Footer from "@/components/ui/Footer";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import TawkProvider from "@/components/ui/TawkProvider";
 import { enhancedMetadata as seoMetadata } from "@/lib/enhanced-seo";
 
 const geistSans = Geist({
@@ -47,6 +48,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </SmoothScroll>
+        <TawkProvider />
         <WhatsAppButton />
 
       </body>

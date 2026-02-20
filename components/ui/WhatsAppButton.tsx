@@ -23,7 +23,8 @@ export default function WhatsAppButton() {
   return (
     <>
       {/* WhatsApp Floating Button */}
-      <div className="fixed bottom-6 right-6 z-50 flex items-end gap-3">
+      {/* Placed at bottom-[112px] to stack elegantly above the Tawk.to native chat widget */}
+      <div className="fixed bottom-[112px] right-6 z-[60] flex items-end gap-3">
 
         {/* Tooltip Message */}
         {showTooltip && (
