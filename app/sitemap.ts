@@ -65,25 +65,25 @@ function getAllPages(dir: string, baseDir: string = dir): string[] {
 }
 
 // Define priority and change frequency for different page types
-function getPageConfig(route: string): { priority: number; changeFrequency: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never' } {
+function getPageConfig(route: string): { priority: number } {
   if (route === '/') {
-    return { priority: 1.0, changeFrequency: 'weekly' }
+    return { priority: 1.0 }
   }
 
   if (route.startsWith('/solutions/') || route.startsWith('/product/') || route === '/services') {
-    return { priority: 0.9, changeFrequency: 'weekly' }
+    return { priority: 0.9 }
   }
 
   if (route === '/about') {
-    return { priority: 0.8, changeFrequency: 'monthly' }
+    return { priority: 0.8 }
   }
 
   if (route === '/contact') {
-    return { priority: 0.8, changeFrequency: 'monthly' }
+    return { priority: 0.8 }
   }
 
   // Default for other pages
-  return { priority: 0.7, changeFrequency: 'weekly' }
+  return { priority: 0.7 }
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -95,14 +95,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = getAllPages(appDir)
 
   // Generate sitemap entries for all routes
-  return routes.map((route) => {
-    const config = getPageConfig(route)
-
-    return {
+  return routes
+    .sort((a, b) => getPageConfig(b).priority - getPageConfig(a).priority) // Sort by priority (highest first)
+    .map((route) => ({
       url: `${baseUrl}${route}`,
       lastModified: currentDate,
-      changeFrequency: config.changeFrequency,
-      priority: config.priority,
-    }
-  }).sort((a, b) => b.priority - a.priority) // Sort by priority (highest first)
+    }))
 }
