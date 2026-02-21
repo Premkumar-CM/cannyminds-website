@@ -118,11 +118,14 @@ const jsonLd = {
       "name": "CannyECM",
       "applicationCategory": "BusinessApplication",
       "description": "Enterprise content management system with OCR and workflow automation",
-      "operatingSystem": "Web, Windows, macOS, Linux",
+      "operatingSystem": "Cross-platform (On-Premise Deployment)",
       "offers": {
         "@type": "Offer",
-        "availability": "https://schema.org/InStock",
-        "url": "https://www.cannymindstech.com/product/enterprise-content-management"
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Enterprise Installation & Customization Service",
+          "description": "Full setup, configuration, and deployment of this software on client infrastructure."
+        }
       },
     },
     generateFAQSchema([

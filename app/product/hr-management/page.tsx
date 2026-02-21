@@ -111,11 +111,14 @@ const jsonLd = {
       "name": "CannyHR",
       "applicationCategory": "BusinessApplication",
       "description": "Complete HR and payroll management system with attendance tracking and performance management",
-      "operatingSystem": "Web, Windows, macOS, Linux, iOS, Android",
+      "operatingSystem": "Cross-platform (On-Premise Deployment)",
       "offers": {
         "@type": "Offer",
-        "availability": "https://schema.org/InStock",
-        "url": "https://www.cannymindstech.com/product/hr-management"
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Enterprise Installation & Customization Service",
+          "description": "Full setup, configuration, and deployment of this software on client infrastructure."
+        }
       },
     },
     generateFAQSchema([

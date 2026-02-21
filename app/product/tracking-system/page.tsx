@@ -125,11 +125,14 @@ const jsonLd = {
       "name": "CannyTrack",
       "applicationCategory": "BusinessApplication",
       "description": "Employee productivity monitoring and tracking system with activity analytics and data loss prevention",
-      "operatingSystem": "Web, Windows, macOS, Linux",
+      "operatingSystem": "Cross-platform (On-Premise Deployment)",
       "offers": {
         "@type": "Offer",
-        "availability": "https://schema.org/InStock",
-        "url": "https://www.cannymindstech.com/product/tracking-system"
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Enterprise Installation & Customization Service",
+          "description": "Full setup, configuration, and deployment of this software on client infrastructure."
+        }
       }
     },
     {

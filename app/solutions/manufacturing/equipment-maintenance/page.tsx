@@ -88,7 +88,15 @@ const jsonLd = {
                 "@type": "SoftwareApplication",
                 "name": "CannyECM Maintenance Management",
                 "applicationCategory": "BusinessApplication",
-                "operatingSystem": "Web-based"
+                "operatingSystem": "Cross-platform (On-Premise Deployment)",
+      "offers": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Enterprise Installation & Customization Service",
+          "description": "Full setup, configuration, and deployment of this software on client infrastructure."
+        }
+      }
             },
             "datePublished": new Date().toISOString().split('T')[0],
             "dateModified": new Date().toISOString().split('T')[0]

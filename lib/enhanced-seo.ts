@@ -308,24 +308,22 @@ export const enhancedJsonLd = {
           },
           {
             "@type": "OfferCatalog",
-            name: "Software Products",
+            name: "Enterprise Software Deployment & Custom Development",
             itemListElement: [
               {
                 "@type": "Offer",
                 itemOffered: {
-                  "@type": "SoftwareApplication",
-                  name: "CannyECM",
-                  applicationCategory: "BusinessApplication",
-                  description: "Smart content management software",
+                  "@type": "Service",
+                  name: "On-Premise CannyECM Deployment",
+                  description: "Enterprise content management installation, configuration, and integration on client servers.",
                 },
               },
               {
                 "@type": "Offer",
                 itemOffered: {
-                  "@type": "SoftwareApplication",
-                  name: "CannyHR",
-                  applicationCategory: "BusinessApplication",
-                  description: "HR and payroll management system",
+                  "@type": "Service",
+                  name: "On-Premise CannyHR Deployment",
+                  description: "HR and payroll management system installation, configuration, and integration on client servers.",
                 },
               },
             ],
@@ -467,7 +465,7 @@ export const enhancedJsonLd = {
           "@type": "ListItem",
           position: 2,
           name: "Products",
-          item: `${enhancedSiteConfig.url}/products`,
+          item: `${enhancedSiteConfig.url}/product`,
         },
         {
           "@type": "ListItem",

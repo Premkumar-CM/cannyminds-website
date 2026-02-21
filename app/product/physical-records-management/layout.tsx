@@ -123,12 +123,15 @@ const jsonLd = {
             "@type": "SoftwareApplication",
             "name": "CannyRMS",
             "applicationCategory": "BusinessApplication",
-            "operatingSystem": "Web, Windows, macOS, Linux",
+            "operatingSystem": "Cross-platform (On-Premise Deployment)",
             "description": "Enterprise physical records management software for tracking cartons, files, and documents with barcode scanning, approval workflows, and complete audit trails.",
             "offers": {
                 "@type": "Offer",
-                "availability": "https://schema.org/InStock",
-                "url": "https://www.cannymindstech.com/product/physical-records-management"
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Enterprise Installation & Customization Service",
+                    "description": "Full setup, configuration, and deployment of this software on client infrastructure."
+                }
             },
             "featureList": [
                 "Barcode-based document tracking",
